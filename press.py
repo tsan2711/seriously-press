@@ -321,7 +321,7 @@ def build():
     import shutil, theme   # theme Xưởng đồng hồ 2D tĩnh: web/style.css + web/app.js, HTML từ theme.py
     pages = theme.render_all(theme.Ctx(day, topics, desks, roles=load_roles(), share=tomllib.load(open(f'{ROOT}/config/share.toml', 'rb')).get('endpoint', '')))
     for name, h in pages.items(): open(f'{ROOT}/public/{name}.tmp', 'w', encoding='utf8').write(h); os.replace(f'{ROOT}/public/{name}.tmp', f'{ROOT}/public/{name}')
-    for f in ('rank.js', 'dedup.js', 'memory.js', 'journal.js', 'profiles.js', 'share-core.js', 'run-core.js', 'app.js', 'diary.js', 'community.js', 'settings.js', 'mempage.js', 'issues.js', 'style.css'): shutil.copy(f'{ROOT}/web/{f}', f'{ROOT}/public/{f}')
+    for f in ('rank.js', 'dedup.js', 'memory.js', 'journal.js', 'profiles.js', 'share-core.js', 'run-core.js', 'app.js', 'diary.js', 'community.js', 'settings.js', 'mempage.js', 'issues.js', 'fx.js', 'style.css'): shutil.copy(f'{ROOT}/web/{f}', f'{ROOT}/public/{f}')
     if os.path.isdir(f'{ROOT}/web/tex'): shutil.copytree(f'{ROOT}/web/tex', f'{ROOT}/public/tex', dirs_exist_ok=True)
     build_issues(files, topics, desks)
     import extras; n_s = extras.build_search(ROOT, topics, desks)

@@ -302,3 +302,47 @@ html.pp-open{overflow:hidden}
 @media (prefers-reduced-motion:no-preference){.grid.sk-load .card{animation:sk 1.1s ease-in-out infinite}}
 @media (pointer:coarse){.chip,.mem button,.btn,.scheme,.tags a,[role=tab]{min-height:44px}.chip{display:inline-flex;align-items:center}}
 @media (max-width:480px){.srch .mt{display:none}.pp-f select{max-width:100%;flex:1 1 40%}}
+
+/* ---- v6 (11-22): chất C v2 (cork, thẻ giấy ghim, halftone) + animation GPU-only (transform/opacity). Không filter/blur/shadow động. ---- */
+.mast .clipping{box-shadow:0 1px 1px rgba(0,0,0,.25),0 12px 20px -10px rgba(0,0,0,.6);background:var(--card);border-bottom:3px double var(--ink)}
+.title{letter-spacing:-.015em}
+.tags a{box-shadow:0 1px 0 rgba(0,0,0,.25),0 4px 6px -3px rgba(0,0,0,.5)}
+.scheme{box-shadow:0 1px 0 rgba(0,0,0,.3),0 4px 6px -3px rgba(0,0,0,.5)}
+/* thẻ lưới = mẩu báo ghim: nghiêng nhẹ tĩnh, giấy ấm, kẻ đầu, ghim đỏ (không dây) */
+.grid .card{position:relative;overflow:visible;contain:layout style;background:linear-gradient(180deg,var(--card),var(--card2));border-top:3px solid var(--ink);padding-top:0;transform:rotate(var(--r,0deg))}
+.grid .card:nth-child(4n+1){--r:-.5deg}.grid .card:nth-child(4n+2){--r:.4deg}.grid .card:nth-child(4n+3){--r:-.2deg}.grid .card:nth-child(4n){--r:.6deg}
+.grid .card.lead{--r:-.3deg;border-top-width:4px}
+.grid .card::before{content:"";position:absolute;z-index:4;left:50%;top:-9px;width:15px;height:15px;margin-left:-8px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#ff9d8f,var(--pin) 45%,#6d1009 100%);box-shadow:2px 3px 2px rgba(0,0,0,.4)}
+.grid .card.pinned::before{background:radial-gradient(circle at 35% 30%,#ffe9a0,#e8b830 45%,#7a5a08 100%)}
+.thumb{position:relative}
+.thumb::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle,rgba(26,23,18,.45) 0 1px,transparent 1.6px) 0 0/5px 5px;opacity:.18}
+.lead h3{font-family:var(--serif)}
+.cb h3{font-family:var(--serif);font-weight:700}
+.cb .meta{font:500 .7rem var(--mono);color:var(--mut)}
+.lab{transform:rotate(-1.5deg)}
+.grid .card:hover,.grid .card:focus-within{box-shadow:0 1px 1px rgba(0,0,0,.2),0 8px 16px -8px rgba(0,0,0,.55)}
+.fade-ov{position:fixed;inset:0;z-index:100;pointer-events:none;opacity:1}
+.pg{display:none;height:8px;margin:.5rem 0;background:rgba(26,23,18,.25);overflow:hidden;border-radius:4px}
+.pg.on{display:block}.pg-f{height:100%;width:100%;background:var(--pin);transform-origin:left center;transform:scaleX(0)}
+html.js [data-run-prog]{position:absolute;width:1px;height:1px;opacity:0}
+@media (prefers-reduced-motion:no-preference){
+  html.js .grid .card.fx{opacity:0;transform:translateY(16px) rotate(calc(var(--r,0deg) * 3))}
+  html.js .grid .card.fx.in{opacity:1;transform:rotate(var(--r,0deg));transition:opacity .45s ease-out var(--d,0ms),transform .55s cubic-bezier(.2,1.2,.4,1) var(--d,0ms)}
+  html.js .grid .card.fx.done{transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+  @media (hover:hover){
+    html.js .grid .card.done:hover,html.js .grid .card.done:focus-within{transform:translateY(-5px) rotate(calc(var(--r,0deg) * -1 - .5deg))}
+  }
+  .mast .clipping{animation:v6-drop .6s cubic-bezier(.2,1.2,.4,1) both}
+  @keyframes v6-drop{from{opacity:0;transform:translateY(-14px) rotate(-3deg)}}
+  .grid .card.pinned::before{animation:v6-plug .45s cubic-bezier(.3,1.6,.5,1) both}
+  @keyframes v6-plug{from{transform:translateY(-14px) scale(1.5);opacity:.2}60%{transform:translateY(2px) scale(.9);opacity:1}}
+  .grid.slide{animation:v6-slide .4s cubic-bezier(.2,.9,.3,1) both}
+  @keyframes v6-slide{from{opacity:0;transform:translateX(28px)}}
+  .grid.sk-load .card{animation:none;opacity:.7;overflow:hidden}
+  .grid.sk-load .card::after{content:"";position:absolute;inset:0;z-index:5;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-100%);animation:v6-shim 1.2s linear infinite}
+  @keyframes v6-shim{to{transform:translateX(100%)}}
+  .pg-f{transition:transform .35s ease-out}
+  html.fx-paused *,html.fx-paused *::after,html.fx-paused *::before{animation-play-state:paused!important}
+}
+@media (prefers-reduced-motion:reduce){.grid .card.fx{opacity:1!important;transform:rotate(var(--r,0deg))!important}.grid.slide,.mast .clipping,.grid .card.pinned::before,.grid.sk-load .card::after{animation:none!important}.pg-f{transition:none}}
