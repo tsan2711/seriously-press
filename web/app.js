@@ -25,7 +25,9 @@
   const wl = D.querySelector('.who i'); if (wl && who) wl.textContent = who.name.slice(0, 1).toUpperCase();
   const wipe = D.querySelector('[data-wipe]');
   if (wipe && db) wipe.addEventListener('click', ev => { ev.preventDefault(); const id = db.active() || 'me'; if (confirm('Xoá sở thích của người đọc này trên thiết bị?')) db.clear(id); });
-  let DATA = null; const dataP = fetch('today.json').then(r => r.json()).then(d => (DATA = d)).catch(() => null);
+  let DATA = null; const idle = f => ('requestIdleCallback' in window ? requestIdleCallback(f, { timeout: 1500 }) : setTimeout(f, 200));
+  // today.json + mọi xử lý cá nhân hoá chạy lúc rảnh, sau khi trang đã vẽ (không chặn tương tác)
+  const dataP = new Promise(res => addEventListener('load', () => idle(res))).then(() => fetch('today.json')).then(r => r.json()).then(d => (DATA = d)).catch(() => null);
   window.PressData = dataP;
   const mine = () => { const id = db && db.active(); return id ? { id, p: PR.ensure(db.load(id) || PR.newProfile(null, [])) } : null; };
   const PD = window.PressDedup, PM = window.PressMemory;

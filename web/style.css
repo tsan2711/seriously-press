@@ -247,3 +247,15 @@ ul.mem{list-style:none;padding:0;display:grid;gap:.45rem}.mem li{display:flex;fl
 .art-wrap .feature>*:not(.thumb){margin-left:1.2rem;margin-right:1.2rem}
 .art-wrap .feature h1{margin-top:1rem}.art-wrap .thumb{aspect-ratio:16/9}
 .more{margin:1rem 1.2rem}.more-h{margin:2rem 0 0;color:#fffdf5;font:700 1.2rem var(--serif)}
+
+/* ---- perf (11-22): bỏ thứ làm lag khi cuộn/vẽ ---- */
+.grid .card,.card{animation:none!important;background-image:none}      /* grain + hoạt ảnh từng thẻ */
+.grid .card{background:var(--card);content-visibility:auto;contain-intrinsic-size:auto 280px;contain:layout paint}
+.clipping{animation:none!important;filter:none}
+.card:not(.hub):not(.feature){filter:none}
+.thumb img{content-visibility:auto}
+body{background-attachment:scroll}
+.title,.desk-h h1,.desk-h p,.more-h,.foot p{text-shadow:none}
+@media (hover:none){.card:hover,.card:focus-within{transform:none}}
+.card{transition:none}.grid .card{transition:box-shadow .15s}
+.grid .card:hover,.grid .card:focus-within{transform:none;box-shadow:0 0 0 3px var(--note)}

@@ -18,8 +18,15 @@ for f in sorted(glob.glob(R + '/*.html')):
     if 'class="skip"' not in s or '<main id="main"' not in s: bad.append(f'{n}: thiếu skip-link/main')
     if re.search(r'<img(?![^>]*alt=)', s): bad.append(f'{n}: <img> thiếu alt')
     if len(s.encode()) > 150_000: bad.append(f'{n}: nặng {len(s)//1000} KB > 150 KB')
+    if s.count('<') > 900: bad.append(f'{n}: quá nhiều DOM node (>900 thẻ)')
+    imgs = re.findall(r'<img[^>]*>', s)
+    if any('width=' not in i or 'height=' not in i for i in imgs): bad.append(f'{n}: <img> thiếu width/height (CLS)')
+    if sum('loading="eager"' in i for i in imgs) > 1: bad.append(f'{n}: >1 ảnh eager')
     for m in re.finditer(r'<a [^>]*href="https?://[^"]+"[^>]*>', s):
         if 'noopener' not in m.group(0): bad.append(f'{n}: link ngoài thiếu rel=noopener'); break
+JS_BUDGET = 130_000   # tổng JS tải lúc đầu (byte, chưa nén)
+if sum(os.path.getsize(f) for f in glob.glob(R + '/*.js')) > JS_BUDGET: bad.append('tổng JS vượt ngân sách %d' % JS_BUDGET)
+if re.search(r'animation-timeline|feTurbulence[^}]*\.card', open(R + '/style.css', encoding='utf8').read().split('/* ---- perf')[-1]): bad.append('style.css: perf block dính animation-timeline')
 for f in sorted(glob.glob(R + '/*.js')):   # cú pháp JS phía trình duyệt
     try: node('--check', f)
     except Exception: bad.append(f'{os.path.basename(f)}: lỗi cú pháp JS')

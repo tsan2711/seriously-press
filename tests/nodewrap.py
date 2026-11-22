@@ -24,5 +24,11 @@ def node(*args):
         return subprocess.check_output(['node', *args], text=True, stderr=subprocess.DEVNULL)
     except subprocess.CalledProcessError:
         d = _shim()
-        if not d: raise
-        return subprocess.check_output(['node', *args], text=True, env={**os.environ, 'DYLD_FALLBACK_LIBRARY_PATH': d})
+        try:
+            if not d: raise subprocess.CalledProcessError(1, 'node')
+            return subprocess.check_output(['node', *args], text=True, env={**os.environ, 'DYLD_FALLBACK_LIBRARY_PATH': d})
+        except subprocess.CalledProcessError:
+            if len(args) == 2 and args[0] == '--check':   # node hỏng hẳn (ABI lệch): kiểm cú pháp bằng JavaScriptCore của macOS (osascript -l JavaScript)
+                js = 'ObjC.import("Foundation");var s=$.NSString.stringWithContentsOfFileEncodingError($(' + repr(os.path.abspath(args[1])) + '),4,null).js;new Function(s);"ok"'
+                return subprocess.check_output(['osascript', '-l', 'JavaScript', '-e', js], text=True, stderr=subprocess.DEVNULL)
+            raise

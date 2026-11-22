@@ -106,7 +106,7 @@ def head(page, title):
 <meta name="description" content="Bản tin công nghệ hằng ngày: game dev, thiết kế, AI — mỗi bài ghi nguồn."><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#a77c4e"><meta property="og:type" content="website"><meta property="og:title" content="{e(title)} · {NAME}"><meta property="og:description" content="Bản tin công nghệ hằng ngày: game dev, thiết kế, AI — mỗi bài ghi nguồn."><meta property="og:locale" content="vi_VN">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23a77c4e'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23d33a2c'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?{FONTS}&display=swap&subset=vietnamese">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?{FONTS}&display=swap&subset=vietnamese" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?{FONTS}&display=swap&subset=vietnamese"></noscript>
 <link rel="stylesheet" href="style.css">
 <script>document.documentElement.classList.add("js");try{{var s=localStorage.getItem('press.scheme');if(s==='light'||s==='dark'||s==='auto')document.documentElement.dataset.scheme=s}}catch(e){{}}</script>
 {share_meta}<script src="rank.js" defer></script><script src="dedup.js" defer></script><script src="memory.js" defer></script><script src="journal.js" defer></script><script src="profiles.js" defer></script><script src="share-core.js" defer></script><script src="run-core.js" defer></script><script src="app.js" defer></script><script src="diary.js" defer></script><script src="community.js" defer></script><script src="settings.js" defer></script><script src="mempage.js" defer></script></head>
@@ -131,7 +131,7 @@ def page(name, title, body, cur=None):
 def thumb(a, big=False):
     """Ảnh bài: hotlink og:image/ảnh feed, lazy; lỗi tải → bỏ <img>, còn nền gradient theo chủ đề (theme C, không ảnh sinh)."""
     h = int(hashlib.md5(B.topic(a).encode()).hexdigest()[:4], 16) % 360
-    img = f'<img src="{e(a["img"])}" alt="Ảnh bài: {e(a["title"][:90])}" loading="{"eager" if big else "lazy"}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' if a.get("img") else ""
+    img = f'<img src="{e(a["img"])}" alt="Ảnh bài: {e(a["title"][:90])}" width="640" height="360" loading="{"eager" if big else "lazy"}" fetchpriority="{"high" if big else "low"}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' if a.get("img") else ""
     return f'<div class="thumb" style="--h:{h}" aria-hidden="{"false" if img else "true"}">{img}</div>'
 
 def card(a, i=0, photo=None, cls="", lead=False):
