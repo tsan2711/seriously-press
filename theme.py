@@ -1,6 +1,6 @@
 """Theme BẢNG TIN (art theme C v2 = depts/art/out/press/themes/c_v2_review: bảng ghim, thẻ rách, ảnh halftone, dây đỏ), không 3D. Dữ liệu thật qua Ctx(day, topics, desks).
 CSS web/style.css, JS web/app.js. Không ảnh minh hoạ sinh bằng PIL (art có, site thì không)."""
-import math, html, re, random, datetime as dt
+import math, html, re, random, hashlib, datetime as dt
 
 NAME = "Bản Tin"
 e = lambda s: html.escape(str(s or ""), quote=True)
@@ -113,62 +113,49 @@ def head(page, title):
 <body class="t-c"><a class="skip" href="#main">Bỏ qua tới nội dung</a>"""
 
 def mast(cur):
-    nav = f'<a href="index.html"{" aria-current=page" if cur == "home" else ""}>Trang chủ</a>' + "".join(
+    nav = f'<a href="index.html"{" aria-current=page" if cur == "home" else ""}>Hôm nay</a>' + "".join(
         f'<a href="{B.dpage(d)}"{" aria-current=page" if cur == d else ""}>{e(B.DN[d])}</a>' for d in B.DESK_ORDER)
-    return f"""<header class="mast"><div class="clipping" style="--tear:{tear(B.LEAD, n=20, amp=1.6)}">
-<p class="topline"><span>{e(B.ISSUE)}</span><span>{e(B.DATE_LONG)}</span><span>Giá 0 đồng</span></p>
-<p class="title"><a href="index.html">Bản Tin</a></p><p class="motto">Bảng tin công nghệ · gom theo chủ đề trong ngày</p></div>
+    lk = lambda h, n, who="": f'<a href="{h}"{" aria-current=page" if cur == h[:-5] else ""}>{n}</a>'
+    return f"""<header class="mast"><p class="title"><a href="index.html">Bản Tin</a><small>{e(B.DATE_LONG)}</small></p>
 <div class="navrow"><nav class="desks tags" aria-label="Các ban">{nav}</nav>
-<a class="who" href="picker.html"{" aria-current=page" if cur == "picker" else ""}><i aria-hidden="true">T</i><span>Người đọc</span></a>
-<a class="who" href="settings.html"{" aria-current=page" if cur == "settings" else ""}><i aria-hidden="true">⚙</i><span>Cài đặt</span></a>
-<div class="schemes" role="group" aria-label="Màu nền"><button class="scheme" type="button" data-mode="light" aria-pressed="false" aria-label="Nền sáng" title="Sáng"><span aria-hidden="true">☀</span></button><button class="scheme" type="button" data-mode="dark" aria-pressed="false" aria-label="Nền tối" title="Tối"><span aria-hidden="true">☾</span></button><button class="scheme" type="button" data-mode="auto" aria-pressed="true" aria-label="Nền theo máy" title="Theo máy"><span aria-hidden="true">◐</span></button></div></div></header>"""
+<details class="menu"><summary aria-label="Menu"><span class="who"><i aria-hidden="true">T</i></span><span class="mt">Menu</span></summary><div class="mp">
+{lk("picker.html", "Người đọc &amp; gu của tôi")}{lk("memory.html", "Bộ nhớ của tôi")}{lk("journal.html", "Nhật ký đọc")}{lk("settings.html", "Cài đặt &amp; chạy báo")}
+<div class="schemes" role="group" aria-label="Màu nền"><button class="scheme" type="button" data-mode="light" aria-pressed="false" aria-label="Nền sáng" title="Sáng"><span aria-hidden="true">☀</span></button><button class="scheme" type="button" data-mode="dark" aria-pressed="false" aria-label="Nền tối" title="Tối"><span aria-hidden="true">☾</span></button><button class="scheme" type="button" data-mode="auto" aria-pressed="true" aria-label="Nền theo máy" title="Theo máy"><span aria-hidden="true">◐</span></button></div></div></details></div></header>"""
 
 def foot():
-    return f"""<footer class="foot"><p>Bản tin · {e(B.ISSUE)} · {B.DATE_SHORT} · tóm tắt trích từ nguồn, mỗi bài ghi nguồn và link gốc.</p>
-<p>Sở thích lưu trên thiết bị của bạn, không tài khoản. <a href="#" data-wipe>Xoá sở thích</a> · <a href="picker.html">Đổi người đọc</a> · <a href="journal.html">Nhật ký</a> · <a href="memory.html">Bộ nhớ của tôi</a> · <a href="settings.html">Cài đặt &amp; chạy báo</a></p></footer>"""
+    return f"""<footer class="foot"><p>Tóm tắt trích từ nguồn; mỗi bài ghi nguồn và link gốc. Sở thích lưu trên máy bạn, không tài khoản. <a href="#" data-wipe>Xoá sở thích</a></p></footer>"""
 
 def page(name, title, body, cur=None):
     return head(name, title) + mast(cur or name) + body + foot() + "</body></html>\n"
 
+def thumb(a, big=False):
+    """Ảnh bài: hotlink og:image/ảnh feed, lazy; lỗi tải → bỏ <img>, còn nền gradient theo chủ đề (theme C, không ảnh sinh)."""
+    h = int(hashlib.md5(B.topic(a).encode()).hexdigest()[:4], 16) % 360
+    img = f'<img src="{e(a["img"])}" alt="Ảnh bài: {e(a["title"][:90])}" loading="{"eager" if big else "lazy"}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' if a.get("img") else ""
+    return f'<div class="thumb" style="--h:{h}" aria-hidden="{"false" if img else "true"}">{img}</div>'
+
 def card(a, i=0, photo=None, cls="", lead=False):
-    r = random.Random(seed(a)); rot = round(r.uniform(-1.9, 1.9), 1)
-    ph = photo if photo is not None else (seed(a) % 5 == 0)
-    fig = f'<figure class="photo">{halftone(a)}<figcaption>{case_no(a)} · {e(a["source"])}</figcaption></figure>' if ph else ""
-    st = a.get("status", "new"); lab = f'<span class="lab lab-up" title="{e(a.get("update_note") or "Có cập nhật")}">Cập nhật</span>' if st == "update" else (f'<span class="lab lab-seen">Đã thấy</span>' if st == "repeat" else "")
-    return f"""<article class="card {cls}" data-id="{e(a['id'])}" data-sid="{e(a.get('sid', ''))}" data-rev="{a.get('rev', 0)}" data-st="{st}" data-topic="{e(B.topic(a))}" style="--r:{rot}deg;--i:{i};--tear:{tear(a)}">
-{PIN}{fig}<p class="kicker"><span>{e(B.tl(B.topic(a)))}</span><span>{case_no(a)}</span></p>{lab}
-<h3><a href="{e(a['url'])}" rel="noopener">{e(a['title'])}</a></h3>
-<p class="meta">{e(B.meta(a))}</p>{('<p class="upnote">' + e(a.get('update_note')) + '</p>') if st == 'update' and a.get('update_note') else ''}</article>"""
+    st = a.get("status", "new"); lab = f'<span class="lab lab-up" title="{e(a.get("update_note") or "Có cập nhật")}">Cập nhật</span>' if st == "update" else ""
+    return f"""<article class="card {cls}" data-id="{e(a['id'])}" data-sid="{e(a.get('sid', ''))}" data-rev="{a.get('rev', 0)}" data-st="{st}" data-topic="{e(B.topic(a))}" style="--i:{i}">
+{thumb(a, lead)}<div class="cb">{lab}<h3><a href="{e(a['url'])}" rel="noopener">{e(a['title'])}</a></h3>
+<p class="meta">{e(B.meta(a))}</p></div></article>"""
 
 def hub(t, n, k):
     return f"""<header class="card hub zhead" data-hub="1" data-topic="{e(t)}" style="--r:{(-.8, .6, -.4)[k % 3]}deg">{PIN}
 <p class="typed">CHỦ ĐỀ</p><h2 class="hubt">{e(B.tl(t))}</h2><p class="typed">{n} bài cùng chủ đề</p></header>"""
 
-def board(arts, lead=None, max_hub=3, per=7, rest_n=9):
-    groups = {}
-    for a in arts:
-        if lead is None or a["id"] != lead["id"]: groups.setdefault(B.topic(a), []).append(a)
-    order = sorted(groups, key=lambda k: -len(groups[k])); big = [k for k in order if len(groups[k]) >= 2][:max_hub]
-    rest = [a for k in order if k not in big for a in groups[k]][:rest_n]
-    out = []; i = 0
-    if lead:
-        side = groups[big[0]][:3] if big else []
-        if big: groups[big[0]] = groups[big[0]][3:]
-        out.append('<section class="front">' + card(lead, 0, photo=True, cls="lead") + '<div class="side">' + "".join(card(a, k + 1, photo=False) for k, a in enumerate(side)) + '</div></section>'); i = 4
-    for k, t in enumerate(big):
-        cards = "".join(card(a, i + j, photo=(j in (1, 4))) for j, a in enumerate(groups[t][:per])); i += per
-        out.append(f'<section class="zone">{hub(t, B.cnt.get(t, 0), k)}<div class="tray">{cards}</div></section>')
-    if rest:
-        out.append('<section class="zone"><header class="card hub zhead" style="--r:.5deg">' + PIN + '<p class="typed">KHÁC</p><h2 class="hubt">Tin khác</h2></header><div class="tray">'
-                   + "".join(card(a, i + j, photo=(j == 2)) for j, a in enumerate(rest)) + '</div></section>')
-    return '<div class="board">' + "".join(out) + "</div>"
+def board(arts, lead=None, max_hub=3, per=7, rest_n=9, limit=24):
+    """v4 tối giản: một lưới thẻ (ảnh + tiêu đề + 1 dòng nguồn), không cụm/hub/chip."""
+    rest = [a for a in arts if lead is None or a["id"] != lead["id"]][:limit - (1 if lead else 0)]
+    top = card(lead, 0, cls="lead", lead=True) if lead else ""
+    return '<div class="grid">' + top + "".join(card(a, k + 1) for k, a in enumerate(rest)) + "</div>"
 
 def home():
     pool = [B.L] + B.BR + [a for d in B.DESK_ORDER for a in B.DESK[d]] + B.ARTS[:60]
     seen, arts = set(), []
     for a in pool:
         if a["id"] not in seen: seen.add(a["id"]); arts.append(a)
-    return f"""<main id="main"><h1 class="vh">Bảng tin hôm nay</h1><p class="ddnote" data-dd-note role="status" aria-live="polite" hidden></p>{FORYOU}{hot_section()}{LOCALRUN}{SHAREFEED}{board(arts, lead=B.LEAD, rest_n=10)}</main>"""
+    return f"""<main id="main"><h1 class="vh">Bảng tin hôm nay</h1><p class="ddnote" data-dd-note role="status" aria-live="polite" hidden></p>{FORYOU}{LOCALRUN}{SHAREFEED}{board(arts, lead=B.LEAD)}</main>"""
 
 def prior(F):
     """Khối 'Trước đó' từ KB: câu chuyện cũ liên quan (K3)."""
@@ -180,25 +167,21 @@ def prior(F):
 def article():
     F = L; rel = B.RELATED or B.BR
     n = sum(B.topic(a) == B.topic(F) for a in B.ARTS)
-    cards = "".join(card(a, i + 1, photo=False, cls="mini") for i, a in enumerate(rel))
-    return f"""<main id="main" class="art"><div class="board art-board">
-<article class="card feature" data-id="{e(F['id'])}" data-topic="{e(B.topic(F))}" style="--r:-.4deg;--tear:{tear(F)}">{PIN}
-<p class="kicker"><span>{e(B.tl(B.topic(F)))}</span><span>{case_no(F)}</span></p><h1>{e(F['title'])}</h1>
+    cards = "".join(card(a, i + 1) for i, a in enumerate(rel))
+    return f"""<main id="main" class="art"><div class="art-wrap">
+<article class="card feature" data-id="{e(F['id'])}" data-topic="{e(B.topic(F))}">
+<h1>{e(F['title'])}</h1>
 <p class="byline">Nguồn: {e(F['source'])} · {e(B.ago(F))} · tóm tắt trích từ bài gốc</p>
-<figure class="photo">{halftone(F)}<figcaption>{case_no(F)} · hoạ tiết sinh từ mã bài</figcaption></figure>
+{thumb(F, True)}
 <p class="dropcap">{e(summ(F, 2000))}</p>
-<p class="typed">Đoạn trích. Toàn văn: <a href="{e(F['url'])}" rel="noopener">bài gốc tại {e(F['source'])}</a>.</p>
-<p class="why">↳ {e(B.why(F))}</p>
-<p class="acts"><button class="btn" type="button" data-save data-id="{e(F['id'])}" aria-pressed="false">Lưu bài</button><button class="btn" type="button" data-less data-id="{e(F['id'])}">Ít tin như thế này</button><button class="btn" type="button" data-share data-id="{e(F['id'])}" hidden>Giới thiệu cho mọi người</button></p>
-<fieldset class="rate" data-rate-box data-id="{e(F['id'])}"><legend class="typed">BÀI NÀY CÓ ÍCH?</legend>{''.join(f'<button type="button" class="chip" data-rate="{k}" aria-pressed="false" aria-label="{k} sao">{k}★</button>' for k in range(1, 6))}</fieldset>
+<p class="more"><a class="btn pri" href="{e(F['url'])}" rel="noopener">Đọc bài gốc tại {e(F['source'])} →</a></p>
+<p class="acts"><button class="btn" type="button" data-save data-id="{e(F['id'])}" aria-pressed="false">Lưu bài</button><button class="btn" type="button" data-share data-id="{e(F['id'])}" hidden>Giới thiệu cho mọi người</button></p>
 <p class="m" data-share-msg role="status"></p></article>
-<div class="card hub" data-hub="1" data-topic="{e(B.topic(F))}" style="--r:1.4deg">{PIN}<p class="typed">THÔNG TIN BÀI</p>
-<dl><dt>Nguồn</dt><dd>{e(F['source'])}</dd><dt>Chủ đề</dt><dd>{e(', '.join(B.tl(t) for t in F['topics']))}</dd><dt>Cùng chủ đề</dt><dd>{n} bài</dd></dl></div>
-{prior(F)}<h2 class="vh">Bài liên quan</h2>{cards}</div></main>"""
+<h2 class="more-h">Đọc tiếp</h2><div class="grid">{cards}</div></main>"""
 
 def desk(d):
     arts = [a for a in B.ARTS if d in a["desks"]][:16]
-    return f"""<main id="main"><header class="desk-h card hub wide" style="--r:-.6deg">{PIN}<p class="typed">BAN · {B.COUNT[d]} TIN HÔM NAY</p><h1>{e(B.DN[d])}</h1><p>{e(B.TAG[d])}</p></header>{board(arts, None, 3, 6, 6)}</main>"""
+    return f"""<main id="main"><header class="desk-h"><h1>{e(B.DN[d])}</h1><p>{e(B.TAG[d])}</p></header>{board(arts, None)}</main>"""
 
 def onboard():
     r = "".join(f'<button type="button" class="chip" data-role="{e(k)}" data-topics="{e(",".join(v.get("topics", [])))}" data-density="{e(v.get("density", "normal"))}" aria-pressed="false">{e(v["label"])}</button>' for k, v in B.ROLES.items())

@@ -23,7 +23,8 @@
    "summary_by": "none",
    "sid": "3e6ca39e70",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
@@ -47,7 +48,8 @@
    "summary_by": "none",
    "sid": "c4ca83ba57",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://signal.org/blog/images/protecting-your-privacy-opengraph.png"
   },
   {
    "title": "AI agents ask better questions than KPMG accountants in audit trial",
@@ -71,7 +73,8 @@
    "summary_by": "none",
    "sid": "dbf7233003",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://europeanbusinessmagazine.com/wp-content/uploads/2026/06/ai5555-1024x678.jpg"
   },
   {
    "title": "Claude solves two open problems in the physics of black holes",
@@ -95,7 +98,8 @@
    "summary_by": "none",
    "sid": "be373132dc",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://assets.claude.com/57a443b51d13727573b7c1290130d09c5f434b2c.jpg"
   },
   {
    "title": "Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine",
@@ -119,7 +123,8 @@
    "summary_by": "none",
    "sid": "0760cd4476",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://s.yimg.com/lo/mysterio/api/ad6a2a112e9f0226e79e9b73cb48fc33faa150dd88d4ea7b20be07d0146e6315/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fukrayinska_pravda_articles_451%2F3f75d2ecee0a54bee0a4a11b062d8666.jpg"
   },
   {
    "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
@@ -143,7 +148,8 @@
    "summary_by": "none",
    "sid": "df98bcb7b8",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/dae5b34245adb2c47ebebd184314cee9254a10643b26ce56b053f76b2951f9dd/openssl/openssl/pull/33652"
   },
   {
    "title": "Multiple vulnerabilities in Regexp and String case conversion",
@@ -167,7 +173,8 @@
    "summary_by": "none",
    "sid": "77ff48ef19",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://www.ruby-lang.org/images/og-image.png"
   },
   {
    "title": "If you can't explain something in simple terms, you don't understand it (2017)",
@@ -191,7 +198,8 @@
    "summary_by": "none",
    "sid": "601ef0d322",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "UK government forced to admit it issued Apple a secret encryption order",
@@ -215,7 +223,8 @@
    "summary_by": "none",
    "sid": "3580245413",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://macanorak.com/content/images/2026/11/Apple.jpg"
   },
   {
    "title": "Slopstrap – Make your site look hastily vibecoded",
@@ -239,7 +248,8 @@
    "summary_by": "none",
    "sid": "5f05718be2",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://slopstrap.mikelacher.com/og-image.png"
   },
   {
    "title": "Seven new models at scalable price-performance",
@@ -263,7 +273,8 @@
    "summary_by": "none",
    "sid": "5dbbce4400",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://microsoft.ai/wp-content/uploads/2026/11/All-Up-Blog.jpg"
   },
   {
    "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
@@ -287,7 +298,8 @@
    "summary_by": "none",
    "sid": "dc0a65e6fd",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
@@ -311,7 +323,8 @@
    "summary_by": "none",
    "sid": "fda5004e84",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://i.guim.co.uk/img/media/578833ee207aab76c1b6a542f17226703dbd735b/686_0_5336_4269/master/5336.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a36857abb7bd0660d819105186f898a0"
   },
   {
    "title": "Someone reported java4shell bug in September 2026",
@@ -335,7 +348,8 @@
    "summary_by": "none",
    "sid": "21575d4806",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/1abbfd7d7cebaa4d92e82df074eba8f2eb3dc9b90aedb5ab35f8af55f07288b6/openjdk/jdk/pull/32781"
   },
   {
    "title": "LLM assisted reverse engineering",
@@ -358,7 +372,8 @@
    "summary_by": "none",
    "sid": "ba05f6db61",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
@@ -382,7 +397,8 @@
    "summary_by": "none",
    "sid": "667ebdd67c",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
@@ -409,7 +425,8 @@
    "summary_by": "none",
    "sid": "00ca2badf7",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/84bdc0705228501b2c5c65dde4b05dd96fae89d9df448982f5ad25d471971833/onlook-dev/onlook"
   },
   {
    "title": "Toyota, Nissan, and Honda to Standardize Parts to Lower Costs",
@@ -433,7 +450,8 @@
    "summary_by": "none",
    "sid": "d3a1a9a15e",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://hips.hearstapps.com/hmg-prod/images/d8009593-6fd1-4860-b42e-c59e9945155a.jpeg?crop=1xw:0.75xh;0xw,0.184xh&resize=1200:*"
   },
   {
    "title": "ClawDOS – An AI coding agent for DOS",
@@ -458,7 +476,8 @@
    "summary_by": "none",
    "sid": "c82934c02e",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
@@ -481,7 +500,8 @@
    "summary_by": "none",
    "sid": "21efcf41c8",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Show HN: Fast deterministic natural language search for OpenStreetMap data",
@@ -504,7 +524,8 @@
    "summary_by": "none",
    "sid": "ebb93c0b48",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://hippomaps.ch/static/pages/img/en/search.webp?v=5496d14268"
   },
   {
    "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
@@ -530,7 +551,8 @@
    "summary_by": "none",
    "sid": "724823e096",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Fable: Written, painted and directed by Claude Fable 5.2",
@@ -553,7 +575,8 @@
    "summary_by": "none",
    "sid": "48cd8de2ce",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://claudia.gallery/og/fable.jpg"
   },
   {
    "title": "Show HN: OpenComputer – an open source alternative to Devin",
@@ -576,7 +599,8 @@
    "summary_by": "none",
    "sid": "00dcab6dea",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/efe01b9fc939c8cb5d043ecb9c347066b7c478d8d586be1101400372ef6bbe5f/diggerhq/opencomputer"
   },
   {
    "title": "C's designated initializers give us named arguments",
@@ -600,7 +624,8 @@
    "summary_by": "none",
    "sid": "9ce310da3f",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "An FBI agent called a Claude user about his chats",
@@ -625,7 +650,8 @@
    "summary_by": "none",
    "sid": "b9ffbcf8b1",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://substackcdn.com/image/fetch/$s_!NWUr!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,$fp_!0.4762:0.3834:1.05!/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40d557e9-ee2f-486f-8ce6-c7cf6e819d91_1468x1560.png"
   },
   {
    "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
@@ -648,7 +674,8 @@
    "summary_by": "none",
    "sid": "d3325aea2b",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Australia's full national topographic library at your fingertips",
@@ -672,7 +699,8 @@
    "summary_by": "none",
    "sid": "29a1c1e816",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://www.ga.gov.au/__data/assets/image/0007/189601/AUSTopomap_social.jpg"
   },
   {
    "title": "Pandex – Official European Law for AI Agents, over MCP",
@@ -703,7 +731,8 @@
      "title": "Llms.txt and MCP didn't move the needle",
      "d": "2026-11-21"
     }
-   ]
+   ],
+   "img": "https://www.pandex.io/opengraph-image?6367cd8c0b666bc6"
   },
   {
    "title": "Llms.txt and MCP didn't move the needle",
@@ -728,7 +757,8 @@
    "summary_by": "none",
    "sid": "d77b554642",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://backpackforlaravel.com/presentation/img/backpack/socials/backpack_og_image_general.jpg"
   },
   {
    "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
@@ -752,7 +782,8 @@
    "summary_by": "none",
    "sid": "7d99e1aa81",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Show HN: Watch weight-space programming in action with WebGPU",
@@ -775,7 +806,8 @@
    "summary_by": "none",
    "sid": "3d57282d18",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://tabbyml.github.io/weight-space-playground/og-cover.png"
   },
   {
    "title": "Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests",
@@ -798,7 +830,8 @@
    "summary_by": "none",
    "sid": "45afd8c4f8",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://cdn.springcraft.ai/springrep/springrep-preview-mwmpm0jd.png"
   },
   {
    "title": "A 4.5M-parameter TTS model runs 70x real-time on CPU and cost just $10 to train",
@@ -822,7 +855,8 @@
    "summary_by": "none",
    "sid": "7064e35195",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/n4ze3m/tiny-voca.png"
   },
   {
    "title": "Claude Gets Hella Paranoid",
@@ -845,7 +879,8 @@
    "summary_by": "none",
    "sid": "89bec2dcd6",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Anyone can easily use private, open weight models",
@@ -868,7 +903,8 @@
    "summary_by": "none",
    "sid": "6bc9d30d02",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://storage.ghost.io/c/ab/b9/abb95af0-3cb7-4e49-a6c2-c87b36f5d5c2/content/images/2026/11/Screenshot-2026-11-13-at-3.52.43---PM-1.png"
   },
   {
    "title": "Show HN: AgentMall – Let your AI agent buy groceries",
@@ -892,7 +928,8 @@
    "summary_by": "none",
    "sid": "f9911b0047",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Apple is building an AI agent",
@@ -916,7 +953,8 @@
    "summary_by": "none",
    "sid": "b24c1081da",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&strip=all&crop=0%2C10.628272251309%2C100%2C78.743455497382&w=1200"
   },
   {
    "title": "When Everything Has Changed, What Do We Do Next?",
@@ -940,7 +978,8 @@
    "summary_by": "none",
    "sid": "940edf162a",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://css-tricks.com/wp-content/uploads/2018/06/brain-gears.png"
   },
   {
    "title": "Show HN: Zpup – Zdog style 3D scenes in JSON, SVG from any angle",
@@ -963,7 +1002,8 @@
    "summary_by": "none",
    "sid": "e5af9e4827",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/5844f92898b3770737402515af9cbcbbd006bfe8f657c6072e97422620a89b23/rxolve/zpup"
   },
   {
    "title": "Muru",
@@ -984,7 +1024,8 @@
    "summary_by": "excerpt",
    "sid": "21bd1d482a",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Quoting Ravi Vakil",
@@ -1005,7 +1046,8 @@
    "summary_by": "excerpt",
    "sid": "81ce5b24dd",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Quoting Levent Alpöge",
@@ -1026,7 +1068,8 @@
    "summary_by": "excerpt",
    "sid": "b8e1839046",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "llm-gemini 0.38.1",
@@ -1048,7 +1091,8 @@
    "summary_by": "excerpt",
    "sid": "480c7f59bb",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": "https://static.simonwillison.net/static/2026/gemini-4-xhigh-pelicans.webp"
   },
   {
    "title": "Token fraud is here and it’s BAD (YouTube)",
@@ -1069,7 +1113,8 @@
    "summary_by": "excerpt",
    "sid": "e486efe85b",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "PostgreSQL 19 Released",
@@ -1090,7 +1135,8 @@
    "summary_by": "excerpt",
    "sid": "4ba1303d2e",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "llm-gemini 0.38",
@@ -1111,7 +1157,8 @@
    "summary_by": "excerpt",
    "sid": "c3c7756f62",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://static.simonwillison.net/static/2026/gemini-grid-updated.webp"
   },
   {
    "title": "datasette-arrows 0.1a0",
@@ -1132,7 +1179,8 @@
    "summary_by": "excerpt",
    "sid": "630b41be4a",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://static.simonwillison.net/static/2026/arrow-export-dialog.webp"
   },
   {
    "title": "Quoting Daniel Stenberg",
@@ -1154,7 +1202,8 @@
    "summary_by": "excerpt",
    "sid": "569017a70f",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "The PSF end-of-year fundraiser",
@@ -1177,7 +1226,8 @@
    "summary_by": "excerpt",
    "sid": "358ebcd58d",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "External sandboxes for coding agents",
@@ -1199,7 +1249,8 @@
    "summary_by": "excerpt",
    "sid": "c60558e985",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://static.simonwillison.net/static/2026/sandbox-proxy.png"
   },
   {
    "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
@@ -1220,7 +1271,8 @@
    "summary_by": "excerpt",
    "sid": "5cbc55e1b4",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://static.simonwillison.net/static/2026/astra-6-2-max.webp"
   },
   {
    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
@@ -1241,7 +1293,8 @@
    "summary_by": "excerpt",
    "sid": "5b15888867",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://static.simonwillison.net/static/2026/datasette-lite-diag.webp"
   },
   {
    "title": "Quoting Go Proverbs",
@@ -1262,7 +1315,8 @@
    "summary_by": "excerpt",
    "sid": "ae3ee0f483",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "llm 0.37.3",
@@ -1283,7 +1337,8 @@
    "summary_by": "excerpt",
    "sid": "764198fc49",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
@@ -1304,7 +1359,8 @@
    "summary_by": "none",
    "sid": "80d31a6dee",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://huggingface.co/blog/assets/inkling2mini/thumbnail.png"
   },
   {
    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
@@ -1325,7 +1381,8 @@
    "summary_by": "none",
    "sid": "211fbe8009",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://huggingface.co/blog/assets/harness-adapters-at-scale/thumbnail.png"
   },
   {
    "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
@@ -1346,7 +1403,8 @@
    "summary_by": "none",
    "sid": "f689168723",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/6aeabf9f2efd990530425e58/faP4Su889q_DIgN3wmU9M.png"
   },
   {
    "title": "Why your fine-tuning job takes longer than the FLOPs say",
@@ -1367,7 +1425,8 @@
    "summary_by": "none",
    "sid": "75623b38e6",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/J6DIf4Len_31Tj-CQlQXY.png"
   },
   {
    "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
@@ -1388,7 +1447,8 @@
    "summary_by": "none",
    "sid": "bf1424b145",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
@@ -1409,7 +1469,8 @@
    "summary_by": "none",
    "sid": "af1852b4c4",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://huggingface.co/blog/assets/moe-expert-streaming/thumbnail.png"
   },
   {
    "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
@@ -1430,7 +1491,8 @@
    "summary_by": "none",
    "sid": "679cee5ea1",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://huggingface.co/blog/assets/rumble-2-flash/thumbnail.png"
   },
   {
    "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
@@ -1451,7 +1513,8 @@
    "summary_by": "none",
    "sid": "853b24ff0d",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://huggingface.co/blog/assets/openrouter/thumbnail.jpg"
   },
   {
    "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
@@ -1472,7 +1535,8 @@
    "summary_by": "none",
    "sid": "2427bacb74",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "XYBench: Helping with the problem behind the question",
@@ -1493,7 +1557,8 @@
    "summary_by": "none",
    "sid": "8400bdfe1e",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/aOWdQgZ8ioJcx9Eii4iob.png"
   },
   {
    "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
@@ -1514,7 +1579,8 @@
    "summary_by": "none",
    "sid": "40e78db660",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png"
   },
   {
    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
@@ -1535,7 +1601,8 @@
    "summary_by": "none",
    "sid": "a88bddb172",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
@@ -1556,7 +1623,8 @@
    "summary_by": "none",
    "sid": "56dac742ff",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
@@ -1579,7 +1647,8 @@
    "summary_by": "none",
    "sid": "b22522d14a",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/6468b319b2321e47d3267049/Emr86qw6NAueYLdIEiTTD.png"
   },
   {
    "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
@@ -1600,7 +1669,8 @@
    "summary_by": "none",
    "sid": "d2296a64c0",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png"
   },
   {
    "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced",
@@ -1621,7 +1691,8 @@
    "summary_by": "none",
    "sid": "6e086317ff",
    "status": "new",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Rebuilding my local voice assistant pipeline",
@@ -1642,7 +1713,8 @@
    "summary_by": "none",
    "sid": "f454ea635e",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://s3.platypush.tech/static/images/voice-assistant-pipeline.png"
   },
   {
    "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
@@ -1663,7 +1735,8 @@
    "summary_by": "none",
    "sid": "feb4caa835",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg"
   },
   {
    "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
@@ -1684,7 +1757,8 @@
    "summary_by": "none",
    "sid": "6fc8c039af",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://energy-based-reasoners.github.io/static/images/ebr_landscape_abc_v1.png"
   },
   {
    "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
@@ -1705,7 +1779,8 @@
    "summary_by": "none",
    "sid": "1d17667aee",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
@@ -1726,7 +1801,8 @@
    "summary_by": "none",
    "sid": "edbf4ed1a9",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "You could have invented transformers from memory",
@@ -1747,7 +1823,8 @@
    "summary_by": "none",
    "sid": "c19e7ef010",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
   },
   {
    "title": "e-means: 10x faster k-means at equal loss",
@@ -1768,7 +1845,8 @@
    "summary_by": "none",
    "sid": "4f9270c0ec",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://e-means.github.io/assets/emeans_vs_lloyd_readme_v9.png"
   },
   {
    "title": "libreagi - save OS models",
@@ -1789,7 +1867,8 @@
    "summary_by": "none",
    "sid": "9feb4ac43a",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://libreagi.com/og.png"
   },
   {
    "title": "Writing a SIGGRAPH paper from scratch",
@@ -1810,7 +1889,8 @@
    "summary_by": "none",
    "sid": "cd8eac6f9e",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Online learning on the programmable dataplane (2022)",
@@ -1831,7 +1911,8 @@
    "summary_by": "none",
    "sid": "9d242d664e",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Catching prompt injections hidden in PDFs",
@@ -1852,7 +1933,8 @@
    "summary_by": "none",
    "sid": "83d54a23e8",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Firecracker VM Escape: PwnEscape Part 2",
@@ -1873,7 +1955,8 @@
    "summary_by": "none",
    "sid": "f441801c06",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://api.pwn.ai/api/blog/images/photo-2026-11-04-22-55-56-b01dcd719e0c.jpeg"
   },
   {
    "title": "Reflections on Rust in the LLM Age",
@@ -1894,7 +1977,8 @@
    "summary_by": "none",
    "sid": "7dfde11877",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": ""
   },
   {
    "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
@@ -1915,7 +1999,8 @@
    "summary_by": "none",
    "sid": "38c41eb0ed",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://rikiyat.github.io/images/blog/weight-space-programming.png"
   },
   {
    "title": "v2.1.330",
@@ -1938,7 +2023,8 @@
    "summary_by": "excerpt",
    "sid": "7ce40af713",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/039682c0eddced240ab97c729ba18cf64b6d2a8143b2f64e8694fb42caf41007/anthropics/claude-code/releases/tag/v2.1.330"
   },
   {
    "title": "v2.1.329",
@@ -1959,7 +2045,8 @@
    "summary_by": "excerpt",
    "sid": "9166064c2f",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/5b42bee5d440f0e84ecda22947f89cf6c4fa8ccb21c7ee3aac2297099480c966/anthropics/claude-code/releases/tag/v2.1.329"
   },
   {
    "title": "v2.1.328",
@@ -1982,7 +2069,8 @@
    "summary_by": "excerpt",
    "sid": "249cf944c1",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/cb956e0313e453d1ba5080e2bb2510ad156dcebf68610b6ec5e7618b48f0d4e6/anthropics/claude-code/releases/tag/v2.1.328"
   },
   {
    "title": "v2.1.327",
@@ -2005,7 +2093,8 @@
    "summary_by": "excerpt",
    "sid": "1560056f3e",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/e467c19d450f45943c4d319e53b510cb01287ebdee8b1040cccc0ee10f915458/anthropics/claude-code/releases/tag/v2.1.327"
   },
   {
    "title": "v2.1.326",
@@ -2027,7 +2116,8 @@
    "summary_by": "excerpt",
    "sid": "328f5dc06a",
    "status": "repeat",
-   "rev": 0
+   "rev": 0,
+   "img": "https://opengraph.githubassets.com/3040c3eaaedb0b2acd5bd42cdca9f7589df49c04f85cc0eeac6e357c6c6e8013/anthropics/claude-code/releases/tag/v2.1.326"
   },
   {
    "title": "v2.1.325",

@@ -24,6 +24,8 @@ except Exception:
     def injection_hits(t):
         return [m for m in ('ignore previous', 'ignore all previous', 'disregard the above', 'system prompt') if m in t.lower()]
 
+IMG_MAX = 90
+
 def load_cfg():
     topics = tomllib.load(open(f'{ROOT}/config/topics.toml', 'rb'))['topic']
     desks = {}
@@ -60,6 +62,37 @@ def clean(s, n=None):
 def tag(e):
     return e.tag.rsplit('}', 1)[-1]
 
+IMG_BAD = re.compile(r'(pixel|spacer|1x1|blank|tracking|badge|avatar|gravatar|emoji|logo|favicon|\.svg|\.gif)(\b|[?.])', re.I)
+def good_img(u, base=''):
+    u = html.unescape((u or '').strip())
+    if u.startswith('//'): u = 'https:' + u
+    elif u.startswith('/') and base: u = urllib.parse.urljoin(base, u)
+    return u if u.startswith('https://') and len(u) < 400 and not IMG_BAD.search(u) else ''
+
+def feed_img(it, desc, link):
+    """Ảnh đại diện từ chính feed (media:thumbnail/content, enclosure ảnh, <img> đầu trong mô tả) — không tốn request thêm."""
+    for c in it.iter():
+        k = tag(c)
+        if k in ('thumbnail', 'content') and c.get('url') and (k == 'thumbnail' or 'image' in (c.get('type') or c.get('medium') or 'image')):
+            if (u := good_img(c.get('url'), link)): return u
+        if k == 'enclosure' and 'image' in (c.get('type') or '') and (u := good_img(c.get('url'), link)): return u
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)', html.unescape(desc or '') if '&lt;img' in (desc or '') else (desc or ''))
+    return good_img(m.group(1), link) if m else ''
+
+OG = re.compile(r'<meta[^>]+(?:property|name)=["\'](?:og:image(?::secure_url)?|twitter:image(?::src)?)["\'][^>]*>', re.I)
+def og_image(url):
+    """og:image từ <head> của bài gốc (đọc ≤ 200KB, 8 s). Lỗi → rỗng, không sập."""
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': UA})
+        with urllib.request.urlopen(req, timeout=8) as r:
+            if 'html' not in (r.headers.get('Content-Type') or 'html'): return ''
+            h = r.read(200_000).decode('utf-8', 'ignore')
+        for m in OG.finditer(h):
+            c = re.search(r'content=["\']([^"\']+)', m.group(0))
+            if c and (u := good_img(c.group(1), url)): return u
+    except Exception: pass
+    return ''
+
 def parse_feed(raw, feed):
     out = []
     root = ET.fromstring(raw)
@@ -81,7 +114,7 @@ def parse_feed(raw, feed):
         if desc and clean(desc).lower() in ('comments', 'comment'): desc = ''
         if title and link.startswith('http'):
             out.append(dict(title=title, url=link.strip(), summary=clean(desc, MAX_SUM), published=date,
-                            source=feed['name'], source_id=feed['id']))
+                            source=feed['name'], source_id=feed['id'], img=feed_img(it, desc, link)))
     return out
 
 def hn(query):
@@ -243,6 +276,10 @@ def fetch(date):
             a.update(id=hashlib.sha1(key.encode()).hexdigest()[:10], topics=tl, desks=sorted(set(dl) | {did}), summary_by='excerpt' if a['summary'] else 'none')
             seen[key] = a; arts.append(a)
     arts.sort(key=lambda a: -a.get('engagement', 0))
+    need = [a for a in arts if not a.get('img')][:IMG_MAX]   # bù ảnh thiếu bằng og:image (song song, giới hạn số bài)
+    with cf.ThreadPoolExecutor(8) as ex:
+        for a, u in zip(need, ex.map(lambda a: og_image(a['url']), need)): a['img'] = u
+    print(f"ảnh: {sum(bool(a.get('img')) for a in arts)}/{len(arts)} bài có ảnh")
     import kb as KB   # K2/K3: gắn new/update/repeat theo các ngày TRƯỚC + ghi KB (idempotent theo ngày)
     kbs = KB.load(); dstat = KB.ingest(kbs, arts, date); KB.save(kbs)
     trend, terrs = trending(desks, topics, cfg); errs += terrs
@@ -310,6 +347,11 @@ if __name__ == '__main__':
     cmd = a[0] if a else 'all'
     if cmd in ('fetch', 'all'): fetch(date)
     if cmd in ('build', 'all'): build()
+    if cmd == 'images':   # bù ảnh cho store của ngày đã fetch (không fetch lại nguồn)
+        f = f'{ROOT}/store/{date}.json'; d = json.load(open(f, encoding='utf8')); need = [x for x in d['articles'] if not x.get('img')][:IMG_MAX]
+        with cf.ThreadPoolExecutor(8) as ex:
+            for x, u in zip(need, ex.map(lambda x: og_image(x['url']), need)): x['img'] = u
+        json.dump(d, open(f, 'w', encoding='utf8'), ensure_ascii=False, indent=1); print(f"ảnh: {sum(bool(x.get('img')) for x in d['articles'])}/{len(d['articles'])}")
     if cmd == 'hosts':   # dán vào biến PROXY_HOSTS của Worker (allowlist cho /fetch)
         _, ds = load_cfg(); print(','.join(sorted({urllib.parse.urlparse(x['url']).hostname for c in ds.values() for x in c.get('feed', [])} | {'hn.algolia.com'})))
     if cmd in ('check', 'all'): sys.exit(check(date))
