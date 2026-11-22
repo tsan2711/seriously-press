@@ -28,7 +28,8 @@
     const isToday = e.src !== 'local' && e.date === TODAY;
     if (isToday) { grid.replaceChildren(...origNodes); line.textContent = origLine; if (note) note.style.display = ''; return; }
     let arts = e.articles;
-    if (!arts) { try { arts = cache[e.file] = cache[e.file] || (await (await fetch(e.file)).json()).articles; } catch (x) { line.textContent = 'Không tải được số báo này.'; return; } }
+    if (!arts) { grid.classList.add('sk-load'); line.textContent = 'Đang tải số báo…'; try { arts = cache[e.file] = cache[e.file] || (await (await fetch(e.file)).json()).articles; } catch (x) { grid.classList.remove('sk-load'); line.textContent = 'Không tải được số báo này. Kiểm tra mạng rồi chọn lại ngày.'; return; } }
+    grid.classList.remove('sk-load');
     if (cur !== i) return;   // người dùng đã chuyển tiếp
     grid.replaceChildren(...arts.slice(0, 24).map(card)); line.textContent = info(e); if (note) note.style.display = 'none';
   }

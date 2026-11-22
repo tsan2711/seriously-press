@@ -79,10 +79,11 @@
     const ctx = { fetch: fx, endpoint: cfg.endpoint || '' }, max = Math.max(1, Math.min(+cfg.max || LIM.maxDef, LIM.maxHard));
     const jobs = [...(cfg.sources || []).map(s => ({ k: 'feed', s, desk: s.desk })), ...(cfg.hn || []).map(h => ({ k: 'hn', q: h.q, desk: h.desk }))], errs = []; let at = 0, doneN = 0;
     const results = new Array(jobs.length);
-    await Promise.all(Array.from({ length: Math.min(LIM.conc, jobs.length) }, async () => { while (at < jobs.length) { const i = at++, j = jobs[i]; try {
+    await Promise.all(Array.from({ length: Math.min(LIM.conc, jobs.length) }, async () => { while (at < jobs.length && !(cfg.signal && cfg.signal.aborted)) { const i = at++, j = jobs[i]; try {
       if (j.k === 'feed') results[i] = parseFeed(await getText(j.s.url, ctx), j.s);
       else results[i] = parseHN(await getText('https://hn.algolia.com/api/v1/search?' + new URLSearchParams({ query: j.q, tags: 'story', numericFilters: 'points>15,created_at_i>' + (Math.floor(now().getTime() / 1000) - 4 * 86400), hitsPerPage: LIM.hnPerQ }), ctx));
     } catch (e) { results[i] = []; errs.push((j.k === 'feed' ? j.s.id : 'hn:' + j.q) + ': ' + (e.message || e)); } prog({ step: 'fetch', done: ++doneN, total: jobs.length }); } }));
+    if (cfg.signal && cfg.signal.aborted) throw new Error('Đã huỷ');   // nút Huỷ: bỏ dở, không ghi gì
     const known = new Set((cfg.known || []).map(canon)), seen = new Set(), lanes = []; let blocked = 0;
     results.forEach((items, i) => { const lane = []; for (const a of items || []) {
       if (bad(a.title + ' ' + a.summary)) { blocked++; continue; }

@@ -27,7 +27,7 @@ for f in sorted(glob.glob(R + '/*.html')):
 JS_BUDGET = 130_000   # tổng JS tải lúc đầu (byte, chưa nén)
 if sum(os.path.getsize(f) for f in glob.glob(R + '/*.js')) > JS_BUDGET: bad.append('tổng JS vượt ngân sách %d' % JS_BUDGET)
 if re.search(r'animation-timeline|feTurbulence[^}]*\.card', open(R + '/style.css', encoding='utf8').read().split('/* ---- perf')[-1]): bad.append('style.css: perf block dính animation-timeline')
-for f in sorted(glob.glob(R + '/*.js')):   # cú pháp JS phía trình duyệt
+for f in sorted(glob.glob(R + '/*.js') + glob.glob(R + '/x/*.js')):   # cú pháp JS phía trình duyệt
     try: node('--check', f)
     except Exception: bad.append(f'{os.path.basename(f)}: lỗi cú pháp JS')
 # riêng tư: không PII/khoá trong thứ được đẩy lên Pages
@@ -42,7 +42,7 @@ else:
     _m = open(R + '/me.html', encoding='utf-8').read()
     for _k in ('data-mem', 'data-diary', 'data-settings', 'aria-live', '<h1', 'role="tablist"', 'role="tabpanel"'):
         if _k not in _m: bad.append('me.html thiếu ' + _k)
-    if _m.count('role="tab"') != 3: bad.append('me.html cần đúng 3 tab (Lịch sử | Bộ nhớ | Cài đặt)')
+    if _m.count('role="tab"') != 4: bad.append('me.html cần đúng 4 tab (Đã lưu | Lịch sử | Bộ nhớ | Cài đặt)')
 for _o, _t in (('journal', 'lich-su'), ('memory', 'bo-nho'), ('settings', 'cai-dat')):   # URL cũ vẫn sống: chuyển sang tab
     _p = R + '/' + _o + '.html'
     if not os.path.exists(_p) or 'me.html#' + _t not in open(_p, encoding='utf-8').read(): bad.append(_o + '.html không chuyển hướng về me.html#' + _t)

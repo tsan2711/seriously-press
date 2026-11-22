@@ -47,6 +47,7 @@
   const PD = window.PressDedup, PM = window.PressMemory;
   const PJ = window.PressJournal, jr = id => (PJ && id ? PJ.open(null, id) : null);
   const fb = (artId, sig, amount) => { const m = mine(), a = DATA && DATA.articles.find(x => x.id === artId); if (!m || !a) return; PR.feedback(m.p, a, sig, null, Date.now(), amount); db.save(m.id, m.p); const j = jr(m.id); if (j) j.record(sig, a, Date.now(), amount); if (PM) { const tl = t => (DATA.topics && DATA.topics[t] && DATA.topics[t].label) || t; PM.open(null, m.id).record(sig, a, Date.now(), amount, tl); } if (PD && (sig === 'open' || sig === 'save' || sig === 'like')) PD.open(null, m.id).mark(a, true); };
+  D.addEventListener('press:save', ev => { dataP.then(() => fb(ev.detail.id, 'save')); });   // 'Đọc sau' (x/ui.js) cũng là tín hiệu lưu
   if (db && PR) D.addEventListener('click', ev => {
     const el = ev.target.closest('[data-save],[data-less]');
     if (el) { dataP.then(() => fb(el.dataset.id, el.hasAttribute('data-save') ? (el.getAttribute('aria-pressed') === 'true' ? 'save' : 'like') : 'less')); return; }

@@ -324,6 +324,7 @@ def build():
     for f in ('rank.js', 'dedup.js', 'memory.js', 'journal.js', 'profiles.js', 'share-core.js', 'run-core.js', 'app.js', 'diary.js', 'community.js', 'settings.js', 'mempage.js', 'issues.js', 'style.css'): shutil.copy(f'{ROOT}/web/{f}', f'{ROOT}/public/{f}')
     if os.path.isdir(f'{ROOT}/web/tex'): shutil.copytree(f'{ROOT}/web/tex', f'{ROOT}/public/tex', dirs_exist_ok=True)
     build_issues(files, topics, desks)
+    import extras; n_s = extras.build_search(ROOT, topics, desks)
     for d in desks:   # tên cũ <ban>.html → desk-<ban>.html (liên kết đã chia sẻ không gãy)
         open(f'{ROOT}/public/{d}.html', 'w', encoding='utf8').write(f'<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=desk-{d}.html"><a href="desk-{d}.html">Mở ban</a>')
     # danh sách nguồn cho nút "Chạy báo hôm nay" trong trình duyệt (công khai, không bí mật)
@@ -332,6 +333,7 @@ def build():
     trend = day.get('trending', {})
     json.dump(dict(date=day['date'], desks={d: dict(name=c['name'], accent=c['accent']) for d, c in desks.items()}, topics=topics, trending=trend, hot=sorted({x['topic'] for v in trend.values() for x in v}), dedup=tomllib.load(open(f'{ROOT}/config/dedup.toml', 'rb')), repeat_hidden=day.get('dedup', {}).get('repeat', 0), engagement_weight=load_eng()['weights']['rank'], roles=load_roles(), articles=arts),
               open(f'{ROOT}/public/today.json', 'w', encoding='utf8'), ensure_ascii=False)
+    extras.build_pwa(ROOT)
     print(f'build: {len(pages)} trang, {len(arts)} bài → public/')
 
 ISSUE_DAYS = 14

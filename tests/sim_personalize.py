@@ -23,5 +23,7 @@ names = {'default_is_me': 'mặc định chỉ có "Tôi", chưa chọn', 'creat
 for k, n in names.items(): checks['hồ sơ: ' + n] = bool(pr.get(k))
 ad = json.loads(node(f'{d}/sim_adapt.js'))
 for k, v in ad.items(): checks['vai trò/gu: ' + k.replace('_', ' ')] = bool(v)
+fx = json.loads(node(f'{d}/sim_features.js', os.path.abspath(f'{d}/../web/x')))
+for k, n in {'slot_sang': 'số báo sáng từ giờ đọc', 'slot_toi': 'số báo tối', 'slot_none': 'ít dữ liệu → không đoán', 'dens_compact': 'gợi ý mật độ', 'over_suggest': 'gợi ý giới hạn', 'over_limit': 'cảnh báo quá tải', 'explore_share': 'khám phá ≥15%'}.items(): checks['U6: ' + n] = fx.get(k) is True
 for k, v in checks.items(): print(('OK   ' if v else 'FAIL ') + k)
 sys.exit(0 if all(checks.values()) else 1)
