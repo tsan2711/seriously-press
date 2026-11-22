@@ -1,0 +1,3 @@
+# BE chia sẻ (tuỳ chọn). Rỗng = tắt: trang vẫn chạy, mục "Mọi người thấy hay" ẩn. Điền URL Worker sau khi Bi deploy (worker/README.md).
+# Chỉ URL công khai ở đây — ADMIN_TOKEN và token thành viên KHÔNG bao giờ vào repo.
+endpoint = ""

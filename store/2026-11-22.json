@@ -1,0 +1,5926 @@
+{
+ "date": "2026-11-22",
+ "generated": "2026-11-22T12:32:20",
+ "articles": [
+  {
+   "title": "LLMs can read and write executables byte by byte from a hex dump",
+   "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
+   "summary": "",
+   "published": "2026-11-18T14:15:58Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 221,
+   "comments": 139,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "3e6ca39e70",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "3e6ca39e70",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
+   "url": "https://signal.org/blog/protecting-your-privacy/",
+   "summary": "",
+   "published": "2026-11-20T09:42:16Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 573,
+   "comments": 336,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "c4ca83ba57",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "c4ca83ba57",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "AI agents ask better questions than KPMG accountants in audit trial",
+   "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+   "summary": "",
+   "published": "2026-11-18T15:49:34Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 499,
+   "comments": 263,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "dbf7233003",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "dbf7233003",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Claude solves two open problems in the physics of black holes",
+   "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+   "summary": "",
+   "published": "2026-11-19T17:30:44Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 569,
+   "comments": 274,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "be373132dc",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "be373132dc",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine",
+   "url": "https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html",
+   "summary": "",
+   "published": "2026-11-18T15:18:30Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 386,
+   "comments": 233,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "0760cd4476",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "0760cd4476",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+   "url": "https://github.com/openssl/openssl/pull/33652",
+   "summary": "",
+   "published": "2026-11-20T02:01:09Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 370,
+   "comments": 346,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "df98bcb7b8",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "df98bcb7b8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Multiple vulnerabilities in Regexp and String case conversion",
+   "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+   "summary": "",
+   "published": "2026-11-18T23:52:50Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 342,
+   "comments": 132,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "77ff48ef19",
+   "topics": [
+    "growth"
+   ],
+   "desks": [
+    "design",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "77ff48ef19",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "If you can't explain something in simple terms, you don't understand it (2017)",
+   "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
+   "summary": "",
+   "published": "2026-11-20T09:43:19Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 706,
+   "comments": 323,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "601ef0d322",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "601ef0d322",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "UK government forced to admit it issued Apple a secret encryption order",
+   "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
+   "summary": "",
+   "published": "2026-11-19T16:21:03Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 691,
+   "comments": 379,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "3580245413",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "3580245413",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Slopstrap – Make your site look hastily vibecoded",
+   "url": "https://slopstrap.mikelacher.com/",
+   "summary": "",
+   "published": "2026-11-20T15:24:11Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 683,
+   "comments": 128,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "5f05718be2",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "5f05718be2",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Seven new models at scalable price-performance",
+   "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+   "summary": "",
+   "published": "2026-11-18T16:08:24Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 603,
+   "comments": 377,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "5dbbce4400",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "5dbbce4400",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+   "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+   "summary": "",
+   "published": "2026-11-20T17:21:36Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 541,
+   "comments": 244,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "dc0a65e6fd",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "dc0a65e6fd",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+   "summary": "",
+   "published": "2026-11-20T13:29:59Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 507,
+   "comments": 886,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "fda5004e84",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "fda5004e84",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Someone reported java4shell bug in September 2026",
+   "url": "https://github.com/openjdk/jdk/pull/32781",
+   "summary": "",
+   "published": "2026-11-19T11:47:03Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 460,
+   "comments": 134,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "21575d4806",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "21575d4806",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "LLM assisted reverse engineering",
+   "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+   "summary": "",
+   "published": "2026-11-18T22:29:13Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 316,
+   "comments": 82,
+   "engagement": 0.993,
+   "topic_by": "keyword",
+   "id": "ba05f6db61",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "ba05f6db61",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+   "url": "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
+   "summary": "",
+   "published": "2026-11-19T23:32:11Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 196,
+   "comments": 50,
+   "engagement": 0.916,
+   "topic_by": "desk-default",
+   "id": "667ebdd67c",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "667ebdd67c",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+   "url": "https://github.com/onlook-dev/onlook/",
+   "summary": "",
+   "published": "2026-11-19T16:34:04Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 125,
+   "comments": 85,
+   "engagement": 0.915,
+   "topic_by": "keyword",
+   "id": "00ca2badf7",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "ai",
+    "design",
+    "finance",
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "00ca2badf7",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Toyota, Nissan, and Honda to Standardize Parts to Lower Costs",
+   "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+   "summary": "",
+   "published": "2026-11-22T04:04:56Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 137,
+   "comments": 73,
+   "engagement": 0.909,
+   "topic_by": "desk-default",
+   "id": "d3a1a9a15e",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "d3a1a9a15e",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "ClawDOS – An AI coding agent for DOS",
+   "url": "http://ricapar.net/ClawDOS/",
+   "summary": "",
+   "published": "2026-11-21T05:38:01Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 161,
+   "comments": 51,
+   "engagement": 0.897,
+   "topic_by": "keyword",
+   "id": "c82934c02e",
+   "topics": [
+    "ai-coding",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "c82934c02e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
+   "url": "https://news.ycombinator.com/item?id=50548660",
+   "summary": "",
+   "published": "2026-11-18T16:53:42Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 156,
+   "comments": 44,
+   "engagement": 0.885,
+   "topic_by": "desk-default",
+   "id": "21efcf41c8",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "21efcf41c8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: Fast deterministic natural language search for OpenStreetMap data",
+   "url": "https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935",
+   "summary": "",
+   "published": "2026-11-19T15:16:02Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 136,
+   "comments": 44,
+   "engagement": 0.871,
+   "topic_by": "desk-default",
+   "id": "ebb93c0b48",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "ebb93c0b48",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+   "url": "https://news.ycombinator.com/item?id=50549188",
+   "summary": "",
+   "published": "2026-11-18T17:26:28Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 60,
+   "comments": 66,
+   "engagement": 0.847,
+   "topic_by": "keyword",
+   "id": "724823e096",
+   "topics": [
+    "game-marketing",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "sid": "724823e096",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Fable: Written, painted and directed by Claude Fable 5.2",
+   "url": "https://claudia.gallery/fable/",
+   "summary": "",
+   "published": "2026-11-19T00:18:18Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 61,
+   "comments": 66,
+   "engagement": 0.847,
+   "topic_by": "keyword",
+   "id": "48cd8de2ce",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "48cd8de2ce",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: OpenComputer – an open source alternative to Devin",
+   "url": "https://github.com/diggerhq/opencomputer",
+   "summary": "",
+   "published": "2026-11-20T20:19:56Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 118,
+   "comments": 36,
+   "engagement": 0.845,
+   "topic_by": "desk-default",
+   "id": "00dcab6dea",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "00dcab6dea",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "C's designated initializers give us named arguments",
+   "url": "https://quuxplusone.github.io/blog/2026/11/16/named-arguments-in-c/",
+   "summary": "",
+   "published": "2026-11-18T09:49:49Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 77,
+   "comments": 47,
+   "engagement": 0.828,
+   "topic_by": "desk-default",
+   "id": "9ce310da3f",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "9ce310da3f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "An FBI agent called a Claude user about his chats",
+   "url": "https://austinpatrick.substack.com/p/when-should-ai-labs-alert-police",
+   "summary": "",
+   "published": "2026-11-19T22:36:51Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 34,
+   "comments": 31,
+   "engagement": 0.736,
+   "topic_by": "keyword",
+   "id": "b9ffbcf8b1",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "b9ffbcf8b1",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
+   "url": "https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models",
+   "summary": "",
+   "published": "2026-11-20T22:18:20Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 53,
+   "comments": 20,
+   "engagement": 0.731,
+   "topic_by": "keyword",
+   "id": "d3325aea2b",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "d3325aea2b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Australia's full national topographic library at your fingertips",
+   "url": "https://www.ga.gov.au/news/australias-full-national-topographic-library-at-your-fingertips",
+   "summary": "",
+   "published": "2026-11-18T07:10:46Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 51,
+   "comments": 19,
+   "engagement": 0.724,
+   "topic_by": "desk-default",
+   "id": "29a1c1e816",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "29a1c1e816",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Pandex – Official European Law for AI Agents, over MCP",
+   "url": "https://www.pandex.io",
+   "summary": "",
+   "published": "2026-11-21T20:47:41Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 54,
+   "comments": 10,
+   "engagement": 0.695,
+   "topic_by": "keyword",
+   "id": "b77be25502",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "b77be25502",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "d77b554642",
+     "title": "Llms.txt and MCP didn't move the needle",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Llms.txt and MCP didn't move the needle",
+   "url": "https://backpackforlaravel.com/articles/opinions/llms-txt-and-mcp-didn-t-move-the-needle-for-us-here-s-what-did",
+   "summary": "",
+   "published": "2026-11-20T14:00:23Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 31,
+   "comments": 21,
+   "engagement": 0.692,
+   "topic_by": "keyword",
+   "id": "d77b554642",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "d77b554642",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+   "url": "https://arxiv.org/abs/2607.29378",
+   "summary": "",
+   "published": "2026-11-19T01:27:02Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 47,
+   "comments": 10,
+   "engagement": 0.679,
+   "topic_by": "keyword",
+   "id": "7d99e1aa81",
+   "topics": [
+    "prompting",
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "7d99e1aa81",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: Watch weight-space programming in action with WebGPU",
+   "url": "https://tabbyml.github.io/weight-space-playground/",
+   "summary": "",
+   "published": "2026-11-19T15:32:47Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 40,
+   "comments": 6,
+   "engagement": 0.639,
+   "topic_by": "desk-default",
+   "id": "3d57282d18",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "3d57282d18",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests",
+   "url": "https://springcraft-ai.github.io/springrep/",
+   "summary": "",
+   "published": "2026-11-18T21:08:47Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 34,
+   "comments": 9,
+   "engagement": 0.639,
+   "topic_by": "desk-default",
+   "id": "45afd8c4f8",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "45afd8c4f8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A 4.5M-parameter TTS model runs 70x real-time on CPU and cost just $10 to train",
+   "url": "https://huggingface.co/n4ze3m/tiny-voca",
+   "summary": "",
+   "published": "2026-11-18T15:01:14Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 43,
+   "comments": 4,
+   "engagement": 0.636,
+   "topic_by": "desk-default",
+   "id": "7064e35195",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "7064e35195",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Claude Gets Hella Paranoid",
+   "url": "https://news.ycombinator.com/item?id=50543947",
+   "summary": "",
+   "published": "2026-11-18T09:24:58Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 19,
+   "comments": 14,
+   "engagement": 0.623,
+   "topic_by": "keyword",
+   "id": "89bec2dcd6",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "89bec2dcd6",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Anyone can easily use private, open weight models",
+   "url": "https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models/",
+   "summary": "",
+   "published": "2026-11-21T12:11:54Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 27,
+   "comments": 8,
+   "engagement": 0.609,
+   "topic_by": "desk-default",
+   "id": "6bc9d30d02",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "6bc9d30d02",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: AgentMall – Let your AI agent buy groceries",
+   "url": "https://getagentmall.com",
+   "summary": "",
+   "published": "2026-11-19T16:46:14Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 21,
+   "comments": 10,
+   "engagement": 0.601,
+   "topic_by": "keyword",
+   "id": "f9911b0047",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "f9911b0047",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Apple is building an AI agent",
+   "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+   "summary": "",
+   "published": "2026-11-20T11:22:27Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 19,
+   "comments": 11,
+   "engagement": 0.601,
+   "topic_by": "keyword",
+   "id": "b24c1081da",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "b24c1081da",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "When Everything Has Changed, What Do We Do Next?",
+   "url": "https://css-tricks.com/when-everything-has-changed/",
+   "summary": "",
+   "published": "2026-11-18T20:12:23Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 25,
+   "comments": 6,
+   "engagement": 0.585,
+   "topic_by": "desk-default",
+   "id": "940edf162a",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "940edf162a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: Zpup – Zdog style 3D scenes in JSON, SVG from any angle",
+   "url": "https://github.com/rxolve/zpup",
+   "summary": "",
+   "published": "2026-11-19T05:56:41Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 16,
+   "comments": 0,
+   "engagement": 0.456,
+   "topic_by": "desk-default",
+   "id": "e5af9e4827",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "e5af9e4827",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Muru",
+   "url": "https://simonwillison.net/2026/Nov/21/muru/",
+   "summary": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that…",
+   "published": "2026-11-21T23:56:28+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "21bd1d482a",
+   "topics": [
+    "ai-coding"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "21bd1d482a",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Quoting Ravi Vakil",
+   "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+   "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it…",
+   "published": "2026-11-20T19:21:49+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "81ce5b24dd",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "81ce5b24dd",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Quoting Levent Alpöge",
+   "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+   "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I…",
+   "published": "2026-11-20T16:30:48+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b8e1839046",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "b8e1839046",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "llm-gemini 0.38.1",
+   "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
+   "summary": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added…",
+   "published": "2026-11-20T03:01:57+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "480c7f59bb",
+   "topics": [
+    "llm",
+    "ai-research"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "480c7f59bb",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Token fraud is here and it’s BAD (YouTube)",
+   "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+   "summary": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire…",
+   "published": "2026-11-20T02:49:57+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "e486efe85b",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e486efe85b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "PostgreSQL 19 Released",
+   "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
+   "summary": "PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to…",
+   "published": "2026-11-19T20:43:57+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "4ba1303d2e",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "4ba1303d2e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "llm-gemini 0.38",
+   "url": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
+   "summary": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the…",
+   "published": "2026-11-18T23:59:20+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "c3c7756f62",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "c3c7756f62",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "datasette-arrows 0.1a0",
+   "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows/",
+   "summary": "Release: datasette-arrows 0.1a0 Datasette 1.0a43 added the ability for plugins to implement streaming export formats. Datasette core supports streaming CSV and TSV - you can export millions of lines…",
+   "published": "2026-11-18T17:09:59+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "630b41be4a",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "630b41be4a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Quoting Daniel Stenberg",
+   "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
+   "summary": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during…",
+   "published": "2026-11-18T15:58:27+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "569017a70f",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "569017a70f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The PSF end-of-year fundraiser",
+   "url": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser/",
+   "summary": "The PSF end-of-year fundraiser With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python…",
+   "published": "2026-11-18T14:44:48+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "358ebcd58d",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "ai",
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "358ebcd58d",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "External sandboxes for coding agents",
+   "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+   "summary": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake…",
+   "published": "2026-11-17T22:52:29+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "c60558e985",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "c60558e985",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+   "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+   "summary": "GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're…",
+   "published": "2026-11-17T22:38:52+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "5cbc55e1b4",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "5cbc55e1b4",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+   "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+   "summary": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers…",
+   "published": "2026-11-17T16:48:33+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "5b15888867",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "5b15888867",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Quoting Go Proverbs",
+   "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+   "summary": "A little copying is better than a little dependency. — Go Proverbs , via Tags: go , programming",
+   "published": "2026-11-17T06:16:26+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "ae3ee0f483",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "ae3ee0f483",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "llm 0.37.3",
+   "url": "https://simonwillison.net/2026/Nov/16/llm/",
+   "summary": "Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix…",
+   "published": "2026-11-16T23:57:26+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "764198fc49",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "764198fc49",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+   "url": "https://huggingface.co/blog/inkling2mini",
+   "summary": "",
+   "published": "Fri, 20 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "80d31a6dee",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "80d31a6dee",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+   "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+   "summary": "",
+   "published": "Fri, 20 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "211fbe8009",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "211fbe8009",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+   "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 19:54:56 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "f689168723",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "f689168723",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Why your fine-tuning job takes longer than the FLOPs say",
+   "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 18:53:43 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "75623b38e6",
+   "topics": [
+    "prompting"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "75623b38e6",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+   "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 15:00:23 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "bf1424b145",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "bf1424b145",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+   "url": "https://huggingface.co/blog/moe-expert-streaming",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "af1852b4c4",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "af1852b4c4",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+   "url": "https://huggingface.co/blog/rumble-2-flash",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "679cee5ea1",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "679cee5ea1",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+   "url": "https://huggingface.co/blog/openrouter",
+   "summary": "",
+   "published": "Mon, 16 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "853b24ff0d",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "853b24ff0d",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+   "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+   "summary": "",
+   "published": "Fri, 13 Nov 2026 18:00:39 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "2427bacb74",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "2427bacb74",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "XYBench: Helping with the problem behind the question",
+   "url": "https://huggingface.co/blog/allenai/xybench",
+   "summary": "",
+   "published": "Fri, 13 Nov 2026 17:02:35 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "8400bdfe1e",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "8400bdfe1e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "summary": "",
+   "published": "Fri, 13 Nov 2026 14:05:22 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "40e78db660",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "40e78db660",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+   "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+   "summary": "",
+   "published": "Thu, 12 Nov 2026 19:07:35 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "a88bddb172",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "a88bddb172",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+   "url": "https://huggingface.co/blog/3d-lora-finetuning",
+   "summary": "",
+   "published": "Thu, 12 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "56dac742ff",
+   "topics": [
+    "prompting"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "56dac742ff",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+   "url": "https://huggingface.co/blog/qvac/botpsy",
+   "summary": "",
+   "published": "Wed, 11 Nov 2026 05:01:16 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b22522d14a",
+   "topics": [
+    "agents",
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "b22522d14a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+   "url": "https://huggingface.co/blog/token-pooling",
+   "summary": "",
+   "published": "Wed, 11 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d2296a64c0",
+   "topics": [
+    "prompting"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "d2296a64c0",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced",
+   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+   "summary": "",
+   "published": "Sat, 21 Nov 2026 20:03:46 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "6e086317ff",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "6e086317ff",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Rebuilding my local voice assistant pipeline",
+   "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+   "summary": "",
+   "published": "Thu, 19 Nov 2026 13:50:25 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "f454ea635e",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "f454ea635e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+   "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 15:53:43 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "feb4caa835",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "feb4caa835",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+   "url": "https://energy-based-reasoners.github.io/",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 08:45:20 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "6fc8c039af",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "6fc8c039af",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+   "url": "https://arxiv.org/abs/2607.02512",
+   "summary": "",
+   "published": "Tue, 17 Nov 2026 06:55:46 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "1d17667aee",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "1d17667aee",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+   "url": "https://arxiv.org/abs/2605.29713",
+   "summary": "",
+   "published": "Fri, 13 Nov 2026 22:51:14 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "edbf4ed1a9",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "edbf4ed1a9",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "You could have invented transformers from memory",
+   "url": "https://alexwang.ai/posts/associative-memory/",
+   "summary": "",
+   "published": "Fri, 13 Nov 2026 22:49:47 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "c19e7ef010",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "c19e7ef010",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "e-means: 10x faster k-means at equal loss",
+   "url": "https://e-means.github.io/",
+   "summary": "",
+   "published": "Fri, 13 Nov 2026 02:37:31 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "4f9270c0ec",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "4f9270c0ec",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "libreagi - save OS models",
+   "url": "https://libreagi.com/",
+   "summary": "",
+   "published": "Thu, 12 Nov 2026 09:35:46 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "9feb4ac43a",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "9feb4ac43a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Writing a SIGGRAPH paper from scratch",
+   "url": "https://alexandergoslin.me/writing-a-siggraph-paper-from-scratch/",
+   "summary": "",
+   "published": "Wed, 11 Nov 2026 10:34:08 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "cd8eac6f9e",
+   "topics": [
+    "ai-research"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "cd8eac6f9e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Online learning on the programmable dataplane (2022)",
+   "url": "https://theses.gla.ac.uk/83235/3/2022SimpsonPhD.pdf",
+   "summary": "",
+   "published": "Tue, 10 Nov 2026 14:22:46 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "9d242d664e",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "9d242d664e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Catching prompt injections hidden in PDFs",
+   "url": "https://tomclancy.info/joshua-judges-ruth.html",
+   "summary": "",
+   "published": "Sat, 07 Nov 2026 13:34:01 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "83d54a23e8",
+   "topics": [
+    "prompting"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "83d54a23e8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Firecracker VM Escape: PwnEscape Part 2",
+   "url": "https://pwn.ai/blog/firecracker-escape",
+   "summary": "",
+   "published": "Sat, 07 Nov 2026 02:44:02 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "f441801c06",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "f441801c06",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Reflections on Rust in the LLM Age",
+   "url": "https://www.youtube.com/watch?v=5D7QPOIZ7gY",
+   "summary": "",
+   "published": "Thu, 05 Nov 2026 11:32:18 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "7dfde11877",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "7dfde11877",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+   "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+   "summary": "",
+   "published": "Mon, 02 Nov 2026 13:24:33 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "38c41eb0ed",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "38c41eb0ed",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.330",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "summary": "What's changed Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login , Claude Code applies the organization's settings and uses its cloud provider or…",
+   "published": "2026-11-20T22:32:56Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "7ce40af713",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "7ce40af713",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.329",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+   "summary": "What's changed Added a trust dialog warning that says where a folder's hooks are declared Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed…",
+   "published": "2026-11-19T22:14:41Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "9166064c2f",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "9166064c2f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.328",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+   "summary": "What's changed Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude apps gateway; interactive sessions with no permission…",
+   "published": "2026-11-19T01:14:04Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "249cf944c1",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "249cf944c1",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.327",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+   "summary": "What's changed Added a confirmation before /install-github-app changes a repository Added claude mcp add-json <name> - to read the server's JSON from stdin, so tokens can stay off the command line…",
+   "published": "2026-11-17T23:17:45Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "1560056f3e",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "1560056f3e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.326",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+   "summary": "What's changed Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode Added a startup warning when an…",
+   "published": "2026-11-16T22:11:05Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "328f5dc06a",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "328f5dc06a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.325",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+   "summary": "What's changed Fixed a security issue in how zstd-compressed responses are decoded Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude…",
+   "published": "2026-11-13T20:40:01Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3578b3def0",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3578b3def0",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.323",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+   "summary": "What's changed Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it on, or to turn it off for an…",
+   "published": "2026-11-12T22:12:13Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "1e1f91e95e",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "1e1f91e95e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.322",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+   "summary": "What's changed Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it",
+   "published": "2026-11-10T02:29:43Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "f7d3d2f1a8",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f7d3d2f1a8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.321",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+   "summary": "What's changed Added Claude Fable 5.2 ( claude-fable-5-2 ), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads Added --settings <file> to claude remote-control …",
+   "published": "2026-11-09T19:22:30Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "1393243560",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "1393243560",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.319",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+   "summary": "What's changed Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in…",
+   "published": "2026-11-06T17:04:01Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "df1346203f",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "df1346203f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Meet AI 2027 Conference (Dec 1)",
+   "url": "https://smashingmagazine.com/2026/11/online-smashingconf-ai-2027/",
+   "summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly online conference on AI-ready design systems, AI + Figma and AI design patterns…",
+   "published": "Tue, 17 Nov 2026 12:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "ea1bd15d2e",
+   "topics": [
+    "design-systems"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "ea1bd15d2e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
+   "url": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/",
+   "summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getting less accessible. Drawing on new research, Andrew Chung explains what…",
+   "published": "Tue, 17 Nov 2026 08:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f0c70df868",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f0c70df868",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Should You Actually Add AI To That? A Four-Question Audit For Product Teams",
+   "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/",
+   "summary": "An AI feature can save users time on a task, only for them to spend it checking the results. This practical audit helps product teams decide where AI earns its place and what users need to verify its…",
+   "published": "Thu, 12 Nov 2026 10:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "ebb2101084",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "ebb2101084",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A New Community For In-House UX People",
+   "url": "https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/",
+   "summary": "We’ve been working on something new! We’ve teamed up for a **new small community** for people doing UX-inside organizations — with weekly calls and a shared library of the business cases, templates…",
+   "published": "Fri, 06 Nov 2026 08:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "fd494cf14b",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "fd494cf14b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Making Immersive LLM Chat Experiences More Accessible",
+   "url": "https://smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
+   "summary": "As LLM chat patterns become more widespread, making them accessible is essential to ensuring everyone can access the information, tools, and opportunities they offer. Drawing on his work improving…",
+   "published": "Thu, 05 Nov 2026 13:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "cabaa2ef3d",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "cabaa2ef3d",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Modern CSS Might Make Your Front-End More Complex",
+   "url": "https://smashingmagazine.com/2026/11/modern-css-might-make-your-front-end-more-complex/",
+   "summary": "Replacing JavaScript with a modern CSS feature can simplify a piece of code while making the wider application harder to reason about. Gabriel Shoyombo explores what happens when logic is split…",
+   "published": "Tue, 03 Nov 2026 10:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "89375f5d51",
+   "topics": [
+    "ui-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "89375f5d51",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A Spark Of Color In November’s Gray (2026 Wallpapers Edition)",
+   "url": "https://smashingmagazine.com/2026/10/desktop-wallpaper-calendars-november-2026/",
+   "summary": "Let’s kick of November with a new collection of desktop wallpapers! Designed by creatives from across the globe, the wallpapers come in a variety of screen resolutions and can be downloaded for free…",
+   "published": "Sat, 31 Oct 2026 08:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "cbd8445c9d",
+   "topics": [
+    "visual-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "cbd8445c9d",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Accordion Icons: Which Work Best?",
+   "url": "https://smashingmagazine.com/2026/10/accordion-icons-which-work-best/",
+   "summary": "A closer look at accordion icons, why split menus are harmful, and why it’s better not to have icons and text labels link to different actions. Plus, why the caret is the safest icon choice. You’ll…",
+   "published": "Fri, 23 Oct 2026 13:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d053d7081b",
+   "topics": [
+    "visual-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "d053d7081b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Embracing Playful Imperfection With The CSS `random()` Function",
+   "url": "https://smashingmagazine.com/2026/10/embracing-playful-imperfection-css-random-function/",
+   "summary": "Design systems thrive on consistency, so where does randomness fit in? Through playful demos of organic typography, bouncing letters, and splayed cards, Brecht De Ruyte shows how the new CSS…",
+   "published": "Tue, 20 Oct 2026 10:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f1e66fdacb",
+   "topics": [
+    "ui-design",
+    "typography",
+    "design-systems"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f1e66fdacb",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Is Your Organization Messing Up AI Adoption?",
+   "url": "https://smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption/",
+   "summary": "What can digital transformation teach us about AI adoption? Paul Boag revisits his book Digital Adaptation to show how lessons from the past can help organizations navigate the challenges of AI today.",
+   "published": "Fri, 16 Oct 2026 10:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "2b3bef5103",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "2b3bef5103",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A Practical Guide To Naming Things",
+   "url": "https://smashingmagazine.com/2026/10/how-name-things/",
+   "summary": "A practical guide to naming UI components, with useful resources, naming conventions, and structures. You’ll find more [useful guides](https://www.smashingmagazine.com/category/guides/) and [online…",
+   "published": "Tue, 06 Oct 2026 10:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "52954c80b9",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "52954c80b9",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Under Autumn’s Spell (October 2026 Wallpapers Edition)",
+   "url": "https://smashingmagazine.com/2026/09/desktop-wallpaper-calendars-october-2026/",
+   "summary": "October is just around the corner, which means it’s time for some new desktop wallpapers! Designed by the community for the community, they’re here to brighten your screens, and maybe spark some…",
+   "published": "Wed, 30 Sep 2026 13:30:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "a03c40f9e3",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "a03c40f9e3",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Stop Treating CSS Container Queries Like Traditional Media Queries",
+   "url": "https://smashingmagazine.com/2026/09/stop-treating-css-container-queries-traditional-media-queries/",
+   "summary": "Despite broad browser support, container queries remain surprisingly underused and frequently misunderstood. Let’s look at how they differ from media queries, when to reach for each, and how…",
+   "published": "Wed, 16 Sep 2026 13:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b8054564eb",
+   "topics": [
+    "ui-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "b8054564eb",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Building A UX ROI Case That Survives The Boardroom",
+   "url": "https://smashingmagazine.com/2026/09/building-ux-roi-case-survives-boardroom/",
+   "summary": "Strong UX ideas do not secure investment on their own. Through a worked example, Alex Williams breaks down how to define business value, calculate costs, test causality, and build a credible case for…",
+   "published": "Fri, 11 Sep 2026 13:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "a86ea82d51",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "a86ea82d51",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Death Of The Button: Why The Best Interface Is No Interface",
+   "url": "https://smashingmagazine.com/2026/09/death-button-why-best-interface-is-no-interface/",
+   "summary": "The web is evolving beyond menus, forms, and endless clicks toward experiences shaped around human intent. For UX designers, understanding this shift means re-evaluating their role, moving from…",
+   "published": "Wed, 09 Sep 2026 10:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "5a46d823d4",
+   "topics": [
+    "ux-design",
+    "ui-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "5a46d823d4",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Can AI Generate Good Designs from Raw User Data?",
+   "url": "https://www.nngroup.com/articles/raw-data-vs-synthesized-data/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "In our study, AI-generated designs were better when the AI received synthesized findings and recommendations instead of raw user comments alone.",
+   "published": "Fri, 20 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "706403dd4b",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "706403dd4b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Qualitative User-Research Methods: An Overview",
+   "url": "https://www.nngroup.com/articles/qual-research-methods/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Want to know why users struggle or what they need? Start by choosing the right method. Here are 4 of the most popular qualitative UX-research methods.",
+   "published": "Fri, 20 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "053f38f47f",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "053f38f47f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "UX Conference March Announced (Mar 1 - Mar 4)",
+   "url": "https://www.nngroup.com/training/nov-asia-au/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Take up to 2 in-depth training courses, teaching user experience best practices for successful design. Live online training focused on long-lasting skills for UX professionals. March 1-4, 2027…",
+   "published": "Fri, 20 Nov 2026 03:44:24 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "96aa9af75e",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "96aa9af75e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "UX Conference February Announced (Feb 22 - Feb 26)",
+   "url": "https://www.nngroup.com/training/february/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Take up to 5 in-depth training courses, teaching user experience best practices for successful design. Courses focused on long-lasting skills for UX professionals. February 22 - February 26, 2027.",
+   "published": "Fri, 20 Nov 2026 03:16:44 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "864f7e13f2",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "864f7e13f2",
+   "status": "repeat",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "96aa9af75e",
+     "title": "UX Conference March Announced (Mar 1 - Mar 4)",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Journey Mapping 101",
+   "url": "https://www.nngroup.com/articles/journey-mapping-101/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "A journey map is a visualization of the process that a person goes through in order to accomplish a goal.",
+   "published": "Fri, 13 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "3215b4e6ce",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3215b4e6ce",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Research-In-The-Loop: How UXR Adapts to Development at AI Speed",
+   "url": "https://www.nngroup.com/articles/research-in-the-loop/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "As AI speeds up development, it can be a challenge for research to adapt. Research can define what each release must measure and what it can help teams discover.",
+   "published": "Fri, 13 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "6f448cafbd",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "6f448cafbd",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Agent Harness: Definition",
+   "url": "https://www.nngroup.com/articles/agent-harness/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "An agent harness manages a software loop between an AI model and its tools. Its context, permissions, and limits shape what users can do.",
+   "published": "Fri, 06 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "0edab277d1",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "0edab277d1",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Usability 101: Introduction to Usability",
+   "url": "https://www.nngroup.com/articles/usability-101-introduction-to-usability/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Usability refers to how easily people can complete tasks with a design. Improve it by watching representative users do realistic tasks, early and repeatedly.",
+   "published": "Fri, 06 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "84bf03764f",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "84bf03764f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "UX Conference January Announced (Jan 19 - Feb 1)",
+   "url": "https://www.nngroup.com/training/january/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Take up to 5 in-depth training courses, teaching user experience best practices for successful design. Training focused on long-lasting skills for UX professionals. January 19 - February 1, 2026.",
+   "published": "Fri, 06 Nov 2026 04:34:21 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "469cecf3d1",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "469cecf3d1",
+   "status": "repeat",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "96aa9af75e",
+     "title": "UX Conference March Announced (Mar 1 - Mar 4)",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "The Role of UX in Agentic Software Factories",
+   "url": "https://www.nngroup.com/articles/ux-agentic-software-factories/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "AI-native software development lifecycles reduce UX to AI context. UX must discover user needs, shape what’s built, and evaluate it before and after launch.",
+   "published": "Fri, 30 Oct 2026 17:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "48c9e72016",
+   "topics": [
+    "agents",
+    "ux-design",
+    "game-marketing"
+   ],
+   "desks": [
+    "ai",
+    "design",
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "48c9e72016",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Experience Design: Dropping the “User” from “User Experience”",
+   "url": "https://www.nngroup.com/articles/ux-vs-experience-design/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "AI is expanding UX beyond human users to agents acting on their behalf. Experience design names this broader field, which still centers on people’s goals.",
+   "published": "Fri, 30 Oct 2026 17:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3d7f4cc90e",
+   "topics": [
+    "ux-design",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3d7f4cc90e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "UX Disciplines: Glossary",
+   "url": "https://www.nngroup.com/articles/ux-disciplines-glossary/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Definitions of fields related to user experience, including UX design, UI design, visual design, interaction design, service design, UX research, and DesignOps",
+   "published": "Fri, 23 Oct 2026 17:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "9f40ceae20",
+   "topics": [
+    "ux-design",
+    "visual-design",
+    "ui-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "9f40ceae20",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "AI in UX: Work Is Faster, But Practitioners Have Mixed Feelings",
+   "url": "https://www.nngroup.com/articles/ai-in-ux-survey-26/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "AI saves UX practitioners time on nearly every task, yet most feel lukewarm about it: mandates, unreliable output, and inflated expectations eat the gains.",
+   "published": "Fri, 23 Oct 2026 17:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "98ae0612de",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "98ae0612de",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Synthetic Users vs. Human Respondents: Same Conclusion, Less Variation",
+   "url": "https://www.nngroup.com/articles/synthetic-users-vs-human-respondents/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Data from AI-generated respondents pointed to the same conclusion as a survey of 604 humans but contained far fewer distinct answers.",
+   "published": "Fri, 16 Oct 2026 17:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "0f6df2ffe2",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "0f6df2ffe2",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "UX Maps: Glossary",
+   "url": "https://www.nngroup.com/articles/ux-maps-glossary/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Use this glossary to quickly clarify key terms and concepts related to UX maps.",
+   "published": "Fri, 16 Oct 2026 17:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "719285fbb8",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "719285fbb8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Sarasa Gothic Mono",
+   "url": "https://picaq.github.io/sarasa",
+   "summary": "",
+   "published": "Tue, 17 Nov 2026 12:47:39 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "c5446227ea",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "c5446227ea",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Github Redesign (2019)",
+   "url": "https://tonsky.me/blog/github-redesign/",
+   "summary": "I suggest the conversation steer away from the controversial last point where he flattens the UI quite a bit to make it less \"dated\", as the rest was quite good up until that point, and that deserves…",
+   "published": "Tue, 17 Nov 2026 03:28:18 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "d97800a739",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "d97800a739",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Terminal borders that don't cost a cell",
+   "url": "https://www.joshka.net/cell-borders/",
+   "summary": "",
+   "published": "Fri, 13 Nov 2026 06:03:19 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "11a7870633",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "11a7870633",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "I’m not descending into madness because mount and unmount icons make no sense",
+   "url": "https://www.osnews.com/story/146312/im-not-descending-into-madness-because-mount-and-unmount-icons-make-no-sense/",
+   "summary": "",
+   "published": "Thu, 12 Nov 2026 20:51:18 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "5d397839ad",
+   "topics": [
+    "visual-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "5d397839ad",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "I was wrong about dark mode",
+   "url": "https://dbushell.com/2026/11/09/dark-mode/",
+   "summary": "",
+   "published": "Mon, 09 Nov 2026 10:54:03 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "80987bf094",
+   "topics": [
+    "ui-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "80987bf094",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Declarative Dragging",
+   "url": "https://declarative-dragging.github.io/",
+   "summary": "",
+   "published": "Wed, 04 Nov 2026 18:35:09 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "b06b054a80",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "b06b054a80",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "1,447 emoji? We'll do it live",
+   "url": "https://planetpeanut.studio/post/2026/10/27/pidgin-emoji-twitch",
+   "summary": "",
+   "published": "Tue, 27 Oct 2026 13:28:06 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "c3356224ae",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "c3356224ae",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Mastodon 5.0: A closer look",
+   "url": "https://blog.joinmastodon.org/2026/10/5.0-a-closer-look/",
+   "summary": "",
+   "published": "Tue, 20 Oct 2026 12:33:54 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "d6ea4698a8",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "d6ea4698a8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Furifont: furigana built into the font",
+   "url": "https://furifont.antfu.me/",
+   "summary": "",
+   "published": "Thu, 15 Oct 2026 00:00:23 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "460023e079",
+   "topics": [
+    "typography"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "460023e079",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Lightbulb Computer: Reimagining Spatial & Ambient Computing with Projectors",
+   "url": "https://lightbulbcomputer.com/",
+   "summary": "",
+   "published": "Sat, 10 Oct 2026 06:53:29 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "41f66d0af9",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "41f66d0af9",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A tale of four theorem provers, or: A (reasonably) opinionated comparison of Isabelle/HOL, Lean, HOL4, and Agda",
+   "url": "https://blueberrywren.dev/blog/primes/",
+   "summary": "",
+   "published": "Fri, 09 Oct 2026 09:30:28 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "6853ed3d74",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "6853ed3d74",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "There are many themes, but this one is yours",
+   "url": "https://earendil.com/posts/system-theme/",
+   "summary": "",
+   "published": "Fri, 09 Oct 2026 07:08:09 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "6dd676368e",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "6dd676368e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Is COSMIC DE mogging KDE Plasma?",
+   "url": "https://thelibre.news/is-cosmic-de-mogging-kde-plasma/",
+   "summary": "",
+   "published": "Tue, 06 Oct 2026 19:15:00 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "38b96528d9",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "38b96528d9",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Klassik Revives the KDE 3 Desktop on Modern Plasma 6",
+   "url": "https://linuxiac.com/klassik-revives-the-kde-3-desktop-on-modern-plasma-6/",
+   "summary": "",
+   "published": "Fri, 02 Oct 2026 13:34:38 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "fe8bc0a4c2",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "fe8bc0a4c2",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "What Would A Serious AI Product Look Like?",
+   "url": "https://blog.glyph.im/2026/09/serious-ai-product.html",
+   "summary": "",
+   "published": "Mon, 28 Sep 2026 12:01:01 -0500",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "8c79cd7d02",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "8c79cd7d02",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Will the AI Bubble Destroy our Retirement?",
+   "url": "https://www.mrmoneymustache.com/2026/09/25/will-the-ai-bubble-destroy-our-retirement/",
+   "summary": "Wow, how about that stock market? It’s a phrase we keep having to dust off and use again, as the years go by and the market keeps surprising us. When it crashes, some of us worry because we see our…",
+   "published": "Fri, 25 Sep 2026 17:57:07 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "cab68b93e9",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "cab68b93e9",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Shockingly Simple Math Behind Social Security",
+   "url": "https://www.mrmoneymustache.com/2026/04/16/the-shockingly-simple-math-behind-social-security/",
+   "summary": "In the world of very early retirement, we tend to ignore one of the most important things for normal retirees: the Social Security program. Don’t get me wrong, it’s a great thing for the 73 million…",
+   "published": "Thu, 16 Apr 2026 17:25:38 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f1f293dd87",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f1f293dd87",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "My Unexpected Journey to Hormone Replacement (TRT)",
+   "url": "https://www.mrmoneymustache.com/2025/12/15/my-unexpected-journey-to-hormone-replacement-trt/",
+   "summary": "As a man of Science, I’m supposed to hide my enthusiasm about this somewhat controversial subject, and instead direct you only to the peer-reviewed studies. But man, I feel like I’ve stumbled upon…",
+   "published": "Tue, 16 Dec 2025 02:14:05 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "1a52c91f8b",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "1a52c91f8b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How Unlimited Free Stuff from Amazon Almost Ruined My Retirement",
+   "url": "https://www.mrmoneymustache.com/2025/10/06/amazon-vine-ruins-retirement/",
+   "summary": "It all started last winter when I innocently posted a review for a heated vest I had bought on Amazon. I was happy with this fun new way to beat the winter and wanted to share it with others, so I…",
+   "published": "Tue, 07 Oct 2025 01:32:10 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3225aba45b",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3225aba45b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How to Navigate the Tariff Circus",
+   "url": "https://www.mrmoneymustache.com/2025/06/13/tariffs-and-the-economy/",
+   "summary": "Quite accidentally, it looks like we timed our last talk about the stock market pretty darned well. Back in February 2025, the market put the perfect cap on a multi year climb before stepping onto…",
+   "published": "Fri, 13 Jun 2025 20:47:59 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "3c3a12d2ba",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3c3a12d2ba",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Wow, have you seen the stock market lately?",
+   "url": "https://www.mrmoneymustache.com/2025/02/25/stock-market-ai-boom-2025/",
+   "summary": "And by lately, I mean the past several years or more. The value of the S&P 500 index of stocks, where most of us hopefully have a good chunk of our retirement savings stashed into index funds, is up…",
+   "published": "Tue, 25 Feb 2025 14:47:42 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "4dd9ade4ea",
+   "topics": [
+    "retirement",
+    "investing"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "4dd9ade4ea",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Retired Man Tries to Spend More Money, Mostly Fails",
+   "url": "https://www.mrmoneymustache.com/2025/01/16/mmm-2024-spending/",
+   "summary": "A couple of years ago, Mr. Money Mustache lost some credibility among the faithful when he wrote this blog post about actually trying to spend a bit more money, while buying a Tesla as the first step…",
+   "published": "Thu, 16 Jan 2025 22:07:21 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "e34f1ddb04",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e34f1ddb04",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Six Dumb Misconceptions About The Economy (that the Politicians Want You To Believe)",
+   "url": "https://www.mrmoneymustache.com/2024/10/13/economics-vs-politics/",
+   "summary": "Well, it looks like we’re here in another US election year already. As Advanced Mustachians, we already know that the ongoing battle of Harris vs. Trump should not be consuming much of our time…",
+   "published": "Sun, 13 Oct 2024 20:37:49 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "0fc19c8b89",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "0fc19c8b89",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "$656,000 of Frugal Things I Still Love Doing",
+   "url": "https://www.mrmoneymustache.com/2024/07/23/656000-of-frugal-things-i-still-love-doing/",
+   "summary": "“I used to read Mr. Money Mustache”, some people say these days, “Until he got all rich and fancy so that he no longer understands the common person’s plight. Stash probably doesn’t even practice any…",
+   "published": "Wed, 24 Jul 2024 02:33:08 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "d54ef88280",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "d54ef88280",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Ultimate Life Coach",
+   "url": "https://www.mrmoneymustache.com/2024/05/18/the-ultimate-life-coach/",
+   "summary": "Almost nineteen years into early retirement now, I’ve come to realize that the complete freedom of this lifestyle can be a double-edged sword. You’ve already heard me raving plenty about the upside…",
+   "published": "Sat, 18 May 2024 23:54:52 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "db51ce0c1a",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "db51ce0c1a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How To Afford a House These Days",
+   "url": "https://www.mrmoneymustache.com/2024/02/03/how-to-afford-a-house/",
+   "summary": "The other day, an MMM reader stopped by and left the following comment on one of my older posts about the principles of FIRE: As with every critique of our ideas, I thought about this comment for a…",
+   "published": "Sat, 03 Feb 2024 21:25:51 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "c22962c38e",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "c22962c38e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Arizona Experiment!",
+   "url": "https://www.mrmoneymustache.com/2023/11/02/moving-to-culdesac/",
+   "summary": "The thing that drew me to early retirement is freedom, and that’s still the best part of it. Back in 2005, the primary reason for this freedom-seeking was being able to devote my best hours to being…",
+   "published": "Thu, 02 Nov 2023 19:35:34 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "e66a44d704",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e66a44d704",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "What to Do About These High Interest Rates",
+   "url": "https://www.mrmoneymustache.com/2023/09/04/interest-rates/",
+   "summary": "Whoa, have you seen what just happened to interest rates!? Suddenly, after at least fourteen years of our financial world being mostly the same, somebody flipped over the table and now things are…",
+   "published": "Mon, 04 Sep 2023 20:46:18 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "5570bc41ff",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "5570bc41ff",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Comfort Crisis",
+   "url": "https://www.mrmoneymustache.com/2023/07/23/the-comfort-crisis/",
+   "summary": "As with many things in life these days, it all started with an episode of the Peter Attia podcast. In this edition, our nation’s most Badass Doctor was interviewing a guest I initially dismissed as…",
+   "published": "Sun, 23 Jul 2023 19:43:12 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "39dbfdf3b7",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "39dbfdf3b7",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Frugal Man Buys $52,000 Car – Why??",
+   "url": "https://www.mrmoneymustache.com/2023/04/27/why-buy-model-y/",
+   "summary": "As I type this, I’m jumping through the various hoops involved in buying a 2023 Tesla Model Y, a rather expensive, luxury “crossover” that is absolutely loaded to the gills with excess: all wheel…",
+   "published": "Thu, 27 Apr 2023 19:55:33 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "23bc85e270",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "23bc85e270",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Poetry in Retirement: Marking the Transition",
+   "url": "https://www.whitecoatinvestor.com/poetry-in-retirement-marking-the-transition/",
+   "summary": "Now that I'm semi-retired, I've learned more about myself and the world around me. Freedom from work has opened my mind and forged new paths. The post Poetry in Retirement: Marking the Transition…",
+   "published": "Sat, 21 Nov 2026 07:30:37 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f2d680fd4b",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f2d680fd4b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "7 Reasons to Get Your Kids to Tax Independence",
+   "url": "https://www.whitecoatinvestor.com/7-reasons-to-get-your-kids-to-tax-independence/",
+   "summary": "Once a child turns 18, claiming them as dependents is worth little to most WCIers. But not claiming them can unlock all kinds of savings. The post 7 Reasons to Get Your Kids to Tax Independence…",
+   "published": "Fri, 20 Nov 2026 07:30:59 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b819840b7b",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "b819840b7b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How to Practice Medicine on Your Own Terms",
+   "url": "https://www.whitecoatinvestor.com/how-to-practice-medicine-on-your-own-terms-498/",
+   "summary": "Answering listener questions about leaving medicine, cutting back, finding a way to practice on your own terms, and building a career and a life you actually enjoy. The post How to Practice Medicine…",
+   "published": "Thu, 19 Nov 2026 07:30:02 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "acf333c1d0",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "acf333c1d0",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Annuity Puzzle or Paradox",
+   "url": "https://www.whitecoatinvestor.com/the-annuity-puzzle-paradox/",
+   "summary": "Ask yourself why people want annuities, and you'll notice the disconnect (the paradox) between people who want one but don't want to buy one. The post The Annuity Puzzle or Paradox appeared first on…",
+   "published": "Wed, 18 Nov 2026 07:30:26 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "2bcb1dbcb0",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "2bcb1dbcb0",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Sports Gambling Led Me on a Wild $15,000 Swing in 6 Weeks; Then, I Had to Tell My Wife",
+   "url": "https://www.whitecoatinvestor.com/doctors-sports-gambling/",
+   "summary": "I'm trying to hit my retirement goal by the age of 40. But I got sucked into sports gambling, and that has made everything even harder. The post Sports Gambling Led Me on a Wild $15,000 Swing in 6…",
+   "published": "Tue, 17 Nov 2026 07:30:14 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "63a3e00d9e",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "63a3e00d9e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A WCIer Shocks the Ramsey Show Hosts",
+   "url": "https://www.whitecoatinvestor.com/a-wcier-shocks-the-ramsey-show-hosts/",
+   "summary": "A doc went on the Ramsey Show to ask about his $600,000 student loan debt. The hosts gave him advice, but here's what they should've said. The post A WCIer Shocks the Ramsey Show Hosts appeared first…",
+   "published": "Mon, 16 Nov 2026 07:30:31 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "6ec596206d",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "6ec596206d",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How Physicians Feel About AI and If Their Pay and Job Security Will Be Affected",
+   "url": "https://www.whitecoatinvestor.com/doctors-ai-job-security-physician-income/",
+   "summary": "Some say AI will be a boon. Some say it will be a burden. Here's how more than 1,000 physicians surveyed recently feel about it. The post How Physicians Feel About AI and If Their Pay and Job…",
+   "published": "Sun, 15 Nov 2026 07:30:19 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "d739450e60",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "d739450e60",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How Much Should You Have Saved for Retirement by Age?",
+   "url": "https://ofdollarsanddata.com/how-much-should-you-have-saved-for-retirement-by-age/",
+   "summary": "One of the most common questions around saving for retirement is: Am I on track? While it's a good question to ask, there are a lot of factors that influence the answer. Between your future spending…",
+   "published": "Tue, 17 Nov 2026 12:45:50 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "43786a79ad",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "43786a79ad",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Gamble of Your Life",
+   "url": "https://ofdollarsanddata.com/the-gamble-of-your-life/",
+   "summary": "My late grandfather gambled away over $1 million during his lifetime. His wager of choice was horse racing. But if he were alive today, I'm confident he'd be into sports betting. How do I know?…",
+   "published": "Tue, 10 Nov 2026 12:45:13 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "26249e9088",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "26249e9088",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How Many Americans Are Millionaires?",
+   "url": "https://ofdollarsanddata.com/how-many-americans-are-millionaires/",
+   "summary": "If it feels like there are more millionaires in the U.S. than ever before, you're right. According to the 2025 Survey of Consumer Finances , there are about 29 million U.S. households with a net…",
+   "published": "Tue, 03 Nov 2026 12:45:02 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "6dae7ad758",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "6dae7ad758",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Can You Count on Social Security in Retirement?",
+   "url": "https://ofdollarsanddata.com/can-you-count-on-social-security-in-retirement/",
+   "summary": "A few weeks ago, this tweet set off a firestorm on Twitter/X: JUST IN: 🇺🇸 US boomers overwhelmingly support higher taxes on younger workers to maintain current Social Security benefits, poll shows…",
+   "published": "Tue, 27 Oct 2026 11:45:50 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d15e979ec6",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "d15e979ec6",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "What is the Average Net Worth by Age? [2025 Latest Data]",
+   "url": "https://ofdollarsanddata.com/average-net-worth-by-age/",
+   "summary": "Do you want to know how you are doing relative to your peers financially? Then this is the article for you. The Federal Reserve recently released its 2025 Survey of Consumer Finances , the gold…",
+   "published": "Tue, 20 Oct 2026 10:00:03 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "5d50c75afd",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "5d50c75afd",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Who Got Richer Since 2022?",
+   "url": "https://ofdollarsanddata.com/who-got-richer-since-2022/",
+   "summary": "Last Friday, the Federal Reserve released the results of its 2025 Survey of Consumer Finances (SCF) , which takes a detailed snapshot of American households' finances every three years. And the big…",
+   "published": "Tue, 13 Oct 2026 11:45:36 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "dadc4d2723",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "dadc4d2723",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Playing the Wrong Game",
+   "url": "https://ofdollarsanddata.com/playing-the-wrong-game/",
+   "summary": "A few months ago, I saw this tweet about the World Sauna Championships and how men will literally push themselves to the brink of death to win them, despite there being no tangible rewards. As the…",
+   "published": "Tue, 06 Oct 2026 11:45:56 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "a34e519864",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "a34e519864",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Who Is Really Rich in America? (Hint: Main Street Millionaires)",
+   "url": "https://ofdollarsanddata.com/who-is-really-rich-in-america/",
+   "summary": "If you want to understand the wealth of the typical American household, the resources are excellent. Not only are there free public data sources, but there are also many great books that detail how…",
+   "published": "Tue, 29 Sep 2026 11:45:37 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "9c8b4ceec0",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "9c8b4ceec0",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Is Startup Equity a Bad Deal?",
+   "url": "https://ofdollarsanddata.com/is-startup-equity-a-bad-deal/",
+   "summary": "Imagine joining a startup as employee number 10. Your salary is a bit below what the market pays for your role, but, in exchange, you get equity. How much? 0.25% of the company to be exact. You do…",
+   "published": "Tue, 22 Sep 2026 11:45:57 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "61ec1eae87",
+   "topics": [
+    "personal-finance"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "61ec1eae87",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "What Was the Best Portfolio Over the Last 50 Years?",
+   "url": "https://ofdollarsanddata.com/what-was-the-best-portfolio-over-the-last-50-years/",
+   "summary": "A few months ago, I analyzed U.S. stock returns over the last century . Today, I'm going to determine the best portfolio over the last 50 years among the following asset classes: U.S. Stocks…",
+   "published": "Tue, 15 Sep 2026 11:45:37 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f71d07f2ef",
+   "topics": [
+    "investing"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f71d07f2ef",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Grand Theft Auto VI is now the biggest video game launch in history",
+   "url": "https://www.gamedeveloper.com/business/grand-theft-auto-vi-is-officially-the-biggest-video-game-launch-ever",
+   "summary": "Day-one retails sales for Grand Theft Auto VI crossed $3.79 billion, and Take-Two sold 32.5 million copies before the game even released.",
+   "published": "Fri, 20 Nov 2026 21:50:59 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "176eb6dc2a",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "176eb6dc2a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ubisoft misses forecast and bets big on AI development",
+   "url": "https://www.gamedeveloper.com/business/ubisoft-misses-forecast-and-bets-big-on-ai-development",
+   "summary": "The French publisher plunges on first-half year earnings, though has a few bright spots in its portfolio.",
+   "published": "Fri, 20 Nov 2026 18:37:58 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "7ed30d6af6",
+   "topics": [
+    "investing"
+   ],
+   "desks": [
+    "finance",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "7ed30d6af6",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Is Control Resonant's protagonist a 'sad wet man?' ft. Mikael Kasurinen",
+   "url": "https://www.gamedeveloper.com/design/is-control-resonant-s-protagonist-a-sad-wet-man-ft-mikael-kasurinen",
+   "summary": "We're chatting with creative director Mikael Kasurinen about the process of making the challenging development decisions behind Control Resonant.",
+   "published": "Fri, 20 Nov 2026 15:14:40 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "31620190ed",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "31620190ed",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ubisoft lays off 166 in Canada across Montréal and Quebec City",
+   "url": "https://www.gamedeveloper.com/business/ubiosft-lays-off-166-in-canada",
+   "summary": "The cuts come from the Montréal and Quebec City offices, two studios that have historically benefited from sizable subsidies offered by the Canadian government to bolster the country's game…",
+   "published": "Thu, 19 Nov 2026 17:53:00 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "8f5feeb2f1",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "8f5feeb2f1",
+   "status": "repeat",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "8c69ccab86",
+     "title": "Ubisoft merges two Creative Houses as H1 results decline 16.5%; Q2 net bookings above guidance thanks to Assassin's Creed Black Flag remake",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Why greenlighting Dressmaker wasn't an easy decision to make",
+   "url": "https://www.gamedeveloper.com/marketing/why-greenlighting-dressmaker-wasn-t-an-easy-decision-to-make",
+   "summary": "Pre-production data said Dressmaker might not find an audience. Free Lives pushed past those numbers to make a bona fide hit.",
+   "published": "Thu, 19 Nov 2026 15:57:43 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "a882393621",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "a882393621",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Clair Obscur: Expedition 33's narrative lead wants to change game funding",
+   "url": "https://www.gamedeveloper.com/design/clair-obscur-expedition-33-s-narrative-lead-wants-to-change-game-funding",
+   "summary": "After winning numerous awards, Clair Obscur narrative lead Jennifer Svedberg-Yen wants to change the story about priorities in game funding.",
+   "published": "Wed, 18 Nov 2026 19:02:15 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "c20eaecf42",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "c20eaecf42",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "PlayStation emerges victorious in a $2.6 billion lawsuit alleging a digital monopoly",
+   "url": "https://www.gamedeveloper.com/console/playstation-emerges-victorious-in-a-2-6-billion-lawsuit-alleging-a-digital-monopoly",
+   "summary": "The now-dismissed lawsuit accused PlayStation of setting \"excessive and unfair prices\" in the UK, but will not proceed any further.",
+   "published": "Wed, 18 Nov 2026 18:14:35 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "6fe8c4b50e",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "6fe8c4b50e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "European Game Worker unions publish manifesto warning against unchecked AI usage",
+   "url": "https://www.gamedeveloper.com/production/europe-s-game-worker-unions-publish-a-manifesto-warning-against-unchecked-ai-usage",
+   "summary": "Members in Ireland, Spain, and Milan have come together to outline concerns, grievances, pitfalls, and proposed solutions surrounding Generative AI use.",
+   "published": "Tue, 17 Nov 2026 21:21:17 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "09d67d1e59",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "09d67d1e59",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Zelda and Grand Theft Auto headline the nominees for the 2027 Game Awards",
+   "url": "https://www.gamedeveloper.com/marketing/zelda-and-grand-theft-auto-headline-the-nominees-for-the-2027-game-awards",
+   "summary": "The numerous categories of The Game Awards were largely dominated by Grand Theft Auto VI and The Legend of Zelda: Ocarina of Time, but there's plenty to talk about in this year's nominees.",
+   "published": "Tue, 17 Nov 2026 19:29:31 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "726202cad4",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "726202cad4",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "This year's video game Grammy nominations reveal Academy's potential favor against songs with vocals",
+   "url": "https://www.gamedeveloper.com/audio/grammy-nominations-for-video-games-announced-unbeatable-developers-lament-the-preference-against-vocal-songs",
+   "summary": "The Grammys are celebrating a suite of stellar video game soundtracks—but one indie dev says the academy rejected their score for being heavy on vocals.",
+   "published": "Tue, 17 Nov 2026 17:30:00 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f8e8b550d1",
+   "topics": [
+    "indie-games"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f8e8b550d1",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Take-Two lays off Firaxis employees on eve of Grand Theft Auto VI launch",
+   "url": "https://www.gamedeveloper.com/business/take-two-lays-off-firaxis-employees-on-eve-of-grand-theft-auto-vi-launch",
+   "summary": "Firaxis, a sibling studio to Take-Two's Rockstar Games, is known for games like Sid Meier's Civilization VII and Marvel's Midnight Suns.",
+   "published": "Tue, 17 Nov 2026 16:07:35 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "fbe9dce808",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "fbe9dce808",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Shigeru Miyamoto selected as inaugural Legend Award inductee at DICE Awards",
+   "url": "https://www.gamedeveloper.com/console/shigeru-miyamoto-selected-as-inaugural-legend-award-inductee-at-d-i-c-e-awards",
+   "summary": "Nintendo's early game director, creative fellow, and most famous face is named as the first Legend Award winner at the 30th annual D.I.C.E. awards.",
+   "published": "Mon, 16 Nov 2026 20:15:00 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "80e056eadb",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "80e056eadb",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Riot unveils New Dawn, a major overhaul for League of Legends",
+   "url": "https://www.gamedeveloper.com/pc/riot-unveils-new-dawn-the-next-evolution-of-league-of-legends",
+   "summary": "At the League of Legends 2026 championship, Riot revealed a new era for League of Legends with a cinematic that's a bit brief on details.",
+   "published": "Mon, 16 Nov 2026 19:15:00 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "9b1800433a",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "9b1800433a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "'It's common for there to be speculation and headlines:' Unity exec addresses acquisition rumors",
+   "url": "https://www.gamedeveloper.com/business/-it-s-common-for-there-to-be-speculation-and-headlines-unity-exec-addresses-acquisition-rumors",
+   "summary": "Unity senior vice president of product Adam Smith says speculation over M&A tends to follow strong quarterly results.",
+   "published": "Mon, 16 Nov 2026 18:14:49 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "cbd9b508ce",
+   "topics": [
+    "unity"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "cbd9b508ce",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Paradox Interactive names new CEO",
+   "url": "https://www.gamedeveloper.com/business/paradox-interactive-names-a-new-ceo",
+   "summary": "Paradox Interactive's current CEO, Fredrik Wester, is retiring after having taken the reins again, passing on duties to deputy CEO Mattias Lilja.",
+   "published": "Mon, 16 Nov 2026 17:15:00 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "18695f292e",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "18695f292e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "GTA 6 hits $3.79 billion in its first day on sale, becoming \"the biggest entertainment launch in history\"",
+   "url": "https://www.gamesindustry.biz/gta-6-hits-379-billion-in-its-first-day-on-sale-becoming-the-biggest-entertainment-launch-in-history",
+   "summary": "Rockstar has announced that GTA 6 achieved $3.79 billion in retail sales in its first day on sale, \"setting a new record for entertainment across any medium, and becoming the biggest entertainment…",
+   "published": "Fri, 20 Nov 2026 20:24:00 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "0caa8cd26f",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "0caa8cd26f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ampere Analysis: Over 2m UK and US Xbox players accessed GTA 6 before official launch by switching location to New Zealand",
+   "url": "https://www.gamesindustry.biz/ampere-analysis-over-1m-uk-and-us-xbox-players-accessed-gta-6-before-official-launch-by-switching-location-to-new-zealand",
+   "summary": "Over two million Xbox players in the UK and US accessed Grand Theft Auto 6 before its official launch by changing their location to New Zealand, according to Ampere Analysis. Read more",
+   "published": "Fri, 20 Nov 2026 15:21:00 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b53adbc27f",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "b53adbc27f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "GTA 6: the first billion-dollar game may also be the last | Opinion",
+   "url": "https://www.gamesindustry.biz/gta-6-the-first-billion-dollar-game-may-also-be-the-last",
+   "summary": "What does a billion dollars look like on screen? Or $1.5bn, or perhaps $2bn; estimates swing around a little for just how much money has been spent creating GTA 6. The one thing that’s certain is…",
+   "published": "Fri, 20 Nov 2026 15:02:20 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "90dab0a940",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "90dab0a940",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Sensor Tower estimates GTA 6 generated $2.36bn in pre-order and launch-day sales",
+   "url": "https://www.gamesindustry.biz/sensor-tower-estimates-gta-6-generated-236bn-in-pre-order-and-launch-day-sales",
+   "summary": "Sensor Tower estimates Grand Theft Auto 6 sold over 24.5 million copies through pre-orders and on launch day, generating approximately $2.36 billion in revenue. Read more",
+   "published": "Fri, 20 Nov 2026 14:07:30 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3dd1b65f1a",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3dd1b65f1a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How the EU's Digital Fairness Act will impact game design, and why it hits European indies particularly hard",
+   "url": "https://www.gamesindustry.biz/how-the-eus-digital-fairness-act-will-impact-game-design-and-why-it-hits-european-indies-particularly-hard",
+   "summary": "The European Commission's publication of its draft Digital Fairness Act (DFA) last week prompted uproar within the games industry, with many notable voices candidly expressing their concerns…",
+   "published": "Fri, 20 Nov 2026 12:27:00 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "6d3714c75b",
+   "topics": [
+    "prompting",
+    "indie-games",
+    "game-design"
+   ],
+   "desks": [
+    "ai",
+    "design",
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "6d3714c75b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ubisoft merges two Creative Houses as H1 results decline 16.5%; Q2 net bookings above guidance thanks to Assassin's Creed Black Flag remake",
+   "url": "https://www.gamesindustry.biz/assassins-creed-black-flag-resynced-drives-ubisoft-q2-net-bookings-above-guidance-h1-results-decline-165-to-6447m",
+   "summary": "Assassin's Creed Black Flag Resynced increased Ubisoft's Q2 net bookings to €389 million, exceeding the estimated guidance of €370 million. Read more",
+   "published": "Fri, 20 Nov 2026 11:43:40 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "8c69ccab86",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "8c69ccab86",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The creator of E.T. on the Atari 2600 likens the deluge of AI-made games to the glut of poor-quality titles released ahead of the US video game crash of 1983",
+   "url": "https://www.gamesindustry.biz/the-creator-of-et-on-the-atari-2600-likens-the-deluge-of-ai-made-games-to-the-glut-of-poor-quality-titles-released-ahead-of-the-us-video-game-crash-of-1983",
+   "summary": "At the DevGAMM Lisbon conference this week, veteran game designer Howard Scott Warshaw gave a talk called \"From Atari to AI\". Warshaw was behind a number of famous titles for the Atari 2600…",
+   "published": "Fri, 20 Nov 2026 11:13:00 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "47e178e004",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "47e178e004",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ubisoft launches Motherbrain, a new subsidiary focused on AI-driven \"gameplay innovation\"",
+   "url": "https://www.gamesindustry.biz/ubisoft-launches-motherbrain-a-new-subsidiary-focused-on-ai-driven-gameplay-innovation",
+   "summary": "Ubisoft has launched Motherbrain, a dedicated subsidiary focused on developing proprietary generative AI technology for gameplay. Read more",
+   "published": "Fri, 20 Nov 2026 10:21:10 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b089a19aa7",
+   "topics": [
+    "game-marketing",
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "b089a19aa7",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "IGN partners with Rockstar to host Official Strategy Guide for GTA 6",
+   "url": "https://www.gamesindustry.biz/ign-partners-with-rockstar-to-host-official-strategy-guide-for-gta-6",
+   "summary": "IGN Entertainment, the parent company of GamesIndustry.biz , has released the Official Online Guide for GTA 6 , created through direct collaboration with Rockstar Games. The free guide, which was…",
+   "published": "Fri, 20 Nov 2026 10:07:40 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "72782c5456",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "72782c5456",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Phonopolis from Amanita Design wins Grand Prize at the DevGAMM Awards",
+   "url": "https://www.gamesindustry.biz/phonopolis-from-amanita-design-wins-grand-prize-at-the-devgamm-awards",
+   "summary": "The DevGAMM Awards took place on Wednesday evening as the finale to the DevGAMM Lisbon conference, which this year was held in a new, more central venue: the Carlos Lopes Pavilion. Read more",
+   "published": "Fri, 20 Nov 2026 09:44:20 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "2f23dbd771",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "2f23dbd771",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ubisoft lays off 166 staff in Montreal and Quebec studios",
+   "url": "https://www.gamesindustry.biz/ubisoft-lays-off-166-staff-in-montreal-and-quebec-studios",
+   "summary": "Ubisoft is laying off staff in its vast Montreal and Quebec studios, with 166 roles being lost \"to ensure our resources are aligned with current production priorities and business needs.\" Read more",
+   "published": "Thu, 19 Nov 2026 15:15:00 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "fc1fff21b5",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "8f5feeb2f1",
+   "status": "repeat",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "8c69ccab86",
+     "title": "Ubisoft merges two Creative Houses as H1 results decline 16.5%; Q2 net bookings above guidance thanks to Assassin's Creed Black Flag remake",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "007 First Light wins GOTY at 2026 TIGA Awards, Dovetail Games takes home four accolades including Best Publisher",
+   "url": "https://www.gamesindustry.biz/007-first-light-wins-goty-at-2026-tiga-awards-dovetail-games-takes-home-four-accolades-including-best-publisher",
+   "summary": "IO Interactive's 007 First Light received Game of the Year at the 2026 TIGA Awards, while Dovetail Games earned four awards, including Best Publisher and Best Educational, Serious or Simulation Game…",
+   "published": "Thu, 19 Nov 2026 14:55:30 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "f73eed0a74",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f73eed0a74",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Call of Duty: Modern Warfare 4 debuts as top-selling game in US for October 2026",
+   "url": "https://www.gamesindustry.biz/call-of-duty-modern-warfare-4-debuts-as-top-selling-game-in-us-for-october-2026",
+   "summary": "Call of Duty: Modern Warfare 4 led US sales in October according to Circana, marking the 19th consecutive year a Call of Duty title has been the best-selling game during its launch month. Read more",
+   "published": "Thu, 19 Nov 2026 14:00:00 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d30c205235",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "d30c205235",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "US Senate hearing examines child safety on Roblox, considers bipartisan bill to bypass forced arbitration",
+   "url": "https://www.gamesindustry.biz/us-senate-hearing-examines-child-safety-on-roblox-considers-bipartisan-bill-to-bypass-forced-arbitration",
+   "summary": "The US Senate Judiciary Subcommittee on Crime and Counterterrorism held a hearing this week to examine child safety on Roblox and consider a bipartisan bill that would allow families and victims to…",
+   "published": "Thu, 19 Nov 2026 11:52:10 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "8af497cde8",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "8af497cde8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The future of British gaming is more than just games | Opinion",
+   "url": "https://www.gamesindustry.biz/the-future-of-british-gaming-is-more-than-just-games-opinion",
+   "summary": "The UK has one of the most creative and innovative video games industries in the world. From independent studios developing original ideas to established businesses creating globally recognised…",
+   "published": "Thu, 19 Nov 2026 10:32:50 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "e4efdaa3e9",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e4efdaa3e9",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Where 3D meets the real world: highlights from Unity Industry Summit Munich 2026",
+   "url": "https://unity.com/blog/unity-industry-summit-munich-2026-recap",
+   "summary": "Unity Industry Summit 2026 recap: customer sessions from Mazda to Lufthansa, an F1 simulator, 13 demo stations, and talks on AI agents, robotics, and 3D data.",
+   "published": "Fri, 20 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "8801e1c132",
+   "topics": [
+    "unity",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "8801e1c132",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Phone or computer? How to plan your video game controls",
+   "url": "https://unity.com/blog/video-game-controls-phone-or-computer",
+   "summary": "Plan video game controls for phone and computer in six steps, from mapping actions to testing on real devices, before your first Unity Spark prompt.",
+   "published": "Fri, 20 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "295f14098a",
+   "topics": [
+    "unity",
+    "prompting"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "295f14098a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The inflection point: why mobile gaming is becoming essential to the digital advertising mix",
+   "url": "https://unity.com/blog/the-inflection-point-why-mobile-gaming-is-becoming-essential-to-the-digital-advertising-mix",
+   "summary": "The gap between audience scale and ad spend is closing. Learn why better measurement and addressability make mobile gaming an essential marketing investment.",
+   "published": "Wed, 18 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "cbb8a7ca77",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "cbb8a7ca77",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How to playtest your first video game",
+   "url": "https://unity.com/blog/how-to-playtest-your-first-video-game",
+   "summary": "A beginner’s guide to playtesting your video game: what playtesting is, why it matters, how to run a session, and how to act on feedback when you build with AI.",
+   "published": "Wed, 18 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "3486df46b6",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3486df46b6",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Unity CLI 1.0 is here!",
+   "url": "https://unity.com/the-unity-cli-1.0-is-here",
+   "summary": "Unity CLI 1.0 is out of beta. Connect Claude Code, Codex, Grok Build or Antigravity to your Unity project, and automate builds and tests from the terminal.",
+   "published": "Tue, 17 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "c31d0d34a1",
+   "topics": [
+    "agents",
+    "unity",
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "c31d0d34a1",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Unite Tokyo 2026 Keynote recap: Built for the speed of your ideas",
+   "url": "https://unity.com/blog/unite-tokyo-2026-keynote-recap",
+   "summary": "Catch every highlight from the Unite Tokyo 2026 Keynote: Unity 7, ECS for All, Unity CLI, Synty Studios joining Unity, and the new Unity Fellowship.",
+   "published": "Tue, 17 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "95bd7b59d4",
+   "topics": [
+    "unity"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "95bd7b59d4",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Synty Studios Joins Unity, Bringing Artist-Made Assets to Unity Spark",
+   "url": "https://unity.com/blog/synty-studios-acquisition",
+   "summary": "Unity has acquired Synty Studios, maker of the POLYGON 3D asset packs. Synty’s library is coming to Unity Spark, and existing packs and licenses stay the same.",
+   "published": "Mon, 16 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "5e570ad837",
+   "topics": [
+    "unity"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "5e570ad837",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "“Follow the fun”: a crowdfunding Q&A with Catino Town",
+   "url": "https://unity.com/blog/funding-unity-game-catino-town",
+   "summary": "Catino World creator Alex Tino shares how they planned a crowdfunding campaign for Catino Town, a made with Unity game – and raised $25,000 in under 12 hours.",
+   "published": "Mon, 16 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "69ed41a008",
+   "topics": [
+    "unity"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "69ed41a008",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Rules, states, and win conditions in video games: a guide",
+   "url": "https://unity.com/blog/video-game-rules-states-win-conditions",
+   "summary": "Learn how rules, game states, and win and lose conditions work in video games, with simple examples and a five-step method to define yours before you build.",
+   "published": "Thu, 12 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "f0353eb23d",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f0353eb23d",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The gods are dead. But not forever: Inside Azra Games’ UnGodly",
+   "url": "https://unity.com/blog/ungodly-azra-games-mobile-rpg-unity",
+   "summary": "UnGodly is a dark-fantasy action RPG built with Unity for iPhone Duo, Android, Mac, PC, and Apple Vision Pro. Azra Games explains its console-like mobile vision",
+   "published": "Wed, 11 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f84171a670",
+   "topics": [
+    "unity"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f84171a670",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "10 teams, 3 programs, and 7 years: Efficiently managing 3D assets in defense training",
+   "url": "https://unity.com/blog/3d-asset-management-defense-training",
+   "summary": "i3 Corps maintains military digital twins for years. See how its 10 art teams manage 3D assets with Unity Addressables and Unity Asset Manager.",
+   "published": "Tue, 10 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "011b1cc783",
+   "topics": [
+    "unity"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "011b1cc783",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "10 tips for organizing your first video game project with AI",
+   "url": "https://unity.com/blog/how-to-organize-a-game-project-with-ai",
+   "summary": "How to organize a video game project with AI: 10 beginner tips on design briefs, naming, checkpoints, prompt logs, and playtesting – no coding needed.",
+   "published": "Tue, 10 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "43738a69e6",
+   "topics": [
+    "prompting"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "43738a69e6",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Our new XR e-book is here: Build XR with Unity: Meta XR",
+   "url": "https://unity.com/blog/our-new-xr-e-book-is-here-build-xr-with-unity:-meta-xr",
+   "summary": "Download the free Build XR with Unity: Meta XR e-book. Learn eye and hand tracking, 5K display optimization, and AI-assisted workflows for Meta VR Glasses.",
+   "published": "Fri, 06 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "52b4309758",
+   "topics": [
+    "unity",
+    "ai-coding"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "52b4309758",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How SEED renders a world players never stop building",
+   "url": "https://unity.com/blog/seed-unity-rendering-performance",
+   "summary": "Unity rendering performance at scale: Klang Games profiles real player-built societies in SEED to find and fix CPU and memory bottlenecks on PC and mobile.",
+   "published": "Fri, 06 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "97ba990913",
+   "topics": [
+    "unity",
+    "graphics"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "97ba990913",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How AI Is Actually Reshaping Mobile Gaming Advertising",
+   "url": "https://unity.com/blog/ai-in-mobile-gaming-advertising-reshaping-targeting-and-workflows",
+   "summary": "Move beyond buzzwords. Discover how AI is actually reshaping mobile gaming advertising through advanced targeting, dynamic creative, and automated workflows.",
+   "published": "Wed, 04 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "3d9e3f3492",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3d9e3f3492",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Godot Showreel 2026",
+   "url": "https://godotengine.org/article/godot-showreel-2026/",
+   "summary": "The Godot 2026 showreel is out! We’re so grateful for every submission, vote, and support from our community. This year we had 422 submissions which is a new record. To deal with the increased amount…",
+   "published": "Thu, 19 Nov 2026 18:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "48a8ab73bf",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "48a8ab73bf",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 beta 4",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-beta-4/",
+   "summary": "It’s only been a little over a week since our previous development snapshot, 4.8 beta 3 , and in that time we’ve already worked through the majority of remaining release blockers! What that means is…",
+   "published": "Wed, 18 Nov 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "e632f3e18a",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Godot Foundation welcomes Manus as Platinum Sponsor",
+   "url": "https://godotengine.org/article/partners_manus_sponsorship_2026_announcement/",
+   "summary": "We’d like to welcome Manus as a Platinum Sponsor of the Godot Foundation. Their contribution helps keep Godot free, open, and in constant development for everyone, and we truly appreciate it. Here is…",
+   "published": "Tue, 17 Nov 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d2d628329a",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "d2d628329a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "JetBrains Renews its Platinum Sponsorship of the Godot Foundation",
+   "url": "https://godotengine.org/article/partners_jetbrains_sponsorship_renewal_2027/",
+   "summary": "We’re happy to share that JetBrains has renewed its Platinum sponsorship of the Godot Foundation for 2027. JetBrains first joined as a Platinum sponsor in August 2025. Alongside the sponsorship…",
+   "published": "Tue, 10 Nov 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "9f2596928d",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "9f2596928d",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 beta 3",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-beta-3/",
+   "summary": "Despite much of our team being at GodotFest this past week , there was still a healthy amount of progress made on our handful of remaining release blockers. It’s looking like it won’t be too much…",
+   "published": "Mon, 09 Nov 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "1365b1c9a1",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Godot Showcase - Sovereign Tower",
+   "url": "https://godotengine.org/article/godot-showcase-sovereign-tower/",
+   "summary": ".paul { color: #aa77e2; } .lisa { color: #40b99f; } Today, Paul Mozet (Lead Programmer on Sovereign Tower) and Lisa Garnier (Narrative Design and Technical Artist on Sovereign Tower) from Wild Wits…",
+   "published": "Fri, 06 Nov 2026 14:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "703777948c",
+   "topics": [
+    "visual-design",
+    "godot"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "703777948c",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 beta 2",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-beta-2/",
+   "summary": "In the two weeks since the release of 4.8 beta 1 , our team has made great strides in ensuring the resolution of nearly 150 bugs including around 30 regressions. This blog post covering the beta…",
+   "published": "Thu, 29 Oct 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3f568468ab",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ready for XREAL AURA",
+   "url": "https://godotengine.org/article/godot-xreal-aura-launch/",
+   "summary": "XREAL AURA , the first optical see-through glasses on Android XR, is here and Godot is part of the launch lineup! Develop natively on spatial computing glasses Download the Godot editor and its…",
+   "published": "Wed, 28 Oct 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "36a5989371",
+   "topics": [
+    "godot",
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "36a5989371",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Godot XR Community Game Jam VI",
+   "url": "https://godotengine.org/article/godot-xr-update-oct2026/",
+   "summary": "The sixth Godot XR Community Game Jam ran from 21 September 2026 until 5 October 2026. We had 85 participants join, who submitted 28 games. Down from 98 participants but up from 22 games last jam…",
+   "published": "Sun, 25 Oct 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "ec9e837e45",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "ec9e837e45",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 beta 1",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-beta-1/",
+   "summary": "It’s that time of the release cycle once again: the beta snapshot! With this, 4.8 is fully in feature-freeze, and developer resources have shifted exclusively to creating and reviewing various…",
+   "published": "Thu, 15 Oct 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "ab2256bbfb",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 dev 7",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-dev-7/",
+   "summary": "It’s that time once again: feature freeze! With this, no new features will be integrated for Godot 4.8 moving forward, and priorities will be shifting exclusively towards bugfixes and addressing…",
+   "published": "Tue, 29 Sep 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b68771b783",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 dev 6",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-dev-6/",
+   "summary": "“Another development snapshot already? Didn’t they just release one last Friday ?” Indeed, this is much sooner than usual. Even when taking into consideration how development snapshots become more…",
+   "published": "Tue, 15 Sep 2026 20:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "cd71580210",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Optimizing CPU-side Rendering Code",
+   "url": "https://godotengine.org/article/rendering-cpu-optimizations/",
+   "summary": "I want to give people a little bit of insight into what the optimization process looks like for Godot’s renderer. From the outside, rendering optimization can look a little bit like black magic. I…",
+   "published": "Tue, 15 Sep 2026 17:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "96d15e21c6",
+   "topics": [
+    "graphics",
+    "godot"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "96d15e21c6",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 dev 5",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-dev-5/",
+   "summary": "As we’re hoping to enter feature freeze later in the month, you can expect this to be one of the last development snapshot highlights of the 4.8 cycle. Relatedly, many of our contributors are…",
+   "published": "Thu, 10 Sep 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "c281fcdf1b",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 dev 4",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-dev-4/",
+   "summary": "Those of you who follow our development blogposts closely might’ve noticed that the past few snapshots have been a little on the light side. This isn’t to say that there was a lack of features on…",
+   "published": "Wed, 26 Aug 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "256c94208b",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Lisp Game Jam devlog: Polydraw",
+   "url": "https://spritely.institute/news/lisp-game-jam-devlog-polydraw.html",
+   "summary": "",
+   "published": "Fri, 20 Nov 2026 05:18:47 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "ec97137176",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "ec97137176",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How I made a custom game engine for Satelital",
+   "url": "https://spectralorbit.com/blog/satelital_game_engine",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 10:39:00 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f1147e4339",
+   "topics": [
+    "game-engines"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "f1147e4339",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Making Games in Go: Entity Component System (ECS)",
+   "url": "https://threedots.tech/post/making-games-in-go-ecs/",
+   "summary": "",
+   "published": "Tue, 17 Nov 2026 11:18:53 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "9055565e26",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "9055565e26",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "25 of my favourite modern NES games",
+   "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+   "summary": "",
+   "published": "Sat, 14 Nov 2026 20:40:40 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "ee705bff49",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "ee705bff49",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Beating the frontier on NetHack",
+   "url": "https://antithesis.com/blog/2026/nethack/",
+   "summary": "",
+   "published": "Fri, 13 Nov 2026 08:34:57 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "a2e9d6979e",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "a2e9d6979e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Secret of Monkey Island: all 13 versions side by side",
+   "url": "https://monkeyisland.pages.dev/",
+   "summary": "",
+   "published": "Thu, 12 Nov 2026 08:37:35 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "2be02ef86a",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "2be02ef86a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ruffle: Stable Releases, API, Text... and Everything Else",
+   "url": "https://ruffle.rs/blog/2026/11/04/stable-releases-and-everything-else",
+   "summary": "",
+   "published": "Wed, 04 Nov 2026 13:37:40 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "29d24987b8",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "29d24987b8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
+   "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+   "summary": "",
+   "published": "Tue, 03 Nov 2026 09:44:27 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "0b48a22c90",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "0b48a22c90",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Tactical-Retreat: a freely available, multi-platform QuakeC-based Counter-Strike v1.5 port",
+   "url": "https://www.frag-net.com/project_tacticalretreat.html",
+   "summary": "",
+   "published": "Fri, 30 Oct 2026 21:32:10 -0500",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "7eee2d284f",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "7eee2d284f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "What the fox say?",
+   "url": "https://entropicthoughts.com/what-the-fox-say",
+   "summary": "",
+   "published": "Thu, 29 Oct 2026 01:42:40 -0500",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "c756110afc",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "c756110afc",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "No Source Code? No Problem! What if you have to port a program, but all you have is a binary? (2003)",
+   "url": "https://queue.acm.org/doi/10.1145/945131.945155",
+   "summary": "",
+   "published": "Fri, 23 Oct 2026 12:00:36 -0500",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "286f92fd01",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "286f92fd01",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Many Many Missed Opportunities of Sonic 06",
+   "url": "https://isaacmarovitz.com/posts/sonic-06/",
+   "summary": "",
+   "published": "Thu, 22 Oct 2026 23:30:10 -0500",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "84ddf7326c",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "84ddf7326c",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "My 6 Month Journey to Recreate Half-Life",
+   "url": "https://www.youtube.com/watch?v=rwQ8p_J5KhI",
+   "summary": "",
+   "published": "Mon, 19 Oct 2026 20:23:03 -0500",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "3fa10712e7",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "3fa10712e7",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Sunsetting decomp.dev",
+   "url": "https://decomp.dev/",
+   "summary": "",
+   "published": "Thu, 15 Oct 2026 08:27:41 -0500",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "000ea8a477",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "000ea8a477",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "WordPress Random Redirects, Branded API Data & CDN Advice – SEO Pulse via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/seo-pulse-wordpress-random-redirects-branded-api-data-cdn-advice/598173/",
+   "summary": "This week's SEO Pulse covers WordPress's random redirect, branded data in Search Console API, Google's CDN guidance, and who controls access for bots and agents. The post WordPress Random Redirects…",
+   "published": "Sat, 21 Nov 2026 13:00:00 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "13b61555bd",
+   "topics": [
+    "seo",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "13b61555bd",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Salesforce CEO Says ‘Goodbye SEO.’ Salesforce’s SEO Guide Disagrees via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/salesforce-ceo-goodbye-seo-salesforce-seo-guide/598343/",
+   "summary": "Marc Benioff promoted Palmata by saying goodbye to SEO, while Salesforce’s own guide says SEO remains the foundation. The post Salesforce CEO Says ‘Goodbye SEO.’ Salesforce’s SEO Guide Disagrees…",
+   "published": "Fri, 20 Nov 2026 20:20:52 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d477595b95",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "d477595b95",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Why Building Trust Through Real People Stands The Test Of Time In SEO & AI Search via @sejournal, @lilyraynyc",
+   "url": "https://www.searchenginejournal.com/why-building-trust-through-real-people-stands-the-test-of-time-in-seo-ai-search/598110/",
+   "summary": "Scaled AI content, fake authors, and self-promotional listicles work until they don’t. Here’s why putting real human experts first keeps paying off in search. The post Why Building Trust Through Real…",
+   "published": "Fri, 20 Nov 2026 20:00:34 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "47e3bcb383",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "47e3bcb383",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Google’s ‘Top 10’ Line For CMOs Points At Generic Tips Posts via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/google-told-cmos-to-stop-top-10-listicles/598310/",
+   "summary": "Google's marketing account told CMOs to replace generic tips posts with content grounded in first-hand expertise. The post Google’s ‘Top 10’ Line For CMOs Points At Generic Tips Posts appeared first…",
+   "published": "Fri, 20 Nov 2026 16:17:43 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "0e1e633638",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "0e1e633638",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "A Charity Rescue Dog Outscored Amazon’s Christmas Ad – PPC Accounts Need A Story Before Cyber Week via @sejournal, @gregjarboe",
+   "url": "https://www.searchenginejournal.com/a-charity-rescue-dog-outscored-amazons-christmas-ad-ppc-accounts-need-a-story-before-cyber-week/597789/",
+   "summary": "Give holiday Google Ads a stronger story, using DAIVID's ranking of 75 Christmas ads where Dogs Trust outscored Amazon. The post A Charity Rescue Dog Outscored Amazon’s Christmas Ad – PPC Accounts…",
+   "published": "Fri, 20 Nov 2026 15:00:09 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "3986195833",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3986195833",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "AI Citations: What To Check Before Reacting To A Lost One via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/ai-citations-what-to-check-before-reacting-to-a-lost-one/598166/",
+   "summary": "Most AI citations that disappear later come back. Here are four things to check about a lost citation before you decide to change a page. The post AI Citations: What To Check Before Reacting To A…",
+   "published": "Fri, 20 Nov 2026 13:00:00 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "15c4dda949",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "15c4dda949",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "21 Alternative Search Engines You Can Use Instead of Google via @sejournal, @lorenbaker",
+   "url": "https://www.searchenginejournal.com/21-alternative-search-engines-you-can-use-instead-of-google/596605/",
+   "summary": "Compare 21 Google alternatives for everyday search, private search, AI answers, specialist research, and regional results. The post 21 Alternative Search Engines You Can Use Instead of Google…",
+   "published": "Thu, 19 Nov 2026 20:00:05 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "8e29706924",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "8e29706924",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Google’s Next Update Won’t Touch The Index, And Nobody Will Announce It via @sejournal, @DuaneForrester",
+   "url": "https://www.searchenginejournal.com/googles-next-update-wont-touch-the-index-and-nobody-will-announce-it/597481/",
+   "summary": "Stop matching traffic drops to update dates. Sample what AI assistants say about your company on a schedule and track which facts drift. The post Google’s Next Update Won’t Touch The Index, And…",
+   "published": "Thu, 19 Nov 2026 18:00:31 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "54c030d83f",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "54c030d83f",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Your WordPress Sitemap Isn’t Broken – Chrome 158 Has Dropped XSLT via @sejournal, @TaylorDanRW",
+   "url": "https://www.searchenginejournal.com/your-wordpress-sitemap-isnt-broken-chrome-158-has-dropped-xslt/597549/",
+   "summary": "Chrome dropping XSLT makes WordPress sitemaps display as raw XML. Skip the unnecessary fixes and use Google Search Console to verify crawlers still read them. The post Your WordPress Sitemap Isn’t…",
+   "published": "Thu, 19 Nov 2026 15:00:06 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "2df2d2c5f2",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "2df2d2c5f2",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "WordPress 7.1.5 Security Release Fixes 18 Vulnerabilities via @sejournal, @martinibuster",
+   "url": "https://www.searchenginejournal.com/wordpress-7-1-5-security-release-fixes-18-vulnerabilities/598080/",
+   "summary": "WordPress 7.1.5 fixes 18 vulnerabilities and adds two security improvements, including an unauthenticated flaw that could lead to RCE. The post WordPress 7.1.5 Security Release Fixes 18…",
+   "published": "Thu, 19 Nov 2026 14:40:05 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "c2561052d2",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "c2561052d2",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "WordPress 7.2 Arrives Dec. 8 – Last-Minute Changes Still Being Made via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/wordpress-7-2-seo-ai-changes/597616/",
+   "summary": "WordPress 7.2 plans a default-on random post redirect with no settings toggle. Here's what changes, what can wait, and what's still undecided before release. The post WordPress 7.2 Arrives Dec. 8 –…",
+   "published": "Thu, 19 Nov 2026 13:00:50 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "844acc68f1",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "844acc68f1",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "OpenAI Publishes Prompting Guidance For GPT-6.2 Astra via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/openai-gpt-6-2-astra-prompting-guidance/597877/",
+   "summary": "OpenAI's GPT-6.2 guide says Astra writes more concisely by default, suggests revisiting \"be concise\" prompts and flags an API change for edited history. The post OpenAI Publishes Prompting Guidance…",
+   "published": "Wed, 18 Nov 2026 22:26:21 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "96fa849a8f",
+   "topics": [
+    "llm",
+    "prompting"
+   ],
+   "desks": [
+    "ai",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "96fa849a8f",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "5cbc55e1b4",
+     "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Robots.txt Guide – Best Practices For Search & AI Crawlers via @sejournal, @vahandev",
+   "url": "https://www.searchenginejournal.com/technical-seo/robots-txt-guide-best-practices-for-search-ai-crawlers/",
+   "summary": "Learn how to configure robots.txt, avoid crawl and indexing mistakes, and manage AI training, search crawlers, and user-requested visits separately. The post Robots.txt Guide – Best Practices For…",
+   "published": "Wed, 18 Nov 2026 20:00:31 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "72ce035c8d",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "72ce035c8d",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Microsoft Rebuilds Its Smart Bidding Prediction Models, Rolling Out Automatically via @sejournal, @brookeosmundson",
+   "url": "https://www.searchenginejournal.com/microsoft-rolls-out-its-biggest-bidding-upgrade-in-a-decade/597963/",
+   "summary": "Microsoft Advertising is automatically updating its bidding models, reporting faster target adjustments, smoother budget pacing, and best practices for CPA and ROAS campaigns. The post Microsoft…",
+   "published": "Wed, 18 Nov 2026 18:19:49 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "133f99d109",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "133f99d109",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How I’m Approaching AI Search (And How You Should To)",
+   "url": "https://www.searchenginejournal.com/how-im-approaching-ai-search-and-how-you-should-to/597775/",
+   "summary": "Citation tactics miss the point. Build a brand worth recommending and a business that benefits whether the citation comes or not. The post How I’m Approaching AI Search (And How You Should To)…",
+   "published": "Wed, 18 Nov 2026 18:00:01 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "engagement": 0.0,
+   "topic_by": "desk-default",
+   "id": "5558cb00e9",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "sid": "5558cb00e9",
+   "status": "new",
+   "rev": 0
+  }
+ ],
+ "trending": {
+  "ai": [
+   {
+    "topic": "llm",
+    "heat": 36.88,
+    "count": 38,
+    "url": "https://news.ycombinator.com/item?id=50233779",
+    "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+    "source": "Hacker News",
+    "blurb": "38 cuộc thảo luận về Mô hình ngôn ngữ trong 30 ngày; sôi nhất trên Hacker News (670 điểm, 274 bình luận)."
+   },
+   {
+    "topic": "agents",
+    "heat": 25.11,
+    "count": 26,
+    "url": "https://news.ycombinator.com/item?id=50452455",
+    "title": "My AI agents found an unmapped Maya site?",
+    "source": "Hacker News",
+    "blurb": "26 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (1036 điểm, 393 bình luận)."
+   },
+   {
+    "topic": "ai-art",
+    "heat": 1.88,
+    "count": 2,
+    "url": "https://news.ycombinator.com/item?id=50368208",
+    "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+    "source": "Hacker News",
+    "blurb": "2 cuộc thảo luận về AI sinh ảnh/3D trong 30 ngày; sôi nhất trên Hacker News (287 điểm, 30 bình luận)."
+   }
+  ],
+  "design": [
+   {
+    "topic": "game-design",
+    "heat": 9.58,
+    "count": 12,
+    "url": "https://news.ycombinator.com/item?id=50340088",
+    "title": "Show HN: Subvocal – Talk to your computer without making noise",
+    "source": "Hacker News",
+    "blurb": "12 cuộc thảo luận về Thiết kế game trong 30 ngày; sôi nhất trên Hacker News (849 điểm, 395 bình luận)."
+   },
+   {
+    "topic": "ui-design",
+    "heat": 8.37,
+    "count": 11,
+    "url": "https://news.ycombinator.com/item?id=50245831",
+    "title": "CSS-Tricks has a new owner",
+    "source": "Hacker News",
+    "blurb": "11 cuộc thảo luận về UI & giao diện trong 30 ngày; sôi nhất trên Hacker News (556 điểm, 116 bình luận)."
+   },
+   {
+    "topic": "agents",
+    "heat": 3.44,
+    "count": 4,
+    "url": "https://news.ycombinator.com/item?id=50443812",
+    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+    "source": "Hacker News",
+    "blurb": "4 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (449 điểm, 146 bình luận)."
+   },
+   {
+    "topic": "ux-design",
+    "heat": 1.92,
+    "count": 3,
+    "url": "https://news.ycombinator.com/item?id=50533517",
+    "title": "Bolt's Scooters Are Becoming Accessibility Sensors",
+    "source": "Hacker News",
+    "blurb": "3 cuộc thảo luận về UX trong 30 ngày; sôi nhất trên Hacker News (34 điểm, 44 bình luận)."
+   },
+   {
+    "topic": "game-marketing",
+    "heat": 1.68,
+    "count": 2,
+    "url": "https://news.ycombinator.com/item?id=50562320",
+    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+    "source": "Hacker News",
+    "blurb": "2 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (125 điểm, 85 bình luận)."
+   }
+  ],
+  "finance": [
+   {
+    "topic": "personal-finance",
+    "heat": 2.98,
+    "count": 3,
+    "url": "https://news.ycombinator.com/item?id=50251344",
+    "title": "Three new discoveries in mathematics, computer science, and physics",
+    "source": "Hacker News",
+    "blurb": "3 cuộc thảo luận về Tài chính cá nhân trong 30 ngày; sôi nhất trên Hacker News (1164 điểm, 715 bình luận)."
+   },
+   {
+    "topic": "retirement",
+    "heat": 2.0,
+    "count": 2,
+    "url": "https://news.ycombinator.com/item?id=50457164",
+    "title": "Retirement Savings Are Fueling the AI Bubble",
+    "source": "Hacker News",
+    "blurb": "2 cuộc thảo luận về Hưu trí & thuế trong 30 ngày; sôi nhất trên Hacker News (165 điểm, 198 bình luận)."
+   }
+  ],
+  "gamedev": [
+   {
+    "topic": "roguelike",
+    "heat": 8.01,
+    "count": 11,
+    "url": "https://news.ycombinator.com/item?id=50340088",
+    "title": "Show HN: Subvocal – Talk to your computer without making noise",
+    "source": "Hacker News",
+    "blurb": "11 cuộc thảo luận về Roguelike trong 30 ngày; sôi nhất trên Hacker News (849 điểm, 395 bình luận)."
+   },
+   {
+    "topic": "agents",
+    "heat": 4.67,
+    "count": 7,
+    "url": "https://news.ycombinator.com/item?id=50454951",
+    "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+    "source": "Hacker News",
+    "blurb": "7 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (85 điểm, 34 bình luận)."
+   },
+   {
+    "topic": "indie-games",
+    "heat": 4.46,
+    "count": 6,
+    "url": "https://news.ycombinator.com/item?id=50343418",
+    "title": "Valve \"played capitalism so well they broke it\" and now Steam can't be replaced",
+    "source": "Hacker News",
+    "blurb": "6 cuộc thảo luận về Game indie trong 30 ngày; sôi nhất trên Hacker News (58 điểm, 131 bình luận)."
+   },
+   {
+    "topic": "godot",
+    "heat": 3.19,
+    "count": 6,
+    "url": "https://github.com/Zengkailin/parametric-topdown-pixel-architecture",
+    "title": "Zengkailin/parametric-topdown-pixel-architecture: 参数化2D topdown像素建筑 - 把参数化 3D 建筑渲染成 2D 俯视像素图的本地网页工具（Godot hd2d_scene_tools 网页移植版）",
+    "source": "GitHub",
+    "blurb": "6 cuộc thảo luận về Godot trong 30 ngày; sôi nhất trên GitHub (241 điểm, 0 bình luận)."
+   },
+   {
+    "topic": "unity",
+    "heat": 2.57,
+    "count": 5,
+    "url": "https://github.com/erwachirakenya-dot/gflfc-decryption-toolkit",
+    "title": "erwachirakenya-dot/gflfc-decryption-toolkit: GFLFC Decryption Toolkit: Fire Control UnityFS XOR, FlatBuffers Manifest, CDN Subpackages…",
+    "source": "GitHub",
+    "blurb": "5 cuộc thảo luận về Unity trong 30 ngày; sôi nhất trên GitHub (153 điểm, 0 bình luận)."
+   }
+  ],
+  "marketing": [
+   {
+    "topic": "game-marketing",
+    "heat": 7.98,
+    "count": 8,
+    "url": "https://news.ycombinator.com/item?id=50540178",
+    "title": "Google's AI answers reducing search traffic by 40%",
+    "source": "Hacker News",
+    "blurb": "8 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (712 điểm, 565 bình luận)."
+   },
+   {
+    "topic": "llm",
+    "heat": 2.0,
+    "count": 2,
+    "url": "https://news.ycombinator.com/item?id=50385272",
+    "title": "Claude Code sends your email address to websites",
+    "source": "Hacker News",
+    "blurb": "2 cuộc thảo luận về Mô hình ngôn ngữ trong 30 ngày; sôi nhất trên Hacker News (1616 điểm, 535 bình luận)."
+   }
+  ]
+ },
+ "errors": [
+  "ai/reddit:LocalLLaMA: HTTPError: HTTP Error 403: Blocked",
+  "ai/reddit:ClaudeAI: HTTPError: HTTP Error 403: Blocked",
+  "design/reddit:userexperience: HTTPError: HTTP Error 403: Blocked",
+  "design/reddit:web_design: HTTPError: HTTP Error 403: Blocked",
+  "gamedev/reddit:gamedev: HTTPError: HTTP Error 403: Blocked",
+  "gamedev/reddit:indiegaming: HTTPError: HTTP Error 403: Blocked"
+ ],
+ "blocked_injection": 0
+}

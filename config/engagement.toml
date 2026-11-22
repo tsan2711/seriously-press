@@ -1,0 +1,30 @@
+# Tín hiệu tương tác (chỉ nguồn công khai, không khoá). Trọng số/tham số ở đây, không hard-code trong mã.
+[weights]
+rank = 1.0            # hệ số cộng điểm tương tác chuẩn hoá (0..1) vào điểm xếp hạng cục bộ (rank.js)
+comment_factor = 2.0  # 1 bình luận tính bằng bấy nhiêu điểm
+[norm]                # điểm thô đạt mức này (đã gồm bình luận) = engagement 1.0 (thang log)
+hn = 500
+reddit = 2000
+github = 3000
+[trending]
+window_days = 30
+per_desk = 5          # 3–5 chủ đề nóng mỗi ban
+min_items = 2
+github_per_query = 10
+# subreddit theo ban (Reddit có thể chặn client không đăng nhập: lỗi ghi vào store, không vượt rào)
+[reddit]
+gamedev = ["gamedev", "indiegaming"]
+design = ["userexperience", "web_design"]
+ai = ["LocalLLaMA", "ClaudeAI"]
+# truy vấn GitHub theo ban: repo tạo mới trong cửa sổ, xếp theo sao
+[github]
+gamedev = ["topic:game-development", "topic:godot", "topic:unity"]
+design = ["topic:design-system", "topic:ui"]
+ai = ["topic:llm", "topic:ai-agent", "topic:mcp"]
+# Adapter last30days (mvanhorn/last30days-skill, MIT) — TẮT mặc định, xem knowledge/last30days.md. Cần tự cài CLI; không bật key trả phí.
+[last30days]
+enabled = false
+cmd = ""            # vd: python3 /đường/dẫn/skills/last30days/scripts/last30days.py
+search = "reddit,hn,github"
+timeout = 120
+max_items = 20

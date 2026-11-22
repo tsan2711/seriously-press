@@ -1,0 +1,26 @@
+# Ban Game dev. Thêm ban = thêm một file như thế này vào config/desks/.
+id = "gamedev"
+name = "Game dev"
+accent = "#b4472f"
+tagline = "Làm game, bán game, giữ game sống."
+hn_queries = ["game development", "roguelike", "unity engine", "godot", "indie game", "game design", "steam game"]
+[[feed]]
+id = "gamedeveloper"
+name = "Game Developer"
+url = "https://www.gamedeveloper.com/rss.xml"
+[[feed]]
+id = "gamesindustry"
+name = "GamesIndustry.biz"
+url = "https://www.gamesindustry.biz/feed"
+[[feed]]
+id = "unity-blog"
+name = "Unity Blog"
+url = "https://blog.unity.com/feed"
+[[feed]]
+id = "godot-blog"
+name = "Godot Engine"
+url = "https://godotengine.org/rss.xml"
+[[feed]]
+id = "lobsters-gamedev"
+name = "Lobsters · gamedev"
+url = "https://lobste.rs/t/games.rss"

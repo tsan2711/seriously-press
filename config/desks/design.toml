@@ -1,0 +1,21 @@
+id = "design"
+name = "Thiết kế"
+accent = "#1f6f6b"
+tagline = "Chữ, lưới, giao diện và những gì người dùng thật chạm vào."
+hn_queries = ["ux design", "typography", "design system", "ui design", "css", "accessibility"]
+[[feed]]
+id = "smashing"
+name = "Smashing Magazine"
+url = "https://www.smashingmagazine.com/feed/"
+[[feed]]
+id = "alistapart"
+name = "A List Apart"
+url = "https://alistapart.com/main/feed/"
+[[feed]]
+id = "nngroup"
+name = "Nielsen Norman Group"
+url = "https://www.nngroup.com/feed/rss/"
+[[feed]]
+id = "lobsters-design"
+name = "Lobsters · design"
+url = "https://lobste.rs/t/design.rss"

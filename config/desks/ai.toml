@@ -1,0 +1,21 @@
+id = "ai"
+name = "AI & Agent"
+accent = "#3b4fb8"
+tagline = "Mô hình, agent và cách làm việc cùng chúng."
+hn_queries = ["LLM", "AI agent", "Claude", "MCP model context protocol", "prompt engineering", "open weights model", "diffusion model"]
+[[feed]]
+id = "simonw"
+name = "Simon Willison"
+url = "https://simonwillison.net/atom/everything/"
+[[feed]]
+id = "huggingface"
+name = "Hugging Face Blog"
+url = "https://huggingface.co/blog/feed.xml"
+[[feed]]
+id = "lobsters-ai"
+name = "Lobsters · ai"
+url = "https://lobste.rs/t/ai.rss"
+[[feed]]
+id = "claude-code-releases"
+name = "Claude Code releases"
+url = "https://github.com/anthropics/claude-code/releases.atom"

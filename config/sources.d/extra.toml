@@ -1,0 +1,6 @@
+[[feed]]
+desk = "marketing"
+id = "gamesindustry-mk"
+name = "GamesIndustry.biz (marketing)"
+url = "https://www.gamesindustry.biz/feed"
+roles = ["marketing", "gamedev"]

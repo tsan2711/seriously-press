@@ -1,0 +1,17 @@
+id = "finance"
+name = "Tài chính cá nhân"
+accent = "#8a5a12"
+tagline = "Ngân sách, đầu tư dài hạn, thuế và hưu trí — không mẹo làm giàu nhanh."
+hn_queries = ["personal finance", "index fund", "retirement", "budgeting"]
+[[feed]]
+id = "mrmoneymustache"
+name = "Mr. Money Mustache"
+url = "https://www.mrmoneymustache.com/feed/"
+[[feed]]
+id = "whitecoat"
+name = "White Coat Investor"
+url = "https://www.whitecoatinvestor.com/feed/"
+[[feed]]
+id = "ofdollars"
+name = "Of Dollars And Data"
+url = "https://ofdollarsanddata.com/feed/"

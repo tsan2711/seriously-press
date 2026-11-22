@@ -1,0 +1,33 @@
+# Build Bản Tin mỗi ngày + đẩy lên GitHub Pages (miễn phí cho repo công khai). KHÔNG chứa bí mật.
+# CHUẨN BỊ SẴN — chưa kích hoạt: GitHub chỉ đọc workflow ở <repo-gốc>/.github/workflows/. Khi Bi OK:
+#   1) repo riêng cho site (hoặc git subtree depts/press/site) với file này ở .github/workflows/press.yml
+#   2) Settings → Pages → Source = "GitHub Actions"   3) push.   Chi tiết: knowledge/arch-multiuser.md
+name: press-daily
+on:
+  schedule: [{ cron: "30 0 * * *" }]   # 00:30 UTC = 07:30 giờ VN
+  workflow_dispatch: {}
+  push: { branches: [main], paths: ["config/**", "web/**", "*.py", "tests/**"] }
+permissions: { contents: read, pages: write, id-token: write }
+concurrency: { group: pages, cancel-in-progress: true }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: python3 tests/check_publish.py
+      - run: python3 press.py fetch          # nguồn công khai; Reddit có thể 403 → ghi lỗi, không sập
+      - run: python3 press.py build
+      - run: python3 tests/check_site.py && python3 tests/test_share.py && python3 tests/test_run.py && python3 tests/sim_personalize.py && python3 tests/test_engagement.py
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: public }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.d.outputs.page_url }}" }
+    steps:
+      - id: d
+        uses: actions/deploy-pages@v4

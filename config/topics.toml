@@ -1,0 +1,139 @@
+# Đồ thị chủ đề (spec §2). Mỗi chủ đề: tên hiển thị, từ khoá khớp (không phân biệt hoa thường), chủ đề kề (cho khám phá M4), ngành.
+# Thêm chủ đề = thêm một khối. Không sửa mã.
+[topic.roguelike]
+label = "Roguelike"
+kw = ["roguelike", "roguelite", "rogue-lite"]
+adjacent = ["deckbuilder", "game-design", "indie-games"]
+desks = ["gamedev"]
+[topic.deckbuilder]
+label = "Deckbuilder"
+kw = ["deckbuilder", "deck-builder", "deck building", "card game"]
+adjacent = ["roguelike", "game-design"]
+desks = ["gamedev"]
+[topic.game-design]
+label = "Thiết kế game"
+kw = ["game design", "level design", "game balance", "game feel", "gameplay", "game designer"]
+adjacent = ["roguelike", "ux-design", "indie-games"]
+desks = ["gamedev", "design"]
+[topic.unity]
+label = "Unity"
+kw = ["unity", "unity6", "unity 6", "urp", "dots"]
+adjacent = ["godot", "game-engines", "mobile-games"]
+desks = ["gamedev"]
+[topic.godot]
+label = "Godot"
+kw = ["godot"]
+adjacent = ["unity", "game-engines"]
+desks = ["gamedev"]
+[topic.game-engines]
+label = "Engine game"
+kw = ["unreal", "game engine", "bevy", "raylib", "gamemaker"]
+adjacent = ["unity", "godot", "graphics"]
+desks = ["gamedev"]
+[topic.mobile-games]
+label = "Game di động"
+kw = ["mobile game", "android game", "ios game", "google play", "app store", "f2p", "free-to-play", "monetization"]
+adjacent = ["unity", "indie-games"]
+desks = ["gamedev"]
+[topic.indie-games]
+label = "Game indie"
+kw = ["indie", "steam", "solo dev", "gamedev", "game dev", "postmortem"]
+adjacent = ["roguelike", "game-design", "mobile-games"]
+desks = ["gamedev"]
+[topic.graphics]
+label = "Đồ hoạ & shader"
+kw = ["shader", "rendering", "ray tracing", "gpu", "pixel art", "procedural", "vfx", "3d model", "blender"]
+adjacent = ["game-engines", "visual-design"]
+desks = ["gamedev", "design"]
+[topic.ux-design]
+label = "UX"
+kw = ["ux", "user experience", "usability", "user research", "interaction design", "accessibility"]
+adjacent = ["ui-design", "game-design", "design-systems"]
+desks = ["design"]
+[topic.ui-design]
+label = "UI & giao diện"
+kw = ["ui design", "interface", "mobile ui", "dark mode", "responsive", "css"]
+adjacent = ["ux-design", "typography", "design-systems"]
+desks = ["design"]
+[topic.typography]
+label = "Chữ & bố cục"
+kw = ["typography", "typeface", "font", "layout", "grid"]
+adjacent = ["ui-design", "visual-design"]
+desks = ["design"]
+[topic.design-systems]
+label = "Hệ thiết kế"
+kw = ["design system", "design token", "component library", "figma", "storybook"]
+adjacent = ["ui-design", "ux-design"]
+desks = ["design"]
+[topic.visual-design]
+label = "Thiết kế hình ảnh"
+kw = ["illustration", "color", "colour", "branding", "icon", "visual design", "poster"]
+adjacent = ["typography", "graphics"]
+desks = ["design"]
+[topic.llm]
+label = "Mô hình ngôn ngữ"
+kw = ["llm", "language model", "gpt", "claude", "gemini", "llama", "anthropic", "openai", "mistral", "qwen", "deepseek", "transformer"]
+adjacent = ["agents", "prompting", "ai-research"]
+desks = ["ai"]
+[topic.agents]
+label = "Agent & công cụ"
+kw = ["agent", "agentic", "mcp", "tool use", "claude code", "copilot", "cursor", "coding assistant", "codex"]
+adjacent = ["llm", "prompting", "ai-coding"]
+desks = ["ai", "gamedev"]
+[topic.ai-coding]
+label = "Lập trình cùng AI"
+kw = ["vibe coding", "ai coding", "code generation", "code review", "ai-assisted", "pair programming"]
+adjacent = ["agents", "llm"]
+desks = ["ai"]
+[topic.prompting]
+label = "Prompt & ngữ cảnh"
+kw = ["prompt", "context window", "rag", "retrieval", "embedding", "fine-tun", "evals", "evaluation"]
+adjacent = ["llm", "agents"]
+desks = ["ai"]
+[topic.ai-research]
+label = "Nghiên cứu AI"
+kw = ["arxiv", "paper", "benchmark", "diffusion", "reinforcement learning", "multimodal", "reasoning", "open-source model", "open weights"]
+adjacent = ["llm", "ai-art"]
+desks = ["ai"]
+[topic.ai-art]
+label = "AI sinh ảnh/3D"
+kw = ["stable diffusion", "comfyui", "image generation", "text-to-image", "text-to-3d", "midjourney", "flux", "lora"]
+adjacent = ["ai-research", "graphics", "visual-design"]
+desks = ["ai", "design"]
+# --- Ban "tài chính cá nhân" (M5: thêm ban chỉ bằng cấu hình) ---
+[topic.personal-finance]
+label = "Tài chính cá nhân"
+kw = ["personal finance", "budgeting", "emergency fund", "net worth", "credit score", "debt payoff", "financial independence"]
+adjacent = ["investing", "retirement"]
+desks = ["finance"]
+[topic.investing]
+label = "Đầu tư"
+kw = ["index fund", "etf", "investing", "portfolio", "dividend", "asset allocation", "bogleheads"]
+adjacent = ["personal-finance", "retirement"]
+desks = ["finance"]
+[topic.retirement]
+label = "Hưu trí & thuế"
+kw = ["retirement", "401k", "ira", "pension", "tax", "fire movement"]
+adjacent = ["personal-finance", "investing"]
+desks = ["finance"]
+# --- Ban "marketing" (thêm bằng cấu hình, vai trò marketing) ---
+[topic.game-marketing]
+label = "Marketing game"
+kw = ["game marketing", "wishlist", "steam page", "trailer", "press kit", "influencer", "user acquisition", "launch"]
+adjacent = ["growth", "indie-games", "mobile-games"]
+desks = ["marketing", "gamedev"]
+[topic.growth]
+label = "Tăng trưởng"
+kw = ["growth", "retention", "conversion", "funnel", "a/b test", "ab test", "analytics", "churn"]
+adjacent = ["game-marketing", "seo", "aso"]
+desks = ["marketing"]
+[topic.seo]
+label = "SEO & nội dung"
+kw = ["seo", "search engine", "google search", "content marketing", "backlink", "keyword"]
+adjacent = ["growth", "aso"]
+desks = ["marketing"]
+[topic.aso]
+label = "ASO / cửa hàng ứng dụng"
+kw = ["aso", "app store optimization", "app store", "play store", "store listing", "screenshots"]
+adjacent = ["growth", "mobile-games", "game-marketing"]
+desks = ["marketing"]

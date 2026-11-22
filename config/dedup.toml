@@ -1,0 +1,14 @@
+# Ngưỡng dedup qua ngày + KB. Cùng giá trị cho kb.py (build) và web/dedup.js (trình duyệt, đọc từ today.json.dedup).
+[match]            # hai bài cùng một câu chuyện khi…
+jaccard_strong = 0.6      # …token tiêu đề giống ≥ ngưỡng này; hoặc
+hamming_max = 3           # …simhash 32-bit lệch ≤ ngưỡng VÀ jaccard ≥ jaccard_min_hamming; hoặc
+jaccard_min_hamming = 0.3
+jaccard_weak = 0.35       # …jaccard ≥ ngưỡng này VÀ chung ≥ shared_entities thực thể
+shared_entities = 2
+[update]           # "update thật" = có fact mới (phiên bản/con số lạ) hoặc cùng URL mà nội dung lệch ≥ ngưỡng
+text_distance = 0.35
+[kb]
+ttl_days = 90             # quá hạn thì bỏ story
+max_entries = 12          # timeline mỗi story (giữ mục đầu + mới nhất)
+slim_after_days = 30      # mục cũ hơn → bỏ tiêu đề/facts, chỉ giữ ngày/url/rev
+related_max = 3

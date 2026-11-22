@@ -1,0 +1,9 @@
+id = "marketing"
+name = "Marketing & tăng trưởng"
+accent = "#a1307a"
+tagline = "Thu hút người chơi, giữ chân và bán được — không mẹo rác."
+hn_queries = ["game marketing", "app store optimization", "growth marketing", "SEO", "indie marketing"]
+[[feed]]
+id = "sej"
+name = "Search Engine Journal"
+url = "https://www.searchenginejournal.com/feed/"

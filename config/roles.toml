@@ -1,0 +1,31 @@
+# Vai trò → cấu hình mặc định cho hồ sơ mới (onboarding 3 câu: vai trò · chủ đề · mật độ).
+# Thêm vai trò = thêm một khối, không sửa mã. topics phải có trong topics.toml; desks có trong config/desks/.
+[density]   # số bài một trang bảng tin
+compact = 12
+normal = 24
+rich = 40
+[role.gamedev]
+label = "Làm game"
+desks = ["gamedev", "ai"]
+topics = ["unity", "game-design", "indie-games"]
+density = "normal"
+[role.art]
+label = "Art / hoạ sĩ"
+desks = ["design", "ai", "gamedev"]
+topics = ["visual-design", "ai-art", "graphics"]
+density = "normal"
+[role.design]
+label = "Thiết kế UI/UX"
+desks = ["design", "ai"]
+topics = ["ux-design", "ui-design", "design-systems"]
+density = "normal"
+[role.marketing]
+label = "Marketing / phát hành"
+desks = ["marketing", "gamedev"]
+topics = ["game-marketing", "growth", "aso"]
+density = "compact"
+[role.other]
+label = "Khác"
+desks = []
+topics = []
+density = "normal"
