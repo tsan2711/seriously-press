@@ -43,7 +43,7 @@ class Ctx:
             for t in a["topics"]: cnt[t] = cnt.get(t, 0) + 1
         s.cnt = cnt
         s.TREND = [dict(x, desk=k) for k, v in (day.get("trending") or {}).items() if k in desks for x in v]
-        s.TBD = {k: sorted([t for t, v in topics.items() if k in v.get("desks", [])], key=lambda t: -cnt.get(t, 0))[:5] for k in desks}
+        s.TBD = {k: sorted([t for t, v in topics.items() if k in v.get("desks", [])], key=lambda t: -cnt.get(t, 0))[:12] for k in desks}
     def tl(s, t): return s.TOP.get(t, {}).get("label", t)
     def topic(s, a): return a["topics"][0] if a["topics"] else "khac"
     def ago(s, a):
@@ -68,7 +68,7 @@ def summ(a, n=260):
 
 
 B = L = None
-FORYOU = '<section class="strip" data-foryou hidden aria-labelledby="fy"><h2 id="fy" class="typed">DÀNH CHO <span data-fy-who>BẠN</span> <small data-fy-role></small></h2><ol class="fy" data-fy-list></ol></section>'
+FORYOU = '<section class="fy-sec" data-foryou hidden aria-labelledby="fy"><h2 id="fy" class="sec-h">DÀNH CHO <span data-fy-who>BẠN</span> <small data-fy-role></small></h2><p class="sec-s">Chọn theo chủ đề và gu của bạn — chỉ có trên máy này. <a href="picker.html">Đổi chủ đề</a></p><div class="grid fyg" data-fy-list></div></section>'
 SHAREFEED = '<section class="strip" id="chia-se" data-sharefeed hidden aria-labelledby="sf"><h2 id="sf" class="typed">MỌI NGƯỜI THẤY HAY</h2><ul class="fy" data-sf-list></ul><p class="m" data-sf-msg role="status"></p></section>'
 def hot_section():
     rows = sorted(B.TREND, key=lambda x: -x.get("heat", 0))[:8]
@@ -175,7 +175,7 @@ def issue_bar():
 
 def home():
     arts = home_arts()
-    return f"""<main id="main"><h1 class="vh">Bảng tin hôm nay</h1>{issue_bar()}<p class="ddnote" data-dd-note role="status" aria-live="polite" hidden></p>{FORYOU}{SHAREFEED}{board(arts, lead=B.LEAD)}</main>"""
+    return f"""<main id="main"><h1 class="vh">Bảng tin hôm nay</h1>{issue_bar()}<p class="ddnote" data-dd-note role="status" aria-live="polite" hidden></p>{FORYOU}{SHAREFEED}<h2 class="sec-h gen-h">TIN CHUNG HÔM NAY <small>— tòa soạn chọn, ai vào cũng thấy như nhau</small></h2>{board(arts, lead=B.LEAD).replace('class="grid"', 'class="grid" data-gen', 1)}</main>"""
 
 def issue_json(by="tự động"):
     """Số báo của một ngày (cron) dạng gọn cho trình duyệt: ≤24 bài; trả (mục trong issues.json, nội dung)."""
@@ -211,12 +211,12 @@ def desk(d):
     arts = [a for a in B.ARTS if d in a["desks"]][:16]
     return f"""<main id="main"><header class="desk-h"><h1>{e(B.DN[d])}</h1><p>{e(B.TAG[d])}</p></header>{board(arts, None)}</main>"""
 
-def onboard():
+def onboard(sug=''):
     r = "".join(f'<button type="button" class="chip" data-role="{e(k)}" data-topics="{e(",".join(v.get("topics", [])))}" data-density="{e(v.get("density", "normal"))}" aria-pressed="false">{e(v["label"])}</button>' for k, v in B.ROLES.items())
     dn = "".join(f'<button type="button" class="chip" data-density-pick="{k}" aria-pressed="{"true" if k == "normal" else "false"}">{l}</button>' for k, l in (("compact", "Gọn (12 bài)"), ("normal", "Vừa (24 bài)"), ("rich", "Nhiều (40 bài)")))
     return f'''<section class="mk ob" aria-labelledby="ob"><h2 id="ob">3 câu để bảng tin hợp bạn</h2>
 <fieldset><legend>1. Bạn làm gì?</legend><div class="chips" data-roles>{r}</div></fieldset>
-<p class="m">2. Chủ đề quan tâm: chọn ở phần "Đề xuất theo ban" bên dưới (chọn vai trò sẽ tự chọn sẵn).</p>
+<fieldset><legend>2. Chủ đề bạn quan tâm <small>— chạm để chọn nhiều, chọn vai trò sẽ chọn sẵn, đổi sau lúc nào cũng được</small></legend><label class="sr" for="tf">Tìm chủ đề</label><input id="tf" type="search" data-topic-filter placeholder="Tìm chủ đề… (vd: unity, tài chính)" autocomplete="off"><p class="m" data-tf-empty hidden>Không có chủ đề nào khớp.</p><div class="sgs">{sug}</div></fieldset>
 <fieldset><legend>3. Muốn đọc bao nhiêu mỗi lần?</legend><div class="chips" data-dens>{dn}</div></fieldset></section>'''
 
 COMMUNITY = '<section class="mk" aria-labelledby="cm"><h2 id="cm">Cài đặt &amp; chạy báo</h2><p class="m">Không tài khoản, không link mời — ai mở trang cũng dùng được mọi thứ. Dán API key (tuỳ chọn) và bấm <b>Chạy báo hôm nay</b> ở trang Cài đặt.</p><p><a class="btn" href="settings.html">Mở Cài đặt →</a></p></section>'
@@ -224,15 +224,15 @@ TASTE = '<section class="mk" aria-labelledby="tt"><h2 id="tt">Gu của tôi</h2>
 SYNC = '<section class="mk" aria-labelledby="sy"><h2 id="sy">Đồng bộ giữa máy</h2><p class="m">Mã chỉ là văn bản chứa hồ sơ của bạn; không gửi lên mạng. Sao chép sang máy kia rồi nhập.</p><label for="sc">Mã đồng bộ</label><textarea id="sc" data-sync-code rows="3" spellcheck="false"></textarea><div class="frow"><button class="btn" type="button" data-sync-out>Tạo mã</button><button class="btn" type="button" data-sync-in>Nhập mã</button></div><p class="m" data-sync-msg role="status"></p></section>'
 
 def picker():
-    ONBOARD = onboard()
     cards = '<li class="nw"><button class="pf new" type="button" data-go="nm"><span class="av" aria-hidden="true">+</span><span class="pn">Tạo người đọc</span><span class="ps">Tối đa 8 người</span></button></li>'
     sug = "".join(f'<section class="sg"><h3>{e(B.DN[d])}</h3><p>{e(B.TAG[d])}</p><div class="chips">' + "".join(
-        f'<button type="button" class="chip" data-desk="{e(d)}" data-topic="{e(x)}" aria-pressed="false">{e(B.tl(x))}</button>' for x in B.TBD[d][:5]) + "</div></section>" for d in B.DESK_ORDER)
+        f'<button type="button" class="chip" data-desk="{e(d)}" data-topic="{e(x)}" aria-pressed="false">{e(B.tl(x))}</button>' for x in B.TBD[d]) + "</div></section>" for d in B.DESK_ORDER)
     return f"""<main id="main"><div class="pick" data-picker><div class="paper pk"><header class="ph"><p class="typed">TRƯỚC KHI ĐỌC</p><h1>Ai đang đọc?</h1><p class="sub">Mỗi người đọc có chủ đề, bài đã lưu và bài đã ẩn riêng. Không cần tài khoản; mọi thứ nằm trên thiết bị này.</p></header>
 <ul class="pfs" data-list>{cards}</ul><p class="now" role="status" aria-live="polite">Đang đọc: <b data-now>Tôi</b></p>
 <section class="mk" aria-labelledby="mk"><h2 id="mk">Tạo người đọc</h2><form data-new><label for="nm">Tên gọi <small>(tối đa 24 ký tự)</small></label><div class="frow"><input id="nm" name="nm" maxlength="24" autocomplete="off" placeholder="Ví dụ: Hà"><button class="btn" type="submit">Tạo người đọc</button></div></form>
-{ONBOARD}<h3 class="sgh">Đề xuất theo ban <small>— chạm để chọn chủ đề, đổi sau lúc nào cũng được</small></h3><div class="sgs">{sug}</div>
-<p class="m" data-msg role="status"></p>{TASTE}{SYNC}{COMMUNITY}<div class="frow end"><button class="btn" type="button" data-del>Xoá người đọc này</button><a class="btn pri" href="index.html">Vào đọc →</a></div></section></div></div></main>"""
+{onboard(sug)}
+<p class="m" data-msg role="status"></p><div class="frow end"><a class="btn pri" href="index.html">Vào đọc →</a></div>
+<details class="adv"><summary>Nâng cao: gu của tôi, đồng bộ máy, chạy báo, xoá người đọc</summary>{TASTE}{SYNC}{COMMUNITY}<div class="frow end"><button class="btn" type="button" data-del>Xoá người đọc này</button></div></details></section></div></div></main>"""
 
 
 SETTINGS = '<div data-settings>\n<section class="mk" aria-labelledby="r1"><h2 id="r1">Chạy báo hôm nay</h2>\n<p class="m">Lấy các nguồn trong trình duyệt của bạn, gom theo chủ đề, rồi tóm tắt bằng key ở trên. <b>Không có key vẫn chạy</b> — tóm tắt là bản trích 200 ký tự từ nguồn.</p>\n<div class="frow"><label for="rm">Số bài tối đa <small>(≤ 60)</small></label><input id="rm" type="number" min="1" max="60" data-run-max><label for="rs">Số bài tóm tắt bằng AI <small>(≤ 20, 10 bài/lượt gọi)</small></label><input id="rs" type="number" min="0" max="20" data-run-sum></div>\n<div class="frow"><button class="btn pri" type="button" data-run-go>Chạy báo hôm nay</button><button class="btn" type="button" data-run-cancel hidden>Huỷ</button><button class="btn" type="button" data-run-clear>Xoá bản chạy &amp; nhật ký</button></div>\n<progress data-run-prog hidden value="0" max="1"></progress>\n<div data-run-out hidden><h3 class="sgh">Kết quả hôm nay</h3><ul class="fy"></ul></div>\n<h3 class="sgh">Nhật ký các lần chạy <small>(30 lần gần nhất, chỉ ở máy này)</small></h3><ul class="fy" data-run-log></ul></section>\n<section class="mk" aria-labelledby="n1"><h2 id="n1">Tên của bạn</h2><p class="m">Khi trang có bật chia sẻ, bạn giới thiệu bài kèm ghi chú ngay từ trang bài; ai cũng thấy. Tên này hiện cùng ghi chú chia sẻ và ở số báo bạn tự chạy (để trống = Ẩn danh / "bạn"). Bạn chỉ xoá được ghi chú do máy này đăng.</p>\n<label for="nn">Tên hiển thị <small>(tối đa 24 ký tự)</small></label><div class="frow"><input id="nn" maxlength="24" autocomplete="off" data-name><button class="btn" type="button" data-name-save>Lưu tên</button></div></section>\n<section class="mk" aria-labelledby="k1"><h2 id="k1">API key (tuỳ chọn)</h2>\n<p class="warn" role="note"><b>Key chỉ nằm trên máy này</b> (localStorage của trình duyệt) — không lên repo, không gửi cho máy chủ chia sẻ; chỉ được gửi thẳng tới nhà cung cấp bạn chọn khi bấm Chạy. <b>Chi phí gọi AI do bạn chịu</b> theo bảng giá của nhà cung cấp. Đừng dán key trên máy dùng chung; ai mở được trình duyệt này đọc được key. Nên dùng key có hạn mức chi thấp.</p>\n<label for="ap">Nhà cung cấp</label><select id="ap" data-ai-provider><option value="anthropic">Anthropic (Claude)</option><option value="openai">OpenAI</option></select>\n<label for="ak">API key</label><div class="frow"><input id="ak" type="password" autocomplete="off" spellcheck="false" data-ai-key placeholder="sk-…"><button class="btn" type="button" data-ai-save>Lưu key</button><button class="btn" type="button" data-ai-clear>Xoá key</button></div>\n<label for="am">Model <small>(để trống = mặc định rẻ nhất của nhà cung cấp)</small></label><input id="am" data-ai-model maxlength="60" autocomplete="off">\n<p class="m" data-ai-state role="status"></p></section>\n<section class="mk" aria-labelledby="rd1"><h2 id="rd1">Người đọc &amp; chủ đề</h2><p class="m">Đổi người đọc, chọn chủ đề quan tâm, đồng bộ giữa máy.</p><p><a class="btn" href="picker.html">Mở →</a></p></section>\n<p class="m" data-set-msg role="status" aria-live="polite"></p></div>'

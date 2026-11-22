@@ -24,8 +24,18 @@ label = "Marketing / phát hành"
 desks = ["marketing", "gamedev"]
 topics = ["game-marketing", "growth", "aso"]
 density = "compact"
+[role.ai]
+label = "Dùng / làm AI"
+desks = ["ai", "gamedev"]
+topics = ["llm", "agents", "ai-coding", "prompting"]
+density = "normal"
+[role.finance]
+label = "Tài chính cá nhân"
+desks = ["finance"]
+topics = ["personal-finance", "investing", "retirement"]
+density = "compact"
 [role.other]
-label = "Khác"
-desks = []
-topics = []
+label = "Khác (xem đủ mảng)"
+desks = ["gamedev", "design", "ai", "finance", "marketing"]
+topics = ["game-design", "ux-design", "llm", "personal-finance", "game-marketing"]
 density = "normal"

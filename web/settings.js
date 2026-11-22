@@ -57,7 +57,7 @@
       r.log.by = who; wr(RUN, { date: r.date, articles: r.articles }); wr(LOG, PR.pushLog(rd(LOG), r.log));
       // số báo bản tự chạy: chỉ ở máy này (≤14), hiện trong bộ chọn ngày ở trang chủ
       wr('press.issues', [{ ts: r.log.ts, date: r.date, by: who, src: 'local', n: r.articles.length, new: r.log.fresh, up: 0, srcs: r.log.sources, articles: r.articles.slice(0, 24).map(a => ({ id: a.id, title: a.title, url: a.url, source: a.source, topics: a.topics, isNew: a.isNew })) }].concat(rd('press.issues') || []).slice(0, 14)); drawLog(); draw();
-      say('Xong: ' + r.articles.length + ' bài (' + r.log.fresh + ' mới), ' + (r.log.provider ? r.log.summarized + ' tóm tắt AI' : 'bản trích') + (r.log.aiError ? ' — lỗi AI: ' + r.log.aiError + ' (đã dùng bản trích)' : '') + (r.log.sourceErrors ? ' · ' + r.log.sourceErrors + ' nguồn lỗi' : '') + '. Xem ở Trang chủ → “Bản chạy tại máy”.');
+      say('Xong: ' + r.articles.length + ' bài (' + r.log.fresh + ' mới), ' + (r.log.provider ? r.log.summarized + ' tóm tắt AI' : 'bản trích') + (r.log.aiError ? ' — lỗi AI: ' + r.log.aiError + ' (đã dùng bản trích)' : '') + (r.log.sourceErrors ? ' · ' + r.log.sourceErrors + ' nguồn lỗi' : '') + '. Về Trang chủ để xem — số báo vừa chạy tự hiện ở đầu (chỉ trên máy này).');
     } catch (e) { say(e && e.message === 'Đã huỷ' ? 'Đã huỷ — chưa ghi gì.' : 'Lỗi: ' + (e && e.message || e) + '. Thử lại, hoặc kiểm tra mạng.'); }
     go.disabled = false; bar.hidden = true; if (cancel) cancel.hidden = true; ctl = null;
   });

@@ -346,3 +346,6 @@ html.js [data-run-prog]{position:absolute;width:1px;height:1px;opacity:0}
   html.fx-paused *,html.fx-paused *::after,html.fx-paused *::before{animation-play-state:paused!important}
 }
 @media (prefers-reduced-motion:reduce){.grid .card.fx{opacity:1!important;transform:rotate(var(--r,0deg))!important}.grid.slide,.mast .clipping,.grid .card.pinned::before,.grid.sk-load .card::after{animation:none!important}.pg-f{transition:none}}
+.adv{margin-top:1.4rem}.adv>summary{cursor:pointer;font:700 .85rem var(--mono);padding:.6rem 0}.ob .sgs{margin-top:.4rem}
+.sr{position:absolute;left:-9999px}[data-topic-filter]{width:100%;max-width:26rem;margin:.3rem 0;padding:.5rem .6rem;font:inherit;border:1px solid var(--rule);background:transparent;color:inherit}.chip[hidden],.sg[hidden]{display:none}
+.fy-sec{margin:1.2rem 0 0}.sec-h{font:700 .85rem var(--mono);letter-spacing:.14em;margin:1.4rem 0 .2rem}.sec-h small{font-weight:400;letter-spacing:.04em;color:var(--mut)}.sec-s{margin:0;font:.85rem var(--serif);color:var(--mut)}.fyg{padding-bottom:1rem}.card .why{margin:.2rem 0 0;font:italic .8rem var(--serif);color:var(--mut)}.gen-h{border-top:2px solid var(--rule);padding-top:1.2rem}

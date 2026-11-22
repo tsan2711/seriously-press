@@ -1,31 +1,7 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T12:32:20",
+ "generated": "2026-11-22T22:49:06",
  "articles": [
-  {
-   "title": "LLMs can read and write executables byte by byte from a hex dump",
-   "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
-   "summary": "",
-   "published": "2026-11-18T14:15:58Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 221,
-   "comments": 139,
-   "engagement": 1.0,
-   "topic_by": "keyword",
-   "id": "3e6ca39e70",
-   "topics": [
-    "llm"
-   ],
-   "desks": [
-    "ai"
-   ],
-   "summary_by": "none",
-   "sid": "3e6ca39e70",
-   "status": "repeat",
-   "rev": 0,
-   "img": ""
-  },
   {
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
    "url": "https://signal.org/blog/protecting-your-privacy/",
@@ -33,8 +9,8 @@
    "published": "2026-11-20T09:42:16Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 573,
-   "comments": 336,
+   "points": 577,
+   "comments": 345,
    "engagement": 1.0,
    "topic_by": "keyword",
    "id": "c4ca83ba57",
@@ -46,10 +22,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "https://signal.org/blog/images/protecting-your-privacy-opengraph.png",
    "sid": "c4ca83ba57",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://signal.org/blog/images/protecting-your-privacy-opengraph.png"
+   "rev": 0
   },
   {
    "title": "AI agents ask better questions than KPMG accountants in audit trial",
@@ -59,7 +35,7 @@
    "source": "Hacker News",
    "source_id": "hn",
    "points": 499,
-   "comments": 263,
+   "comments": 264,
    "engagement": 1.0,
    "topic_by": "keyword",
    "id": "dbf7233003",
@@ -71,10 +47,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "https://europeanbusinessmagazine.com/wp-content/uploads/2026/06/ai5555-1024x678.jpg",
    "sid": "dbf7233003",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://europeanbusinessmagazine.com/wp-content/uploads/2026/06/ai5555-1024x678.jpg"
+   "rev": 0
   },
   {
    "title": "Claude solves two open problems in the physics of black holes",
@@ -83,7 +59,7 @@
    "published": "2026-11-19T17:30:44Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 569,
+   "points": 572,
    "comments": 274,
    "engagement": 1.0,
    "topic_by": "keyword",
@@ -96,23 +72,23 @@
     "marketing"
    ],
    "summary_by": "none",
+   "img": "https://assets.claude.com/57a443b51d13727573b7c1290130d09c5f434b2c.jpg",
    "sid": "be373132dc",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://assets.claude.com/57a443b51d13727573b7c1290130d09c5f434b2c.jpg"
+   "rev": 0
   },
   {
-   "title": "Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine",
-   "url": "https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html",
+   "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+   "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
    "summary": "",
-   "published": "2026-11-18T15:18:30Z",
+   "published": "2026-11-22T04:04:56Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 386,
-   "comments": 233,
+   "points": 849,
+   "comments": 504,
    "engagement": 1.0,
    "topic_by": "desk-default",
-   "id": "0760cd4476",
+   "id": "d3a1a9a15e",
    "topics": [
     "game-design"
    ],
@@ -121,10 +97,10 @@
     "gamedev"
    ],
    "summary_by": "none",
-   "sid": "0760cd4476",
-   "status": "repeat",
-   "rev": 0,
-   "img": "https://s.yimg.com/lo/mysterio/api/ad6a2a112e9f0226e79e9b73cb48fc33faa150dd88d4ea7b20be07d0146e6315/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fukrayinska_pravda_articles_451%2F3f75d2ecee0a54bee0a4a11b062d8666.jpg"
+   "img": "https://hips.hearstapps.com/hmg-prod/images/d8009593-6fd1-4860-b42e-c59e9945155a.jpeg?crop=1xw:0.75xh;0xw,0.184xh&resize=1200:*",
+   "sid": "d3a1a9a15e",
+   "status": "new",
+   "rev": 0
   },
   {
    "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
@@ -133,8 +109,8 @@
    "published": "2026-11-20T02:01:09Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 370,
-   "comments": 346,
+   "points": 371,
+   "comments": 345,
    "engagement": 1.0,
    "topic_by": "desk-default",
    "id": "df98bcb7b8",
@@ -146,10 +122,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "https://opengraph.githubassets.com/dae5b34245adb2c47ebebd184314cee9254a10643b26ce56b053f76b2951f9dd/openssl/openssl/pull/33652",
    "sid": "df98bcb7b8",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/dae5b34245adb2c47ebebd184314cee9254a10643b26ce56b053f76b2951f9dd/openssl/openssl/pull/33652"
+   "rev": 0
   },
   {
    "title": "Multiple vulnerabilities in Regexp and String case conversion",
@@ -159,7 +135,7 @@
    "source": "Hacker News",
    "source_id": "hn",
    "points": 342,
-   "comments": 132,
+   "comments": 133,
    "engagement": 1.0,
    "topic_by": "keyword",
    "id": "77ff48ef19",
@@ -171,60 +147,10 @@
     "marketing"
    ],
    "summary_by": "none",
+   "img": "https://www.ruby-lang.org/images/og-image.png",
    "sid": "77ff48ef19",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://www.ruby-lang.org/images/og-image.png"
-  },
-  {
-   "title": "If you can't explain something in simple terms, you don't understand it (2017)",
-   "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
-   "summary": "",
-   "published": "2026-11-20T09:43:19Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 706,
-   "comments": 323,
-   "engagement": 1.0,
-   "topic_by": "desk-default",
-   "id": "601ef0d322",
-   "topics": [
-    "game-marketing"
-   ],
-   "desks": [
-    "gamedev",
-    "marketing"
-   ],
-   "summary_by": "none",
-   "sid": "601ef0d322",
-   "status": "new",
-   "rev": 0,
-   "img": ""
-  },
-  {
-   "title": "UK government forced to admit it issued Apple a secret encryption order",
-   "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
-   "summary": "",
-   "published": "2026-11-19T16:21:03Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 691,
-   "comments": 379,
-   "engagement": 1.0,
-   "topic_by": "desk-default",
-   "id": "3580245413",
-   "topics": [
-    "game-marketing"
-   ],
-   "desks": [
-    "gamedev",
-    "marketing"
-   ],
-   "summary_by": "none",
-   "sid": "3580245413",
-   "status": "new",
-   "rev": 0,
-   "img": "https://macanorak.com/content/images/2026/11/Apple.jpg"
+   "rev": 0
   },
   {
    "title": "Slopstrap – Make your site look hastily vibecoded",
@@ -233,8 +159,8 @@
    "published": "2026-11-20T15:24:11Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 683,
-   "comments": 128,
+   "points": 740,
+   "comments": 140,
    "engagement": 1.0,
    "topic_by": "desk-default",
    "id": "5f05718be2",
@@ -246,23 +172,23 @@
     "marketing"
    ],
    "summary_by": "none",
+   "img": "https://slopstrap.mikelacher.com/og-image.png",
    "sid": "5f05718be2",
    "status": "new",
-   "rev": 0,
-   "img": "https://slopstrap.mikelacher.com/og-image.png"
+   "rev": 0
   },
   {
-   "title": "Seven new models at scalable price-performance",
-   "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+   "title": "If you can't explain something in simple terms, you don't understand it (2017)",
+   "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
    "summary": "",
-   "published": "2026-11-18T16:08:24Z",
+   "published": "2026-11-20T09:43:19Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 603,
-   "comments": 377,
+   "points": 711,
+   "comments": 328,
    "engagement": 1.0,
    "topic_by": "desk-default",
-   "id": "5dbbce4400",
+   "id": "601ef0d322",
    "topics": [
     "game-marketing"
    ],
@@ -271,10 +197,35 @@
     "marketing"
    ],
    "summary_by": "none",
-   "sid": "5dbbce4400",
+   "img": "",
+   "sid": "601ef0d322",
    "status": "new",
-   "rev": 0,
-   "img": "https://microsoft.ai/wp-content/uploads/2026/11/All-Up-Blog.jpg"
+   "rev": 0
+  },
+  {
+   "title": "UK government forced to admit it issued Apple a secret encryption order",
+   "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
+   "summary": "",
+   "published": "2026-11-19T16:21:03Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 691,
+   "comments": 382,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "3580245413",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "img": "https://macanorak.com/content/images/2026/11/Apple.jpg",
+   "sid": "3580245413",
+   "status": "new",
+   "rev": 0
   },
   {
    "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
@@ -283,8 +234,8 @@
    "published": "2026-11-20T17:21:36Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 541,
-   "comments": 244,
+   "points": 546,
+   "comments": 243,
    "engagement": 1.0,
    "topic_by": "desk-default",
    "id": "dc0a65e6fd",
@@ -296,10 +247,10 @@
     "marketing"
    ],
    "summary_by": "none",
+   "img": "",
    "sid": "dc0a65e6fd",
    "status": "new",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
@@ -308,8 +259,8 @@
    "published": "2026-11-20T13:29:59Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 507,
-   "comments": 886,
+   "points": 518,
+   "comments": 907,
    "engagement": 1.0,
    "topic_by": "keyword",
    "id": "fda5004e84",
@@ -321,23 +272,23 @@
     "marketing"
    ],
    "summary_by": "none",
+   "img": "https://i.guim.co.uk/img/media/578833ee207aab76c1b6a542f17226703dbd735b/686_0_5336_4269/master/5336.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a36857abb7bd0660d819105186f898a0",
    "sid": "fda5004e84",
    "status": "new",
-   "rev": 0,
-   "img": "https://i.guim.co.uk/img/media/578833ee207aab76c1b6a542f17226703dbd735b/686_0_5336_4269/master/5336.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a36857abb7bd0660d819105186f898a0"
+   "rev": 0
   },
   {
-   "title": "Someone reported java4shell bug in September 2026",
-   "url": "https://github.com/openjdk/jdk/pull/32781",
+   "title": "Everything you need to survive and rebuild society",
+   "url": "https://lastbook.org/",
    "summary": "",
-   "published": "2026-11-19T11:47:03Z",
+   "published": "2026-11-19T14:47:18Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 460,
-   "comments": 134,
+   "points": 425,
+   "comments": 231,
    "engagement": 1.0,
    "topic_by": "desk-default",
-   "id": "21575d4806",
+   "id": "d87379e2fe",
    "topics": [
     "game-marketing"
    ],
@@ -346,10 +297,35 @@
     "marketing"
    ],
    "summary_by": "none",
-   "sid": "21575d4806",
+   "img": "https://lastbook.org/og-survive-rebuild-v2.png",
+   "sid": "d87379e2fe",
    "status": "new",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/1abbfd7d7cebaa4d92e82df074eba8f2eb3dc9b90aedb5ab35f8af55f07288b6/openjdk/jdk/pull/32781"
+   "rev": 0
+  },
+  {
+   "title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
+   "url": "https://kapteko.com/15-million-webservers/",
+   "summary": "",
+   "published": "2026-11-19T05:56:36Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 410,
+   "comments": 45,
+   "engagement": 1.0,
+   "topic_by": "desk-default",
+   "id": "cd785972e8",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "none",
+   "img": "",
+   "sid": "cd785972e8",
+   "status": "new",
+   "rev": 0
   },
   {
    "title": "LLM assisted reverse engineering",
@@ -370,10 +346,10 @@
     "ai"
    ],
    "summary_by": "none",
+   "img": "",
    "sid": "ba05f6db61",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
@@ -395,10 +371,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "",
    "sid": "667ebdd67c",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
@@ -423,35 +399,10 @@
     "marketing"
    ],
    "summary_by": "none",
+   "img": "https://opengraph.githubassets.com/33d9398461541dca9a31452b4a444c3c87b758c6adc2cde6a5a60690bc07711d/onlook-dev/onlook",
    "sid": "00ca2badf7",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/84bdc0705228501b2c5c65dde4b05dd96fae89d9df448982f5ad25d471971833/onlook-dev/onlook"
-  },
-  {
-   "title": "Toyota, Nissan, and Honda to Standardize Parts to Lower Costs",
-   "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
-   "summary": "",
-   "published": "2026-11-22T04:04:56Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 137,
-   "comments": 73,
-   "engagement": 0.909,
-   "topic_by": "desk-default",
-   "id": "d3a1a9a15e",
-   "topics": [
-    "game-design"
-   ],
-   "desks": [
-    "design",
-    "gamedev"
-   ],
-   "summary_by": "none",
-   "sid": "d3a1a9a15e",
-   "status": "new",
-   "rev": 0,
-   "img": "https://hips.hearstapps.com/hmg-prod/images/d8009593-6fd1-4860-b42e-c59e9945155a.jpeg?crop=1xw:0.75xh;0xw,0.184xh&resize=1200:*"
+   "rev": 0
   },
   {
    "title": "ClawDOS – An AI coding agent for DOS",
@@ -460,9 +411,9 @@
    "published": "2026-11-21T05:38:01Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 161,
-   "comments": 51,
-   "engagement": 0.897,
+   "points": 167,
+   "comments": 52,
+   "engagement": 0.902,
    "topic_by": "keyword",
    "id": "c82934c02e",
    "topics": [
@@ -474,10 +425,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "",
    "sid": "c82934c02e",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
@@ -486,11 +437,36 @@
    "published": "2026-11-18T16:53:42Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 156,
+   "points": 157,
    "comments": 44,
-   "engagement": 0.885,
+   "engagement": 0.886,
    "topic_by": "desk-default",
    "id": "21efcf41c8",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "design"
+   ],
+   "summary_by": "none",
+   "img": "",
+   "sid": "21efcf41c8",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
+   "url": "https://arxiv.org/abs/2606.14068",
+   "summary": "",
+   "published": "2026-11-22T09:18:36Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 85,
+   "comments": 73,
+   "engagement": 0.876,
+   "topic_by": "keyword",
+   "id": "77bc9c5c53",
    "topics": [
     "llm"
    ],
@@ -498,10 +474,27 @@
     "ai"
    ],
    "summary_by": "none",
-   "sid": "21efcf41c8",
-   "status": "repeat",
+   "img": "",
+   "sid": "77bc9c5c53",
+   "status": "new",
    "rev": 0,
-   "img": ""
+   "related": [
+    {
+     "sid": "feb4caa835",
+     "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "d3325aea2b",
+     "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "38c41eb0ed",
+     "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+     "d": "2026-11-21"
+    }
+   ]
   },
   {
    "title": "Show HN: Fast deterministic natural language search for OpenStreetMap data",
@@ -510,9 +503,9 @@
    "published": "2026-11-19T15:16:02Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 136,
-   "comments": 44,
-   "engagement": 0.871,
+   "points": 137,
+   "comments": 46,
+   "engagement": 0.875,
    "topic_by": "desk-default",
    "id": "ebb93c0b48",
    "topics": [
@@ -522,10 +515,10 @@
     "ai"
    ],
    "summary_by": "none",
+   "img": "https://hippomaps.ch/static/pages/img/en/search.webp?v=5496d14268",
    "sid": "ebb93c0b48",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://hippomaps.ch/static/pages/img/en/search.webp?v=5496d14268"
+   "rev": 0
   },
   {
    "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
@@ -549,10 +542,10 @@
     "marketing"
    ],
    "summary_by": "none",
+   "img": "",
    "sid": "724823e096",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Fable: Written, painted and directed by Claude Fable 5.2",
@@ -573,10 +566,10 @@
     "ai"
    ],
    "summary_by": "none",
+   "img": "https://claudia.gallery/og/fable.jpg",
    "sid": "48cd8de2ce",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://claudia.gallery/og/fable.jpg"
+   "rev": 0
   },
   {
    "title": "Show HN: OpenComputer – an open source alternative to Devin",
@@ -585,9 +578,9 @@
    "published": "2026-11-20T20:19:56Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 118,
+   "points": 121,
    "comments": 36,
-   "engagement": 0.845,
+   "engagement": 0.847,
    "topic_by": "desk-default",
    "id": "00dcab6dea",
    "topics": [
@@ -597,35 +590,42 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "https://opengraph.githubassets.com/6e2040313e50345c3b6e850538a9800e183572086be5f0f6e48ca49d31624ff8/diggerhq/opencomputer",
    "sid": "00dcab6dea",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/efe01b9fc939c8cb5d043ecb9c347066b7c478d8d586be1101400372ef6bbe5f/diggerhq/opencomputer"
+   "rev": 0
   },
   {
-   "title": "C's designated initializers give us named arguments",
-   "url": "https://quuxplusone.github.io/blog/2026/11/16/named-arguments-in-c/",
+   "title": "Pandex – Official European Law for AI Agents, over MCP",
+   "url": "https://www.pandex.io",
    "summary": "",
-   "published": "2026-11-18T09:49:49Z",
+   "published": "2026-11-21T20:47:41Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 77,
-   "comments": 47,
-   "engagement": 0.828,
-   "topic_by": "desk-default",
-   "id": "9ce310da3f",
+   "points": 121,
+   "comments": 29,
+   "engagement": 0.835,
+   "topic_by": "keyword",
+   "id": "b77be25502",
    "topics": [
-    "game-design"
+    "agents"
    ],
    "desks": [
-    "design",
+    "ai",
     "gamedev"
    ],
    "summary_by": "none",
-   "sid": "9ce310da3f",
-   "status": "repeat",
+   "img": "https://www.pandex.io/opengraph-image?6367cd8c0b666bc6",
+   "sid": "b77be25502",
+   "status": "new",
    "rev": 0,
-   "img": ""
+   "related": [
+    {
+     "sid": "d77b554642",
+     "title": "Llms.txt and MCP didn't move the needle",
+     "d": "2026-11-21"
+    }
+   ]
   },
   {
    "title": "An FBI agent called a Claude user about his chats",
@@ -648,10 +648,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "https://substackcdn.com/image/fetch/$s_!NWUr!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,$fp_!0.4762:0.3834:1.05!/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40d557e9-ee2f-486f-8ce6-c7cf6e819d91_1468x1560.png",
    "sid": "b9ffbcf8b1",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://substackcdn.com/image/fetch/$s_!NWUr!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,$fp_!0.4762:0.3834:1.05!/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40d557e9-ee2f-486f-8ce6-c7cf6e819d91_1468x1560.png"
+   "rev": 0
   },
   {
    "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
@@ -660,9 +660,9 @@
    "published": "2026-11-20T22:18:20Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 53,
+   "points": 54,
    "comments": 20,
-   "engagement": 0.731,
+   "engagement": 0.733,
    "topic_by": "keyword",
    "id": "d3325aea2b",
    "topics": [
@@ -672,67 +672,51 @@
     "ai"
    ],
    "summary_by": "none",
+   "img": "",
    "sid": "d3325aea2b",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
-   "title": "Australia's full national topographic library at your fingertips",
-   "url": "https://www.ga.gov.au/news/australias-full-national-topographic-library-at-your-fingertips",
+   "title": "Show HN: I built a game where you are an LLM's subagent",
+   "url": "https://github.com/gulivan/worker755",
    "summary": "",
-   "published": "2026-11-18T07:10:46Z",
+   "published": "2026-11-22T13:56:58Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 51,
-   "comments": 19,
-   "engagement": 0.724,
-   "topic_by": "desk-default",
-   "id": "29a1c1e816",
-   "topics": [
-    "game-design"
-   ],
-   "desks": [
-    "design",
-    "gamedev"
-   ],
-   "summary_by": "none",
-   "sid": "29a1c1e816",
-   "status": "repeat",
-   "rev": 0,
-   "img": "https://www.ga.gov.au/__data/assets/image/0007/189601/AUSTopomap_social.jpg"
-  },
-  {
-   "title": "Pandex – Official European Law for AI Agents, over MCP",
-   "url": "https://www.pandex.io",
-   "summary": "",
-   "published": "2026-11-21T20:47:41Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 54,
-   "comments": 10,
-   "engagement": 0.695,
+   "points": 56,
+   "comments": 14,
+   "engagement": 0.715,
    "topic_by": "keyword",
-   "id": "b77be25502",
+   "id": "3c4f4993ad",
    "topics": [
-    "agents"
+    "llm"
    ],
    "desks": [
-    "ai",
-    "gamedev"
+    "ai"
    ],
    "summary_by": "none",
-   "sid": "b77be25502",
+   "img": "https://opengraph.githubassets.com/83e7ba15f339c69e92ad7923eca35bbcf0eab649370c661dbf0a72ec95015602/gulivan/worker755",
+   "sid": "3c4f4993ad",
    "status": "new",
    "rev": 0,
    "related": [
     {
-     "sid": "d77b554642",
-     "title": "Llms.txt and MCP didn't move the needle",
+     "sid": "cabaa2ef3d",
+     "title": "Making Immersive LLM Chat Experiences More Accessible",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "ba05f6db61",
+     "title": "LLM assisted reverse engineering",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "7dfde11877",
+     "title": "Reflections on Rust in the LLM Age",
      "d": "2026-11-21"
     }
-   ],
-   "img": "https://www.pandex.io/opengraph-image?6367cd8c0b666bc6"
+   ]
   },
   {
    "title": "Llms.txt and MCP didn't move the needle",
@@ -755,10 +739,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "https://backpackforlaravel.com/presentation/img/backpack/socials/backpack_og_image_general.jpg",
    "sid": "d77b554642",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://backpackforlaravel.com/presentation/img/backpack/socials/backpack_og_image_general.jpg"
+   "rev": 0
   },
   {
    "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
@@ -767,9 +751,9 @@
    "published": "2026-11-19T01:27:02Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 47,
+   "points": 48,
    "comments": 10,
-   "engagement": 0.679,
+   "engagement": 0.681,
    "topic_by": "keyword",
    "id": "7d99e1aa81",
    "topics": [
@@ -780,34 +764,60 @@
     "ai"
    ],
    "summary_by": "none",
+   "img": "",
    "sid": "7d99e1aa81",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
-   "title": "Show HN: Watch weight-space programming in action with WebGPU",
-   "url": "https://tabbyml.github.io/weight-space-playground/",
+   "title": "Split Radiance Cascades",
+   "url": "https://www.jacktollenaar.top/articles/split-rc.html",
    "summary": "",
-   "published": "2026-11-19T15:32:47Z",
+   "published": "2026-11-19T14:08:33Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 53,
+   "comments": 2,
+   "engagement": 0.653,
+   "topic_by": "desk-default",
+   "id": "3eb9c6b33f",
+   "topics": [
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "img": "https://www.jacktollenaar.top/media/images/split-rc-card.png",
+   "sid": "3eb9c6b33f",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How I made a custom game engine for Satelital",
+   "url": "https://spectralorbit.com/blog/satelital_game_engine",
+   "summary": "",
+   "published": "2026-11-18T18:23:03Z",
    "source": "Hacker News",
    "source_id": "hn",
    "points": 40,
-   "comments": 6,
-   "engagement": 0.639,
-   "topic_by": "desk-default",
-   "id": "3d57282d18",
+   "comments": 7,
+   "engagement": 0.645,
+   "topic_by": "keyword",
+   "id": "f1147e4339",
    "topics": [
-    "llm"
+    "game-engines"
    ],
    "desks": [
-    "ai"
+    "design",
+    "gamedev"
    ],
    "summary_by": "none",
-   "sid": "3d57282d18",
-   "status": "new",
-   "rev": 0,
-   "img": "https://tabbyml.github.io/weight-space-playground/og-cover.png"
+   "img": "https://spectralorbit.com/assets/screenshots/trium_2.jpg",
+   "sid": "f1147e4339",
+   "status": "repeat",
+   "rev": 0
   },
   {
    "title": "Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests",
@@ -828,59 +838,10 @@
     "ai"
    ],
    "summary_by": "none",
+   "img": "https://cdn.springcraft.ai/springrep/springrep-preview-mwmpm0jd.png",
    "sid": "45afd8c4f8",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://cdn.springcraft.ai/springrep/springrep-preview-mwmpm0jd.png"
-  },
-  {
-   "title": "A 4.5M-parameter TTS model runs 70x real-time on CPU and cost just $10 to train",
-   "url": "https://huggingface.co/n4ze3m/tiny-voca",
-   "summary": "",
-   "published": "2026-11-18T15:01:14Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 43,
-   "comments": 4,
-   "engagement": 0.636,
-   "topic_by": "desk-default",
-   "id": "7064e35195",
-   "topics": [
-    "game-design"
-   ],
-   "desks": [
-    "design",
-    "gamedev"
-   ],
-   "summary_by": "none",
-   "sid": "7064e35195",
-   "status": "repeat",
-   "rev": 0,
-   "img": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/n4ze3m/tiny-voca.png"
-  },
-  {
-   "title": "Claude Gets Hella Paranoid",
-   "url": "https://news.ycombinator.com/item?id=50543947",
-   "summary": "",
-   "published": "2026-11-18T09:24:58Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 19,
-   "comments": 14,
-   "engagement": 0.623,
-   "topic_by": "keyword",
-   "id": "89bec2dcd6",
-   "topics": [
-    "llm"
-   ],
-   "desks": [
-    "ai"
-   ],
-   "summary_by": "none",
-   "sid": "89bec2dcd6",
-   "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Anyone can easily use private, open weight models",
@@ -889,9 +850,9 @@
    "published": "2026-11-21T12:11:54Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 27,
+   "points": 28,
    "comments": 8,
-   "engagement": 0.609,
+   "engagement": 0.612,
    "topic_by": "desk-default",
    "id": "6bc9d30d02",
    "topics": [
@@ -901,10 +862,10 @@
     "ai"
    ],
    "summary_by": "none",
+   "img": "https://storage.ghost.io/c/ab/b9/abb95af0-3cb7-4e49-a6c2-c87b36f5d5c2/content/images/2026/11/Screenshot-2026-11-13-at-3.52.43---PM-1.png",
    "sid": "6bc9d30d02",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://storage.ghost.io/c/ab/b9/abb95af0-3cb7-4e49-a6c2-c87b36f5d5c2/content/images/2026/11/Screenshot-2026-11-13-at-3.52.43---PM-1.png"
+   "rev": 0
   },
   {
    "title": "Show HN: AgentMall – Let your AI agent buy groceries",
@@ -926,10 +887,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "",
    "sid": "f9911b0047",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Apple is building an AI agent",
@@ -951,10 +912,10 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&strip=all&crop=0%2C10.628272251309%2C100%2C78.743455497382&w=1200",
    "sid": "b24c1081da",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&strip=all&crop=0%2C10.628272251309%2C100%2C78.743455497382&w=1200"
+   "rev": 0
   },
   {
    "title": "When Everything Has Changed, What Do We Do Next?",
@@ -976,10 +937,84 @@
     "gamedev"
    ],
    "summary_by": "none",
+   "img": "https://css-tricks.com/wp-content/uploads/2018/06/brain-gears.png",
    "sid": "940edf162a",
    "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
+   "url": "https://morethanamachine.com/posts/slinky-escalator-benchmark/",
+   "summary": "",
+   "published": "2026-11-22T07:31:41Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 16,
+   "comments": 3,
+   "engagement": 0.504,
+   "topic_by": "keyword",
+   "id": "604c323804",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "img": "https://morethanamachine.com/_astro/slinky-og.BYHNVX-K.png",
+   "sid": "604c323804",
+   "status": "new",
    "rev": 0,
-   "img": "https://css-tricks.com/wp-content/uploads/2018/06/brain-gears.png"
+   "related": [
+    {
+     "sid": "cabaa2ef3d",
+     "title": "Making Immersive LLM Chat Experiences More Accessible",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "ba05f6db61",
+     "title": "LLM assisted reverse engineering",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "7dfde11877",
+     "title": "Reflections on Rust in the LLM Age",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Multi Agent Coordination Benchmark",
+   "url": "https://benchmarks.bespokelabs.ai/multi-agent-coordination-bench/",
+   "summary": "",
+   "published": "2026-11-18T18:28:05Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 16,
+   "comments": 1,
+   "engagement": 0.474,
+   "topic_by": "keyword",
+   "id": "f8fce374fb",
+   "topics": [
+    "ai-research",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "img": "",
+   "sid": "f8fce374fb",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "0edab277d1",
+     "title": "Agent Harness: Definition",
+     "d": "2026-11-21"
+    }
+   ]
   },
   {
    "title": "Show HN: Zpup – Zdog style 3D scenes in JSON, SVG from any angle",
@@ -1000,10 +1035,10 @@
     "ai"
    ],
    "summary_by": "none",
+   "img": "https://opengraph.githubassets.com/5844f92898b3770737402515af9cbcbbd006bfe8f657c6072e97422620a89b23/rxolve/zpup",
    "sid": "e5af9e4827",
    "status": "new",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/5844f92898b3770737402515af9cbcbbd006bfe8f657c6072e97422620a89b23/rxolve/zpup"
+   "rev": 0
   },
   {
    "title": "Muru",
@@ -1012,6 +1047,7 @@
    "published": "2026-11-21T23:56:28+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "21bd1d482a",
@@ -1024,8 +1060,7 @@
    "summary_by": "excerpt",
    "sid": "21bd1d482a",
    "status": "new",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Quoting Ravi Vakil",
@@ -1034,6 +1069,7 @@
    "published": "2026-11-20T19:21:49+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "81ce5b24dd",
@@ -1046,8 +1082,7 @@
    "summary_by": "excerpt",
    "sid": "81ce5b24dd",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Quoting Levent Alpöge",
@@ -1056,6 +1091,7 @@
    "published": "2026-11-20T16:30:48+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "b8e1839046",
@@ -1068,8 +1104,7 @@
    "summary_by": "excerpt",
    "sid": "b8e1839046",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "llm-gemini 0.38.1",
@@ -1078,6 +1113,7 @@
    "published": "2026-11-20T03:01:57+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "https://static.simonwillison.net/static/2026/gemini-4-xhigh-pelicans.webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "480c7f59bb",
@@ -1091,8 +1127,7 @@
    "summary_by": "excerpt",
    "sid": "480c7f59bb",
    "status": "new",
-   "rev": 0,
-   "img": "https://static.simonwillison.net/static/2026/gemini-4-xhigh-pelicans.webp"
+   "rev": 0
   },
   {
    "title": "Token fraud is here and it’s BAD (YouTube)",
@@ -1101,6 +1136,7 @@
    "published": "2026-11-20T02:49:57+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "e486efe85b",
@@ -1113,8 +1149,7 @@
    "summary_by": "excerpt",
    "sid": "e486efe85b",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "PostgreSQL 19 Released",
@@ -1123,6 +1158,7 @@
    "published": "2026-11-19T20:43:57+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "4ba1303d2e",
@@ -1135,8 +1171,7 @@
    "summary_by": "excerpt",
    "sid": "4ba1303d2e",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "llm-gemini 0.38",
@@ -1145,6 +1180,7 @@
    "published": "2026-11-18T23:59:20+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "https://static.simonwillison.net/static/2026/gemini-4-neon__comparison-graphi.width-2000.webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "c3c7756f62",
@@ -1157,8 +1193,7 @@
    "summary_by": "excerpt",
    "sid": "c3c7756f62",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://static.simonwillison.net/static/2026/gemini-grid-updated.webp"
+   "rev": 0
   },
   {
    "title": "datasette-arrows 0.1a0",
@@ -1167,6 +1202,7 @@
    "published": "2026-11-18T17:09:59+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "https://static.simonwillison.net/static/2026/arrow-export-dialog.webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "630b41be4a",
@@ -1179,8 +1215,7 @@
    "summary_by": "excerpt",
    "sid": "630b41be4a",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://static.simonwillison.net/static/2026/arrow-export-dialog.webp"
+   "rev": 0
   },
   {
    "title": "Quoting Daniel Stenberg",
@@ -1189,6 +1224,7 @@
    "published": "2026-11-18T15:58:27+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "569017a70f",
@@ -1202,8 +1238,7 @@
    "summary_by": "excerpt",
    "sid": "569017a70f",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "The PSF end-of-year fundraiser",
@@ -1212,6 +1247,7 @@
    "published": "2026-11-18T14:44:48+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "358ebcd58d",
@@ -1226,8 +1262,7 @@
    "summary_by": "excerpt",
    "sid": "358ebcd58d",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "External sandboxes for coding agents",
@@ -1236,6 +1271,7 @@
    "published": "2026-11-17T22:52:29+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "https://static.simonwillison.net/static/2026/sandbox-proxy.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "c60558e985",
@@ -1249,8 +1285,7 @@
    "summary_by": "excerpt",
    "sid": "c60558e985",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://static.simonwillison.net/static/2026/sandbox-proxy.png"
+   "rev": 0
   },
   {
    "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
@@ -1259,6 +1294,7 @@
    "published": "2026-11-17T22:38:52+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "https://static.simonwillison.net/static/2026/astra-6-2-max.webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "5cbc55e1b4",
@@ -1271,8 +1307,7 @@
    "summary_by": "excerpt",
    "sid": "5cbc55e1b4",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://static.simonwillison.net/static/2026/astra-6-2-max.webp"
+   "rev": 0
   },
   {
    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
@@ -1281,6 +1316,7 @@
    "published": "2026-11-17T16:48:33+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "https://static.simonwillison.net/static/cors-allow/2026/datasette-maplibre.webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "5b15888867",
@@ -1293,8 +1329,7 @@
    "summary_by": "excerpt",
    "sid": "5b15888867",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://static.simonwillison.net/static/2026/datasette-lite-diag.webp"
+   "rev": 0
   },
   {
    "title": "Quoting Go Proverbs",
@@ -1303,6 +1338,7 @@
    "published": "2026-11-17T06:16:26+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "ae3ee0f483",
@@ -1315,8 +1351,7 @@
    "summary_by": "excerpt",
    "sid": "ae3ee0f483",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "llm 0.37.3",
@@ -1325,6 +1360,7 @@
    "published": "2026-11-16T23:57:26+00:00",
    "source": "Simon Willison",
    "source_id": "simonw",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "764198fc49",
@@ -1337,8 +1373,7 @@
    "summary_by": "excerpt",
    "sid": "764198fc49",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
@@ -1347,6 +1382,7 @@
    "published": "Fri, 20 Nov 2026 00:00:00 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://huggingface.co/blog/assets/inkling2mini/thumbnail.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "80d31a6dee",
@@ -1359,8 +1395,7 @@
    "summary_by": "none",
    "sid": "80d31a6dee",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://huggingface.co/blog/assets/inkling2mini/thumbnail.png"
+   "rev": 0
   },
   {
    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
@@ -1369,6 +1404,7 @@
    "published": "Fri, 20 Nov 2026 00:00:00 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://huggingface.co/blog/assets/harness-adapters-at-scale/thumbnail.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "211fbe8009",
@@ -1381,8 +1417,7 @@
    "summary_by": "none",
    "sid": "211fbe8009",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://huggingface.co/blog/assets/harness-adapters-at-scale/thumbnail.png"
+   "rev": 0
   },
   {
    "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
@@ -1391,6 +1426,7 @@
    "published": "Wed, 18 Nov 2026 19:54:56 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/6aeabf9f2efd990530425e58/faP4Su889q_DIgN3wmU9M.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "f689168723",
@@ -1403,8 +1439,7 @@
    "summary_by": "none",
    "sid": "f689168723",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://cdn-uploads.huggingface.co/production/uploads/6aeabf9f2efd990530425e58/faP4Su889q_DIgN3wmU9M.png"
+   "rev": 0
   },
   {
    "title": "Why your fine-tuning job takes longer than the FLOPs say",
@@ -1413,6 +1448,7 @@
    "published": "Wed, 18 Nov 2026 18:53:43 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/J6DIf4Len_31Tj-CQlQXY.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "75623b38e6",
@@ -1425,8 +1461,7 @@
    "summary_by": "none",
    "sid": "75623b38e6",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/J6DIf4Len_31Tj-CQlQXY.png"
+   "rev": 0
   },
   {
    "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
@@ -1435,6 +1470,7 @@
    "published": "Wed, 18 Nov 2026 15:00:23 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "bf1424b145",
@@ -1447,8 +1483,7 @@
    "summary_by": "none",
    "sid": "bf1424b145",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
@@ -1457,6 +1492,7 @@
    "published": "Wed, 18 Nov 2026 00:00:00 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://huggingface.co/blog/assets/moe-expert-streaming/thumbnail.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "af1852b4c4",
@@ -1469,8 +1505,7 @@
    "summary_by": "none",
    "sid": "af1852b4c4",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://huggingface.co/blog/assets/moe-expert-streaming/thumbnail.png"
+   "rev": 0
   },
   {
    "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
@@ -1479,6 +1514,7 @@
    "published": "Wed, 18 Nov 2026 00:00:00 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://huggingface.co/blog/assets/rumble-2-flash/thumbnail.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "679cee5ea1",
@@ -1490,9 +1526,9 @@
    ],
    "summary_by": "none",
    "sid": "679cee5ea1",
-   "status": "repeat",
-   "rev": 0,
-   "img": "https://huggingface.co/blog/assets/rumble-2-flash/thumbnail.png"
+   "status": "update",
+   "rev": 1,
+   "update_note": "Nội dung đổi đáng kể"
   },
   {
    "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
@@ -1501,6 +1537,7 @@
    "published": "Mon, 16 Nov 2026 00:00:00 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://huggingface.co/blog/assets/openrouter/thumbnail.jpg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "853b24ff0d",
@@ -1513,8 +1550,7 @@
    "summary_by": "none",
    "sid": "853b24ff0d",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://huggingface.co/blog/assets/openrouter/thumbnail.jpg"
+   "rev": 0
   },
   {
    "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
@@ -1523,6 +1559,7 @@
    "published": "Fri, 13 Nov 2026 18:00:39 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "2427bacb74",
@@ -1535,8 +1572,7 @@
    "summary_by": "none",
    "sid": "2427bacb74",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "XYBench: Helping with the problem behind the question",
@@ -1545,6 +1581,7 @@
    "published": "Fri, 13 Nov 2026 17:02:35 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/aOWdQgZ8ioJcx9Eii4iob.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "8400bdfe1e",
@@ -1557,8 +1594,7 @@
    "summary_by": "none",
    "sid": "8400bdfe1e",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/aOWdQgZ8ioJcx9Eii4iob.png"
+   "rev": 0
   },
   {
    "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
@@ -1567,6 +1603,7 @@
    "published": "Fri, 13 Nov 2026 14:05:22 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "40e78db660",
@@ -1579,8 +1616,7 @@
    "summary_by": "none",
    "sid": "40e78db660",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png"
+   "rev": 0
   },
   {
    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
@@ -1589,6 +1625,7 @@
    "published": "Thu, 12 Nov 2026 19:07:35 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "a88bddb172",
@@ -1600,9 +1637,16 @@
    ],
    "summary_by": "none",
    "sid": "a88bddb172",
-   "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "status": "update",
+   "rev": 1,
+   "update_note": "Nội dung đổi đáng kể",
+   "related": [
+    {
+     "sid": "b22522d14a",
+     "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+     "d": "2026-11-21"
+    }
+   ]
   },
   {
    "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
@@ -1611,6 +1655,7 @@
    "published": "Thu, 12 Nov 2026 00:00:00 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "56dac742ff",
@@ -1623,8 +1668,7 @@
    "summary_by": "none",
    "sid": "56dac742ff",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
@@ -1633,6 +1677,7 @@
    "published": "Wed, 11 Nov 2026 05:01:16 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/6468b319b2321e47d3267049/Emr86qw6NAueYLdIEiTTD.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "b22522d14a",
@@ -1647,8 +1692,7 @@
    "summary_by": "none",
    "sid": "b22522d14a",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://cdn-uploads.huggingface.co/production/uploads/6468b319b2321e47d3267049/Emr86qw6NAueYLdIEiTTD.png"
+   "rev": 0
   },
   {
    "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
@@ -1657,6 +1701,7 @@
    "published": "Wed, 11 Nov 2026 00:00:00 GMT",
    "source": "Hugging Face Blog",
    "source_id": "huggingface",
+   "img": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "d2296a64c0",
@@ -1669,8 +1714,7 @@
    "summary_by": "none",
    "sid": "d2296a64c0",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png"
+   "rev": 0
   },
   {
    "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced",
@@ -1679,6 +1723,7 @@
    "published": "Sat, 21 Nov 2026 20:03:46 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "6e086317ff",
@@ -1691,8 +1736,7 @@
    "summary_by": "none",
    "sid": "6e086317ff",
    "status": "new",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Rebuilding my local voice assistant pipeline",
@@ -1701,6 +1745,7 @@
    "published": "Thu, 19 Nov 2026 13:50:25 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "https://s3.platypush.tech/static/images/voice-assistant-pipeline.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "f454ea635e",
@@ -1713,8 +1758,7 @@
    "summary_by": "none",
    "sid": "f454ea635e",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://s3.platypush.tech/static/images/voice-assistant-pipeline.png"
+   "rev": 0
   },
   {
    "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
@@ -1723,6 +1767,7 @@
    "published": "Wed, 18 Nov 2026 15:53:43 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "feb4caa835",
@@ -1735,8 +1780,7 @@
    "summary_by": "none",
    "sid": "feb4caa835",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg"
+   "rev": 0
   },
   {
    "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
@@ -1745,6 +1789,7 @@
    "published": "Wed, 18 Nov 2026 08:45:20 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "https://energy-based-reasoners.github.io/static/images/ebr_landscape_abc_v1.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "6fc8c039af",
@@ -1757,8 +1802,7 @@
    "summary_by": "none",
    "sid": "6fc8c039af",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://energy-based-reasoners.github.io/static/images/ebr_landscape_abc_v1.png"
+   "rev": 0
   },
   {
    "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
@@ -1767,6 +1811,7 @@
    "published": "Tue, 17 Nov 2026 06:55:46 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "1d17667aee",
@@ -1779,8 +1824,7 @@
    "summary_by": "none",
    "sid": "1d17667aee",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
@@ -1789,6 +1833,7 @@
    "published": "Fri, 13 Nov 2026 22:51:14 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "edbf4ed1a9",
@@ -1801,8 +1846,7 @@
    "summary_by": "none",
    "sid": "edbf4ed1a9",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "You could have invented transformers from memory",
@@ -1811,6 +1855,7 @@
    "published": "Fri, 13 Nov 2026 22:49:47 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "c19e7ef010",
@@ -1823,8 +1868,7 @@
    "summary_by": "none",
    "sid": "c19e7ef010",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
+   "rev": 0
   },
   {
    "title": "e-means: 10x faster k-means at equal loss",
@@ -1833,6 +1877,7 @@
    "published": "Fri, 13 Nov 2026 02:37:31 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "https://e-means.github.io/assets/emeans_vs_lloyd_readme_v9.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "4f9270c0ec",
@@ -1845,8 +1890,7 @@
    "summary_by": "none",
    "sid": "4f9270c0ec",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://e-means.github.io/assets/emeans_vs_lloyd_readme_v9.png"
+   "rev": 0
   },
   {
    "title": "libreagi - save OS models",
@@ -1855,6 +1899,7 @@
    "published": "Thu, 12 Nov 2026 09:35:46 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "https://libreagi.com/og.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "9feb4ac43a",
@@ -1867,8 +1912,7 @@
    "summary_by": "none",
    "sid": "9feb4ac43a",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://libreagi.com/og.png"
+   "rev": 0
   },
   {
    "title": "Writing a SIGGRAPH paper from scratch",
@@ -1877,6 +1921,7 @@
    "published": "Wed, 11 Nov 2026 10:34:08 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "cd8eac6f9e",
@@ -1889,8 +1934,7 @@
    "summary_by": "none",
    "sid": "cd8eac6f9e",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Online learning on the programmable dataplane (2022)",
@@ -1899,6 +1943,7 @@
    "published": "Tue, 10 Nov 2026 14:22:46 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "9d242d664e",
@@ -1911,8 +1956,7 @@
    "summary_by": "none",
    "sid": "9d242d664e",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Catching prompt injections hidden in PDFs",
@@ -1921,6 +1965,7 @@
    "published": "Sat, 07 Nov 2026 13:34:01 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "83d54a23e8",
@@ -1933,8 +1978,7 @@
    "summary_by": "none",
    "sid": "83d54a23e8",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Firecracker VM Escape: PwnEscape Part 2",
@@ -1943,6 +1987,7 @@
    "published": "Sat, 07 Nov 2026 02:44:02 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "https://api.pwn.ai/api/blog/images/photo-2026-11-04-22-55-56-b01dcd719e0c.jpeg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "f441801c06",
@@ -1955,8 +2000,7 @@
    "summary_by": "none",
    "sid": "f441801c06",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://api.pwn.ai/api/blog/images/photo-2026-11-04-22-55-56-b01dcd719e0c.jpeg"
+   "rev": 0
   },
   {
    "title": "Reflections on Rust in the LLM Age",
@@ -1965,6 +2009,7 @@
    "published": "Thu, 05 Nov 2026 11:32:18 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "7dfde11877",
@@ -1977,8 +2022,7 @@
    "summary_by": "none",
    "sid": "7dfde11877",
    "status": "repeat",
-   "rev": 0,
-   "img": ""
+   "rev": 0
   },
   {
    "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
@@ -1987,6 +2031,7 @@
    "published": "Mon, 02 Nov 2026 13:24:33 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
+   "img": "https://rikiyat.github.io/images/blog/weight-space-programming.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "38c41eb0ed",
@@ -1999,8 +2044,7 @@
    "summary_by": "none",
    "sid": "38c41eb0ed",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://rikiyat.github.io/images/blog/weight-space-programming.png"
+   "rev": 0
   },
   {
    "title": "v2.1.330",
@@ -2009,6 +2053,7 @@
    "published": "2026-11-20T22:32:56Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "7ce40af713",
@@ -2023,8 +2068,7 @@
    "summary_by": "excerpt",
    "sid": "7ce40af713",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/039682c0eddced240ab97c729ba18cf64b6d2a8143b2f64e8694fb42caf41007/anthropics/claude-code/releases/tag/v2.1.330"
+   "rev": 0
   },
   {
    "title": "v2.1.329",
@@ -2033,6 +2077,7 @@
    "published": "2026-11-19T22:14:41Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "9166064c2f",
@@ -2045,8 +2090,7 @@
    "summary_by": "excerpt",
    "sid": "9166064c2f",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/5b42bee5d440f0e84ecda22947f89cf6c4fa8ccb21c7ee3aac2297099480c966/anthropics/claude-code/releases/tag/v2.1.329"
+   "rev": 0
   },
   {
    "title": "v2.1.328",
@@ -2055,6 +2099,7 @@
    "published": "2026-11-19T01:14:04Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "249cf944c1",
@@ -2069,8 +2114,7 @@
    "summary_by": "excerpt",
    "sid": "249cf944c1",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/cb956e0313e453d1ba5080e2bb2510ad156dcebf68610b6ec5e7618b48f0d4e6/anthropics/claude-code/releases/tag/v2.1.328"
+   "rev": 0
   },
   {
    "title": "v2.1.327",
@@ -2079,6 +2123,7 @@
    "published": "2026-11-17T23:17:45Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "1560056f3e",
@@ -2093,8 +2138,7 @@
    "summary_by": "excerpt",
    "sid": "1560056f3e",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/e467c19d450f45943c4d319e53b510cb01287ebdee8b1040cccc0ee10f915458/anthropics/claude-code/releases/tag/v2.1.327"
+   "rev": 0
   },
   {
    "title": "v2.1.326",
@@ -2103,6 +2147,7 @@
    "published": "2026-11-16T22:11:05Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "328f5dc06a",
@@ -2116,8 +2161,7 @@
    "summary_by": "excerpt",
    "sid": "328f5dc06a",
    "status": "repeat",
-   "rev": 0,
-   "img": "https://opengraph.githubassets.com/3040c3eaaedb0b2acd5bd42cdca9f7589df49c04f85cc0eeac6e357c6c6e8013/anthropics/claude-code/releases/tag/v2.1.326"
+   "rev": 0
   },
   {
    "title": "v2.1.325",
@@ -2126,6 +2170,7 @@
    "published": "2026-11-13T20:40:01Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "3578b3def0",
@@ -2147,6 +2192,7 @@
    "published": "2026-11-12T22:12:13Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "1e1f91e95e",
@@ -2168,6 +2214,7 @@
    "published": "2026-11-10T02:29:43Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "f7d3d2f1a8",
@@ -2189,6 +2236,7 @@
    "published": "2026-11-09T19:22:30Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "1393243560",
@@ -2210,6 +2258,7 @@
    "published": "2026-11-06T17:04:01Z",
    "source": "Claude Code releases",
    "source_id": "claude-code-releases",
+   "img": "https://avatars.githubusercontent.com/u/76263028?s=60&v=4",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "df1346203f",
@@ -2231,6 +2280,7 @@
    "published": "Tue, 17 Nov 2026 12:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/ai-conf/ai-conf-powered-by.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "ea1bd15d2e",
@@ -2252,6 +2302,7 @@
    "published": "Tue, 17 Nov 2026 08:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/ai-sped-up-build-how-can-accessibility-testing-keep-up/ai-sped-up-build-how-can-accessibility-testing-keep-up.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "f0c70df868",
@@ -2273,6 +2324,7 @@
    "published": "Thu, 12 Nov 2026 10:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/should-you-add-au-audit-product-teams/should-you-add-ai-audit-product-teams.jpg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "ebb2101084",
@@ -2295,6 +2347,7 @@
    "published": "Fri, 06 Nov 2026 08:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/ux-insiders-community-in-house-ux-people/ux-insiders-community-in-house-ux-people.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "fd494cf14b",
@@ -2316,6 +2369,7 @@
    "published": "Thu, 05 Nov 2026 13:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/making-immersive-llm-chat-experiences-more-accessible/making-immersive-llm-chat-experiences-more-accessible.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "cabaa2ef3d",
@@ -2338,6 +2392,7 @@
    "published": "Tue, 03 Nov 2026 10:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/modern-css-might-make-your-front-end-more-complex/modern-css-might-make-your-front-end-more-complex.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "89375f5d51",
@@ -2359,6 +2414,7 @@
    "published": "Sat, 31 Oct 2026 08:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8edeb776-d8d5-4b5b-867f-6964f7addcd6/nov-17-colorful-autumn-preview-opt.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "cbd8445c9d",
@@ -2380,6 +2436,7 @@
    "published": "Fri, 23 Oct 2026 13:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/how-name-things-choose-accordion-icons/accordion-icons-which-work-best.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "d053d7081b",
@@ -2401,6 +2458,7 @@
    "published": "Tue, 20 Oct 2026 10:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/embracing-playful-imperfection-css-random-function/embracing-playful-imperfection-css-random-function.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "f1e66fdacb",
@@ -2424,6 +2482,7 @@
    "published": "Fri, 16 Oct 2026 10:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/is-your-organization-messing-up-ai-adoption/is-your-organization-messing-up-ai-adoption.jpg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "2b3bef5103",
@@ -2446,6 +2505,7 @@
    "published": "Tue, 06 Oct 2026 10:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://files.smashing.media/articles/how-name-things-choose-accordion-icons/how-name-things.jpg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "52954c80b9",
@@ -2468,6 +2528,7 @@
    "published": "Wed, 30 Sep 2026 13:30:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0fdda8cd-7c63-4b61-86f6-f3188d312aaf/oct-20-magical-october-preview-opt.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "a03c40f9e3",
@@ -2490,6 +2551,7 @@
    "published": "Wed, 16 Sep 2026 13:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "b8054564eb",
@@ -2511,6 +2573,7 @@
    "published": "Fri, 11 Sep 2026 13:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "a86ea82d51",
@@ -2532,6 +2595,7 @@
    "published": "Wed, 09 Sep 2026 10:00:00 GMT",
    "source": "Smashing Magazine",
    "source_id": "smashing",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "5a46d823d4",
@@ -2548,12 +2612,35 @@
    "rev": 0
   },
   {
+   "title": "Qualitative User-Research Methods: An Overview",
+   "url": "https://www.nngroup.com/articles/qual-research-methods/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Want to know why users struggle or what they need? Start by choosing the right method. Here are 4 of the most popular qualitative UX-research methods.",
+   "published": "Fri, 20 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "053f38f47f",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "053f38f47f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
    "title": "Can AI Generate Good Designs from Raw User Data?",
    "url": "https://www.nngroup.com/articles/raw-data-vs-synthesized-data/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
    "summary": "In our study, AI-generated designs were better when the AI received synthesized findings and recommendations instead of raw user comments alone.",
    "published": "Fri, 20 Nov 2026 18:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "706403dd4b",
@@ -2570,33 +2657,13 @@
    "rev": 0
   },
   {
-   "title": "Qualitative User-Research Methods: An Overview",
-   "url": "https://www.nngroup.com/articles/qual-research-methods/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
-   "summary": "Want to know why users struggle or what they need? Start by choosing the right method. Here are 4 of the most popular qualitative UX-research methods.",
-   "published": "Fri, 20 Nov 2026 18:00:00 +0000",
-   "source": "Nielsen Norman Group",
-   "source_id": "nngroup",
-   "engagement": 0.0,
-   "topic_by": "keyword",
-   "id": "053f38f47f",
-   "topics": [
-    "ux-design"
-   ],
-   "desks": [
-    "design"
-   ],
-   "summary_by": "excerpt",
-   "sid": "053f38f47f",
-   "status": "repeat",
-   "rev": 0
-  },
-  {
    "title": "UX Conference March Announced (Mar 1 - Mar 4)",
    "url": "https://www.nngroup.com/training/nov-asia-au/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
    "summary": "Take up to 2 in-depth training courses, teaching user experience best practices for successful design. Live online training focused on long-lasting skills for UX professionals. March 1-4, 2027…",
    "published": "Fri, 20 Nov 2026 03:44:24 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "96aa9af75e",
@@ -2618,6 +2685,7 @@
    "published": "Fri, 20 Nov 2026 03:16:44 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "864f7e13f2",
@@ -2630,14 +2698,7 @@
    "summary_by": "excerpt",
    "sid": "864f7e13f2",
    "status": "repeat",
-   "rev": 0,
-   "related": [
-    {
-     "sid": "96aa9af75e",
-     "title": "UX Conference March Announced (Mar 1 - Mar 4)",
-     "d": "2026-11-21"
-    }
-   ]
+   "rev": 0
   },
   {
    "title": "Journey Mapping 101",
@@ -2646,6 +2707,7 @@
    "published": "Fri, 13 Nov 2026 18:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "3215b4e6ce",
@@ -2668,6 +2730,7 @@
    "published": "Fri, 13 Nov 2026 18:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "6f448cafbd",
@@ -2689,6 +2752,7 @@
    "published": "Fri, 06 Nov 2026 18:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "0edab277d1",
@@ -2712,6 +2776,7 @@
    "published": "Fri, 06 Nov 2026 18:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "84bf03764f",
@@ -2733,6 +2798,7 @@
    "published": "Fri, 06 Nov 2026 04:34:21 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "469cecf3d1",
@@ -2745,14 +2811,7 @@
    "summary_by": "excerpt",
    "sid": "469cecf3d1",
    "status": "repeat",
-   "rev": 0,
-   "related": [
-    {
-     "sid": "96aa9af75e",
-     "title": "UX Conference March Announced (Mar 1 - Mar 4)",
-     "d": "2026-11-21"
-    }
-   ]
+   "rev": 0
   },
   {
    "title": "The Role of UX in Agentic Software Factories",
@@ -2761,6 +2820,7 @@
    "published": "Fri, 30 Oct 2026 17:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "48c9e72016",
@@ -2787,6 +2847,7 @@
    "published": "Fri, 30 Oct 2026 17:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "3d7f4cc90e",
@@ -2811,6 +2872,7 @@
    "published": "Fri, 23 Oct 2026 17:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "9f40ceae20",
@@ -2834,6 +2896,7 @@
    "published": "Fri, 23 Oct 2026 17:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "98ae0612de",
@@ -2855,6 +2918,7 @@
    "published": "Fri, 16 Oct 2026 17:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "0f6df2ffe2",
@@ -2877,6 +2941,7 @@
    "published": "Fri, 16 Oct 2026 17:00:00 +0000",
    "source": "Nielsen Norman Group",
    "source_id": "nngroup",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "719285fbb8",
@@ -2898,6 +2963,7 @@
    "published": "Tue, 17 Nov 2026 12:47:39 -0600",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "c5446227ea",
@@ -2920,6 +2986,7 @@
    "published": "Tue, 17 Nov 2026 03:28:18 -0600",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "d97800a739",
@@ -2942,6 +3009,7 @@
    "published": "Fri, 13 Nov 2026 06:03:19 -0600",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "11a7870633",
@@ -2964,6 +3032,7 @@
    "published": "Thu, 12 Nov 2026 20:51:18 -0600",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "5d397839ad",
@@ -2985,6 +3054,7 @@
    "published": "Mon, 09 Nov 2026 10:54:03 -0600",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "80987bf094",
@@ -3006,6 +3076,7 @@
    "published": "Wed, 04 Nov 2026 18:35:09 -0600",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "b06b054a80",
@@ -3028,6 +3099,7 @@
    "published": "Tue, 27 Oct 2026 13:28:06 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "c3356224ae",
@@ -3050,6 +3122,7 @@
    "published": "Tue, 20 Oct 2026 12:33:54 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "d6ea4698a8",
@@ -3072,6 +3145,7 @@
    "published": "Thu, 15 Oct 2026 00:00:23 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "460023e079",
@@ -3093,6 +3167,7 @@
    "published": "Sat, 10 Oct 2026 06:53:29 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "41f66d0af9",
@@ -3115,6 +3190,7 @@
    "published": "Fri, 09 Oct 2026 09:30:28 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "6853ed3d74",
@@ -3137,6 +3213,7 @@
    "published": "Fri, 09 Oct 2026 07:08:09 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "6dd676368e",
@@ -3159,6 +3236,7 @@
    "published": "Tue, 06 Oct 2026 19:15:00 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "38b96528d9",
@@ -3181,6 +3259,7 @@
    "published": "Fri, 02 Oct 2026 13:34:38 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "fe8bc0a4c2",
@@ -3203,6 +3282,7 @@
    "published": "Mon, 28 Sep 2026 12:01:01 -0500",
    "source": "Lobsters · design",
    "source_id": "lobsters-design",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "8c79cd7d02",
@@ -3225,6 +3305,7 @@
    "published": "Fri, 25 Sep 2026 17:57:07 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "cab68b93e9",
@@ -3246,6 +3327,7 @@
    "published": "Thu, 16 Apr 2026 17:25:38 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "f1f293dd87",
@@ -3267,6 +3349,7 @@
    "published": "Tue, 16 Dec 2025 02:14:05 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "1a52c91f8b",
@@ -3288,6 +3371,7 @@
    "published": "Tue, 07 Oct 2025 01:32:10 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "3225aba45b",
@@ -3309,6 +3393,7 @@
    "published": "Fri, 13 Jun 2025 20:47:59 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "3c3a12d2ba",
@@ -3330,6 +3415,7 @@
    "published": "Tue, 25 Feb 2025 14:47:42 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "4dd9ade4ea",
@@ -3352,6 +3438,7 @@
    "published": "Thu, 16 Jan 2025 22:07:21 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "e34f1ddb04",
@@ -3373,6 +3460,7 @@
    "published": "Sun, 13 Oct 2024 20:37:49 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "0fc19c8b89",
@@ -3394,6 +3482,7 @@
    "published": "Wed, 24 Jul 2024 02:33:08 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "d54ef88280",
@@ -3415,6 +3504,7 @@
    "published": "Sat, 18 May 2024 23:54:52 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "db51ce0c1a",
@@ -3436,6 +3526,7 @@
    "published": "Sat, 03 Feb 2024 21:25:51 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "c22962c38e",
@@ -3457,6 +3548,7 @@
    "published": "Thu, 02 Nov 2023 19:35:34 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "e66a44d704",
@@ -3478,6 +3570,7 @@
    "published": "Mon, 04 Sep 2023 20:46:18 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "5570bc41ff",
@@ -3499,6 +3592,7 @@
    "published": "Sun, 23 Jul 2023 19:43:12 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "39dbfdf3b7",
@@ -3520,6 +3614,7 @@
    "published": "Thu, 27 Apr 2023 19:55:33 +0000",
    "source": "Mr. Money Mustache",
    "source_id": "mrmoneymustache",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "23bc85e270",
@@ -3535,12 +3630,43 @@
    "rev": 0
   },
   {
+   "title": "Stop Playing When You Win the Game",
+   "url": "https://www.whitecoatinvestor.com/bernstein-says-stop-when-you-win-the-game/",
+   "summary": "Learn from Four Pillars of Investing author, Dr William Bernstein, how to manage your level of risk to be a winner at the retirement game. The post Stop Playing When You Win the Game appeared first…",
+   "published": "Sun, 22 Nov 2026 07:30:43 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "95e21bc478",
+   "topics": [
+    "retirement",
+    "investing"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "95e21bc478",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "a34e519864",
+     "title": "Playing the Wrong Game",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
    "title": "Poetry in Retirement: Marking the Transition",
    "url": "https://www.whitecoatinvestor.com/poetry-in-retirement-marking-the-transition/",
    "summary": "Now that I'm semi-retired, I've learned more about myself and the world around me. Freedom from work has opened my mind and forged new paths. The post Poetry in Retirement: Marking the Transition…",
    "published": "Sat, 21 Nov 2026 07:30:37 +0000",
    "source": "White Coat Investor",
    "source_id": "whitecoat",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "f2d680fd4b",
@@ -3562,6 +3688,7 @@
    "published": "Fri, 20 Nov 2026 07:30:59 +0000",
    "source": "White Coat Investor",
    "source_id": "whitecoat",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "b819840b7b",
@@ -3583,6 +3710,7 @@
    "published": "Thu, 19 Nov 2026 07:30:02 +0000",
    "source": "White Coat Investor",
    "source_id": "whitecoat",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "acf333c1d0",
@@ -3604,6 +3732,7 @@
    "published": "Wed, 18 Nov 2026 07:30:26 +0000",
    "source": "White Coat Investor",
    "source_id": "whitecoat",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "2bcb1dbcb0",
@@ -3625,6 +3754,7 @@
    "published": "Tue, 17 Nov 2026 07:30:14 +0000",
    "source": "White Coat Investor",
    "source_id": "whitecoat",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "63a3e00d9e",
@@ -3646,6 +3776,7 @@
    "published": "Mon, 16 Nov 2026 07:30:31 +0000",
    "source": "White Coat Investor",
    "source_id": "whitecoat",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "6ec596206d",
@@ -3661,33 +3792,13 @@
    "rev": 0
   },
   {
-   "title": "How Physicians Feel About AI and If Their Pay and Job Security Will Be Affected",
-   "url": "https://www.whitecoatinvestor.com/doctors-ai-job-security-physician-income/",
-   "summary": "Some say AI will be a boon. Some say it will be a burden. Here's how more than 1,000 physicians surveyed recently feel about it. The post How Physicians Feel About AI and If Their Pay and Job…",
-   "published": "Sun, 15 Nov 2026 07:30:19 +0000",
-   "source": "White Coat Investor",
-   "source_id": "whitecoat",
-   "engagement": 0.0,
-   "topic_by": "desk-default",
-   "id": "d739450e60",
-   "topics": [
-    "personal-finance"
-   ],
-   "desks": [
-    "finance"
-   ],
-   "summary_by": "excerpt",
-   "sid": "d739450e60",
-   "status": "repeat",
-   "rev": 0
-  },
-  {
    "title": "How Much Should You Have Saved for Retirement by Age?",
    "url": "https://ofdollarsanddata.com/how-much-should-you-have-saved-for-retirement-by-age/",
    "summary": "One of the most common questions around saving for retirement is: Am I on track? While it's a good question to ask, there are a lot of factors that influence the answer. Between your future spending…",
    "published": "Tue, 17 Nov 2026 12:45:50 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/11/00_fidelity_savings_targets_2025.jpeg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "43786a79ad",
@@ -3709,6 +3820,7 @@
    "published": "Tue, 10 Nov 2026 12:45:13 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/11/sportsbetting_revenue_and_hold.png",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "26249e9088",
@@ -3730,6 +3842,7 @@
    "published": "Tue, 03 Nov 2026 12:45:02 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/11/millionaire_share_over_time_2025.jpeg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "6dae7ad758",
@@ -3751,6 +3864,7 @@
    "published": "Tue, 27 Oct 2026 11:45:50 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/12/ss_bend_points_2026.jpeg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "d15e979ec6",
@@ -3772,6 +3886,7 @@
    "published": "Tue, 20 Oct 2026 10:00:03 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/10/networth_avg_age_2025.jpeg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "5d50c75afd",
@@ -3793,6 +3908,7 @@
    "published": "Tue, 13 Oct 2026 11:45:36 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/10/01_median_networth_pct_change_by_age_2025.jpeg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "dadc4d2723",
@@ -3814,6 +3930,7 @@
    "published": "Tue, 06 Oct 2026 11:45:56 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "a34e519864",
@@ -3835,6 +3952,7 @@
    "published": "Tue, 29 Sep 2026 11:45:37 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/09/asset_breakdown_by_wealth_level_all_color.jpeg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "9c8b4ceec0",
@@ -3856,6 +3974,7 @@
    "published": "Tue, 22 Sep 2026 11:45:57 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/09/adigital_acquisitions_ipo_2002_2020.jpg",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "61ec1eae87",
@@ -3877,6 +3996,7 @@
    "published": "Tue, 15 Sep 2026 11:45:37 +0000",
    "source": "Of Dollars And Data",
    "source_id": "ofdollars",
+   "img": "https://ofdollarsanddata.com/wp-content/uploads/2026/08/bv-asset-returns-1972-2025.jpeg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "f71d07f2ef",
@@ -3898,6 +4018,7 @@
    "published": "Fri, 20 Nov 2026 21:50:59 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blte58ce019a2ef9604/6b00c09bb798974fddc17f75/Jason_and_Lucia_14.jpg?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "176eb6dc2a",
@@ -3920,6 +4041,7 @@
    "published": "Fri, 20 Nov 2026 18:37:58 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltb66c65be8013263e/68f2953811a1e30cb46f9d11/assassinscreedwholegangfeatured.jpg?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "7ed30d6af6",
@@ -3942,6 +4064,7 @@
    "published": "Fri, 20 Nov 2026 15:14:40 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt12efdced695253bf/6b0064a2e1e36d368e033d37/controlresonant.png?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "31620190ed",
@@ -3963,6 +4086,7 @@
    "published": "Thu, 19 Nov 2026 17:53:00 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltb34a0cb4a7de6401/6a0dde004c91d14642cb3dc0/ubisoft-praised-the-success-of-assassin-s-creed-shadows-despite-all-controversy-cover690c8c62e01f3.jpg?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "8f5feeb2f1",
@@ -3975,14 +4099,7 @@
    "summary_by": "excerpt",
    "sid": "8f5feeb2f1",
    "status": "repeat",
-   "rev": 0,
-   "related": [
-    {
-     "sid": "8c69ccab86",
-     "title": "Ubisoft merges two Creative Houses as H1 results decline 16.5%; Q2 net bookings above guidance thanks to Assassin's Creed Black Flag remake",
-     "d": "2026-11-21"
-    }
-   ]
+   "rev": 0
   },
   {
    "title": "Why greenlighting Dressmaker wasn't an easy decision to make",
@@ -3991,6 +4108,7 @@
    "published": "Thu, 19 Nov 2026 15:57:43 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf629aa8d663deef6/6aff025aef000f19a8414e37/Dressmaker_Key_Art_Final_(1).JPG?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "a882393621",
@@ -4012,6 +4130,7 @@
    "published": "Wed, 18 Nov 2026 19:02:15 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt91fa6c5cf153b000/69eb7b53d9eb8a86b83cb444/Clair_Obscur.png?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "c20eaecf42",
@@ -4033,6 +4152,7 @@
    "published": "Wed, 18 Nov 2026 18:14:35 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8088c5c7b42593f5/69e750addf45793f21186eca/PlayStation_Header.png?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "6fe8c4b50e",
@@ -4054,6 +4174,7 @@
    "published": "Tue, 17 Nov 2026 21:21:17 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta1ce58ce167cc749/6724d424a5a4251f1dbc9b48/IWGB_Game_Workers_Header.png?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "09d67d1e59",
@@ -4075,6 +4196,7 @@
    "published": "Tue, 17 Nov 2026 19:29:31 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt859507d51581f713/6ae0fbc4f6e3e04aa497e290/gtaviluciaweightsfeatured.jpg?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "726202cad4",
@@ -4096,6 +4218,7 @@
    "published": "Tue, 17 Nov 2026 17:30:00 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt29dd4b5d48c1fd8d/6a197e638bc1ea7b224df755/Bond_Header.png?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "f8e8b550d1",
@@ -4117,6 +4240,7 @@
    "published": "Tue, 17 Nov 2026 16:07:35 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd7a51f4543729098/68b9b02ba65a196166536be0/civilization_vii.jpg?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "fbe9dce808",
@@ -4139,6 +4263,7 @@
    "published": "Mon, 16 Nov 2026 20:15:00 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt639371fbd86997ed/6afb4ac51ecf5c11d26c18f8/miyamotogreybg.jpg?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "80e056eadb",
@@ -4160,6 +4285,7 @@
    "published": "Mon, 16 Nov 2026 19:15:00 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt806a244cbf9e14ed/674d9875ae0a374c0ea86e71/League_of_Legends_Header.png?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "9b1800433a",
@@ -4181,6 +4307,7 @@
    "published": "Mon, 16 Nov 2026 18:14:49 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt90eb331f6bb48824/6afb47b4abec29e73692ac10/unityrumorfeatured.jpg?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "cbd9b508ce",
@@ -4202,6 +4329,7 @@
    "published": "Mon, 16 Nov 2026 17:15:00 GMT",
    "source": "Game Developer",
    "source_id": "gamedeveloper",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt666edf022b7f67ac/6afb307633dbf541f7d0f204/crusaderkingsiii.jpg?width=720&quality=80&disable=upscale",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "18695f292e",
@@ -4223,6 +4351,7 @@
    "published": "Fri, 20 Nov 2026 20:24:00 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/Raul_Bautista_02_RUnoiiq.jpg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "0caa8cd26f",
@@ -4245,6 +4374,7 @@
    "published": "Fri, 20 Nov 2026 15:21:00 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/love-magazine-jason-and-lucia-motorcycle.jpg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "b53adbc27f",
@@ -4267,6 +4397,7 @@
    "published": "Fri, 20 Nov 2026 15:02:20 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/gta-6-headline-launch-gallery-22.jpg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "90dab0a940",
@@ -4289,6 +4420,7 @@
    "published": "Fri, 20 Nov 2026 14:07:30 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/Lucia_Caminos_07.0.c7un8ro7_p2.webp?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "3dd1b65f1a",
@@ -4311,6 +4443,7 @@
    "published": "Fri, 20 Nov 2026 12:27:00 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/pexels-marco-288924445-13153479.jpg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "6d3714c75b",
@@ -4337,6 +4470,7 @@
    "published": "Fri, 20 Nov 2026 11:43:40 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/black-flag-resynced.jpeg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "8c69ccab86",
@@ -4359,6 +4493,7 @@
    "published": "Fri, 20 Nov 2026 11:13:00 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/IMG_8185.jpeg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "47e178e004",
@@ -4382,6 +4517,7 @@
    "published": "Fri, 20 Nov 2026 10:21:10 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "b089a19aa7",
@@ -4406,6 +4542,7 @@
    "published": "Fri, 20 Nov 2026 10:07:40 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/gta-strategy-guide.png?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "72782c5456",
@@ -4428,6 +4565,7 @@
    "published": "Fri, 20 Nov 2026 09:44:20 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/IMG_8211.jpeg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "2f23dbd771",
@@ -4450,6 +4588,7 @@
    "published": "Thu, 19 Nov 2026 15:15:00 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "fc1fff21b5",
@@ -4463,14 +4602,7 @@
    "summary_by": "excerpt",
    "sid": "8f5feeb2f1",
    "status": "repeat",
-   "rev": 0,
-   "related": [
-    {
-     "sid": "8c69ccab86",
-     "title": "Ubisoft merges two Creative Houses as H1 results decline 16.5%; Q2 net bookings above guidance thanks to Assassin's Creed Black Flag remake",
-     "d": "2026-11-21"
-    }
-   ]
+   "rev": 0
   },
   {
    "title": "007 First Light wins GOTY at 2026 TIGA Awards, Dovetail Games takes home four accolades including Best Publisher",
@@ -4479,6 +4611,7 @@
    "published": "Thu, 19 Nov 2026 14:55:30 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/first-light-train-simulator.png?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "f73eed0a74",
@@ -4501,6 +4634,7 @@
    "published": "Thu, 19 Nov 2026 14:00:00 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/cod-mw4.jpg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "d30c205235",
@@ -4523,6 +4657,7 @@
    "published": "Thu, 19 Nov 2026 11:52:10 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/roblox_tXvZOEK.jpg?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "8af497cde8",
@@ -4545,6 +4680,7 @@
    "published": "Thu, 19 Nov 2026 10:32:50 +0000",
    "source": "GamesIndustry.biz",
    "source_id": "gamesindustry",
+   "img": "https://assetsio.gnwcdn.com/Venus-Bluegenes-(Hayley-Atwell)-plays-chess-against-Helm-(Daryl-McCormack).png?width=690&quality=85&format=jpg&auto=webp",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "e4efdaa3e9",
@@ -4567,6 +4703,7 @@
    "published": "Fri, 20 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "8801e1c132",
@@ -4590,6 +4727,7 @@
    "published": "Fri, 20 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "295f14098a",
@@ -4613,6 +4751,7 @@
    "published": "Wed, 18 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "cbb8a7ca77",
@@ -4634,6 +4773,7 @@
    "published": "Wed, 18 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "3486df46b6",
@@ -4655,6 +4795,7 @@
    "published": "Tue, 17 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "c31d0d34a1",
@@ -4679,6 +4820,7 @@
    "published": "Tue, 17 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "95bd7b59d4",
@@ -4700,6 +4842,7 @@
    "published": "Mon, 16 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "5e570ad837",
@@ -4721,6 +4864,7 @@
    "published": "Mon, 16 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "69ed41a008",
@@ -4742,6 +4886,7 @@
    "published": "Thu, 12 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "f0353eb23d",
@@ -4763,6 +4908,7 @@
    "published": "Wed, 11 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "f84171a670",
@@ -4784,6 +4930,7 @@
    "published": "Tue, 10 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "011b1cc783",
@@ -4805,6 +4952,7 @@
    "published": "Tue, 10 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "43738a69e6",
@@ -4827,6 +4975,7 @@
    "published": "Fri, 06 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "52b4309758",
@@ -4850,6 +4999,7 @@
    "published": "Fri, 06 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "97ba990913",
@@ -4873,6 +5023,7 @@
    "published": "Wed, 04 Nov 2026 00:00:00 GMT",
    "source": "Unity Blog",
    "source_id": "unity-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "3d9e3f3492",
@@ -4894,6 +5045,7 @@
    "published": "Thu, 19 Nov 2026 18:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "48a8ab73bf",
@@ -4915,6 +5067,7 @@
    "published": "Wed, 18 Nov 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-8-beta-4.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "e632f3e18a",
@@ -4936,6 +5089,7 @@
    "published": "Tue, 17 Nov 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "d2d628329a",
@@ -4957,6 +5111,7 @@
    "published": "Tue, 10 Nov 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "9f2596928d",
@@ -4978,6 +5133,7 @@
    "published": "Mon, 09 Nov 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-8-beta-3.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "1365b1c9a1",
@@ -4999,6 +5155,7 @@
    "published": "Fri, 06 Nov 2026 14:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/assets/showcase/sovereign-tower/sovereign-tower-1.webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "703777948c",
@@ -5022,6 +5179,7 @@
    "published": "Thu, 29 Oct 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-8-beta-2.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "3f568468ab",
@@ -5033,8 +5191,26 @@
    ],
    "summary_by": "excerpt",
    "sid": "e632f3e18a",
-   "status": "repeat",
-   "rev": 0
+   "status": "update",
+   "rev": 1,
+   "update_note": "Mới: 150, 30",
+   "related": [
+    {
+     "sid": "ec9e837e45",
+     "title": "Godot XR Community Game Jam VI",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "d2d628329a",
+     "title": "Godot Foundation welcomes Manus as Platinum Sponsor",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "9f2596928d",
+     "title": "JetBrains Renews its Platinum Sponsorship of the Godot Foundation",
+     "d": "2026-11-21"
+    }
+   ]
   },
   {
    "title": "Ready for XREAL AURA",
@@ -5043,6 +5219,7 @@
    "published": "Wed, 28 Oct 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "36a5989371",
@@ -5066,6 +5243,7 @@
    "published": "Sun, 25 Oct 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "ec9e837e45",
@@ -5087,6 +5265,7 @@
    "published": "Thu, 15 Oct 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/dev-snapshot-godot-4-8-dev-2/object-diff-old.webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "ab2256bbfb",
@@ -5099,7 +5278,7 @@
    "summary_by": "excerpt",
    "sid": "e632f3e18a",
    "status": "repeat",
-   "rev": 0
+   "rev": 1
   },
   {
    "title": "Dev snapshot: Godot 4.8 dev 7",
@@ -5108,6 +5287,7 @@
    "published": "Tue, 29 Sep 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-8-dev-7.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "b68771b783",
@@ -5120,7 +5300,7 @@
    "summary_by": "excerpt",
    "sid": "e632f3e18a",
    "status": "repeat",
-   "rev": 0
+   "rev": 1
   },
   {
    "title": "Dev snapshot: Godot 4.8 dev 6",
@@ -5129,6 +5309,7 @@
    "published": "Tue, 15 Sep 2026 20:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/dev-snapshot-godot-4-8-dev-6/screen-space-contact-shadows-off.webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "cd71580210",
@@ -5141,7 +5322,7 @@
    "summary_by": "excerpt",
    "sid": "e632f3e18a",
    "status": "repeat",
-   "rev": 0
+   "rev": 1
   },
   {
    "title": "Optimizing CPU-side Rendering Code",
@@ -5150,6 +5331,7 @@
    "published": "Tue, 15 Sep 2026 17:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/rendering-optimizations-cpu-2026/full-frame-before.png",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "96d15e21c6",
@@ -5173,6 +5355,7 @@
    "published": "Thu, 10 Sep 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/dev-snapshot-godot-4-8-dev-5/mip-level-streaming-settings.webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "c281fcdf1b",
@@ -5185,7 +5368,7 @@
    "summary_by": "excerpt",
    "sid": "e632f3e18a",
    "status": "repeat",
-   "rev": 0
+   "rev": 1
   },
   {
    "title": "Dev snapshot: Godot 4.8 dev 4",
@@ -5194,6 +5377,7 @@
    "published": "Wed, 26 Aug 2026 12:00:00 +0000",
    "source": "Godot Engine",
    "source_id": "godot-blog",
+   "img": "https://godotengine.org/storage/blog/dev-snapshot-godot-4-8-dev-4/visual-shader-groups-subgraphs.webp",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "256c94208b",
@@ -5206,7 +5390,7 @@
    "summary_by": "excerpt",
    "sid": "e632f3e18a",
    "status": "repeat",
-   "rev": 0
+   "rev": 1
   },
   {
    "title": "Lisp Game Jam devlog: Polydraw",
@@ -5215,6 +5399,7 @@
    "published": "Fri, 20 Nov 2026 05:18:47 -0600",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "ec97137176",
@@ -5230,33 +5415,13 @@
    "rev": 0
   },
   {
-   "title": "How I made a custom game engine for Satelital",
-   "url": "https://spectralorbit.com/blog/satelital_game_engine",
-   "summary": "",
-   "published": "Wed, 18 Nov 2026 10:39:00 -0600",
-   "source": "Lobsters · gamedev",
-   "source_id": "lobsters-gamedev",
-   "engagement": 0.0,
-   "topic_by": "keyword",
-   "id": "f1147e4339",
-   "topics": [
-    "game-engines"
-   ],
-   "desks": [
-    "gamedev"
-   ],
-   "summary_by": "none",
-   "sid": "f1147e4339",
-   "status": "repeat",
-   "rev": 0
-  },
-  {
    "title": "Making Games in Go: Entity Component System (ECS)",
    "url": "https://threedots.tech/post/making-games-in-go-ecs/",
    "summary": "",
    "published": "Tue, 17 Nov 2026 11:18:53 -0600",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "9055565e26",
@@ -5278,6 +5443,7 @@
    "published": "Sat, 14 Nov 2026 20:40:40 -0600",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "ee705bff49",
@@ -5299,6 +5465,7 @@
    "published": "Fri, 13 Nov 2026 08:34:57 -0600",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "a2e9d6979e",
@@ -5320,6 +5487,7 @@
    "published": "Thu, 12 Nov 2026 08:37:35 -0600",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "2be02ef86a",
@@ -5341,6 +5509,7 @@
    "published": "Wed, 04 Nov 2026 13:37:40 -0600",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "29d24987b8",
@@ -5362,6 +5531,7 @@
    "published": "Tue, 03 Nov 2026 09:44:27 -0600",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "0b48a22c90",
@@ -5383,6 +5553,7 @@
    "published": "Fri, 30 Oct 2026 21:32:10 -0500",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "7eee2d284f",
@@ -5404,6 +5575,7 @@
    "published": "Thu, 29 Oct 2026 01:42:40 -0500",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "c756110afc",
@@ -5425,6 +5597,7 @@
    "published": "Fri, 23 Oct 2026 12:00:36 -0500",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "286f92fd01",
@@ -5446,6 +5619,7 @@
    "published": "Thu, 22 Oct 2026 23:30:10 -0500",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "84ddf7326c",
@@ -5467,6 +5641,7 @@
    "published": "Mon, 19 Oct 2026 20:23:03 -0500",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "3fa10712e7",
@@ -5488,6 +5663,7 @@
    "published": "Thu, 15 Oct 2026 08:27:41 -0500",
    "source": "Lobsters · gamedev",
    "source_id": "lobsters-gamedev",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "000ea8a477",
@@ -5509,6 +5685,7 @@
    "published": "Sat, 21 Nov 2026 13:00:00 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "13b61555bd",
@@ -5533,6 +5710,7 @@
    "published": "Fri, 20 Nov 2026 20:20:52 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "d477595b95",
@@ -5554,6 +5732,7 @@
    "published": "Fri, 20 Nov 2026 20:00:34 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "47e3bcb383",
@@ -5575,6 +5754,7 @@
    "published": "Fri, 20 Nov 2026 16:17:43 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "0e1e633638",
@@ -5597,6 +5777,7 @@
    "published": "Fri, 20 Nov 2026 15:00:09 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "3986195833",
@@ -5619,6 +5800,7 @@
    "published": "Fri, 20 Nov 2026 13:00:00 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "15c4dda949",
@@ -5641,6 +5823,7 @@
    "published": "Thu, 19 Nov 2026 20:00:05 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "8e29706924",
@@ -5662,6 +5845,7 @@
    "published": "Thu, 19 Nov 2026 18:00:31 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "54c030d83f",
@@ -5684,6 +5868,7 @@
    "published": "Thu, 19 Nov 2026 15:00:06 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "2df2d2c5f2",
@@ -5705,6 +5890,7 @@
    "published": "Thu, 19 Nov 2026 14:40:05 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "c2561052d2",
@@ -5727,6 +5913,7 @@
    "published": "Thu, 19 Nov 2026 13:00:50 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "844acc68f1",
@@ -5749,6 +5936,7 @@
    "published": "Wed, 18 Nov 2026 22:26:21 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "96fa849a8f",
@@ -5779,6 +5967,7 @@
    "published": "Wed, 18 Nov 2026 20:00:31 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "72ce035c8d",
@@ -5801,6 +5990,7 @@
    "published": "Wed, 18 Nov 2026 18:19:49 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "133f99d109",
@@ -5823,6 +6013,7 @@
    "published": "Wed, 18 Nov 2026 18:00:01 +0000",
    "source": "Search Engine Journal",
    "source_id": "sej",
+   "img": "",
    "engagement": 0.0,
    "topic_by": "desk-default",
    "id": "5558cb00e9",
@@ -5843,21 +6034,21 @@
   "ai": [
    {
     "topic": "llm",
-    "heat": 36.88,
-    "count": 38,
+    "heat": 37.85,
+    "count": 39,
     "url": "https://news.ycombinator.com/item?id=50233779",
     "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
     "source": "Hacker News",
-    "blurb": "38 cuộc thảo luận về Mô hình ngôn ngữ trong 30 ngày; sôi nhất trên Hacker News (670 điểm, 274 bình luận)."
+    "blurb": "39 cuộc thảo luận về Mô hình ngôn ngữ trong 30 ngày; sôi nhất trên Hacker News (670 điểm, 274 bình luận)."
    },
    {
     "topic": "agents",
-    "heat": 25.11,
-    "count": 26,
+    "heat": 24.19,
+    "count": 25,
     "url": "https://news.ycombinator.com/item?id=50452455",
     "title": "My AI agents found an unmapped Maya site?",
     "source": "Hacker News",
-    "blurb": "26 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (1036 điểm, 393 bình luận)."
+    "blurb": "25 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (1036 điểm, 393 bình luận)."
    },
    {
     "topic": "ai-art",
@@ -5881,7 +6072,7 @@
    },
    {
     "topic": "ui-design",
-    "heat": 8.37,
+    "heat": 8.42,
     "count": 11,
     "url": "https://news.ycombinator.com/item?id=50245831",
     "title": "CSS-Tricks has a new owner",
@@ -5890,7 +6081,7 @@
    },
    {
     "topic": "agents",
-    "heat": 3.44,
+    "heat": 3.45,
     "count": 4,
     "url": "https://news.ycombinator.com/item?id=50443812",
     "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
@@ -5899,12 +6090,12 @@
    },
    {
     "topic": "ux-design",
-    "heat": 1.92,
+    "heat": 1.95,
     "count": 3,
     "url": "https://news.ycombinator.com/item?id=50533517",
     "title": "Bolt's Scooters Are Becoming Accessibility Sensors",
     "source": "Hacker News",
-    "blurb": "3 cuộc thảo luận về UX trong 30 ngày; sôi nhất trên Hacker News (34 điểm, 44 bình luận)."
+    "blurb": "3 cuộc thảo luận về UX trong 30 ngày; sôi nhất trên Hacker News (39 điểm, 50 bình luận)."
    },
    {
     "topic": "game-marketing",
@@ -5916,48 +6107,20 @@
     "blurb": "2 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (125 điểm, 85 bình luận)."
    }
   ],
-  "finance": [
-   {
-    "topic": "personal-finance",
-    "heat": 2.98,
-    "count": 3,
-    "url": "https://news.ycombinator.com/item?id=50251344",
-    "title": "Three new discoveries in mathematics, computer science, and physics",
-    "source": "Hacker News",
-    "blurb": "3 cuộc thảo luận về Tài chính cá nhân trong 30 ngày; sôi nhất trên Hacker News (1164 điểm, 715 bình luận)."
-   },
-   {
-    "topic": "retirement",
-    "heat": 2.0,
-    "count": 2,
-    "url": "https://news.ycombinator.com/item?id=50457164",
-    "title": "Retirement Savings Are Fueling the AI Bubble",
-    "source": "Hacker News",
-    "blurb": "2 cuộc thảo luận về Hưu trí & thuế trong 30 ngày; sôi nhất trên Hacker News (165 điểm, 198 bình luận)."
-   }
-  ],
+  "finance": [],
   "gamedev": [
    {
     "topic": "roguelike",
-    "heat": 8.01,
-    "count": 11,
+    "heat": 7.27,
+    "count": 10,
     "url": "https://news.ycombinator.com/item?id=50340088",
     "title": "Show HN: Subvocal – Talk to your computer without making noise",
     "source": "Hacker News",
-    "blurb": "11 cuộc thảo luận về Roguelike trong 30 ngày; sôi nhất trên Hacker News (849 điểm, 395 bình luận)."
-   },
-   {
-    "topic": "agents",
-    "heat": 4.67,
-    "count": 7,
-    "url": "https://news.ycombinator.com/item?id=50454951",
-    "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
-    "source": "Hacker News",
-    "blurb": "7 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (85 điểm, 34 bình luận)."
+    "blurb": "10 cuộc thảo luận về Roguelike trong 30 ngày; sôi nhất trên Hacker News (849 điểm, 395 bình luận)."
    },
    {
     "topic": "indie-games",
-    "heat": 4.46,
+    "heat": 4.69,
     "count": 6,
     "url": "https://news.ycombinator.com/item?id=50343418",
     "title": "Valve \"played capitalism so well they broke it\" and now Steam can't be replaced",
@@ -5965,42 +6128,42 @@
     "blurb": "6 cuộc thảo luận về Game indie trong 30 ngày; sôi nhất trên Hacker News (58 điểm, 131 bình luận)."
    },
    {
+    "topic": "agents",
+    "heat": 3.62,
+    "count": 5,
+    "url": "https://news.ycombinator.com/item?id=50454951",
+    "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+    "source": "Hacker News",
+    "blurb": "5 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (85 điểm, 34 bình luận)."
+   },
+   {
+    "topic": "game-marketing",
+    "heat": 3.11,
+    "count": 4,
+    "url": "https://news.ycombinator.com/item?id=50562320",
+    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+    "source": "Hacker News",
+    "blurb": "4 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (125 điểm, 85 bình luận)."
+   },
+   {
     "topic": "godot",
-    "heat": 3.19,
-    "count": 6,
+    "heat": 2.64,
+    "count": 5,
     "url": "https://github.com/Zengkailin/parametric-topdown-pixel-architecture",
     "title": "Zengkailin/parametric-topdown-pixel-architecture: 参数化2D topdown像素建筑 - 把参数化 3D 建筑渲染成 2D 俯视像素图的本地网页工具（Godot hd2d_scene_tools 网页移植版）",
     "source": "GitHub",
-    "blurb": "6 cuộc thảo luận về Godot trong 30 ngày; sôi nhất trên GitHub (241 điểm, 0 bình luận)."
-   },
-   {
-    "topic": "unity",
-    "heat": 2.57,
-    "count": 5,
-    "url": "https://github.com/erwachirakenya-dot/gflfc-decryption-toolkit",
-    "title": "erwachirakenya-dot/gflfc-decryption-toolkit: GFLFC Decryption Toolkit: Fire Control UnityFS XOR, FlatBuffers Manifest, CDN Subpackages…",
-    "source": "GitHub",
-    "blurb": "5 cuộc thảo luận về Unity trong 30 ngày; sôi nhất trên GitHub (153 điểm, 0 bình luận)."
+    "blurb": "5 cuộc thảo luận về Godot trong 30 ngày; sôi nhất trên GitHub (242 điểm, 0 bình luận)."
    }
   ],
   "marketing": [
    {
     "topic": "game-marketing",
-    "heat": 7.98,
-    "count": 8,
+    "heat": 7.0,
+    "count": 7,
     "url": "https://news.ycombinator.com/item?id=50540178",
     "title": "Google's AI answers reducing search traffic by 40%",
     "source": "Hacker News",
-    "blurb": "8 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (712 điểm, 565 bình luận)."
-   },
-   {
-    "topic": "llm",
-    "heat": 2.0,
-    "count": 2,
-    "url": "https://news.ycombinator.com/item?id=50385272",
-    "title": "Claude Code sends your email address to websites",
-    "source": "Hacker News",
-    "blurb": "2 cuộc thảo luận về Mô hình ngôn ngữ trong 30 ngày; sôi nhất trên Hacker News (1616 điểm, 535 bình luận)."
+    "blurb": "7 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (713 điểm, 565 bình luận)."
    }
   ]
  },
@@ -6012,5 +6175,11 @@
   "gamedev/reddit:gamedev: HTTPError: HTTP Error 403: Blocked",
   "gamedev/reddit:indiegaming: HTTPError: HTTP Error 403: Blocked"
  ],
- "blocked_injection": 0
+ "blocked_injection": 0,
+ "dedup": {
+  "n": 259,
+  "new": 34,
+  "update": 3,
+  "repeat": 222
+ }
 }

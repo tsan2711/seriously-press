@@ -1,7 +1,7 @@
 /* Bộ chọn số báo ở trang chủ: ◀ ngày ▶ + danh sách 14 ngày; đổi ngày KHÔNG tải lại trang.
    Nguồn: issues.json (bản cron, công khai) + localStorage 'press.issues' (bản bạn tự chạy, chỉ ở máy này). Mọi chữ hiển thị bằng textContent. */
 (() => {
-  const D = document, bar = D.querySelector('[data-issues]'), grid = D.querySelector('main .grid'); if (!bar || !grid) return;
+  const D = document, bar = D.querySelector('[data-issues]'), grid = D.querySelector('main .grid[data-gen]') || D.querySelector('main .grid'); if (!bar || !grid) return;
   const ctl = bar.querySelector('.isu-c'), sel = bar.querySelector('[data-isu-sel]'), line = bar.querySelector('[data-isu-line]');
   const pad = n => String(n).padStart(2, '0'), dm = d => pad(d.getDate()) + '.' + pad(d.getMonth() + 1), hm = d => pad(d.getHours()) + ':' + pad(d.getMinutes());
   const no = date => { const n = Math.round((Date.parse(date) - Date.parse('2026-11-20')) / 864e5) + 1; return 'Số ' + String(Math.max(n, 1)).padStart(4, '0'); };
@@ -40,7 +40,8 @@
     list = pub.concat(loc).filter(e => e.ts).sort((a, b) => Date.parse(b.ts) - Date.parse(a.ts)).slice(0, 14 + loc.length);
     if (list.length < 2) return;
     list.forEach((e, i) => { const o = el('option', '', label(e, i)); o.value = i; sel.append(o); }); sel.querySelector('option:not([value])') && sel.querySelector('option:not([value])').remove();
-    cur = Math.max(0, list.findIndex(e => e.src !== 'local' && e.date === TODAY)); sel.value = String(cur); ctl.hidden = false;
+    const ci = list.findIndex(e => e.src !== 'local' && e.date === TODAY), li = list.findIndex(e => e.src === 'local' && e.date === TODAY && (ci < 0 || Date.parse(e.ts) > Date.parse(list[ci].ts)));
+    cur = li >= 0 ? li : Math.max(0, ci); sel.value = String(cur); ctl.hidden = false; if (li >= 0) show(li);   // bản tự chạy hôm nay mới hơn bản cron → hiện ngay, không bắt chọn tay
     sel.addEventListener('change', () => show(+sel.value));
     bar.querySelector('[data-isu-prev]').addEventListener('click', () => show(Math.min(cur + 1, list.length - 1)));
     bar.querySelector('[data-isu-next]').addEventListener('click', () => show(Math.max(cur - 1, 0)));

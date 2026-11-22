@@ -118,13 +118,19 @@
     const sp = spans(db.active()); if (sp) { PR.adaptDaily(m, sp.p14, Date.now()); db.save(db.active(), m); }
     let mm = null; if (PM) { const mo = PM.open(null, db.active()); mm = mo.load(); const tl = t => (data.topics && data.topics[t] && data.topics[t].label) || t; if (sp && sp.p30 && PM.seedFromSpan(mm, sp.p30, Date.now(), tl)) mo.save(mm); if (PM.consolidate(mm, Date.now()).changed) mo.save(mm); }
     const sdn = PD ? PD.open(null, db.active()).load() : null, pool = sdn ? PD.filter(sdn, data.articles, Date.now(), data.dedup).show : data.articles;
-    const out = PR.rank(pool.length >= 6 ? pool : data.articles, m, data.topics, null, Date.now(), { hot: data.hot, ew: data.engagement_weight, sp: sp && sp.p30, adj: mm ? a => PM.adjust(mm, a, Date.now()) : null, explain: mm ? a => PM.explain(mm, a, Date.now()) : null }).slice(0, m.density === 'compact' ? 5 : m.density === 'rich' ? 12 : 8);
+    const out = PR.rank(pool.length >= 6 ? pool : data.articles, m, data.topics, null, Date.now(), { hot: data.hot, ew: data.engagement_weight, sp: sp && sp.p30, adj: mm ? a => PM.adjust(mm, a, Date.now()) : null, explain: mm ? a => PM.explain(mm, a, Date.now()) : null }).slice(0, m.density === 'compact' ? 6 : m.density === 'rich' ? 18 : 12);
     if (!out.length) return;
     const who = db.list().find(x => x.id === db.active()), rl = m.role && data.roles && data.roles.role[m.role];
     fy.querySelector('[data-fy-who]').textContent = who ? who.name.toUpperCase() : 'BẠN'; fy.querySelector('[data-fy-role]').textContent = rl ? '· ' + rl.label : '';
     const ol = fy.querySelector('[data-fy-list]'); ol.textContent = '';
-    out.forEach(x => { const li = D.createElement('li'), a = D.createElement('a'), w = D.createElement('small'); a.href = x.a.url; a.rel = 'noopener'; a.textContent = x.a.title; a.dataset.id = x.a.id;
-      w.textContent = x.why + ' · ' + x.a.source; li.append(a, D.createElement('br'), w); ol.append(li); });
+    const hue = t => { let h = 0; for (const c of String(t || '')) h = (h * 31 + c.charCodeAt(0)) % 360; return h; };
+    out.forEach((x, i) => { const a = x.a, c = D.createElement('article'), th = D.createElement('div'), cb = D.createElement('div'), h3 = D.createElement('h3'), l = D.createElement('a'), mt = D.createElement('p'), why = D.createElement('p');
+      c.className = 'card' + (i === 0 ? ' lead' : ''); c.dataset.id = a.id; c.dataset.st = a.status || 'new'; c.style.setProperty('--i', i);
+      th.className = 'thumb'; th.setAttribute('aria-hidden', 'true'); th.style.setProperty('--h', hue((a.topics || [])[0]));
+      if (/^https?:\/\//i.test(a.img || '')) { const im = D.createElement('img'); im.src = a.img; im.alt = ''; im.width = 640; im.height = 360; im.loading = i < 2 ? 'eager' : 'lazy'; im.decoding = 'async'; im.referrerPolicy = 'no-referrer'; im.addEventListener('error', () => im.remove()); th.append(im); }
+      cb.className = 'cb'; l.href = /^https?:\/\//i.test(a.url) ? a.url : '#'; l.rel = 'noopener'; l.textContent = a.title; l.dataset.id = a.id; h3.append(l);
+      mt.className = 'meta'; mt.textContent = a.source || ''; why.className = 'why'; why.textContent = x.why || '';
+      cb.append(h3, mt, why); c.append(th, cb); ol.append(c); });
     ol.addEventListener('click', ev => { const a = ev.target.closest('a[data-id]'); if (a) fb(a.dataset.id, 'open'); });
     fy.hidden = false;
   });
@@ -161,6 +167,11 @@
       if (old && dn !== old.density) p.densityAuto = false; else if (old && old.densityAuto === false) p.densityAuto = false;   // chọn tay → khoá tự đổi mật độ
       db.save(cur, p); say('Đã lưu cho người đọc này.'); drawTaste();
     };
+    const tf = pk.querySelector('[data-topic-filter]');   // ô tìm chủ đề: ẩn chip/mảng không khớp (không bỏ chọn)
+    if (tf) tf.addEventListener('input', () => { const q = tf.value.trim().toLowerCase(); let n = 0;
+      chips().forEach(c => { const h = !q || c.textContent.toLowerCase().includes(q) || c.dataset.topic.includes(q); c.hidden = !h; if (h) n++; });
+      pk.querySelectorAll('.sg').forEach(g => { g.hidden = !g.querySelector('.chip[data-topic]:not([hidden])'); });
+      const em = pk.querySelector('[data-tf-empty]'); if (em) em.hidden = n > 0; });
     pk.addEventListener('click', ev => {
       const c = ev.target.closest('.chip[data-topic]'), r = ev.target.closest('[data-role]'), dn = ev.target.closest('[data-density-pick]');
       if (c) { pressed(c, c.getAttribute('aria-pressed') !== 'true'); saveUI(); }

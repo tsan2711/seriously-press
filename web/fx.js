@@ -18,7 +18,7 @@
   };
   const scan = () => reveal([...D.querySelectorAll('.grid .card')]);
   // thẻ vào + chuyển số báo trượt (grid được thay nội dung bởi issues.js)
-  const grid = D.querySelector('.grid');
+  const grid = D.querySelector('.grid[data-gen]') || D.querySelector('.grid');
   if (grid) {
     scan();
     new MutationObserver(ms => {
