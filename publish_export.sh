@@ -5,7 +5,8 @@ OUT="${1:?usage: publish_export.sh <dir>}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 mkdir -p "$OUT"
 cd "$HERE"
-git ls-files . | grep -v -e '^launchd/' -e '^public/' -e '^store/journals/' -e '^topics.toml$' | while read -r f; do
+git ls-tree -r --name-only HEAD . |   # từ HEAD (không phụ thuộc index — phiên khác có thể đang giữ index.lock)
+   grep -v -e '^launchd/' -e '^public/' -e '^store/journals/' -e '^topics.toml$' | while read -r f; do
   mkdir -p "$OUT/$(dirname "$f")"; cp "$f" "$OUT/$f"
 done
 ln -sf config/topics.toml "$OUT/topics.toml"

@@ -1,0 +1,28 @@
+const F = require(process.argv[2] + '/features.js'), P = require(process.argv[2] + '/persona.js'), r = {};
+const arts = Array.from({ length: 20 }, (_, i) => ({ id: 'a' + i, title: 'Tiêu đề bài số ' + i + ' khá dài để đo thời gian đọc nhanh', summary: 'Tóm tắt ngắn của bài ' + i, topics: ['t' + (i % 4)], url: 'https://x.test/' + i }));
+const b = F.brief60(arts); r.brief_n = b.items.length; r.brief_secs = b.secs; r.brief_line_max = Math.max(...b.items.map(x => x.title.length));
+r.brief_empty = F.brief60([]).items.length;
+const st = { s1: [['2026-11-01', 'A', 'src', 'u1'], ['2026-11-03', 'B', 'src', 'u2']] };
+r.timeline_desc = F.timeline(st, 's1')[0].d === '2026-11-03';
+let fl = F.follow([], 's1', st, '2026-11-04'); st.s1.push(['2026-11-05', 'C', 'src', 'u3']);
+r.follow_fresh = F.followUpdates(fl, st)[0].fresh === 1; r.unfollow = F.unfollow(fl, 's1').length === 0;
+const rows = [['1', 'Tin A', 'u', 's', '2026-11-20', ['t1'], 'd', '', 90], ['2', 'Tin B', 'u', 's', '2026-11-21', ['t1'], 'd', '', 80], ['3', 'Tin C', 'u', 's', '2026-11-21', ['t1'], 'd', '', 70], ['4', 'Cũ', 'u', 's', '2026-10-01', ['t2'], 'd', '', 99]];
+const dg = F.digest(rows, '2026-11-22'); r.digest_week = dg.rows.every(x => x[4] >= dg.from); r.digest_per_topic = dg.rows.length === 2;
+const store = { 'press.lib.u1': '[1]', 'press.follow.u1': '[]', 'press.key': 'SECRET', 'press.openaiKey': 'k', 'other': 'x', 'press.token.a': 't' };
+const ex = F.exportProfile(store, 0), o = JSON.parse(ex);
+r.export_clean = Object.keys(o.data).sort().join() === 'press.follow.u1,press.lib.u1'; r.export_no_secret = !/SECRET/.test(ex);
+const dst = {}; const im = F.importProfile(ex, dst); r.roundtrip = im.ok && dst['press.lib.u1'] === '[1]';
+r.reject_bad = !F.importProfile('xx', {}).ok && !F.importProfile('{"a":1}', {}).ok;
+const ev = F.importProfile(JSON.stringify({ press: 'profile', v: 1, data: { 'press.apiKey': 'z', 'evil': 'y', 'press.ok': 'v' } }), dst);
+r.import_filters = ev.n === 1 && ev.skip === 2 && !dst['press.apiKey'] && !dst.evil;
+// persona
+const days = {}; for (let i = 0; i < 5; i++) days[new Date(Date.parse('2026-11-22') - i * 864e5).toISOString().slice(0, 10)] = { n: { open: 2 }, h: { 7: 3, 8: 2 } };
+r.slot_sang = P.slot({ days }, '2026-11-22') === 'sang'; r.slot_none = P.slot({ days: {} }, '2026-11-22') === null;
+const nd = {}; for (let i = 0; i < 4; i++) nd[new Date(Date.parse('2026-11-22') - i * 864e5).toISOString().slice(0, 10)] = { n: { open: 1 }, h: { 21: 2 } };
+r.slot_toi = P.slot({ days: nd }, '2026-11-22') === 'toi';
+r.dens_compact = (P.suggestDensity({ days: nd }, '2026-11-22', 'normal') || {}).to === 'compact'; r.dens_none = P.suggestDensity({ days: {} }, '2026-11-22', 'normal') === null;
+const hv = {}; for (let i = 0; i < 3; i++) hv[new Date(Date.parse('2026-11-22') - i * 864e5).toISOString().slice(0, 10)] = { n: { open: 30 } };
+r.over_suggest = P.overload({ days: hv }, '2026-11-22', 0).suggest === true; r.over_limit = P.overload({ days: hv }, '2026-11-22', 20).over === true; r.over_off = P.overload({ days: hv }, '2026-11-22', 0).over === false;
+const pool = Array.from({ length: 30 }, (_, i) => ({ id: 'p' + i, topics: [i < 10 ? 'main' : 'other'] })), shown = pool.slice(0, 10);
+const ee = P.ensureExplore(shown, pool, ['main']); r.explore_share = ee.list.filter(a => !a.topics.includes('main')).length / ee.list.length >= 0.15; r.explore_len = ee.list.length === 10;
+console.log(JSON.stringify(r));
