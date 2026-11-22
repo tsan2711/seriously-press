@@ -321,8 +321,9 @@ def build():
     import shutil, theme   # theme Xưởng đồng hồ 2D tĩnh: web/style.css + web/app.js, HTML từ theme.py
     pages = theme.render_all(theme.Ctx(day, topics, desks, roles=load_roles(), share=tomllib.load(open(f'{ROOT}/config/share.toml', 'rb')).get('endpoint', '')))
     for name, h in pages.items(): open(f'{ROOT}/public/{name}.tmp', 'w', encoding='utf8').write(h); os.replace(f'{ROOT}/public/{name}.tmp', f'{ROOT}/public/{name}')
-    for f in ('rank.js', 'dedup.js', 'memory.js', 'journal.js', 'profiles.js', 'share-core.js', 'run-core.js', 'app.js', 'diary.js', 'community.js', 'settings.js', 'mempage.js', 'style.css'): shutil.copy(f'{ROOT}/web/{f}', f'{ROOT}/public/{f}')
+    for f in ('rank.js', 'dedup.js', 'memory.js', 'journal.js', 'profiles.js', 'share-core.js', 'run-core.js', 'app.js', 'diary.js', 'community.js', 'settings.js', 'mempage.js', 'issues.js', 'style.css'): shutil.copy(f'{ROOT}/web/{f}', f'{ROOT}/public/{f}')
     if os.path.isdir(f'{ROOT}/web/tex'): shutil.copytree(f'{ROOT}/web/tex', f'{ROOT}/public/tex', dirs_exist_ok=True)
+    build_issues(files, topics, desks)
     for d in desks:   # tên cũ <ban>.html → desk-<ban>.html (liên kết đã chia sẻ không gãy)
         open(f'{ROOT}/public/{d}.html', 'w', encoding='utf8').write(f'<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=desk-{d}.html"><a href="desk-{d}.html">Mở ban</a>')
     # danh sách nguồn cho nút "Chạy báo hôm nay" trong trình duyệt (công khai, không bí mật)
@@ -332,6 +333,26 @@ def build():
     json.dump(dict(date=day['date'], desks={d: dict(name=c['name'], accent=c['accent']) for d, c in desks.items()}, topics=topics, trending=trend, hot=sorted({x['topic'] for v in trend.values() for x in v}), dedup=tomllib.load(open(f'{ROOT}/config/dedup.toml', 'rb')), repeat_hidden=day.get('dedup', {}).get('repeat', 0), engagement_weight=load_eng()['weights']['rank'], roles=load_roles(), articles=arts),
               open(f'{ROOT}/public/today.json', 'w', encoding='utf8'), ensure_ascii=False)
     print(f'build: {len(pages)} trang, {len(arts)} bài → public/')
+
+ISSUE_DAYS = 14
+def build_issues(files, topics, desks):
+    """Số báo theo ngày cho bộ chọn ở trang chủ: public/issues.json + public/issues/<ngày>.json (14 ngày gần nhất).
+    Chỉ có bản CRON (store/). Bản người dùng tự chạy ở trình duyệt nằm trong localStorage, không bao giờ vào đây."""
+    import theme
+    os.makedirs(f'{ROOT}/public/issues', exist_ok=True); rows, keep = [], set()
+    for f in files[-ISSUE_DAYS:]:
+        try:
+            day = json.load(open(f'{ROOT}/store/{f}', encoding='utf8')); day['articles'] = fresh_only(day['articles'])
+            theme.bind(theme.Ctx(day, topics, desks, roles=load_roles(), share=''))
+            head, arts = theme.issue_json()
+        except Exception as ex:
+            print(f'  ! số báo {f}: {type(ex).__name__}: {ex}'); continue
+        json.dump(dict(issue=head, articles=arts), open(f'{ROOT}/public/issues/{head["date"]}.json', 'w', encoding='utf8'), ensure_ascii=False, separators=(',', ':'))
+        rows.append(head); keep.add(f'{head["date"]}.json')
+    for old in os.listdir(f'{ROOT}/public/issues'):
+        if old not in keep: os.remove(f'{ROOT}/public/issues/{old}')
+    rows.sort(key=lambda r: r['ts'], reverse=True)
+    json.dump(dict(issues=rows), open(f'{ROOT}/public/issues.json', 'w', encoding='utf8'), ensure_ascii=False, separators=(',', ':'))
 
 def check(date):
     p = f'{ROOT}/store/{date}.json'

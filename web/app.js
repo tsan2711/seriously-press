@@ -17,6 +17,20 @@
     const go = ev.target.closest('[data-go]'); if (go) { const i = D.getElementById(go.dataset.go); if (i) { i.scrollIntoView({ behavior: RM ? 'auto' : 'smooth', block: 'center' }); i.focus({ preventScroll: true }); } }
   });
 
+  // ---------- tab (trang Của tôi): #lich-su | #bo-nho | #cai-dat ----------
+  const tb = D.querySelector('[data-tabs]');
+  if (tb) {
+    const tabs = [...tb.querySelectorAll('[role=tab]')], pick = (k, focus) => {
+      const t = tabs.find(x => x.dataset.tab === k) || tabs[0];
+      tabs.forEach(x => { const on = x === t; x.setAttribute('aria-selected', on ? 'true' : 'false'); x.tabIndex = on ? 0 : -1; const p = D.getElementById(x.getAttribute('aria-controls')); if (p) p.hidden = !on; });
+      if (focus) t.focus();
+    };
+    tb.addEventListener('click', ev => { const t = ev.target.closest('[role=tab]'); if (t) { pick(t.dataset.tab); history.replaceState(null, '', '#' + t.dataset.tab); } });
+    tb.addEventListener('keydown', ev => { const i = tabs.indexOf(D.activeElement); if (i < 0 || !['ArrowLeft', 'ArrowRight'].includes(ev.key)) return; ev.preventDefault(); const n = tabs[(i + (ev.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length]; pick(n.dataset.tab, true); history.replaceState(null, '', '#' + n.dataset.tab); });
+    addEventListener('hashchange', () => pick(location.hash.slice(1)));
+    pick(location.hash.slice(1));
+  }
+
   // ---------- người đọc: nối profiles.js (cục bộ, localStorage). Không có PressProfiles → bỏ qua ----------
   const PP = window.PressProfiles, PR = window.PressRank;
   const db = PP ? PP.open() : null;

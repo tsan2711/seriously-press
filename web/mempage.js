@@ -3,7 +3,7 @@
   const D = document, root = D.querySelector('[data-mem]'); if (!root) return;
   const PM = window.PressMemory, PD = window.PressDedup, PP = window.PressProfiles; if (!PM || !PP) return;
   const db = PP.open(), id = db.active() || 'me', mo = PM.open(null, id), $ = s => root.querySelector(s);
-  const who = db.list().find(x => x.id === id); $('[data-mm-who]').textContent = who ? who.name : 'Tôi';
+  const who = db.list().find(x => x.id === id); { const w = D.querySelector('[data-mm-who]'); if (w) w.textContent = who ? who.name : 'Tôi'; }
   const msg = t => { $('[data-mm-msg]').textContent = t; };
   const KIND = { topic: 'chủ đề', source: 'nguồn', fact: 'thói quen' };
   function paint() {
@@ -30,5 +30,15 @@
   $('[data-mm-in]').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { const r = mo.importJSON(t); msg(r.error || 'Đã nhập ' + r.added + ' mục.'); paint(); }); });
   $('[data-mm-seenclr]').addEventListener('click', () => { if (PD && confirm('Quên các bài đã thấy? Tin cũ có thể hiện lại.')) { PD.open(null, id).clear(); msg('Đã quên các bài đã thấy.'); paint(); } });
   $('[data-mm-clear]').addEventListener('click', () => { if (confirm('Xoá toàn bộ bộ nhớ của người đọc này trên thiết bị?')) { const m = mo.load(); PM.clear(m); mo.save(m); msg('Đã xoá bộ nhớ.'); paint(); } });
+  // Gu của tôi: chủ đề top theo hồ sơ (cùng số liệu với trang chọn người đọc)
+  const PR = window.PressRank, tb = $('[data-mm-taste]');
+  if (PR && tb) (window.PressData || Promise.resolve(null)).then(data => {
+    const p = db.load(id); if (!p || !data) return; const rp = PR.report(PR.ensure(p), data.topics, Date.now(), 8);
+    if (!rp.top.length && !rp.stats.open) return;
+    const T = { rising: '↑ đang lên', fading: '↓ nhạt dần', steady: '→ ổn định' }, mx = Math.max(...rp.top.map(x => x.score), 1), ul = D.createElement('ul'); ul.className = 'taste';
+    rp.top.forEach(x => { const li = D.createElement('li'), b = D.createElement('i'); b.style.width = Math.round(100 * x.score / mx) + '%'; b.setAttribute('aria-hidden', 'true'); li.append(b, D.createTextNode(x.label + ' · ' + T[x.trend])); ul.append(li); });
+    const st = D.createElement('p'); st.className = 'm'; st.textContent = rp.days + ' ngày có hoạt động · mở ' + rp.stats.open + ', bỏ qua ' + rp.stats.skip + (rp.open_rate != null ? ' (tỉ lệ mở ' + Math.round(rp.open_rate * 100) + '%)' : '');
+    tb.textContent = ''; tb.append(ul, st);
+  });
   paint();
 })();

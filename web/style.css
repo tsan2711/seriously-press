@@ -259,3 +259,15 @@ body{background-attachment:scroll}
 @media (hover:none){.card:hover,.card:focus-within{transform:none}}
 .card{transition:none}.grid .card{transition:box-shadow .15s}
 .grid .card:hover,.grid .card:focus-within{transform:none;box-shadow:0 0 0 3px var(--note)}
+
+/* ---- v5 (11-22): bộ chọn số báo + trang Của tôi 3 tab (không animation/filter) ---- */
+.isu{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .8rem;margin:.8rem 0 0;color:#fffdf5}
+.isu-c{display:flex;align-items:center;gap:.4rem}.isu-c[hidden]{display:none}
+.isu-c .btn{min-height:44px;min-width:44px;padding:.3rem .6rem}
+.isu select{min-height:44px;max-width:60vw;font:600 .85rem var(--mono);padding:.3rem .6rem;border:1.5px solid var(--ink);background:var(--card);color:var(--ink)}
+.isu-l{margin:0;font:400 .78rem/1.4 var(--mono)}
+.tabs{display:flex;gap:.4rem;margin-top:1.2rem;border-bottom:2px solid var(--ink)}
+.tabs [role=tab]{flex:1;min-height:44px;font:700 .9rem var(--mono);background:none;color:var(--ink);border:1.5px solid var(--ink);border-bottom:0;cursor:pointer}
+.tabs [role=tab][aria-selected=true]{background:var(--ink);color:var(--p-brief)}
+.tabs [role=tab]:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+[data-panel][hidden]{display:none}

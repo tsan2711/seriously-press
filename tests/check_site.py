@@ -1,5 +1,5 @@
 """Cổng máy cho site (đọc public/*.html sau build): không dây/3D, a11y cơ bản, SEO, nặng trang, tương phản, link ngoài an toàn."""
-import glob, os, re, sys
+import glob, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from nodewrap import node
 R = os.path.join(os.path.dirname(__file__), '..', 'public'); bad = []
@@ -37,15 +37,27 @@ for f in glob.glob(R + '/*'):
         if re.search(r'ADMIN_TOKEN\s*[:=]\s*["\'][^"\']+|sk-ant-[\w-]{10,}|sk-[A-Za-z0-9]{24,}|nguyen[t]ansang|@gmail\.com|press\.share"\s*:\s*\{"token', t): bad.append(f'{os.path.basename(f)}: dính khoá/PII')
 # nhật ký là của riêng người đọc: không tệp dữ liệu nhật ký nào trong public/, today.json không chứa log
 if glob.glob(R + '/**/journal*.json', recursive=True) or os.path.isdir(R + '/journals'): bad.append('public/ có tệp nhật ký')
-if not os.path.exists(R + '/memory.html'): bad.append('thiếu trang Bộ nhớ của tôi (memory.html)')
+if not os.path.exists(R + '/me.html'): bad.append('thiếu trang Của tôi (me.html)')
 else:
-    _m = open(R + '/memory.html', encoding='utf-8').read()
-    if 'data-mem' not in _m or 'aria-live' not in _m or '<h1' not in _m: bad.append('memory.html thiếu khung/aria-live/h1')
-for _f in ('today.json', 'index.html', 'memory.html'):
+    _m = open(R + '/me.html', encoding='utf-8').read()
+    for _k in ('data-mem', 'data-diary', 'data-settings', 'aria-live', '<h1', 'role="tablist"', 'role="tabpanel"'):
+        if _k not in _m: bad.append('me.html thiếu ' + _k)
+    if _m.count('role="tab"') != 3: bad.append('me.html cần đúng 3 tab (Lịch sử | Bộ nhớ | Cài đặt)')
+for _o, _t in (('journal', 'lich-su'), ('memory', 'bo-nho'), ('settings', 'cai-dat')):   # URL cũ vẫn sống: chuyển sang tab
+    _p = R + '/' + _o + '.html'
+    if not os.path.exists(_p) or 'me.html#' + _t not in open(_p, encoding='utf-8').read(): bad.append(_o + '.html không chuyển hướng về me.html#' + _t)
+_h = open(R + '/index.html', encoding='utf-8').read(); _mp = re.search(r'<div class="mp">(.*?)<div class="schemes"', _h, re.S)
+if not _mp or len(re.findall(r'<a ', _mp.group(1))) > 3: bad.append('menu chính phải ≤ 3 mục (Báo hôm nay · Của tôi · Chia sẻ)')
+if 'data-issues' not in _h or not os.path.exists(R + '/issues.json'): bad.append('trang chủ thiếu bộ chọn số báo / issues.json')
+else:
+    _i = json.loads(open(R + '/issues.json', encoding='utf-8').read())['issues']
+    if len(_i) > 14 or any(x.get('src') != 'cron' for x in _i): bad.append('issues.json: >14 ngày hoặc có bản không phải cron')
+    for x in _i:
+        if not os.path.exists(R + '/' + x['file']): bad.append('thiếu ' + x['file'])
+for _f in ('today.json', 'index.html', 'me.html'):
     _x = open(R + '/' + _f, encoding='utf-8').read()
-    if 'press.mem.' in _x and _f != 'memory.html': bad.append(_f + ' chứa khoá bộ nhớ người đọc')
+    if 'press.mem.' in _x and _f != 'me.html': bad.append(_f + ' chứa khoá bộ nhớ người đọc')
     if '"st":{' in _x or 'press.seen.' in _x and _f == 'today.json': bad.append(_f + ' chứa seen-store')
-if not os.path.exists(R + '/journal.html'): bad.append('thiếu trang Nhật ký (journal.html)')
 import json as _j
 _t = _j.load(open(R + '/today.json', encoding='utf8'))
 if any(k in _t for k in ('days', 'journal', 'readers', 'profile')): bad.append('today.json chứa dữ liệu người đọc')

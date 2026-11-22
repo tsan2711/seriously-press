@@ -4,7 +4,7 @@
   const PP = window.PressProfiles, PJ = window.PressJournal, PR = window.PressRank; if (!PP || !PJ) return;
   const db = PP.open(), id = db.active() || 'me', who = db.list().find(x => x.id === id) || { name: 'Tôi' };
   const jr = PJ.open(null, id), $ = s => root.querySelector(s), esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  $('[data-dy-who]').textContent = who.name;
+  { const w = D.querySelector('[data-dy-who]'); if (w) w.textContent = who.name; }
   let topics = {}; fetch('today.json').then(r => r.json()).then(d => { topics = d.topics || {}; draw(); }).catch(() => {});
   const lab = t => (topics[t] || {}).label || t, EV = { seen: 'thấy', open: 'mở', skip: 'bỏ qua', like: 'thích', save: 'lưu', less: 'ít tin này', hide: 'ẩn', rate: 'chấm' };
   const day = (J, k) => {

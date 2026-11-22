@@ -52,10 +52,13 @@
       const ep = (D.querySelector('meta[name=press-share]') || {}).content || '';
       const r = await PR.run({ sources: src.feeds, hn: src.hn, topics: (today_ && today_.topics) || {}, known: ((today_ && today_.articles) || []).map(a => a.url), max, maxSummarize: sum, endpoint: ep, ai: c && c.key ? c : null,
         onProgress: p => { bar.hidden = false; if (p.step === 'fetch') { bar.max = p.total; bar.value = p.done; say('Lấy nguồn ' + p.done + '/' + p.total + '…'); } else say('Đang tóm tắt bằng AI…'); } });
-      wr(RUN, { date: r.date, articles: r.articles }); wr(LOG, PR.pushLog(rd(LOG), r.log)); drawLog(); draw();
+      let who = ''; try { who = (localStorage.getItem(NAME) || '').trim().slice(0, 24); } catch (e) {} who = who || 'bạn';
+      r.log.by = who; wr(RUN, { date: r.date, articles: r.articles }); wr(LOG, PR.pushLog(rd(LOG), r.log));
+      // số báo bản tự chạy: chỉ ở máy này (≤14), hiện trong bộ chọn ngày ở trang chủ
+      wr('press.issues', [{ ts: r.log.ts, date: r.date, by: who, src: 'local', n: r.articles.length, new: r.log.fresh, up: 0, srcs: r.log.sources, articles: r.articles.slice(0, 24).map(a => ({ id: a.id, title: a.title, url: a.url, source: a.source, topics: a.topics, isNew: a.isNew })) }].concat(rd('press.issues') || []).slice(0, 14)); drawLog(); draw();
       say('Xong: ' + r.articles.length + ' bài (' + r.log.fresh + ' mới), ' + (r.log.provider ? r.log.summarized + ' tóm tắt AI' : 'bản trích') + (r.log.aiError ? ' — lỗi AI: ' + r.log.aiError + ' (đã dùng bản trích)' : '') + (r.log.sourceErrors ? ' · ' + r.log.sourceErrors + ' nguồn lỗi' : '') + '. Xem ở Trang chủ → “Bản chạy tại máy”.');
     } catch (e) { say('Lỗi: ' + (e && e.message || e)); }
     go.disabled = false; bar.hidden = true;
   });
-  $('[data-run-clear]').addEventListener('click', () => { try { localStorage.removeItem(RUN); localStorage.removeItem(LOG); } catch (e) {} out.hidden = true; drawLog(); say('Đã xoá bản chạy và nhật ký trên máy này.'); });
+  $('[data-run-clear]').addEventListener('click', () => { try { localStorage.removeItem(RUN); localStorage.removeItem(LOG); localStorage.removeItem('press.issues'); } catch (e) {} out.hidden = true; drawLog(); say('Đã xoá bản chạy và nhật ký trên máy này.'); });
 })();
