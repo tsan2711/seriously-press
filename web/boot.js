@@ -9,6 +9,6 @@
   window.PressLoadUI = load;
   const idle = f => ('requestIdleCallback' in window ? requestIdleCallback(f, { timeout: 3000 }) : setTimeout(f, 600));
   addEventListener('load', () => idle(load));
-  D.addEventListener('keydown', ev => { const k = ev.key; if (!window.PressUI && (k === '/' || ((ev.ctrlKey || ev.metaKey) && k.toLowerCase() === 'k') || 'jkos'.includes(k) && !ev.ctrlKey && !ev.metaKey && !/^(INPUT|TEXTAREA|SELECT)$/.test((ev.target || {}).tagName))) { if (k === '/' || k === 'k' || k === 'K') ev.preventDefault(); load().then(() => window.PressUI && window.PressUI.key(ev)); } });
-  D.addEventListener('click', ev => { if (!window.PressUI && ev.target.closest('[data-search],[data-b60],[data-lang],.thumb')) load().then(() => window.PressUI && window.PressUI.click(ev)); });
+  D.addEventListener('keydown', ev => { if (window.PressUI) return; const k = ev.key, m = ev.ctrlKey || ev.metaKey, e = ev.target || {}, t = /^(INPUT|TEXTAREA|SELECT)$/.test(e.tagName) || e.isContentEditable, s = m ? k.toLowerCase() === 'k' : k === '/' && !ev.altKey && !ev.isComposing && !t; if (s || (!m && !t && 'jkos?'.includes(k))) { if (s) ev.preventDefault(); load().then(() => window.PressUI && window.PressUI.key(ev)); } });
+  D.addEventListener('click', ev => { if (!window.PressUI && ev.target.closest('[data-search],[data-b60],[data-save],[data-lang],[data-readall],[data-readall-undo-btn],.thumb')) load().then(() => window.PressUI && window.PressUI.click(ev)); });
 })();

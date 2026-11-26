@@ -20,11 +20,16 @@ class P(HTMLParser):
             _, a, txt = s.stack.pop()
             if t == 'button' or 'href' in a:
                 if not (txt.strip() or a.get('aria-label') or a.get('title')): s.issues.append((t, a))
-pages = sorted(glob.glob(f'{R}/*.html')); noname = []; nolab = []; noalt = []; nolang = []; skip = []; h1 = []
+pages = sorted(glob.glob(f'{R}/*.html')); notab = []; nomain = []; nolm = []; noskiptgt = []; noname = []; nolab = []; noalt = []; nolang = []; skip = []; h1 = []
 for f in pages:
     h = open(f, encoding='utf8').read(); p = P(); p.feed(h); n = os.path.basename(f)
     if 'http-equiv="refresh"' in h and len(h) < 400: continue   # trang chuyển hướng
     if not re.search(r'<html[^>]*lang="(vi|en)"', h): nolang.append(n)
+    if 'offline' not in n:
+        if re.search(r'tabindex="?[1-9]', h): notab.append(n)
+        if not re.search(r'<a[^>]*class="skip[^>]*href="#main"|<a[^>]*href="#main"[^>]*class="skip', h) or 'id="main"' not in h: noskiptgt.append(n)
+        if h.count('<main') != 1: nomain.append(n)
+        if not all(x in h for x in ('<header', '<nav', '<footer')): nolm.append(n)
     if p.issues: noname.append((n, p.issues[:2]))
     for a in p.inputs:
         if not (a.get('aria-label') or a.get('id') in p.labels or a.get('title') or a.get('type') in ('submit', 'button')): nolab.append((n, a))
@@ -32,6 +37,10 @@ for f in pages:
     if 'offline' not in n and 'data-skip' not in h and 'class="skip' not in h and 'Bỏ qua' not in h: skip.append(n)
     if 'offline' not in n and p.h and p.h.count(1) != 1: h1.append(n)
 ck(not nolang, f'{len(pages)} trang có <html lang>' + (f' thiếu {nolang}' if nolang else ''))
+ck(not noskiptgt, 'skip link tới #main + có id=main' + (f' — thiếu {noskiptgt[:3]}' if noskiptgt else ''))
+ck(not notab, 'không có tabindex > 0' + (f' — {notab[:3]}' if notab else ''))
+ck(not nomain, 'đúng 1 landmark main' + (f' — {nomain[:3]}' if nomain else ''))
+ck(not nolm, 'đủ landmark header/nav/footer' + (f' — {nolm[:3]}' if nolm else ''))
 ck(not noname, 'mọi nút/liên kết có tên đọc được' + (f' — {noname[:2]}' if noname else ''))
 ck(not nolab, 'mọi ô nhập có nhãn' + (f' — {nolab[:2]}' if nolab else ''))
 ck(not noalt, 'mọi ảnh có alt' + (f' — {noalt}' if noalt else ''))
@@ -46,6 +55,11 @@ ck('.srch' in tap and '.pp' in tap, 'cảm ứng: ô tìm + reader cũng ≥44px
 ui = open(f'{R}/x/ui.js', encoding='utf8').read()
 ck("'Escape'" in ui and ("'j'" in ui and "'k'" in ui) and 'aria-modal' in ui and 'role' in ui, 'bàn phím: Esc/j/k, hộp thoại aria-modal')
 ck('aria-live' in ui or 'role="status"' in ui or "'status'" in ui, 'thông báo động có aria-live/role=status')
+ck(re.search(r'\.skip:focus\{[^}]*left:\s*8px', css) is not None, 'skip link hiện khi focus')
+ck(bool(re.search(r':focus-visible\{outline:\s*([2-9]|\d\d)px solid', css)), 'vòng focus ≥2px')
+ck("details.menu[open]" in ui and ".focus()" in ui, 'Esc đóng menu và trả focus')
+app = open(f'{R}/app.js', encoding='utf8').read()
+ck('live-dyn' in app and 'id="live-dyn" class="vh" role="status" aria-live="polite"' in open(f'{R}/index.html', encoding='utf8').read(), 'thẻ thêm động báo qua aria-live lịch sự')
 idx = open(f'{R}/index.html', encoding='utf8').read()
 ck('aria-pressed' in idx and 'data-lang="en"' in idx, 'chọn ngôn ngữ VI/EN bằng nút aria-pressed')
 # i18n: chữ giao diện cố định trên trang chủ + me phải có bản EN

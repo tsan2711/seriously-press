@@ -186,7 +186,7 @@ def query(kb, text, n=5):
     out.sort(key=lambda x: (-x[0], x[1]['last'])); return [dict(sid=s['sid'], title=s['title'], first=s['first'], last=s['last'], rev=s['rev'], days=len({e['d'] for e in s['entries']})) for _, s in out[:n]]
 
 def backfill():
-    kb = dict(stories={}, sources={}); fs = sorted(f for f in os.listdir(f'{ROOT}/store') if f.endswith('.json'))
+    kb = dict(stories={}, sources={}); fs = sorted(f for f in os.listdir(f'{ROOT}/store') if re.fullmatch(r'\d{4}-\d\d-\d\d\.json', f))
     for f in fs:
         p = f'{ROOT}/store/{f}'; day = json.load(open(p, encoding='utf8')); r = ingest(kb, day['articles'], day['date'])
         json.dump(day, open(p, 'w', encoding='utf8'), ensure_ascii=False, indent=1); print(f, r)

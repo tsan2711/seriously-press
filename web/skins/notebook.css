@@ -1,0 +1,120 @@
+/* ==== SKIN C · "Sổ tay" — trang vở kẻ dòng + lề đỏ, thẻ = phiếu ghi chú viền tay, bút dạ highlight tiêu đề,
+   ghi chú lề viết tay, thẻ ghi nhớ cuối bài. Viền "vẽ tay" theo PaperCSS (MIT, papercss.com: border-radius 255px 15px 225px 15px/15px 225px 15px 255px).
+   Font Patrick Hand (tay, --hand) + Lora (thân) — OFL, có tiếng Việt; chrome (nút/tab/form/chân trang) = chữ hệ thống (--sans).
+   Luật 11-26: chữ tay CHỈ ở tiêu đề + ghi chú ngắn (nhãn ban, dòng nguồn, nhãn thẻ nhớ); đoạn văn không bao giờ dùng chữ tay.
+   Không xoay (luật token ≤ .4deg). --wob = nút nhỏ; --wob-lg = khối cao (bán kính nhỏ, cạnh không bị cong vẹo). */
+:root{--bg:#fbf6e9;--card:#fffdf6;--card2:#f3ecd8;--wash:#f5eedb;--ink:#2a2620;--ink2:#4a443a;--mut:#7a7264;--rule:#d9cfb8;--red:#d2453a;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--hand:"Patrick Hand","Comic Neue","Segoe Print",cursive;--serif:Lora,Georgia,serif;--mono:ui-monospace,Menlo,monospace;
+  --hfont:var(--hand);--hw:400;--rad:0;--line:#cfdcec;--hl:#fff176;--wob:255px 15px 225px 15px/15px 225px 15px 255px;--wob-lg:18px 6px 22px 8px/8px 20px 6px 18px;--pen:#2f4f8f}
+:root[data-scheme=dark]{--bg:#1f1d1a;--card:#2a2723;--card2:#34302a;--wash:#2e2a25;--ink:#ece4d2;--ink2:#cfc6b2;--mut:#a39a87;--rule:#4a443a;--red:#ff7b6e;--line:#2f3540;--hl:#665000;--pen:#9cb8f0}
+@media (prefers-color-scheme:dark){:root[data-scheme=auto]{--bg:#1f1d1a;--card:#2a2723;--card2:#34302a;--wash:#2e2a25;--ink:#ece4d2;--ink2:#cfc6b2;--mut:#a39a87;--rule:#4a443a;--red:#ff7b6e;--line:#2f3540;--hl:#665000;--pen:#9cb8f0}}
+[data-desk=gamedev]{--dc:#d2453a;--tab:#ffd7c9}[data-desk=ai]{--dc:#5b4bd1;--tab:#ddd7ff}[data-desk=design]{--dc:#1b8a78;--tab:#c9efe5}
+[data-desk=finance]{--dc:#b07800;--tab:#ffe9a8}[data-desk=marketing]{--dc:#c2307c;--tab:#ffd1e6}
+:root[data-scheme=dark] [data-desk]{--tab:color-mix(in srgb,var(--dc) 35%,#2a2723)}
+@media (prefers-color-scheme:dark){:root[data-scheme=auto] [data-desk]{--tab:color-mix(in srgb,var(--dc) 35%,#2a2723)}}
+/* trang vở: dòng kẻ xanh nhạt + lề đỏ (≥700px) */
+body{background:var(--bg) repeating-linear-gradient(transparent 0 31px,var(--line) 31px 32px);font:400 1.05rem/1.6 var(--serif)}
+@media (min-width:700px){body{background-image:linear-gradient(90deg,transparent 0 52px,color-mix(in srgb,var(--red) 45%,transparent) 52px 54px,transparent 54px),repeating-linear-gradient(transparent 0 31px,var(--line) 31px 32px)}}
+.mast{border-bottom:2px solid var(--ink);border-radius:0}
+.title a{font:400 2.4rem/1 var(--hand);letter-spacing:0}
+.title a::before{content:"✎ ";color:var(--red)}
+.title small{font:400 1rem var(--hand)!important}
+.tags a{font:600 .92rem var(--sans);color:var(--ink2)}
+.tags a[aria-current]{border-bottom:0;background:linear-gradient(transparent 55%,var(--hl) 55% 90%,transparent 90%)}
+.btn,.ca{font:600 .88rem var(--sans);border:2px solid var(--ink);border-radius:var(--wob);background:var(--card)}
+.btn.pri,.btn.pri:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.isu-l{font:400 .85rem var(--sans)}
+.gen-h{font-size:0;margin:1.6rem 0 .4rem}
+.gen-h::before{content:"Ghi chép hôm nay";font:400 2rem/1.1 var(--hand);color:var(--ink);background:linear-gradient(transparent 60%,var(--hl) 60% 92%,transparent 92%);padding:0 .2rem}
+.gen-h small{display:none}
+/* phiếu ghi chú */
+.grid{display:grid;grid-template-columns:1fr;gap:1.3rem;margin:1.2rem 0 3rem}
+.grid .card{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:1rem;background:var(--card);border:2px solid var(--ink);border-radius:var(--wob-lg);
+  padding:1.1rem 1.2rem 1rem;box-shadow:3px 4px 0 rgba(0,0,0,.12)}
+.grid .card:hover{background:var(--card);box-shadow:4px 6px 0 rgba(0,0,0,.16)}
+.grid .card .thumb{grid-column:2;grid-row:1;width:92px;aspect-ratio:1;border:2px solid var(--ink);border-radius:var(--wob);filter:sepia(.15)}
+.grid .card .cb{grid-column:1;grid-row:1;display:flex;flex-direction:column;gap:.35rem}
+.grid .card:not([data-desk]) .cb::before{display:none}
+[data-desk] .cb::before{display:inline-block!important;align-self:flex-start;background:var(--tab);color:var(--ink);font:400 .95rem var(--hand);padding:0 .55rem;border-radius:var(--wob)}
+[data-desk=gamedev] .cb::before{content:"# game dev"}[data-desk=ai] .cb::before{content:"# AI & agent"}[data-desk=design] .cb::before{content:"# thiết kế"}
+[data-desk=finance] .cb::before{content:"# tài chính"}[data-desk=marketing] .cb::before{content:"# marketing"}
+.grid .card .cb h3{font:400 1.45rem/1.2 var(--hand);margin:0;-webkit-line-clamp:3}
+.grid .card .cb h3 a{background:linear-gradient(transparent 62%,var(--hl) 62% 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.grid .card .cb .ex{font:400 .98rem/1.55 var(--serif);color:var(--ink2);-webkit-line-clamp:2;margin:0}
+.grid .card .cb .meta{font:400 1.08rem/1.35 var(--hand);color:var(--pen)}
+:root[data-scheme] .grid .card .meta{color:var(--pen)}
+.rt::before{content:"⏲ "}
+.card.read{opacity:.7}.card.read .meta::before{content:"☑ đã đọc · ";color:var(--ok,#2f8f46)}
+.grid .card.lead{grid-column:1/-1;display:block;padding:1.4rem 1.4rem 1.2rem;background:var(--card);border:2px solid var(--ink)}
+.grid .card.lead::after{content:"";position:absolute;top:-12px;left:calc(50% - 55px);width:110px;height:24px;background:color-mix(in srgb,var(--hl) 70%,transparent);border:1px solid rgba(0,0,0,.08)}
+.grid .card.lead .thumb{width:100%;aspect-ratio:16/9;margin:0 0 1rem}
+.grid .card.lead>.lq{display:block!important;margin:0 0 1rem;padding:.2rem 0 .2rem 1rem;border:0;border-left:4px solid var(--red);background:none;font:italic 400 1.2rem/1.5 var(--serif);color:var(--ink2)}
+.grid .card.lead .cb h3{font-size:clamp(2rem,8vw,2.8rem);line-height:1.08}
+.grid .card.lead .cb .ex{font-size:1.1rem;-webkit-line-clamp:4}
+@media (min-width:700px){.grid{grid-template-columns:1fr 1fr;gap:1.6rem 1.4rem}}
+@media (min-width:1001px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .grid .card.lead{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:2rem;align-items:center;padding:1.8rem 2rem}
+  .grid .card.lead .thumb,.grid .card.lead>.lq{grid-column:2;grid-row:1;margin:0}
+  .grid .card.lead .cb{grid-column:1}
+  .grid .card.lead .cb h3{font-size:clamp(2.2rem,3vw,3rem)}
+}
+/* trang bài: trang vở + ghi chú lề + thẻ ghi nhớ */
+.art-wrap .feature{background:var(--card);border:2px solid var(--ink);border-radius:var(--wob-lg);padding:1.2rem 0 1.4rem;box-shadow:3px 4px 0 rgba(0,0,0,.12)}
+.art-wrap .feature>*:not(.thumb){margin-left:1.3rem;margin-right:1.3rem}
+.art-wrap .feature>.thumb{margin:0 1.3rem;border:2px solid var(--ink);border-radius:var(--wob-lg)}
+.art-wrap .feature h1{font:400 clamp(2rem,7vw,3rem)/1.1 var(--hand);margin-top:.4rem}
+.art-wrap .feature h1::first-line{background:linear-gradient(transparent 62%,var(--hl) 62% 94%,transparent 94%)}
+.feature .byline{font:400 1.1rem var(--hand)!important;color:var(--pen)!important;border:0}
+.feature .byline::before{content:"↳ "}
+.feature p{font:400 1.12rem/1.8 var(--serif)}
+.dropcap::first-letter{float:left;font:400 3.4rem/.85 var(--hand);margin:.15rem .4rem 0 0;color:var(--red)}
+.recap{display:block;margin:1.6rem 1.3rem 1.2rem}
+.recap h2{font:400 1.8rem var(--hand);margin:0 0 .5rem}.recap h2::before{content:"★ ";color:var(--red)}
+.kp{margin:0 0 1.2rem;padding-left:1.6rem}
+.kp li{font:400 1.06rem/1.65 var(--serif);margin:.25rem 0}
+.kp li::marker{font-family:var(--hand);color:var(--red);font-size:1.2rem}
+.fc{background:var(--wash);border:2px dashed var(--ink);border-radius:var(--wob-lg);margin-bottom:1rem}
+.fc summary{cursor:pointer;list-style:none;padding:1rem 1.2rem;display:grid;gap:.2rem}.fc summary::-webkit-details-marker{display:none}
+.fc-k{font:400 1rem var(--hand);color:var(--pen)}
+.fc-q{font:400 1.4rem/1.25 var(--hand);color:var(--ink)}
+.fc-a{margin:0;padding:0 1.2rem 1.1rem;font:400 1.05rem/1.6 var(--serif)!important}
+.fc[open] .fc-k::after{content:" — đã lật"}
+.got{display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;font:400 1.3rem var(--hand)}
+.got{min-height:44px}.got::before{content:"☐";font-size:1.3em;line-height:1}.got-i:checked+.got::before{content:"☑"}.got-i:focus-visible+.got{outline:2px solid var(--red);outline-offset:2px}
+.got-i:checked+.got::after{content:"✓ nhớ rồi!";color:var(--red);font:400 1.3rem var(--hand)}
+.more-h{font:400 2rem var(--hand)}
+.art .grid{grid-template-columns:1fr}
+@media (min-width:1001px){.art .grid{grid-template-columns:1fr 1fr}}
+/* 11-26: chừa lề thật cho vạch đỏ (vạch ở x=52 không cắt qua chữ); sửa nhãn/link/ô chọn thấy trên ảnh 390 + 1280 */
+@media (min-width:700px){.mast,main,.foot{padding-left:max(var(--gut),72px)}}
+.grid .card .cb .lab{align-self:flex-start;margin:0}
+.grid .card .meta a.tl,.meta a.tl{font:inherit;color:inherit}
+@media (max-width:480px){.isu select{font-weight:400;padding-left:.15rem;padding-right:0;letter-spacing:-.01em}.isu [data-b60]{padding-left:.4rem;padding-right:.4rem;font-size:.8rem}}
+:root:lang(en) .gen-h::before{content:"Today's notes"}:root:lang(en) .card.read .meta::before{content:"☑ read · "}
+:root:lang(en) [data-desk=design] .cb::before{content:"# design"}:root:lang(en) [data-desk=finance] .cb::before{content:"# finance"}
+.grid .card.lead .cb .meta{font-size:1.08rem}
+/* trang ban / chủ đề / repo / của tôi: tiêu đề thẳng mép với phiếu, cùng chữ tay */
+.desk-h{max-width:none;margin:1.5rem 0 0}
+.ph h1,.pk h2,.pn,main.wrap h1,main.wrap h2{font-family:var(--hand);font-weight:400}
+main.wrap .sub{text-align:left;margin-left:0}
+.grid .card .cb .sum{font:400 .98rem/1.55 var(--serif);color:var(--ink2);margin:0;overflow-wrap:anywhere}
+.grid .card .cb{min-width:0}
+.grid .card .cb h3{overflow-wrap:anywhere}
+/* 11-26: khối "Repo hay" trong lưới trang chủ — tờ phiếu ghi chú, cùng viền tay/bút dạ; lớp riêng (.rnote) để JS thẻ tin không đụng */
+.grid[data-gen]{grid-auto-flow:row dense}
+.rhome{grid-column:1/-1;min-width:0;margin:.4rem 0;padding:1rem 0 1.1rem;border-top:2px dashed var(--ink);border-bottom:2px dashed var(--ink)}
+.rh-top h2{display:inline-block;margin:0;padding:0 .2rem;font:400 2rem/1.1 var(--hand);color:var(--ink);background:linear-gradient(transparent 60%,var(--hl) 60% 92%,transparent 92%)}
+.rh-top p{margin:.2rem 0 0;font:400 1.08rem/1.35 var(--hand);color:var(--pen)}
+.rgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:1.1rem;margin:.9rem 0 1rem}
+.rnote{display:flex;flex-direction:column;gap:.3rem;min-width:0;padding:.7rem 1.1rem .8rem;background:var(--card);border:2px solid var(--ink);border-radius:var(--wob-lg);box-shadow:3px 4px 0 rgba(0,0,0,.12)}
+.rnote h3{margin:0;font:400 1.4rem/1.2 var(--hand);overflow-wrap:anywhere}
+.rnote h3 a{display:block;min-height:44px;padding:.45rem 0 .15rem;color:var(--ink);text-decoration:none}
+.rnote h3 a span{background:linear-gradient(transparent 62%,var(--hl) 62% 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.rnote .rsolve{margin:0;font:400 .98rem/1.55 var(--serif);color:var(--ink2);overflow-wrap:anywhere}
+.rnote .rmeta{margin:auto 0 0;padding-top:.2rem;font:400 1.08rem/1.35 var(--hand);color:var(--pen)}
+.rall{margin:0}.rall .btn{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+@media (max-width:699px){.rnote:nth-child(n+5){display:none}}
+@media (min-width:700px){.rgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1001px){.rgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+:root:lang(en) .rh-top p{font-size:1rem}

@@ -2,7 +2,7 @@
 // Mỗi hồ sơ có khoá riêng 'press.p.<id>' chứa hồ sơ xếp hạng (rank.js newProfile: sở thích, đã lưu, ẩn, khám phá).
 // Danh mục 'press.profiles' chỉ giữ {id, name, kind}. Xoá hồ sơ = xoá khoá riêng + dòng danh mục → sạch.
 (function (root) {
-  const CAT = 'press.profiles', PFX = 'press.p.', JPFX = 'press.journal.', LEGACY = 'press.profile', ME = 'me', MAX = 8;
+  const CAT = 'press.profiles', PFX = 'press.p.', JPFX = 'press.journal.', OPFX = 'press.ob.', STEPS = 3, LEGACY = 'press.profile', ME = 'me', MAX = 8;
   const memStore = () => { const m = {}; return { getItem: k => (k in m ? m[k] : null), setItem: (k, v) => { m[k] = String(v); }, removeItem: k => { delete m[k]; }, keys: () => Object.keys(m) }; };
 
   const b64 = j => (typeof btoa === 'function' ? btoa : x => Buffer.from(x, 'binary').toString('base64'))(unescape(encodeURIComponent(j)));
@@ -36,16 +36,21 @@
         if (profile) wr(PFX + id, profile);
         flush(); return id;
       },
+      // Bước onboarding đang dở (1..STEPS) của một người đọc; 0 = không có. Lưu ngay → đóng tab rồi mở lại vẫn tiếp được.
+      step(id) { if (!find(id)) return 0; const n = parseInt(store.getItem(OPFX + id), 10); return n >= 1 && n <= STEPS ? n : 0; },
+      setStep(id, n) { if (!find(id)) return 0; n = Math.max(1, Math.min(STEPS, n | 0)); store.setItem(OPFX + id, String(n)); return n; },
+      doneStep(id) { store.removeItem(OPFX + id); },
+      pending: () => { const x = cat.list.find(y => { const n = parseInt(store.getItem(OPFX + y.id), 10); return n >= 1 && n <= STEPS; }); return x ? x.id : null; },
       select(id) { if (!find(id)) return false; cat.active = id; flush(); return true; },
       leave() { cat.active = null; flush(); },                 // quay về màn chọn
       load: id => (find(id) ? rd(PFX + id) : null),            // null = chưa onboarding
       save(id, p) { if (find(id)) wr(PFX + id, p); },
       rename(id, name) { const x = find(id); name = String(name || '').trim().slice(0, 24); if (!x || !name) return false; x.name = name; flush(); return true; },
-      clear(id) { if (!find(id)) return false; store.removeItem(PFX + id); store.removeItem(JPFX + id); return true; },   // xoá sở thích, giữ thẻ
+      clear(id) { if (!find(id)) return false; store.removeItem(PFX + id); store.removeItem(JPFX + id); store.removeItem(OPFX + id); return true; },   // xoá sở thích, giữ thẻ
       // 'Tôi' không xoá được khỏi danh mục, chỉ xoá sạch dữ liệu (về chưa onboarding). Người khác: xoá hẳn.
       remove(id) {
         const x = find(id); if (!x) return false;
-        store.removeItem(PFX + id); store.removeItem(JPFX + id);   // xoá cả nhật ký
+        store.removeItem(PFX + id); store.removeItem(JPFX + id); store.removeItem(OPFX + id);   // xoá cả nhật ký
         if (x.kind !== 'me') cat.list = cat.list.filter(y => y.id !== id);
         if (cat.active === id) cat.active = null;
         flush(); return true;
@@ -70,7 +75,7 @@
         flush(); return { added, merged };
       },
       // Xoá mọi dấu vết hồ sơ trên thiết bị này
-      wipe() { cat.list.forEach(x => { store.removeItem(PFX + x.id); store.removeItem(JPFX + x.id); }); store.removeItem(CAT); store.removeItem(LEGACY); },
+      wipe() { cat.list.forEach(x => { store.removeItem(PFX + x.id); store.removeItem(JPFX + x.id); store.removeItem(OPFX + x.id); }); store.removeItem(CAT); store.removeItem(LEGACY); },
     };
   }
 
@@ -85,6 +90,8 @@
     }).filter(s => s.topics.length);
   }
 
-  const api = { open, suggest, memStore, ME, MAX };
+  // Điều hướng bước: dir +1 (Tiếp / Bỏ qua) hoặc -1 (Quay lại). Trả bước mới, hoặc 0 = xong (Vào đọc). Không vượt biên.
+  const nav = (cur, dir) => { const n = (cur | 0) + dir; return n > STEPS ? 0 : Math.max(1, n); };
+  const api = { open, suggest, memStore, nav, ME, MAX, STEPS };
   if (typeof module !== 'undefined') module.exports = api; else root.PressProfiles = api;
 })(typeof self !== 'undefined' ? self : this);

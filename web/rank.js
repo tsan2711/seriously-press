@@ -2,14 +2,17 @@
 (function (root) {
   const SIGNAL = { like: 1, save: 1.5, more: 1, hide: -2, less: -1.5, open: 0.2, skip: -0.04, dwell: 0.4, rate: 0 };
   // Gu có hai thang thời gian: ngắn (21 ngày, bắt sở thích nhất thời) + dài (180 ngày, giữ sở thích bền). Lâu ngày thì phần dài thắng.
-  const HALF_LIFE_DAYS = 21, LT_HALF_DAYS = 180, LT_W = 0.3, PROMOTE = 2.5, PAGE = 24, EXPLORE_FRAC = 0.15;   // luôn ~15% khám phá: chống bong bóng lọc
+  const HALF_LIFE_DAYS = 21, LT_HALF_DAYS = 180, LT_W = 0.3, PROMOTE = 2.5, PAGE = 24, EXPLORE_FRAC = 0.15;
   const SKIP_FLOOR = -0.4;
   const PAGES = { compact: 12, normal: 24, rich: 40 };
+  // Mức cá nhân hoá (thanh trượt Ít/Vừa/Nhiều): k nhân điểm sở thích, explore = tỉ lệ bài khám phá. Vừa = hành vi cũ.
+  const LEVELS = { low: { k: 0.35, explore: 0.3 }, mid: { k: 1, explore: EXPLORE_FRAC }, high: { k: 1.8, explore: 0.07 } };
+  const lvl = p => LEVELS[p && p.pz] || LEVELS.mid;
   const day = 86400000;
 
   // Hồ sơ v2: + role, density, src (nguồn hay mở), stats (bộ đo). extra = {role, density}.
   function newProfile(desk, interests, now, extra) {
-    const p = { v: 2, desk: desk || null, role: null, density: 'normal', w: {}, bandit: {}, saved: [], hidden: [], explored: {}, src: {}, stats: newStats() };
+    const p = { v: 2, desk: desk || null, role: null, density: 'normal', w: {}, bandit: {}, saved: [], hidden: [], explored: {}, src: {}, sm: {}, pz: 'mid', stats: newStats() };
     if (extra) { if (extra.role) p.role = extra.role; if (PAGES[extra.density]) p.density = extra.density; }
     (interests || []).forEach(t => { p.w[t] = { v: 1, l: 0, t: now || Date.now() }; });
     return p;
@@ -19,7 +22,7 @@
   function ensure(p) {
     if (!p) return p;
     if (!p.role) p.role = null; if (!PAGES[p.density]) p.density = 'normal';
-    p.src = p.src || {}; p.stats = Object.assign(newStats(), p.stats || {}); p.v = 2;
+    p.src = p.src || {}; if (!LEVELS[p.pz]) p.pz = 'mid'; if (!p.sm || typeof p.sm !== 'object') p.sm = {}; p.stats = Object.assign(newStats(), p.stats || {}); p.v = 2;
     return p;
   }
   function decay(x, t, half, now) { return x * Math.pow(0.5, ((now || Date.now()) - t) / (half * day)); }
@@ -27,11 +30,11 @@
     const e = p.w[t]; if (!e) return { s: 0, l: 0 };
     return { s: decay(e.v, e.t, HALF_LIFE_DAYS, now), l: decay(e.l || 0, e.t, LT_HALF_DAYS, now) };
   }
-  function weight(p, t, now) { const x = parts(p, t, now); return x.s + LT_W * x.l; }
+  function weight(p, t, now) { if (p.w[t] && p.w[t].off) return 0; const x = parts(p, t, now); return x.s + LT_W * x.l; }
   function bump(p, t, d, now) {
     now = now || Date.now();
     const x = parts(p, t, now);
-    p.w[t] = { v: x.s + d, l: x.l + Math.max(d, 0), t: now };   // phần dài chỉ tích luỹ tín hiệu dương; phản đối chỉ ăn vào phần ngắn
+    p.w[t] = { v: x.s + d, l: x.l + Math.max(d, 0), t: now };
   }
   // Beta(a,b) mẫu — Thompson sampling (Gamma qua Marsaglia-Tsang, rng() ∈ [0,1))
   function gauss(rng) { let u = 0, v = 0; while (!u) u = rng(); v = rng(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
@@ -47,43 +50,44 @@
   function beta(a, b, rng) { const x = gamma(a, rng), y = gamma(b, rng); return x / (x + y); }
 
   function baseScore(a, p, now, ew) {
-    let s = 0;
-    (a.topics || []).forEach(t => { s += weight(p, t, now); });
-    if (p.src && a.source && p.src[a.source]) s += 0.12 * Math.min(p.src[a.source], 5);   // nguồn hay mở
-    s += (ew === undefined ? 1 : ew) * (a.engagement || 0) * 0.4;   // tương tác công khai (0..1), trọng số từ config; không át sở thích
+    let s = 0; const k = lvl(p).k;
+    (a.topics || []).forEach(t => { s += k * weight(p, t, now); });
+    if (p.sm && a.source && p.sm[a.source] === 'less') s -= 1;
+    if (p.src && a.source && p.src[a.source]) s += 0.12 * Math.min(p.src[a.source], 5);
+    s += (ew === undefined ? 1 : ew) * (a.engagement || 0) * 0.4;
     return s;
   }
-  function isMain(p, t, now) { return weight(p, t, now) >= PROMOTE || (p.w[t] && p.w[t].main); }
+  function isMain(p, t, now) { return weight(p, t, now) >= PROMOTE || (p.w[t] && p.w[t].main && !p.w[t].off); }
 
   // Trả về danh sách hiển thị: [{a, explore:bool, topic?, why}]
   function rank(arts, p, topics, rng, now, opts) {
     opts = opts || {}; const hot = opts.hot || [];
     now = now || Date.now(); rng = rng || Math.random;
     const hidden = new Set(p.hidden);
-    const pool = arts.filter(a => !hidden.has(a.id) && (!p.desk || (a.desks || []).includes(p.desk) || hasLiked(a, p, now)));
+    const sm = p.sm || {}, pool = arts.filter(a => !hidden.has(a.id) && sm[a.source] !== 'hide' && (!p.desk || (a.desks || []).includes(p.desk) || hasLiked(a, p, now)));
     const main = pool.map(a => ({ a, s: baseScore(a, p, now, opts.ew) + (opts.adj ? opts.adj(a) : 0) })).sort((x, y) => y.s - x.s);
     const page = opts.page || PAGES[p.density] || PAGE;
-    const nExplore = Math.round(page * EXPLORE_FRAC);
+    const nExplore = Math.round(page * lvl(p).explore);
     const likedTopics = Object.keys(p.w).filter(t => weight(p, t, now) > 0.3);
     const out = [];
     // ứng viên khám phá: chủ đề kề sở thích, bản thân chưa phải chủ đề chính
     const cand = {};
     likedTopics.forEach(t => ((topics[t] || {}).adjacent || []).forEach(n => {
-      if (!isMain(p, n, now) && weight(p, n, now) > -0.5 && !(p.w[n] && p.w[n].blocked)) (cand[n] = cand[n] || new Set()).add(t);
+      if (!isMain(p, n, now) && weight(p, n, now) > -0.5 && !(p.w[n] && (p.w[n].blocked || p.w[n].off))) (cand[n] = cand[n] || new Set()).add(t);
     }));
     // chủ đề đang nóng (30 ngày) cũng là nguồn khám phá, kể cả khi chưa kề sở thích
-    hot.forEach(n => { if (topics[n] && !isMain(p, n, now) && weight(p, n, now) > -0.5 && !(p.w[n] && p.w[n].blocked) && likedTopics.length) (cand[n] = cand[n] || new Set()).add(likedTopics[0]); });
+    hot.forEach(n => { if (topics[n] && !isMain(p, n, now) && weight(p, n, now) > -0.5 && !(p.w[n] && (p.w[n].blocked || p.w[n].off)) && likedTopics.length) (cand[n] = cand[n] || new Set()).add(likedTopics[0]); });
     const picks = [], used = new Set();
     if (nExplore && Object.keys(cand).length) {
       for (let i = 0; i < nExplore; i++) {
         let best = null, bs = -1;
         Object.keys(cand).forEach(n => {
           const b = p.bandit[n] || { a: 1, b: 1 }, s = beta(b.a, b.b, rng);
-          const has = arts.some(x => !hidden.has(x.id) && !used.has(x.id) && (x.topics || []).includes(n));
+          const has = arts.some(x => !hidden.has(x.id) && sm[x.source] !== 'hide' && !used.has(x.id) && (x.topics || []).includes(n));
           if (has && s > bs) { bs = s; best = n; }
         });
         if (!best) break;
-        const art = arts.filter(x => !hidden.has(x.id) && !used.has(x.id) && (x.topics || []).includes(best))
+        const art = arts.filter(x => !hidden.has(x.id) && sm[x.source] !== 'hide' && !used.has(x.id) && (x.topics || []).includes(best))
           .sort((x, y) => (y.points || 0) - (x.points || 0))[0];
         used.add(art.id); picks.push({ a: art, explore: true, topic: best, from: [...cand[best]][0] });
       }
@@ -120,8 +124,8 @@
     if (!sp14 || !sp14.days) return { changed: false, notes };
     Object.keys(sp14.topics).forEach(t => {
       const x = sp14.topics[t], w = weight(p, t, now);
-      if (x.skip >= 6 && x.open === 0 && w > SKIP_FLOOR + 0.02) { bump(p, t, -Math.min(0.3, w - SKIP_FLOOR), now); notes.push('hạ ' + t); }          // bị bỏ qua đều → hạ nhẹ, không bao giờ về chặn
-      else if (x.open >= 2 && w < PROMOTE / 2) { bump(p, t, 0.4, now); p.w[t].emerging = today; notes.push('nổi ' + t); }   // mở đều mà gu còn thấp → chủ đề mới nổi
+      if (x.skip >= 6 && x.open === 0 && w > SKIP_FLOOR + 0.02) { bump(p, t, -Math.min(0.3, w - SKIP_FLOOR), now); notes.push('hạ ' + t); }
+      else if (x.open >= 2 && w < PROMOTE / 2) { bump(p, t, 0.4, now); p.w[t].emerging = today; notes.push('nổi ' + t); }
     });
     if (p.densityAuto !== false && sp14.days >= 3) {
       const per = sp14.n.open / sp14.days, to = per >= 8 ? 'rich' : per <= 1.5 ? 'compact' : 'normal';
@@ -149,10 +153,10 @@
     if (signal === 'rate') { st.rate_n++; st.rate_sum += amount || 3; }
     if (d > 0 && a.source) p.src[a.source] = (p.src[a.source] || 0) + (signal === 'open' || signal === 'dwell' ? 0.5 : 1);
     if (d === 0) return p;
-    (a.topics || []).forEach(t => { if (signal === 'skip' && weight(p, t, now) <= SKIP_FLOOR) return; bump(p, t, d, now); });   // bỏ qua thụ động không đẩy chủ đề xuống dưới sàn → còn cơ hội được khám phá lại
+    (a.topics || []).forEach(t => { if (signal === 'skip' && weight(p, t, now) <= SKIP_FLOOR) return; bump(p, t, d, now); });
     if (signal === 'save' && !p.saved.includes(a.id)) p.saved.push(a.id);
     if (signal === 'hide' && !p.hidden.includes(a.id)) p.hidden.push(a.id);
-    if (explored) {   // cập nhật bandit cho chủ đề được thử
+    if (explored) {
       const t = explored, b = (p.bandit[t] = p.bandit[t] || { a: 1, b: 1 });
       if (d > 0) b.a += 1; else if (d < 0) { b.b += 1; if (signal === 'less') (p.w[t] = p.w[t] || { v: 0, t: now }).blocked = b.b >= 3; }
       if (d > 0 && weight(p, t, now) >= PROMOTE) { p.w[t].main = true; }
@@ -174,8 +178,8 @@
     const r = ((roles || {}).role || {})[roleId] || {};
     return newProfile((r.desks || [])[0] || null, r.topics || [], now, { role: roleId, density: r.density });
   }
-  function reset() { return null; }   // xoá sở thích = bỏ hồ sơ, về mặc định
+  function reset() { return null; }
 
-  const api = { adaptDaily, deskOrder, ymd, SIGNAL, PROMOTE, PAGE, PAGES, newProfile, newStats, ensure, weight, parts, rank, feedback, report, fromRole, reset, why, isMain };
+  const api = { adaptDaily, deskOrder, ymd, SIGNAL, PROMOTE, PAGE, PAGES, newProfile, newStats, ensure, weight, parts, rank, feedback, report, fromRole, reset, why, isMain, LEVELS };
   if (typeof module !== 'undefined') module.exports = api; else root.PressRank = api;
 })(typeof self !== 'undefined' ? self : this);

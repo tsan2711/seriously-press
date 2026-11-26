@@ -47,7 +47,7 @@
     const c = rd(KEY), max = Math.max(1, Math.min(+maxA.value || 30, PR.LIM.maxHard)), sum = Math.max(0, Math.min(+maxS.value || 0, PR.LIM.sumHard));
     wr('press.runcfg', { max, sum });
     if (c && c.key && !confirm('Sẽ gọi ' + (c.provider === 'openai' ? 'OpenAI' : 'Anthropic') + ' bằng key của bạn để tóm tắt tối đa ' + sum + ' bài (khoảng ' + Math.ceil(sum / PR.LIM.batch) + ' lượt gọi). Chi phí do bạn chịu. Tiếp tục?')) return;
-    go.disabled = true; ctl = typeof AbortController !== 'undefined' ? new AbortController() : null; if (cancel) cancel.hidden = false; bar.hidden = false; say('Đang lấy nguồn…');
+    go.disabled = true; go.setAttribute('aria-busy', 'true'); go.dataset.l = go.textContent; go.textContent = 'Đang chạy…'; ctl = typeof AbortController !== 'undefined' ? new AbortController() : null; if (cancel) cancel.hidden = false; bar.hidden = false; say('Đang lấy nguồn…');
     try {
       const [src, today_] = await Promise.all([PR.loadSources(), (window.PressData || Promise.resolve(null))]);
       const ep = (D.querySelector('meta[name=press-share]') || {}).content || '';
@@ -56,10 +56,10 @@
       let who = ''; try { who = (localStorage.getItem(NAME) || '').trim().slice(0, 24); } catch (e) {} who = who || 'bạn';
       r.log.by = who; wr(RUN, { date: r.date, articles: r.articles }); wr(LOG, PR.pushLog(rd(LOG), r.log));
       // số báo bản tự chạy: chỉ ở máy này (≤14), hiện trong bộ chọn ngày ở trang chủ
-      wr('press.issues', [{ ts: r.log.ts, date: r.date, by: who, src: 'local', n: r.articles.length, new: r.log.fresh, up: 0, srcs: r.log.sources, articles: r.articles.slice(0, 24).map(a => ({ id: a.id, title: a.title, url: a.url, source: a.source, topics: a.topics, isNew: a.isNew })) }].concat(rd('press.issues') || []).slice(0, 14)); drawLog(); draw();
+      wr('press.issues', [{ ts: r.log.ts, date: r.date, by: who, src: 'local', n: r.articles.length, new: r.log.fresh, up: 0, srcs: r.log.sources, articles: r.articles.slice(0, 24).map(a => ({ id: a.id, title: a.title, url: a.url, source: a.source, topics: a.topics, isNew: a.isNew })) }].concat(rd('press.issues') || []).slice(0, 14)); drawLog(); draw(); const vw = $('[data-run-view]'); if (vw) vw.hidden = false;
       say('Xong: ' + r.articles.length + ' bài (' + r.log.fresh + ' mới), ' + (r.log.provider ? r.log.summarized + ' tóm tắt AI' : 'bản trích') + (r.log.aiError ? ' — lỗi AI: ' + r.log.aiError + ' (đã dùng bản trích)' : '') + (r.log.sourceErrors ? ' · ' + r.log.sourceErrors + ' nguồn lỗi' : '') + '. Về Trang chủ để xem — số báo vừa chạy tự hiện ở đầu (chỉ trên máy này).');
     } catch (e) { say(e && e.message === 'Đã huỷ' ? 'Đã huỷ — chưa ghi gì.' : 'Lỗi: ' + (e && e.message || e) + '. Thử lại, hoặc kiểm tra mạng.'); }
-    go.disabled = false; bar.hidden = true; if (cancel) cancel.hidden = true; ctl = null;
+    go.disabled = false; go.removeAttribute('aria-busy'); go.textContent = go.dataset.l; bar.hidden = true; if (cancel) cancel.hidden = true; ctl = null;
   });
   $('[data-run-clear]').addEventListener('click', () => { try { localStorage.removeItem(RUN); localStorage.removeItem(LOG); localStorage.removeItem('press.issues'); } catch (e) {} out.hidden = true; drawLog(); say('Đã xoá bản chạy và nhật ký trên máy này.'); });
 })();

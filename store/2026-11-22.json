@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T22:49:06",
+ "generated": "2026-11-22T23:22:44",
  "articles": [
   {
    "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
@@ -24,31 +24,6 @@
    "summary_by": "none",
    "img": "https://signal.org/blog/images/protecting-your-privacy-opengraph.png",
    "sid": "c4ca83ba57",
-   "status": "repeat",
-   "rev": 0
-  },
-  {
-   "title": "AI agents ask better questions than KPMG accountants in audit trial",
-   "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
-   "summary": "",
-   "published": "2026-11-18T15:49:34Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 499,
-   "comments": 264,
-   "engagement": 1.0,
-   "topic_by": "keyword",
-   "id": "dbf7233003",
-   "topics": [
-    "agents"
-   ],
-   "desks": [
-    "ai",
-    "gamedev"
-   ],
-   "summary_by": "none",
-   "img": "https://europeanbusinessmagazine.com/wp-content/uploads/2026/06/ai5555-1024x678.jpg",
-   "sid": "dbf7233003",
    "status": "repeat",
    "rev": 0
   },
@@ -84,8 +59,8 @@
    "published": "2026-11-22T04:04:56Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 849,
-   "comments": 504,
+   "points": 895,
+   "comments": 519,
    "engagement": 1.0,
    "topic_by": "desk-default",
    "id": "d3a1a9a15e",
@@ -109,7 +84,7 @@
    "published": "2026-11-20T02:01:09Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 371,
+   "points": 373,
    "comments": 345,
    "engagement": 1.0,
    "topic_by": "desk-default",
@@ -159,7 +134,7 @@
    "published": "2026-11-20T15:24:11Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 740,
+   "points": 743,
    "comments": 140,
    "engagement": 1.0,
    "topic_by": "desk-default",
@@ -185,7 +160,7 @@
    "source": "Hacker News",
    "source_id": "hn",
    "points": 711,
-   "comments": 328,
+   "comments": 329,
    "engagement": 1.0,
    "topic_by": "desk-default",
    "id": "601ef0d322",
@@ -197,7 +172,6 @@
     "marketing"
    ],
    "summary_by": "none",
-   "img": "",
    "sid": "601ef0d322",
    "status": "new",
    "rev": 0
@@ -259,8 +233,8 @@
    "published": "2026-11-20T13:29:59Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 518,
-   "comments": 907,
+   "points": 520,
+   "comments": 908,
    "engagement": 1.0,
    "topic_by": "keyword",
    "id": "fda5004e84",
@@ -322,7 +296,7 @@
     "marketing"
    ],
    "summary_by": "none",
-   "img": "",
+   "img": "https://kapteko.com/15-million-webservers/webservers-benchmark-social.png",
    "sid": "cd785972e8",
    "status": "new",
    "rev": 0
@@ -346,7 +320,7 @@
     "ai"
    ],
    "summary_by": "none",
-   "img": "",
+   "img": "https://www.slowchronicle.com/og-default.png",
    "sid": "ba05f6db61",
    "status": "repeat",
    "rev": 0
@@ -399,7 +373,7 @@
     "marketing"
    ],
    "summary_by": "none",
-   "img": "https://opengraph.githubassets.com/33d9398461541dca9a31452b4a444c3c87b758c6adc2cde6a5a60690bc07711d/onlook-dev/onlook",
+   "img": "https://opengraph.githubassets.com/e9440966780acca9b136cbd8ec55f1be2190c80317c291b4e8c44612f5fe809d/onlook-dev/onlook",
    "sid": "00ca2badf7",
    "status": "repeat",
    "rev": 0
@@ -450,7 +424,6 @@
     "design"
    ],
    "summary_by": "none",
-   "img": "",
    "sid": "21efcf41c8",
    "status": "repeat",
    "rev": 0
@@ -462,9 +435,9 @@
    "published": "2026-11-22T09:18:36Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 85,
+   "points": 86,
    "comments": 73,
-   "engagement": 0.876,
+   "engagement": 0.877,
    "topic_by": "keyword",
    "id": "77bc9c5c53",
    "topics": [
@@ -474,7 +447,6 @@
     "ai"
    ],
    "summary_by": "none",
-   "img": "",
    "sid": "77bc9c5c53",
    "status": "new",
    "rev": 0,
@@ -517,6 +489,30 @@
    "summary_by": "none",
    "img": "https://hippomaps.ch/static/pages/img/en/search.webp?v=5496d14268",
    "sid": "ebb93c0b48",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: OpenComputer – an open source alternative to Devin",
+   "url": "https://github.com/diggerhq/opencomputer",
+   "summary": "",
+   "published": "2026-11-20T20:19:56Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 122,
+   "comments": 36,
+   "engagement": 0.848,
+   "topic_by": "desk-default",
+   "id": "00dcab6dea",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "img": "https://opengraph.githubassets.com/8d596b572083da4c20aa7faefc1fcd67b68f7465c182bc4d2886295f519ade3f/diggerhq/opencomputer",
+   "sid": "00dcab6dea",
    "status": "repeat",
    "rev": 0
   },
@@ -572,39 +568,15 @@
    "rev": 0
   },
   {
-   "title": "Show HN: OpenComputer – an open source alternative to Devin",
-   "url": "https://github.com/diggerhq/opencomputer",
-   "summary": "",
-   "published": "2026-11-20T20:19:56Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 121,
-   "comments": 36,
-   "engagement": 0.847,
-   "topic_by": "desk-default",
-   "id": "00dcab6dea",
-   "topics": [
-    "roguelike"
-   ],
-   "desks": [
-    "gamedev"
-   ],
-   "summary_by": "none",
-   "img": "https://opengraph.githubassets.com/6e2040313e50345c3b6e850538a9800e183572086be5f0f6e48ca49d31624ff8/diggerhq/opencomputer",
-   "sid": "00dcab6dea",
-   "status": "repeat",
-   "rev": 0
-  },
-  {
    "title": "Pandex – Official European Law for AI Agents, over MCP",
    "url": "https://www.pandex.io",
    "summary": "",
    "published": "2026-11-21T20:47:41Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 121,
+   "points": 124,
    "comments": 29,
-   "engagement": 0.835,
+   "engagement": 0.838,
    "topic_by": "keyword",
    "id": "b77be25502",
    "topics": [
@@ -623,6 +595,47 @@
     {
      "sid": "d77b554642",
      "title": "Llms.txt and MCP didn't move the needle",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Show HN: I built a game where you are an LLM's subagent",
+   "url": "https://github.com/gulivan/worker755",
+   "summary": "",
+   "published": "2026-11-22T13:56:58Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 88,
+   "comments": 19,
+   "engagement": 0.779,
+   "topic_by": "keyword",
+   "id": "3c4f4993ad",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "img": "https://opengraph.githubassets.com/caa20faf036a233488f83bd727e849105621213b598940fd143f50be345aa8cb/gulivan/worker755",
+   "sid": "3c4f4993ad",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "cabaa2ef3d",
+     "title": "Making Immersive LLM Chat Experiences More Accessible",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "ba05f6db61",
+     "title": "LLM assisted reverse engineering",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "7dfde11877",
+     "title": "Reflections on Rust in the LLM Age",
      "d": "2026-11-21"
     }
    ]
@@ -676,47 +689,6 @@
    "sid": "d3325aea2b",
    "status": "repeat",
    "rev": 0
-  },
-  {
-   "title": "Show HN: I built a game where you are an LLM's subagent",
-   "url": "https://github.com/gulivan/worker755",
-   "summary": "",
-   "published": "2026-11-22T13:56:58Z",
-   "source": "Hacker News",
-   "source_id": "hn",
-   "points": 56,
-   "comments": 14,
-   "engagement": 0.715,
-   "topic_by": "keyword",
-   "id": "3c4f4993ad",
-   "topics": [
-    "llm"
-   ],
-   "desks": [
-    "ai"
-   ],
-   "summary_by": "none",
-   "img": "https://opengraph.githubassets.com/83e7ba15f339c69e92ad7923eca35bbcf0eab649370c661dbf0a72ec95015602/gulivan/worker755",
-   "sid": "3c4f4993ad",
-   "status": "new",
-   "rev": 0,
-   "related": [
-    {
-     "sid": "cabaa2ef3d",
-     "title": "Making Immersive LLM Chat Experiences More Accessible",
-     "d": "2026-11-21"
-    },
-    {
-     "sid": "ba05f6db61",
-     "title": "LLM assisted reverse engineering",
-     "d": "2026-11-21"
-    },
-    {
-     "sid": "7dfde11877",
-     "title": "Reflections on Rust in the LLM Age",
-     "d": "2026-11-21"
-    }
-   ]
   },
   {
    "title": "Llms.txt and MCP didn't move the needle",
@@ -776,9 +748,9 @@
    "published": "2026-11-19T14:08:33Z",
    "source": "Hacker News",
    "source_id": "hn",
-   "points": 53,
+   "points": 56,
    "comments": 2,
-   "engagement": 0.653,
+   "engagement": 0.661,
    "topic_by": "desk-default",
    "id": "3eb9c6b33f",
    "topics": [
@@ -841,6 +813,29 @@
    "img": "https://cdn.springcraft.ai/springrep/springrep-preview-mwmpm0jd.png",
    "sid": "45afd8c4f8",
    "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
+   "url": "https://news.ycombinator.com/item?id=50555002",
+   "summary": "",
+   "published": "2026-11-19T01:37:45Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 17,
+   "comments": 15,
+   "engagement": 0.623,
+   "topic_by": "desk-default",
+   "id": "5f16696a85",
+   "topics": [
+    "roguelike"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "5f16696a85",
+   "status": "new",
    "rev": 0
   },
   {
@@ -1004,7 +999,6 @@
     "gamedev"
    ],
    "summary_by": "none",
-   "img": "",
    "sid": "f8fce374fb",
    "status": "new",
    "rev": 0,
@@ -2009,7 +2003,7 @@
    "published": "Thu, 05 Nov 2026 11:32:18 -0600",
    "source": "Lobsters · ai",
    "source_id": "lobsters-ai",
-   "img": "",
+   "img": "https://i.ytimg.com/vi/5D7QPOIZ7gY/maxresdefault.jpg",
    "engagement": 0.0,
    "topic_by": "keyword",
    "id": "7dfde11877",
@@ -6095,7 +6089,7 @@
     "url": "https://news.ycombinator.com/item?id=50533517",
     "title": "Bolt's Scooters Are Becoming Accessibility Sensors",
     "source": "Hacker News",
-    "blurb": "3 cuộc thảo luận về UX trong 30 ngày; sôi nhất trên Hacker News (39 điểm, 50 bình luận)."
+    "blurb": "3 cuộc thảo luận về UX trong 30 ngày; sôi nhất trên Hacker News (39 điểm, 51 bình luận)."
    },
    {
     "topic": "game-marketing",
@@ -6107,7 +6101,17 @@
     "blurb": "2 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (125 điểm, 85 bình luận)."
    }
   ],
-  "finance": [],
+  "finance": [
+   {
+    "topic": "personal-finance",
+    "heat": 2.43,
+    "count": 3,
+    "url": "https://news.ycombinator.com/item?id=50251344",
+    "title": "Three new discoveries in mathematics, computer science, and physics",
+    "source": "Hacker News",
+    "blurb": "3 cuộc thảo luận về Tài chính cá nhân trong 30 ngày; sôi nhất trên Hacker News (1164 điểm, 715 bình luận)."
+   }
+  ],
   "gamedev": [
    {
     "topic": "roguelike",
@@ -6120,7 +6124,7 @@
    },
    {
     "topic": "indie-games",
-    "heat": 4.69,
+    "heat": 4.7,
     "count": 6,
     "url": "https://news.ycombinator.com/item?id=50343418",
     "title": "Valve \"played capitalism so well they broke it\" and now Steam can't be replaced",
@@ -6129,7 +6133,7 @@
    },
    {
     "topic": "agents",
-    "heat": 3.62,
+    "heat": 3.63,
     "count": 5,
     "url": "https://news.ycombinator.com/item?id=50454951",
     "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
@@ -6138,7 +6142,7 @@
    },
    {
     "topic": "game-marketing",
-    "heat": 3.11,
+    "heat": 3.12,
     "count": 4,
     "url": "https://news.ycombinator.com/item?id=50562320",
     "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
@@ -6178,8 +6182,8 @@
  "blocked_injection": 0,
  "dedup": {
   "n": 259,
-  "new": 34,
+  "new": 35,
   "update": 3,
-  "repeat": 222
+  "repeat": 221
  }
 }

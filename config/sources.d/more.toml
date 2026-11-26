@@ -1,0 +1,144 @@
+# Nguồn bổ sung (2026-11-23, task sources-more): chỉ feed RSS/Atom chính thức của chính nhà xuất bản.
+# Mỗi ban ≥ 8 nguồn. Mỗi nguồn tối đa PER_FEED=4 bài/ngày (press.py) để không nguồn nào lấn át.
+
+# ---- gamedev ----
+[[feed]]
+desk = "gamedev"
+id = "gamedev-net"
+name = "Gamedev.net"
+url = "https://www.gamedev.net/rss/"
+# lý do: cộng đồng lập trình game lâu đời, bài kỹ thuật
+[[feed]]
+desk = "gamedev"
+id = "eighty-lv"
+name = "80 Level"
+url = "https://80.lv/feed/"
+# lý do: quy trình art/kỹ thuật game thực chiến
+[[feed]]
+desk = "gamedev"
+id = "gdc-vault"
+name = "GDC"
+url = "https://gdcvault.com/rss"
+# lý do: bài giảng GDC chính chủ
+
+# ---- design ----
+[[feed]]
+desk = "design"
+id = "css-tricks"
+name = "CSS-Tricks"
+url = "https://css-tricks.com/feed/"
+# lý do: tham chiếu CSS/giao diện uy tín
+[[feed]]
+desk = "design"
+id = "uxcollective"
+name = "UX Collective"
+url = "https://uxdesign.cc/feed"
+# lý do: bài thực hành UX chọn lọc
+[[feed]]
+desk = "design"
+id = "web-dev"
+name = "web.dev"
+url = "https://web.dev/feed.xml"
+# lý do: hướng dẫn web/truy cập từ Google Chrome team
+[[feed]]
+desk = "design"
+id = "a11y-project"
+name = "The A11Y Project"
+url = "https://www.a11yproject.com/feed/feed.xml"
+# lý do: chuẩn thực hành khả năng tiếp cận
+
+# ---- ai ----
+[[feed]]
+desk = "ai"
+id = "anthropic-news"
+name = "Anthropic"
+url = "https://www.anthropic.com/rss.xml"
+# lý do: thông báo mô hình/nghiên cứu chính chủ
+[[feed]]
+desk = "ai"
+id = "openai-news"
+name = "OpenAI"
+url = "https://openai.com/news/rss.xml"
+# lý do: thông báo chính chủ
+[[feed]]
+desk = "ai"
+id = "deepmind"
+name = "Google DeepMind"
+url = "https://deepmind.google/blog/rss.xml"
+# lý do: nghiên cứu chính chủ
+[[feed]]
+desk = "ai"
+id = "bair"
+name = "Berkeley AI Research"
+url = "https://bair.berkeley.edu/blog/feed.xml"
+# lý do: blog nghiên cứu học thuật
+
+# ---- finance ----
+[[feed]]
+desk = "finance"
+id = "bogleheads"
+name = "Bogleheads Blog"
+url = "https://www.bogleheads.org/blog/feed/"
+# lý do: đầu tư chỉ số dài hạn
+[[feed]]
+desk = "finance"
+id = "collab-fund"
+name = "Collaborative Fund"
+url = "https://collabfund.com/blog/feed/"
+# lý do: Morgan Housel, tâm lý tiền bạc
+[[feed]]
+desk = "finance"
+id = "awealthofcs"
+name = "A Wealth of Common Sense"
+url = "https://awealthofcommonsense.com/feed/"
+# lý do: đầu tư dựa bằng chứng
+[[feed]]
+desk = "finance"
+id = "irs-news"
+name = "IRS Newsroom"
+url = "https://www.irs.gov/newsroom/rss-feeds"
+# lý do: nguồn thuế chính thức
+[[feed]]
+desk = "finance"
+id = "investor-gov"
+name = "Investor.gov"
+url = "https://www.investor.gov/news-alerts/feed"
+# lý do: cơ quan SEC, cảnh báo nhà đầu tư
+
+# ---- marketing ----
+[[feed]]
+desk = "marketing"
+id = "moz-blog"
+name = "Moz Blog"
+url = "https://moz.com/feed"
+# lý do: SEO uy tín
+[[feed]]
+desk = "marketing"
+id = "ahrefs"
+name = "Ahrefs Blog"
+url = "https://ahrefs.com/blog/feed/"
+# lý do: SEO/nội dung dựa dữ liệu
+[[feed]]
+desk = "marketing"
+id = "mobilegamer-biz"
+name = "MobileGamer.biz"
+url = "https://mobilegamer.biz/feed/"
+# lý do: marketing/UA game mobile
+[[feed]]
+desk = "marketing"
+id = "pocketgamer-biz"
+name = "PocketGamer.biz"
+url = "https://www.pocketgamer.biz/rss/"
+# lý do: kinh doanh game mobile
+[[feed]]
+desk = "marketing"
+id = "think-with-google"
+name = "Think with Google"
+url = "https://www.thinkwithgoogle.com/feed/"
+# lý do: nghiên cứu hành vi người dùng từ Google
+[[feed]]
+desk = "marketing"
+id = "backlinko"
+name = "Backlinko"
+url = "https://backlinko.com/feed"
+# lý do: hướng dẫn SEO chi tiết

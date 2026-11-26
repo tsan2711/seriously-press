@@ -1,0 +1,15 @@
+const RT = require(process.argv[2] + '/readtools.js'), F = RT.flow, r = {};
+const mem = () => { const m = {}; return { getItem: k => (k in m ? m[k] : null), setItem: (k, v) => { m[k] = v; } }; };
+const st = mem(), k = F.key('p1');
+r.key = k === 'press.flow.p1' && F.key() === 'press.flow.me';
+r.save_ok = F.save(st, k, { d: '2026-11-25', id: 'a1', t: 'Tiêu đề', y: 812.6 }) === true;
+const o = F.load(st, k, '2026-11-25'); r.load = !!o && o.id === 'a1' && o.y === 813 && o.t === 'Tiêu đề';
+r.other_day = F.load(st, k, '2026-11-26') === null;
+F.save(st, k, { d: '2026-11-25', id: '', y: 100 }); r.too_little = F.load(st, k, '2026-11-25') === null;
+F.save(st, k, { d: '2026-11-25', id: '', y: 900 }); r.scrolled_only = !!F.load(st, k, '2026-11-25');
+st.setItem(k, '{bad'); r.corrupt = F.load(st, k, '2026-11-25') === null;
+r.full_store = F.save({ setItem() { throw new Error('quota'); } }, k, { d: 'x' }) === false;
+r.no_item = F.load(mem(), k, 'x') === null;
+r.title_cut = JSON.parse((F.save(st, k, { d: 'd', id: 'z', t: 'x'.repeat(300), y: 0 }), st.getItem(k))).t.length === 90;
+r.first_visible = F.firstVisible([{ bottom: -50 }, { bottom: 10 }, { bottom: 400 }], 60) === 2 && F.firstVisible([{ bottom: 5 }], 60) === -1 && F.firstVisible([], 0) === -1;
+console.log(JSON.stringify(r));

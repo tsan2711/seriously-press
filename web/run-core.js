@@ -36,7 +36,7 @@
   function classify(a, topics, desk) {
     const t = (a.title + ' ' + a.summary).toLowerCase(), hits = [];
     for (const [id, c] of Object.entries(topics || {})) if ((c.kw || []).some(k => t.includes(k.toLowerCase()))) hits.push(id);
-    if (!hits.length) { const own = Object.entries(topics || {}).find(([, c]) => (c.desks || []).includes(desk)); if (own) hits.push(own[0]); }
+    
     return hits.slice(0, 3);
   }
   const withTimeout = (fx, url, init, ms) => { const c = typeof AbortController !== 'undefined' ? new AbortController() : null, t = c && setTimeout(() => c.abort(), ms); return fx(url, Object.assign({}, init, c ? { signal: c.signal } : {})).finally(() => t && clearTimeout(t)); };

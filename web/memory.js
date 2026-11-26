@@ -1,5 +1,5 @@
 // Bộ nhớ người đọc (K4) — CỤC BỘ (localStorage 'press.mem.<người đọc>'), không gửi đi, không lên repo. Thuần hàm, test bằng node.
-// Ba tầng: SHORT (hôm nay, nửa đời 1 ngày) · MID (30 ngày: chủ đề nóng/nguồn, nửa đời 14 ngày) · LONG (gu bền, vai trò, nguồn tin cậy, điều đã học; nửa đời 180 ngày).
+// Ba tầng: SHORT (nửa đời 1 ngày) · MID (30 ngày, 14) · LONG (gu bền; 180).
 // Mỗi mục: {id,tier,kind,key,label,s,n,days,t,user} — xem/sửa (ghim, tắt)/xoá/xuất bởi chính người đọc. Xoá = bia mộ (không tự học lại).
 (function (root) {
   const DAY = 86400000, HALF = { short: 1, mid: 14, long: 180 }, KINDS = ['topic', 'source', 'habit', 'fact'];
@@ -28,7 +28,7 @@
     m.last = dkey(now); return m;
   }
   function learn(m, kind, key, text, now) { const id = idOf('fact', kind + '-' + key); if (m.tomb.includes(id)) return; let it = find(m, id); if (!it) m.items.push({ id, tier: 'long', kind: 'fact', key: kind + '-' + key, label: text, s: 1, n: 1, days: [dkey(now)], t: now, user: false, mute: kind === 'mute' ? key : undefined }); else { it.n++; it.t = now; } }
-  // Củng cố hằng ngày (idempotent theo m.cons): short cũ hơn 1 ngày → mid; mid đủ mạnh + đủ ngày → long; mục yếu bị bỏ; giờ đọc hay gặp → thói quen.
+  // Củng cố hằng ngày (idempotent theo m.cons): short→mid→long, mục yếu bị bỏ.
   function consolidate(m, now, ctx) {
     now = now || Date.now(); const today = dkey(now); if (m.cons === today) return { changed: false }; m.cons = today; let ch = 0;
     m.items.forEach(it => {

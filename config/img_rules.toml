@@ -1,0 +1,46 @@
+# Luật ảnh theo host: URL bài khớp `match` (regex, re.fullmatch trên URL đã bỏ query/fragment) → ảnh đoán trước, không tải trang.
+# Thêm host mới = thêm một khối [[rule]], không sửa mã. Placeholder trong `image`/`api` = nhóm đặt tên của regex: {owner}, {id}...
+# kind = "url" (mặc định): `image` là URL ảnh luôn. kind = "api": GET `api` (JSON) rồi lấy `json_path` (dùng * cho khoá bất kỳ); chỉ chạy lúc build.
+# arxiv.org: cố ý không có luật (không ảnh, để sau). reddit: chỉ dùng preview có sẵn trong feed (feed_img), không luật ở đây.
+
+[[rule]]
+name = "github"
+match = 'https?://(?:www\.)?github\.com/(?P<owner>[\w.-]+)/(?P<repo>[\w.-]+)'
+image = "https://opengraph.githubassets.com/1/{owner}/{repo}"
+
+[[rule]]
+name = "youtube-watch"
+match = 'https?://(?:www\.|m\.)?youtube\.com/watch\?(?:.*&)?v=(?P<id>[\w-]{11})(?:&.*)?'
+image = "https://i.ytimg.com/vi/{id}/hqdefault.jpg"
+
+[[rule]]
+name = "youtube-short-path"
+match = 'https?://(?:www\.|m\.)?youtube\.com/(?:shorts|embed|live)/(?P<id>[\w-]{11})'
+image = "https://i.ytimg.com/vi/{id}/hqdefault.jpg"
+
+[[rule]]
+name = "youtu.be"
+match = 'https?://youtu\.be/(?P<id>[\w-]{11})'
+image = "https://i.ytimg.com/vi/{id}/hqdefault.jpg"
+
+[[rule]]
+name = "huggingface-dataset"
+match = 'https?://(?:www\.)?huggingface\.co/datasets/(?P<owner>[\w.-]+)/(?P<repo>[\w.-]+)'
+image = "https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/{owner}/{repo}.png"
+
+[[rule]]
+name = "huggingface-space"
+match = 'https?://(?:www\.)?huggingface\.co/spaces/(?P<owner>[\w.-]+)/(?P<repo>[\w.-]+)'
+image = "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/{owner}/{repo}.png"
+
+[[rule]]
+name = "huggingface-model"
+match = 'https?://(?:www\.)?huggingface\.co/(?!(?:datasets|spaces|docs|blog|papers|models|collections|posts|learn|pricing|enterprise|join|login|settings|organizations|api|tasks)/)(?P<owner>[\w.-]+)/(?P<repo>[\w.-]+)'
+image = "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/{owner}/{repo}.png"
+
+[[rule]]
+name = "wikipedia"
+kind = "api"
+match = 'https?://(?P<lang>[a-z]{2,3})(?:\.m)?\.wikipedia\.org/wiki/(?P<title>[^/:]+)'
+api = "https://{lang}.wikipedia.org/w/api.php?action=query&prop=pageimages&piprop=thumbnail&pithumbsize=800&format=json&redirects=1&titles={title}"
+json_path = "query.pages.*.thumbnail.source"

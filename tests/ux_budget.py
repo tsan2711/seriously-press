@@ -6,7 +6,7 @@ R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'public')
 rd = lambda n: open(f'{R}/{n}', encoding='utf8').read()
 bad, rows = [], []
 MAX_DEPTH = 3
-CONTROLS = {'index.html': 75, 'me.html': 90, 'picker.html': 75, 'article.html': 45}; CONTROLS_DEFAULT = 60   # đo thực tế 11-22 + dư ~25% (plan-ux §U1)
+CONTROLS = {'index.html': 48, 'me.html': 62, 'picker.html': 75, 'article.html': 32}; CONTROLS_DEFAULT = 32   # 11-23 siết lại (chỉ hạ): đo index 38, me 50, picker 74, article 25, ban 19–24 + dư ~25%
 
 # ---- 1) độ sâu trang: BFS từ index.html; liên kết trong menu tốn thêm 1 click (mở menu)
 pages = {os.path.basename(f): rd(os.path.basename(f)) for f in glob.glob(R + '/*.html')}

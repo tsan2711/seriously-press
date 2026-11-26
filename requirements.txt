@@ -1,0 +1,2 @@
+# Chỉ stdlib là bắt buộc. Pillow tuỳ chọn: có thì ảnh bài được tải về + thu 640x360 webp (public/img/), không có thì giữ hotlink.
+pillow>=10

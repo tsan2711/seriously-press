@@ -2,18 +2,18 @@
 """Phòng Báo M1 — fetch → dedupe → gắn chủ đề → kho bài JSON theo ngày → build tĩnh. Chỉ stdlib.
   python3 press.py fetch [--date YYYY-MM-DD]   # ghi store/<date>.json (CHỈ ghi vào store/)
   python3 press.py build                       # đọc store/ + config/ → public/ (index + mỗi ban)
-  python3 press.py check                       # >=20 bài hôm nay, mỗi bài có nguồn + chủ đề
+  python3 press.py check                       # >=20 bài hôm nay, mỗi bài có nguồn + ban
   python3 press.py all
 Nội dung web = không tin: chỉ là dữ liệu; qua security.injection_hits (nếu tìm thấy), không đưa vào phiên agent nào ở đây.
 Tóm tắt M1 = trích tối đa 200 ký tự từ mô tả của nguồn (summary_by="excerpt"); bước viết lại bằng Haiku/Sonnet là mốc sau."""
-import sys, os, re, json, html, datetime, hashlib, urllib.request, urllib.parse, concurrent.futures as cf
+import sys, os, re, json, html, time, threading, datetime, hashlib, urllib.request, urllib.error, urllib.parse, concurrent.futures as cf
 import tomllib
 import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 UA = 'press-room/0.1 (+public RSS reader; respects robots)'
 MAX_SUM = 200
-PER_FEED = 15
+PER_FEED = 4   # ≤4 bài/ngày/nguồn: không nguồn nào lấn át
 HN_PER_Q = 8
 MIN_POINTS = 15
 
@@ -24,7 +24,7 @@ except Exception:
     def injection_hits(t):
         return [m for m in ('ignore previous', 'ignore all previous', 'disregard the above', 'system prompt') if m in t.lower()]
 
-IMG_MAX = 90
+IMG_MAX = 250   # trước 90: bài engagement thấp (sej, mobilegamer…) bị cắt khỏi og → thiếu ảnh
 
 def load_cfg():
     topics = tomllib.load(open(f'{ROOT}/config/topics.toml', 'rb'))['topic']
@@ -47,10 +47,99 @@ def load_cfg():
 def load_roles():
     return tomllib.load(open(f'{ROOT}/config/roles.toml', 'rb'))
 
-def http(url):
-    req = urllib.request.Request(url, headers={'User-Agent': UA})
-    with urllib.request.urlopen(req, timeout=20) as r:
+# ---- Trần thời gian giai đoạn mạng + đo giờ (task build-speed) ----
+NET_BUDGET = 90     # tổng giây cho MỌI giai đoạn mạng của fetch; quá thì bỏ phần còn lại
+CAP_FEEDS, CAP_TREND = 35, 20   # trần riêng: nguồn, "đang bàn tán" — phần còn lại của 90 s dành cho ảnh
+HTTP_TIMEOUT = 20
+PHASES, WARNS = {}, []
+_NET = dict(deadline=None)
+
+def net_start(budget=None):
+    _NET['deadline'] = time.monotonic() + (NET_BUDGET if budget is None else budget)
+def net_left(cap=None):
+    """Giây còn lại của trần mạng (≤ cap nếu có). Chưa bắt đầu đếm → không giới hạn (chỉ cap)."""
+    left = float('inf') if _NET['deadline'] is None else _NET['deadline'] - time.monotonic()
+    return max(0.0, min(left, cap) if cap is not None else left)
+def warn(msg):
+    WARNS.append(msg); print('CẢNH BÁO:', msg)
+
+class phase:
+    """with phase('nguồn'): … — cộng dồn giây vào PHASES."""
+    def __init__(self, name): self.name = name
+    def __enter__(self): self.t0 = time.monotonic()
+    def __exit__(self, *a): PHASES[self.name] = PHASES.get(self.name, 0.0) + time.monotonic() - self.t0
+
+def time_line():
+    net = sum(v for k, v in PHASES.items() if k != 'dựng trang')
+    parts = ' · '.join(f'{k} {v:.1f}s' for k, v in PHASES.items())
+    return f'thời gian: {parts} · mạng {net:.1f}/{NET_BUDGET}s · tổng {sum(PHASES.values()):.1f}s' + (f' · {len(WARNS)} cảnh báo' if WARNS else '')
+
+def par_map(fn, jobs, workers, limit):
+    """Chạy fn(job) song song, tối đa `limit` giây. Trả list cùng thứ tự: (kết quả|None, lỗi|None);
+    job chưa xong khi hết giờ → (None, 'hết trần thời gian'). Luồng daemon: không giữ tiến trình sống sau khi quá hạn."""
+    res = [(None, 'hết trần thời gian')] * len(jobs); q = list(enumerate(jobs)); lk = threading.Lock(); t_end = time.monotonic() + limit
+    def worker():
+        while time.monotonic() < t_end:
+            with lk:
+                if not q: return
+                i, j = q.pop(0)
+            try: r = (fn(j), None)
+            except Exception as ex: r = (None, f'{type(ex).__name__}: {ex}')
+            if time.monotonic() < t_end: res[i] = r
+    ts = [threading.Thread(target=worker, daemon=True) for _ in range(max(1, min(workers, len(jobs))))]
+    for t in ts: t.start()
+    for t in ts: t.join(max(0.0, t_end - time.monotonic()))
+    return res
+
+def http(url, headers=None):
+    req = urllib.request.Request(url, headers={'User-Agent': UA, **(headers or {})})
+    with urllib.request.urlopen(req, timeout=max(1.0, min(HTTP_TIMEOUT, net_left()))) as r:
         return r.read()
+
+# Cache điều kiện cho feed: store/feeds.json {url: {etag, lm}} + thân bản cũ ở store/feeds/<sha1>.xml. 304 → dùng bản cũ.
+def _fc_path(): return f'{ROOT}/store/feeds.json'
+def feed_cache_load():
+    try:
+        c = json.load(open(_fc_path(), encoding='utf8')); return c if isinstance(c, dict) else {}
+    except Exception: return {}
+def feed_cache_save(c):
+    try:
+        os.makedirs(f'{ROOT}/store', exist_ok=True)
+        json.dump(c, open(_fc_path() + '.tmp', 'w', encoding='utf8'), ensure_ascii=False, indent=0, sort_keys=True); os.replace(_fc_path() + '.tmp', _fc_path())
+    except Exception: pass
+def _body_path(url): return f'{ROOT}/store/feeds/{hashlib.sha1(url.encode()).hexdigest()[:16]}.xml'
+def http_cond(url, cache, opener=None):
+    """GET có If-None-Match/If-Modified-Since qua opener(url, headers) → (thân, {etag, lm}). 304 + có bản cũ → trả bản cũ."""
+    opener = opener or http_meta; ent = cache.get(url) or {}; h = {}; old = None
+    if ent and os.path.isfile(_body_path(url)):
+        old = open(_body_path(url), 'rb').read()
+        if ent.get('etag'): h['If-None-Match'] = ent['etag']
+        if ent.get('lm'): h['If-Modified-Since'] = ent['lm']
+    try:
+        body, meta = opener(url, h)
+    except urllib.error.HTTPError as ex:
+        if ex.code == 304 and old is not None: return old
+        raise
+    if meta.get('etag') or meta.get('lm'):
+        try:
+            os.makedirs(os.path.dirname(_body_path(url)), exist_ok=True)
+            open(_body_path(url) + '.tmp', 'wb').write(body); os.replace(_body_path(url) + '.tmp', _body_path(url))
+            cache[url] = dict(etag=meta.get('etag', ''), lm=meta.get('lm', ''))
+        except Exception: pass
+    return body
+
+def http_meta(url, headers=None):
+    """Như http() nhưng trả (thân, {etag, lm}) để lưu cache điều kiện."""
+    req = urllib.request.Request(url, headers={'User-Agent': UA, **(headers or {})})
+    with urllib.request.urlopen(req, timeout=max(1.0, min(HTTP_TIMEOUT, net_left()))) as r:
+        return r.read(), dict(etag=r.headers.get('ETag') or '', lm=r.headers.get('Last-Modified') or '')
+
+def strip_quotes(t):
+    """Tiêu đề bọc trọn trong ngoặc kép (tweet trích trên HN) → bỏ cặp ngoặc ngoài; ngoặc giữa câu giữ nguyên."""
+    t = (t or '').strip()
+    for o, c in (('"', '"'), ('\u201c', '\u201d'), ("'", "'"), ('\u2018', '\u2019')):
+        if len(t) > 2 and t[0] == o and t[-1] == c and o not in t[1:-1] and c not in t[1:-1]: return t[1:-1].strip()
+    return t
 
 def clean(s, n=None):
     s = html.unescape(re.sub(r'<[^>]+>', ' ', s or ''))
@@ -62,7 +151,7 @@ def clean(s, n=None):
 def tag(e):
     return e.tag.rsplit('}', 1)[-1]
 
-IMG_BAD = re.compile(r'(pixel|spacer|1x1|blank|tracking|badge|avatar|gravatar|emoji|logo|favicon|\.svg|\.gif)(\b|[?.])', re.I)
+IMG_BAD = re.compile(r'(pixel|spacer|1x1|blank|tracking|badge|avatar|gravatar|emoji|logo|favicon|\.svg|\.gif)(\b|[?.])|profile_images|/_si/', re.I)
 def good_img(u, base=''):
     u = html.unescape((u or '').strip())
     if u.startswith('//'): u = 'https:' + u
@@ -70,28 +159,20 @@ def good_img(u, base=''):
     return u if u.startswith('https://') and len(u) < 400 and not IMG_BAD.search(u) else ''
 
 def feed_img(it, desc, link):
-    """Ảnh đại diện từ chính feed (media:thumbnail/content, enclosure ảnh, <img> đầu trong mô tả) — không tốn request thêm."""
+    """Ảnh đại diện từ chính feed (media:thumbnail/content, enclosure ảnh, <img> đầu trong content:encoded/summary) — không tốn request thêm."""
     for c in it.iter():
-        k = tag(c)
-        if k in ('thumbnail', 'content') and c.get('url') and (k == 'thumbnail' or 'image' in (c.get('type') or c.get('medium') or 'image')):
-            if (u := good_img(c.get('url'), link)): return u
-        if k == 'enclosure' and 'image' in (c.get('type') or '') and (u := good_img(c.get('url'), link)): return u
-    m = re.search(r'<img[^>]+src=["\']([^"\']+)', html.unescape(desc or '') if '&lt;img' in (desc or '') else (desc or ''))
-    return good_img(m.group(1), link) if m else ''
-
-OG = re.compile(r'<meta[^>]+(?:property|name)=["\'](?:og:image(?::secure_url)?|twitter:image(?::src)?)["\'][^>]*>', re.I)
-def og_image(url):
-    """og:image từ <head> của bài gốc (đọc ≤ 200KB, 8 s). Lỗi → rỗng, không sập."""
-    try:
-        req = urllib.request.Request(url, headers={'User-Agent': UA})
-        with urllib.request.urlopen(req, timeout=8) as r:
-            if 'html' not in (r.headers.get('Content-Type') or 'html'): return ''
-            h = r.read(200_000).decode('utf-8', 'ignore')
-        for m in OG.finditer(h):
-            c = re.search(r'content=["\']([^"\']+)', m.group(0))
-            if c and (u := good_img(c.group(1), url)): return u
-    except Exception: pass
+        k = tag(c); u0 = c.get('url')
+        if not u0: continue
+        kind = (c.get('type') or c.get('medium') or '').lower()
+        if k == 'thumbnail' or (k in ('content', 'enclosure') and kind.startswith('image')):
+            if (u := good_img(u0, link)): return u
+    texts = [desc or ''] + [c.text or '' for c in it if tag(c) in ('description', 'summary', 'content', 'encoded')]
+    for t in dict.fromkeys(texts):
+        m = re.search(r'<img[^>]+src=["\']([^"\']+)', html.unescape(t) if '&lt;img' in t else t)
+        if m and (u := good_img(m.group(1), link)): return u
     return ''
+
+import ogimg
 
 def parse_feed(raw, feed):
     out = []
@@ -194,10 +275,10 @@ def trending(desks, topics, cfg):
         for g in cfg['github'].get(did, []): jobs.append((did, 'github', g, lambda g=g: github_items(g, cfg)))
         if (cfg.get('last30days') or {}).get('enabled'):
             for q in d.get('hn_queries', [])[:2]: jobs.append((did, 'hn', 'l30:' + q, lambda q=q: last30_items(q, cfg)))
-    def run(j):
-        try: return j, j[3](), None
-        except Exception as e: return j, [], f'{j[0]}/{j[1]}:{j[2]}: {type(e).__name__}: {e}'
-    with cf.ThreadPoolExecutor(4) as ex: res = list(ex.map(run, jobs))
+    def run(j, r):
+        v, err = r
+        return j, v or [], (f'{j[0]}/{j[1]}:{j[2]}: {err}' if err else None)
+    res = [run(j, r) for j, r in zip(jobs, par_map(lambda j: j[3](), jobs, 4, net_left(CAP_TREND)))]
     errs = [r[2] for r in res if r[2]]
     per = {}
     for (did, kind, _, _), items, _e in res:
@@ -231,8 +312,8 @@ def classify(a, topics, desk_id):
     hits.sort(reverse=True)
     tl = [t for _, t in hits[:3]]
     if not tl:   # không khớp từ khoá → chủ đề đầu của ban (đánh dấu để Haiku gắn lại sau)
-        tl = [next((k for k, t in topics.items() if desk_id in t['desks']), 'misc')]
-        a['topic_by'] = 'desk-default'
+        tl = []   # không khớp → không gắn chủ đề (gắn bừa chủ đề đầu của ban = nhãn sai); chỉ tính ban
+        a['topic_by'] = 'none'
     else:
         a['topic_by'] = 'keyword'
     desks = sorted({d for t in tl if t in topics for d in topics[t]['desks']} | {desk_id})
@@ -251,19 +332,22 @@ def fetch(date):
             jobs.append((did, 'feed', f))
         for q in d.get('hn_queries', []):
             jobs.append((did, 'hn', q))
+    net_start(); PHASES.clear(); WARNS.clear(); fcache = feed_cache_load()
     def run(j):
         did, k, x = j
-        try:
-            return j, (parse_feed(http(x['url']), x) if k == 'feed' else hn(x)), None
-        except Exception as e:
-            return j, [], f'{type(e).__name__}: {e}'
+        return parse_feed(http_cond(x['url'], fcache), x) if k == 'feed' else hn(x)
     seen, arts, errs, blocked = {}, [], [], 0
-    with cf.ThreadPoolExecutor(8) as ex:
-        results = list(ex.map(run, jobs))
+    with phase('nguồn'):
+        raw = par_map(run, jobs, 8, net_left(CAP_FEEDS))
+        feed_cache_save(fcache)
+    results = [(j, v or [], err) for j, (v, err) in zip(jobs, raw)]
+    late = sum(1 for _, _, err in results if err == 'hết trần thời gian')
+    if late: warn(f'nguồn: {late}/{len(jobs)} nguồn chưa xong trong {CAP_FEEDS}s → bỏ')
     for (did, k, x), items, err in results:
         if err:
             errs.append(f"{did}/{x['id'] if k == 'feed' else x}: {err}")
         for a in items:
+            a['title'] = strip_quotes(a['title'])
             if injection_hits(a['title'] + ' ' + a['summary']):
                 blocked += 1; continue
             key = canon(a['url'])
@@ -276,18 +360,42 @@ def fetch(date):
             a.update(id=hashlib.sha1(key.encode()).hexdigest()[:10], topics=tl, desks=sorted(set(dl) | {did}), summary_by='excerpt' if a['summary'] else 'none')
             seen[key] = a; arts.append(a)
     arts.sort(key=lambda a: -a.get('engagement', 0))
-    need = [a for a in arts if not a.get('img')][:IMG_MAX]   # bù ảnh thiếu bằng og:image (song song, giới hạn số bài)
-    with cf.ThreadPoolExecutor(8) as ex:
-        for a, u in zip(need, ex.map(lambda a: og_image(a['url']), need)): a['img'] = u
-    print(f"ảnh: {sum(bool(a.get('img')) for a in arts)}/{len(arts)} bài có ảnh")
+    import imgcache
+    # trending chạy TRƯỚC giai đoạn ảnh (trần riêng) để ảnh dùng phần còn lại của 90 s
+    with phase('bàn tán'):
+        trend, terrs = trending(desks, topics, cfg); errs += terrs
+    if any('hết trần thời gian' in t for t in terrs): warn('bàn tán: một số truy vấn chưa xong trong trần → bỏ')
+    t_img = time.monotonic()
+    def img_budget(b):
+        left = net_left()
+        if left < b: warn(f'ảnh: còn {left:.0f}s < {b}s mặc định → rút ngắn/bỏ bước')
+        return max(0, int(min(b, left)))
+    def img_step(name, fn):
+        if net_left() < 1: warn(f'ảnh/{name}: hết trần {NET_BUDGET}s → bỏ'); return None
+        try: return fn()
+        except Exception as ex: warn(f'ảnh/{name}: {type(ex).__name__}'); return None
+    img_step('kiểm feed', lambda: imgcache.clean(arts, ROOT, budget=img_budget(imgcache.BUDGET)))   # ảnh từ feed: gỡ hỏng/lặp >2 thẻ
+    img_step('og', lambda: ogimg.fill_images(arts, ROOT, IMG_MAX, budget=img_budget(ogimg.BUDGET), retry_empty=ogimg.RETRY_EMPTY))   # bù ảnh thiếu bằng og:image (cache theo url, giới hạn thời gian)
+    img_step('kiểm og', lambda: imgcache.clean(arts, ROOT, budget=img_budget(imgcache.BUDGET)))
+    img_step('tóm tắt', lambda: print('tóm tắt meta: +%d bài (%d request)' % ogimg.fill_summaries(arts, ROOT, budget=img_budget(ogimg.BUDGET), bad=injection_hits)))   # H7: bài HN chỉ có tiêu đề → meta description
+    try:
+        import imgfind   # dự phòng cuối: ảnh Wikimedia Commons liên quan (giấy phép mở, kèm ghi công)
+        _to = imgfind.load_cfg()['timeout']; _ff = lambda u: None if net_left() < 1 else imgfind.fetch_json(u, _to)
+        nc, qc = imgfind.fill_commons(arts, ROOT, fetcher=_ff, topic_label=lambda a: (topics.get(a['topics'][0], {}) if isinstance(topics, dict) else next((t for t in topics if t.get('id') == a['topics'][0]), {})).get('label', '') if a.get('topics') else '')
+        print(f'commons: +{nc} ảnh ({qc} truy vấn)')
+        print('kiểm ảnh:', img_step('kiểm commons', lambda: imgcache.clean(arts, ROOT, budget=img_budget(imgcache.BUDGET))))
+    except Exception as ex: print('commons: bỏ qua:', type(ex).__name__)
+    print('ảnh cục bộ:', img_step('cục bộ', lambda: imgcache.localize(arts, ROOT, budget=img_budget(imgcache.LOCAL_BUDGET))))   # tải về + thu 640×360 webp (cần Pillow; không có → giữ hotlink)
+    import metrics; print(metrics.img_line(metrics.img_coverage(arts)))
     import kb as KB   # K2/K3: gắn new/update/repeat theo các ngày TRƯỚC + ghi KB (idempotent theo ngày)
     kbs = KB.load(); dstat = KB.ingest(kbs, arts, date); KB.save(kbs)
-    trend, terrs = trending(desks, topics, cfg); errs += terrs
+    PHASES['ảnh'] = time.monotonic() - t_img
     os.makedirs(f'{ROOT}/store', exist_ok=True)
     json.dump(dict(date=date, generated=datetime.datetime.now().isoformat(timespec='seconds'), articles=arts, trending=trend, errors=errs, blocked_injection=blocked, dedup=dstat),
               open(f'{ROOT}/store/{date}.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
     print(f'fetch {date}: {len(arts)} bài ({dstat["new"]} mới, {dstat["update"]} cập nhật, {dstat["repeat"]} lặp), {len(errs)} nguồn lỗi, {blocked} bị chặn injection')
     for e in errs: print('  !', e)
+    if net_left() <= 0: warn(f'trần mạng {NET_BUDGET}s đã hết — phần chưa xong đã bỏ')
 
 def e(s): return html.escape(s or '')
 
@@ -305,23 +413,46 @@ article a{{font:600 1.1rem Georgia,serif}}p{{margin:.2rem 0}}small{{color:var(--
 MIN_FRESH = 8
 def fresh_only(arts):
     """Ngày mới LOẠI tin lặp (status=repeat, K2); chỉ giữ new + update. Quá ít tin mới → bù vài tin lặp nổi nhất, gắn 'repeat' để UI ghi 'Đã thấy'."""
+    for a in arts: a['title'] = strip_quotes(a.get('title'))   # kể cả số báo cũ trong store
     fresh = [a for a in arts if a.get('status', 'new') != 'repeat']
     if len(fresh) < MIN_FRESH:
         fresh += sorted([a for a in arts if a.get('status') == 'repeat'], key=lambda a: -a.get('engagement', 0))[:MIN_FRESH - len(fresh)]
     return fresh
 
+def credit_caption(pages, arts):
+    """Chú thích ghi công ảnh Commons dưới ảnh bài nổi bật ở article.html (escape; theme.py không đổi)."""
+    h = pages.get('article.html'); m = re.search(r'data-id="([^"]+)"', h or '')
+    a = next((x for x in arts if m and x['id'] == html.unescape(m.group(1))), None)
+    if a and a.get('img_credit') and a.get('img'):
+        i = h.find('</div>', h.find('class="thumb"'))
+        if i > 0: pages['article.html'] = h[:i + 6] + f'<p class="img-credit" style="font-size:.75rem;opacity:.8;margin:.25rem 0">Ảnh: {html.escape(a["img_credit"])}</p>' + h[i + 6:]
+    return pages
+
 def build():
+    with phase('dựng trang'): _build()
+
+def _build():
     topics, desks = load_cfg()
-    files = sorted(f for f in os.listdir(f'{ROOT}/store') if f.endswith('.json'))
+    files = sorted(f for f in os.listdir(f'{ROOT}/store') if re.fullmatch(r'\d{4}-\d\d-\d\d\.json', f))
     if not files: sys.exit('store/ rỗng — chạy fetch trước')
     day = json.load(open(f'{ROOT}/store/{files[-1]}', encoding='utf8'))
     arts = fresh_only(day['articles'])
     day = dict(day, articles=arts)
     os.makedirs(f'{ROOT}/public', exist_ok=True)
     import shutil, theme   # theme Xưởng đồng hồ 2D tĩnh: web/style.css + web/app.js, HTML từ theme.py
-    pages = theme.render_all(theme.Ctx(day, topics, desks, roles=load_roles(), share=tomllib.load(open(f'{ROOT}/config/share.toml', 'rb')).get('endpoint', '')))
+    hist = [json.load(open(f'{ROOT}/store/{f}', encoding='utf8')) for f in files[:-1][-theme.TOPIC_DAYS:]]
+    hist = [dict(h, articles=fresh_only(h['articles'])) for h in hist]
+    try:   # lấy repo TRƯỚC khi dựng trang: khối "Repo hay" ở trang chủ đọc store/repos/ (lỗi mạng → bản đã có trên đĩa)
+        import hotrepos as repos; repos.build()
+    except Exception as ex: print('repos: không lấy được —', ex)
+    pages = theme.render_all(theme.Ctx(day, topics, desks, roles=load_roles(), history=hist, share=tomllib.load(open(f'{ROOT}/config/share.toml', 'rb')).get('endpoint', '')))
+    pages = credit_caption(pages, day['articles'])
     for name, h in pages.items(): open(f'{ROOT}/public/{name}.tmp', 'w', encoding='utf8').write(h); os.replace(f'{ROOT}/public/{name}.tmp', f'{ROOT}/public/{name}')
     for f in ('rank.js', 'dedup.js', 'memory.js', 'journal.js', 'profiles.js', 'share-core.js', 'run-core.js', 'app.js', 'diary.js', 'community.js', 'settings.js', 'mempage.js', 'issues.js', 'fx.js', 'style.css'): shutil.copy(f'{ROOT}/web/{f}', f'{ROOT}/public/{f}')
+    sk = theme.skin_name()   # skin: nối web/skins/_flat.css + <skin>.css sau style.css gốc (chỉ lớp trình bày)
+    if sk:
+        with open(f'{ROOT}/public/style.css', 'a', encoding='utf8') as o:
+            for f in ('_flat.css', f'{sk}.css'): o.write('\n' + open(f'{ROOT}/web/skins/{f}', encoding='utf8').read())
     if os.path.isdir(f'{ROOT}/web/tex'): shutil.copytree(f'{ROOT}/web/tex', f'{ROOT}/public/tex', dirs_exist_ok=True)
     build_issues(files, topics, desks)
     import extras; n_s = extras.build_search(ROOT, topics, desks)
@@ -333,6 +464,10 @@ def build():
     trend = day.get('trending', {})
     json.dump(dict(date=day['date'], desks={d: dict(name=c['name'], accent=c['accent']) for d, c in desks.items()}, topics=topics, trending=trend, hot=sorted({x['topic'] for v in trend.values() for x in v}), dedup=tomllib.load(open(f'{ROOT}/config/dedup.toml', 'rb')), repeat_hidden=day.get('dedup', {}).get('repeat', 0), engagement_weight=load_eng()['weights']['rank'], roles=load_roles(), articles=arts),
               open(f'{ROOT}/public/today.json', 'w', encoding='utf8'), ensure_ascii=False)
+    try:
+        import hotrepos as repos; repos.write_page(f'{ROOT}/public')
+    except Exception as ex: print('repos: bỏ qua —', ex)
+    extras.build_feed(ROOT)
     extras.build_pwa(ROOT)
     print(f'build: {len(pages)} trang, {len(arts)} bài → public/')
 
@@ -360,9 +495,13 @@ def check(date):
     p = f'{ROOT}/store/{date}.json'
     if not os.path.exists(p): print(f'FAIL không có {p}'); return 1
     arts = json.load(open(p, encoding='utf8'))['articles']
-    bad = [a['id'] for a in arts if not (a.get('url') and a.get('source') and a.get('topics'))]
-    if len(arts) < 20 or bad: print(f'FAIL {len(arts)} bài, {len(bad)} thiếu nguồn/chủ đề'); return 1
-    print(f'OK {len(arts)} bài, mỗi bài có nguồn + chủ đề'); return 0
+    bad = [a['id'] for a in arts if not (a.get('url') and a.get('source') and a.get('desks'))]
+    if len(arts) < 20 or bad: print(f'FAIL {len(arts)} bài, {len(bad)} thiếu nguồn/ban'); return 1
+    print(f'OK {len(arts)} bài, mỗi bài có nguồn + ban'); return 0
+
+def proxy_hosts():
+    _, ds = load_cfg()
+    return sorted({urllib.parse.urlparse(x['url']).hostname for c in ds.values() for x in c.get('feed', [])} | {'hn.algolia.com'})
 
 if __name__ == '__main__':
     a = sys.argv[1:]
@@ -371,10 +510,9 @@ if __name__ == '__main__':
     if cmd in ('fetch', 'all'): fetch(date)
     if cmd in ('build', 'all'): build()
     if cmd == 'images':   # bù ảnh cho store của ngày đã fetch (không fetch lại nguồn)
-        f = f'{ROOT}/store/{date}.json'; d = json.load(open(f, encoding='utf8')); need = [x for x in d['articles'] if not x.get('img')][:IMG_MAX]
-        with cf.ThreadPoolExecutor(8) as ex:
-            for x, u in zip(need, ex.map(lambda x: og_image(x['url']), need)): x['img'] = u
+        f = f'{ROOT}/store/{date}.json'; d = json.load(open(f, encoding='utf8')); ogimg.fill_images(d['articles'], ROOT, IMG_MAX)
         json.dump(d, open(f, 'w', encoding='utf8'), ensure_ascii=False, indent=1); print(f"ảnh: {sum(bool(x.get('img')) for x in d['articles'])}/{len(d['articles'])}")
     if cmd == 'hosts':   # dán vào biến PROXY_HOSTS của Worker (allowlist cho /fetch)
-        _, ds = load_cfg(); print(','.join(sorted({urllib.parse.urlparse(x['url']).hostname for c in ds.values() for x in c.get('feed', [])} | {'hn.algolia.com'})))
+        print(','.join(proxy_hosts()))
+    if cmd in ('fetch', 'build', 'all'): print(time_line())
     if cmd in ('check', 'all'): sys.exit(check(date))

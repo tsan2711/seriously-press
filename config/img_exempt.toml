@@ -1,0 +1,46 @@
+# Bài KHÔNG có đường lấy ảnh hợp lệ — loại khỏi MẪU khi tính độ phủ ảnh "đủ điều kiện" (số thô vẫn báo song song).
+# Thêm host = thêm một dòng, không sửa mã. Lý do phải ghi rõ; không dùng để che bài lẽ ra lấy được ảnh.
+# no-page: bài là tweet/bài chữ HN/preprint — không có trang ngoài mang ảnh. bot-block: máy chủ trả 403 cho UA công khai của ta (không giả UA để lách).
+[[host]]
+name = "twitter.com"
+why = "no-page"
+[[host]]
+name = "x.com"
+why = "no-page"
+[[host]]
+name = "news.ycombinator.com"
+why = "no-page"
+[[host]]
+name = "arxiv.org"
+why = "no-page (img_rules: cố ý không có luật)"
+[[host]]
+name = "www.bogleheads.org"
+why = "bot-block 403"
+[[host]]
+name = "www.neowin.net"
+why = "bot-block 403"
+[[host]]
+name = "www.alcf.anl.gov"
+why = "bot-block 403"
+# no-image: đã tải thử trang 11-24, không có og:image/twitter:image/ảnh trong thân (không phải do ta lỗi). Trang chủ có ảnh mới thì gỡ dòng.
+[[host]]
+name = "alistapart.com"
+why = "no-image (og+thân trống, 3 bài)"
+[[host]]
+name = "bair.berkeley.edu"
+why = "no-image (og+thân trống)"
+[[host]]
+name = "ricapar.net"
+why = "no-image (trang đơn)"
+[[host]]
+name = "scottaaronson.blog"
+why = "no-image (og+thân trống)"
+[[host]]
+name = "boazbk.github.io"
+why = "no-image (trang môn học)"
+[[host]]
+name = "www.wsj.com"
+why = "bot-block (paywall, không og)"
+[[host]]
+name = "www.nytimes.com"
+why = "bot-block (paywall, không og)"

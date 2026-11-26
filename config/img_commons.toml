@@ -1,0 +1,12 @@
+# Ảnh dự phòng từ Wikimedia Commons (imgfind.py). Chỉ dùng khi bài vẫn chưa có ảnh sau feed/og/luật host.
+min_score = 0.5        # tỉ lệ token khoá khớp tên file+mô tả; dưới ngưỡng → KHÔNG dùng ảnh (thà không có hơn sai)
+min_matches = 2        # tối thiểu số token khoá khớp (chặn khớp một từ chung chung)
+min_width = 600        # px
+max_queries = 25       # mỗi lần build
+timeout = 4            # giây / truy vấn
+max_phrases = 3        # số cụm từ khoá truy vấn / bài
+api = "https://commons.wikimedia.org/w/api.php"
+licenses = ["cc0", "cc by", "cc-by", "cc by-sa", "cc-by-sa", "public domain", "pd", "attribution"]
+bad_title = '\.(svg|gif|pdf|tiff?|webm|ogv|ogg|djvu)$|logo|icon|diagram|chart|graph|flag of|map of|screenshot|coat of arms|symbol|wordmark'
+stop_en = ["the","a","an","and","or","of","to","in","on","for","with","from","by","at","as","is","are","was","were","be","been","it","its","this","that","these","those","new","how","why","what","when","who","your","you","our","we","i","not","no","can","will","just","into","about","than","then","more","most","over","after","before","using","use","via","vs","show","hn","ask","launch","release","released","introducing","announcing","now"]
+stop_vi = ["và","của","là","có","cho","các","một","những","trong","với","được","này","khi","để","từ","ra","vào","cũng","như","không","đã","sẽ","về","theo","hơn","nhiều","bài","mới","cách","tại","trên"]

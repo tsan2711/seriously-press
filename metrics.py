@@ -21,13 +21,34 @@ def journals(root):
         except Exception: pass
     return out
 
+def _exempt_hosts():
+    try:
+        import tomllib; return {h['name'] for h in tomllib.load(open(f'{ROOT}/config/img_exempt.toml', 'rb')).get('host', [])}
+    except Exception: return set()
+
+def img_coverage(arts):
+    """Đếm bài có ảnh theo đường vào: feed · og · thân bài · host · commons. Trả dict (total, with, pct, kênh, none)."""
+    c = collections.Counter()
+    for a in arts:
+        if not a.get('img'): c['none'] += 1
+        elif a.get('img_credit'): c['commons'] += 1
+        else: c[a.get('img_via') if a.get('img_via') in ('og', 'body', 'host') else 'feed'] += 1
+    n = len(arts); w = n - c['none']
+    import urllib.parse; ex = _exempt_hosts()
+    skip = sum(1 for a in arts if not a.get('img') and urllib.parse.urlsplit(a.get('url', '')).netloc.lower() in ex)
+    el = n - skip
+    return dict(total=n, have=w, pct=round(100 * w / n, 1) if n else 0.0, eligible=el, pct_eligible=round(100 * w / el, 1) if el else 0.0, og=c['og'], body=c['body'], feed=c['feed'], host=c['host'], commons=c['commons'], none=c['none'])
+
+def img_line(ic):
+    return f"ảnh: {ic['have']}/{ic['total']} bài ({ic['pct']:g}% thô · {ic['pct_eligible']:g}% trên {ic['eligible']} bài lấy được ảnh) — og {ic['og']} · thân {ic['body']} · feed {ic['feed']} · host {ic['host']} · commons {ic['commons']} · không có {ic['none']}"
+
 def compute(days, jr):
     m = {'days': len(days)}
     if not days: return m
     today = days[-1]; arts = today['articles']
     topic_cnt = collections.Counter(t for a in arts for t in a.get('topics', [])[:1])
     src_cnt = collections.Counter(a['source'] for a in arts)
-    m['articles'] = len(arts)
+    m['articles'] = len(arts); m['img'] = img_coverage(arts)
     m['topic_entropy_norm'] = round(entropy(topic_cnt) / math.log2(len(topic_cnt)), 3) if len(topic_cnt) > 1 else 0.0   # 1 = đều, 0 = dồn một chủ đề
     m['top_source_share'] = round(src_cnt.most_common(1)[0][1] / len(arts), 3) if arts else 0
     m['top_source'] = src_cnt.most_common(1)[0][0] if arts else ''
@@ -82,6 +103,7 @@ def render(m, props, date):
     if not m.get('articles'): return '\n'.join(L + ['(chưa có dữ liệu)']) + '\n'
     L += [f'- Bài hôm nay: {m["articles"]}', f'- Đa dạng chủ đề (entropy chuẩn hoá 0–1): {m["topic_entropy_norm"]}', f'- Nguồn lớn nhất: {m["top_source"]} ({int(m["top_source_share"] * 100)}%)',
           f'- Độ mới: trung vị {m["median_age_h"]} giờ; {int((m["fresh_24h_share"] or 0) * 100)}% trong 24h']
+    if m.get('img'): L.append('- ' + img_line(m['img']))
     if m.get('open_rate') is not None: L.append(f'- Nhật ký đã xuất ({m["readers"]} người): tỉ lệ mở {int(m["open_rate"] * 100)}%, bỏ qua {int(m["skip_rate"] * 100)}%')
     else: L.append('- Đọc/bấm: chưa có — xuất nhật ký ở trang Nhật ký, thả tệp vào `site/store/journals/` (không commit).')
     L += ['', '## Nguồn (lỗi / số bài trung bình mỗi ngày)']

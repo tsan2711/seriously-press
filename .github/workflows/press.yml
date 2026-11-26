@@ -6,7 +6,7 @@ name: press-daily
 on:
   schedule: [{ cron: "30 0 * * *" }]   # 00:30 UTC = 07:30 giờ VN
   workflow_dispatch: {}
-  push: { branches: [main], paths: ["config/**", "web/**", "*.py", "tests/**"] }
+  push: { branches: [main], paths: ["config/**", "web/**", "*.py", "tests/**", "requirements.txt"] }
 permissions: { contents: read, pages: write, id-token: write }
 concurrency: { group: pages, cancel-in-progress: true }
 jobs:
@@ -18,6 +18,8 @@ jobs:
         with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
+      - run: python3 -m pip install -r requirements.txt   # Pillow tuỳ chọn: lỗi cài → vẫn build, ảnh giữ hotlink
+        continue-on-error: true
       - run: python3 tests/check_publish.py
       - run: python3 press.py fetch          # nguồn công khai; Reddit có thể 403 → ghi lỗi, không sập
       - run: python3 press.py build

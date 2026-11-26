@@ -31,7 +31,7 @@ const mk = (calls, opt) => async (url, init) => {
   r.injection_blocked = out.log.blocked === 1 && !out.articles.some(a => /Ignore previous/i.test(a.title));
   r.dedupe_utm = new Set(out.articles.map(a => R.canon(a.url))).size === out.articles.length;
   r.known_marked = out.articles.find(a => a.url.includes('/p0')).isNew === false;
-  r.topics_set = out.articles.every(a => a.topics.length >= 1);
+  r.topics_set = out.articles.every(a => Array.isArray(a.topics) && (a.topics.length >= 1 || !/roguelike|agent/i.test(a.title + ' ' + a.summary)));  // bước E: không khớp từ khoá → không nhãn
   r.diverse_lanes = new Set(out.articles.map(a => a.source_id)).size >= 3;
   r.date_local = out.date === '2026-11-22';
   r.cap_hard = (await R.run(Object.assign({}, base, { fetch: mk([]), max: 9999 }))).articles.length <= R.LIM.maxHard;

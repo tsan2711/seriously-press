@@ -1,0 +1,5 @@
+# Host ảnh là thẻ TỔNG HỢP (chụp trang/thảo luận, chữ bị cắt) — hợp lệ làm ảnh nhỏ, KHÔNG được làm ảnh lead (Bi 11-24).
+# Lead = ảnh og thật hoặc không ảnh. Thêm host = thêm một khối, không sửa mã.
+[[host]]
+match = "opengraph.githubassets.com"
+why = "thẻ chụp issue/discussion/repo của GitHub: chữ cắt, không phải ảnh bài"

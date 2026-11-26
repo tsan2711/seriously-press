@@ -1,0 +1,114 @@
+{
+"https://80.lv/feed/": {
+"etag": "W/\"2a71-pLHX1OY17QXHo0zbe8rcU7et9cA\"",
+"lm": ""
+},
+"https://ahrefs.com/blog/feed/": {
+"etag": "\"f19578be35203ba7a6ba9c24e0d2452e\"",
+"lm": "Tue, 24 Nov 2026 14:38:56 GMT"
+},
+"https://alistapart.com/main/feed/": {
+"etag": "",
+"lm": "Wed, 25 Nov 2026 00:49:07 GMT"
+},
+"https://awealthofcommonsense.com/feed/": {
+"etag": "\"d799f0384eb44fd12c9fd07fbba01859\"",
+"lm": "Tue, 24 Nov 2026 20:10:40 GMT"
+},
+"https://backlinko.com/feed": {
+"etag": "W/\"d1f3f-1a2102e65f6\"",
+"lm": "Wed, 25 Nov 2026 00:50:05 GMT"
+},
+"https://bair.berkeley.edu/blog/feed.xml": {
+"etag": "\"572e3-65fdb8cdc7a80\"",
+"lm": "Mon, 09 Nov 2026 17:47:06 GMT"
+},
+"https://css-tricks.com/feed/": {
+"etag": "\"831858b26af7320ef3ac4c660e7ed484\"",
+"lm": "Tue, 24 Nov 2026 18:02:29 GMT"
+},
+"https://deepmind.google/blog/rss.xml": {
+"etag": "\"oDHYTA\"",
+"lm": ""
+},
+"https://github.com/anthropics/claude-code/releases.atom": {
+"etag": "W/\"1c55882cc6687745bc267eebaff99e38\"",
+"lm": ""
+},
+"https://godotengine.org/rss.xml": {
+"etag": "\"42f0c-661091f82b087\"",
+"lm": "Tue, 24 Nov 2026 17:34:31 GMT"
+},
+"https://huggingface.co/blog/feed.xml": {
+"etag": "W/\"42297-gdOLeX4aOiXgJqDSfT5VUj3SY3k\"",
+"lm": ""
+},
+"https://lobste.rs/t/ai.rss": {
+"etag": "\"dn3vnxdpmjx4-cml\"",
+"lm": "Wed, 25 Nov 2026 00:50:03 GMT"
+},
+"https://lobste.rs/t/design.rss": {
+"etag": "\"dn3vmhc93uz2-cip\"",
+"lm": "Wed, 25 Nov 2026 00:48:10 GMT"
+},
+"https://lobste.rs/t/games.rss": {
+"etag": "\"dn3vmigswtpr-cka\"",
+"lm": "Wed, 25 Nov 2026 00:48:12 GMT"
+},
+"https://mobilegamer.biz/feed/": {
+"etag": "\"4c22dff6bd1274ec64eee16f0e4c08d7\"",
+"lm": "Tue, 24 Nov 2026 17:06:41 GMT"
+},
+"https://moz.com/feed": {
+"etag": "\"6144504e-1e78\"",
+"lm": "Fri, 17 Sep 2021 08:22:38 GMT"
+},
+"https://ofdollarsanddata.com/feed/": {
+"etag": "\"cfadf4b32b7ad63295ad9022f4eb1552\"",
+"lm": "Tue, 24 Nov 2026 12:45:40 GMT"
+},
+"https://simonwillison.net/atom/everything/": {
+"etag": "",
+"lm": "Tue, 24 Nov 2026 23:02:07 GMT"
+},
+"https://web.dev/feed.xml": {
+"etag": "",
+"lm": "Mon, 12 Oct 2026 16:11:01 GMT"
+},
+"https://www.a11yproject.com/feed/feed.xml": {
+"etag": "\"6145918b09102868e89745a38d06ace1-ssl\"",
+"lm": ""
+},
+"https://www.bogleheads.org/blog/feed/": {
+"etag": "\"502b3042a9d99bb805227323a5559cc1\"",
+"lm": "Mon, 23 Nov 2026 01:41:57 GMT"
+},
+"https://www.gamedeveloper.com/rss.xml": {
+"etag": "",
+"lm": "Wed, 25 Nov 2026 00:51:34 GMT"
+},
+"https://www.gamesindustry.biz/feed": {
+"etag": "",
+"lm": "Tue, 24 Nov 2026 15:28:00 GMT"
+},
+"https://www.mrmoneymustache.com/feed/": {
+"etag": "\"c1a08d2b4e86c9cfe4ddfb45bc337f5e\"",
+"lm": "Tue, 20 Oct 2026 17:13:08 GMT"
+},
+"https://www.nngroup.com/feed/rss/": {
+"etag": "",
+"lm": "Sun, 22 Nov 2026 10:38:08 GMT"
+},
+"https://www.searchenginejournal.com/feed/": {
+"etag": "",
+"lm": "Wed, 25 Nov 2026 00:19:03 GMT"
+},
+"https://www.smashingmagazine.com/feed/": {
+"etag": "\"c259cadbeb2c314844099c6932deb12c-ssl\"",
+"lm": ""
+},
+"https://www.whitecoatinvestor.com/feed/": {
+"etag": "\"2040a1aa4ea01608b971dfe829c9dfea\"",
+"lm": "Tue, 24 Nov 2026 21:30:06 GMT"
+}
+}

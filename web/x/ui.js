@@ -25,13 +25,18 @@
   const saveLib = l => ls.set(LK(), JSON.stringify(l.slice(0, 300)));
   const inLib = id => lib().find(x => x.id === id);
   function toggleLater(a) {
-    let l = lib(); const has = l.find(x => x.id === a.id);
-    if (has) l = l.filter(x => x.id !== a.id); else { l.unshift({ id: a.id, t: String(a.t).slice(0, 160), u: httpOk(a.u) ? a.u : '', s: String(a.s || '').slice(0, 40), d: today(), sid: a.sid || '', st: 'later' }); D.dispatchEvent(new CustomEvent('press:save', { detail: { id: a.id } })); }
-    saveLib(l); toast(has ? T('Đã bỏ khỏi “Đọc sau”.', 'Removed from Read later.') : T('Đã lưu vào “Đọc sau” — xem ở Của tôi → Đã lưu.', 'Saved to Read later — see Me → Saved.')); return !has;
+    const before = lib(); let l = before.slice(); const has = l.find(x => x.id === a.id);
+    if (has) l = l.filter(x => x.id !== a.id); else l.unshift({ id: a.id, t: String(a.t).slice(0, 160), u: httpOk(a.u) ? a.u : '', s: String(a.s || '').slice(0, 40), d: today(), sid: a.sid || '', st: 'later' });
+    if (!saveLib(l)) { toast(T('Không lưu được (bộ nhớ trình duyệt đầy hoặc bị chặn). Đã giữ nguyên như cũ.', 'Could not save (browser storage full or blocked). Left as it was.')); return !!has; }
+    if (!has) D.dispatchEvent(new CustomEvent('press:save', { detail: { id: a.id } }));
+    const sync = () => D.querySelectorAll('[data-later-id]').forEach(b => { if (b.dataset.laterId !== a.id) return; const on = !!inLib(a.id); b.textContent = on ? T('Đã lưu ✓', 'Saved ✓') : T('Đọc sau', 'Read later'); b.setAttribute('aria-pressed', String(on)); });
+    toast(has ? T('Đã bỏ khỏi “Đọc sau”.', 'Removed from Read later.') : T('Đã lưu vào “Đọc sau” — xem ở Của tôi → Đã lưu.', 'Saved to Read later — see Me → Saved.'), { undo: () => { saveLib(before); sync(); }, undoLabel: T('Hoàn tác', 'Undo') });
+    return !has;
   }
 
   // ---------- toast ----------
-  let tt = null; const toast = m => { let t = $('#toast'); if (!t) { t = el('p', '', '', { id: 'toast', role: 'status', 'aria-live': 'polite' }); D.body.append(t); } t.textContent = m; t.classList.add('on'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('on'), 3200); };
+  const FBK = window.PressFeedback; let TS = null;
+  const toast = (m, o) => { if (FBK && !TS) TS = FBK.toaster({ doc: D, setTimeout, clearTimeout }); if (TS) TS.show(m, o); };
 
   // ---------- hộp thoại dùng chung (focus trap, Esc, trả focus) ----------
   let dlg = null, back = null, onKey = null;
@@ -63,23 +68,54 @@
       const sT = sel('topic', T('Chủ đề', 'Topic')), sD = sel('desk', T('Ban', 'Desk')), sS = sel('source', T('Nguồn', 'Source')), sW = sel('when', T('Thời gian', 'When'));
       [['7', T('7 ngày', '7 days')], ['30', T('30 ngày', '30 days')]].forEach(([v, l]) => sW.append(new Option(l, v)));
       const list = el('ul', 'pp-l', '', { id: 'pp-list', role: 'listbox', 'aria-label': T('Kết quả', 'Results') }), st = el('p', 'pp-s', '', { role: 'status', 'aria-live': 'polite' });
-      box.append(inp, fl, st, list); let sel_i = -1, items = [];
+      box.append(inp, fl, st, list); let sel_i = -1, items = [], uid = 0;
+      const RK = 'press.recent', recents = () => S.pushRecent(rd(RK, []), '');
+      const mark = (parent, text, T) => S.segments(text, T).forEach(([t, m]) => parent.append(m ? el('mark', '', t) : D.createTextNode(t)));   // chỉ textContent / <mark>
+      const head = t => list.append(el('li', 'pp-g', t, { role: 'presentation' }));
+      const add = (li, act) => { li.id = 'pp-o' + (uid++); li.setAttribute('role', 'option'); li.setAttribute('aria-selected', 'false'); li.addEventListener('mousemove', () => pick(items.findIndex(x => x.li === li))); li.addEventListener('click', e => { e.preventDefault(); act(); }); list.append(li); items.push({ li, act }); };
+      const pick = i => { if (i === sel_i) return; if (items[sel_i]) { items[sel_i].li.classList.remove('sel'); items[sel_i].li.setAttribute('aria-selected', 'false'); } sel_i = i; const it = items[i]; if (it) { it.li.classList.add('sel'); it.li.setAttribute('aria-selected', 'true'); inp.setAttribute('aria-activedescendant', it.li.id); it.li.scrollIntoView && it.li.scrollIntoView({ block: 'nearest' }); } else inp.removeAttribute('aria-activedescendant'); };
+      const remember = () => { const q = inp.value.trim(); if (q) ls.set(RK, JSON.stringify(S.pushRecent(rd(RK, []), q))); };
+      const go = h => { remember(); location.href = h; };
+      const setQ = (v, focus) => { inp.value = v; run(); focus && inp.focus(); };
+      const setFilter = (s, v) => { if (![...s.options].some(o => o.value === v)) return; s.value = v; setQ('', true); };
+      const cmd = (n, h) => { const li = el('li', 'pp-i'); li.append(el('a', '', n, { href: h, tabindex: '-1' })); add(li, () => go(h)); };
+      const chip = (id, name, act, tag) => { const li = el('li', 'pp-i'); li.append(el('span', 'pp-n', name), el('small', '', tag)); add(li, act); };
+      let failed = false;
       const run = () => {
-        list.textContent = ''; items = []; sel_i = -1; const q = inp.value.trim();
-        if (!IX) { st.textContent = T('Đang tải kho tin…', 'Loading archive…'); return; }
+        list.textContent = ''; items = []; sel_i = -1; inp.removeAttribute('aria-activedescendant'); const q = inp.value.trim(), T = S.toks(q);
         const f = { topic: sT.value, desk: sD.value, source: sS.value }; if (sW.value) f.from = new Date(Date.now() - (+sW.value) * 864e5).toISOString().slice(0, 10);
-        if (!q && !f.topic && !f.desk && !f.source && !f.from) { st.textContent = T('Gõ để tìm, hoặc chọn một lệnh:', 'Type to search, or pick a command:'); CMDS().forEach(([n, h]) => { const li = el('li', 'pp-i', '', { role: 'option' }), a = el('a', '', n, { href: h }); li.append(a); list.append(li); items.push(a); }); return; }
-        const t0 = performance.now(), res = S.search(IX, q, f, 30), ms = Math.round(performance.now() - t0);
-        st.textContent = res.length ? res.length + T(' kết quả', ' results') + ' · ' + ms + ' ms' : T('Không thấy kết quả. Thử bớt từ khoá hoặc bỏ bộ lọc.', 'No results. Try fewer keywords or clear filters.');
-        res.forEach(o => { const r = o.r, li = el('li', 'pp-i', '', { role: 'option' }), a = el('a', '', r[S.R.t], { href: httpOk(r[S.R.u]) ? r[S.R.u] : '#', rel: 'noopener' });
-          const sn = el('span', 'pp-sn'); sn.append(o.snip[0]); if (o.snip[1]) sn.append(el('mark', '', o.snip[1])); sn.append(o.snip[2]);
-          li.append(a, el('small', '', r[S.R.s] + ' · ' + r[S.R.d]), sn); list.append(li); items.push(a); });
+        const filtered = f.topic || f.desk || f.source || f.from;
+        if (!q && !filtered) {
+          st.textContent = T('Gõ để tìm, hoặc chọn một gợi ý:', 'Type to search, or pick a suggestion:');
+          const rc = recents(); if (rc.length) { head(T('Tìm gần đây', 'Recent searches')); rc.forEach(x => { const li = el('li', 'pp-i'); li.append(el('span', 'pp-n', x)); add(li, () => setQ(x, true)); }); }
+          const fw = META ? S.followedTopics(((PRK0() || {}).w), META.topics, 5) : []; if (fw.length) { head(T('Chủ đề bạn theo dõi', 'Topics you follow')); fw.forEach(o => chip(o.id, o.name, () => setFilter(sT, o.id), T('chủ đề', 'topic'))); }
+          head(T('Lệnh', 'Commands')); CMDS().forEach(([n, h]) => cmd(n, h)); pick(items.length ? 0 : -1); return;
+        }
+        list.removeAttribute('aria-busy');
+        if (!IX) {
+          if (failed) { st.textContent = T('Không tải được kho tin. Kiểm tra mạng.', 'Could not load archive. Check your connection.'); return; }
+          st.textContent = T('Đang tải kho tin…', 'Loading archive…'); list.setAttribute('aria-busy', 'true');   // khung chờ cao bằng dòng kết quả thật
+          for (let i = 0; i < 4; i++) { const li = el('li', 'pp-i sk-row', '', { 'aria-hidden': 'true' }); li.append(el('span', 'sk-bar'), el('span', 'sk-bar sk-s')); list.append(li); } return;
+        }
+        const t0 = performance.now(), g = S.groups(IX, q, f, META, 12), ms = Math.round(performance.now() - t0), n = g.articles.length + g.topics.length + g.desks.length;
+        st.textContent = n ? g.articles.length + T(' bài', ' stories') + (g.fuzzy ? T(' (gần đúng)', ' (approximate)') : '') + ' · ' + ms + ' ms' : T('Không thấy kết quả. Thử bớt từ khoá hoặc bỏ bộ lọc.', 'No results. Try fewer keywords or clear filters.');
+        if (g.topics.length) { head(T('Chủ đề', 'Topics')); g.topics.forEach(o => { const li = el('li', 'pp-i'), nm = el('span', 'pp-n'); mark(nm, o.name, T); li.append(nm, el('small', '', T('lọc theo chủ đề', 'filter by topic'))); add(li, () => setFilter(sT, o.id)); }); }
+        if (g.desks.length) { head(T('Ban', 'Desks')); g.desks.forEach(o => { const li = el('li', 'pp-i'), nm = el('span', 'pp-n'); mark(nm, o.name, T); li.append(nm, el('small', '', T('lọc theo ban', 'filter by desk'))); add(li, () => setFilter(sD, o.id)); }); }
+        if (g.articles.length) head(T('Bài', 'Stories'));
+        g.articles.forEach(o => { const r = o.r, h = httpOk(r[S.R.u]) ? r[S.R.u] : '#', li = el('li', 'pp-i'), a = el('a', '', '', { href: h, rel: 'noopener', tabindex: '-1' });
+          mark(a, r[S.R.t], T); const sn = el('span', 'pp-sn'); sn.append(o.snip[0]); if (o.snip[1]) sn.append(el('mark', '', o.snip[1])); sn.append(o.snip[2]);
+          li.append(a, el('small', '', r[S.R.s] + ' · ' + r[S.R.d]), sn); add(li, () => { remember(); if (h !== '#') window.open(h, '_blank', 'noopener'); }); });
+        pick(items.length ? 0 : -1);
       };
+      const PRK0 = () => { try { const db = PP.open(), pr = window.PressRank; const pf = db.load(db.active() || 'me'); return pr && pf ? pr.ensure(pf) : null; } catch (e) { return null; } };
       const fill = () => { const c = S.facets(IX), put = (s, o, lab) => Object.keys(o).sort((a, b) => o[b] - o[a]).slice(0, 40).forEach(k => s.append(new Option(lab(k) + ' (' + o[k] + ')', k))); put(sT, c.topics, k => META.topics[k] || k); put(sD, c.desks, k => META.desks[k] || k); put(sS, c.sources, k => k); };
       let to = null; inp.addEventListener('input', () => { clearTimeout(to); to = setTimeout(run, 30); }); fl.addEventListener('change', run);
-      onKey = e => { if (!['ArrowDown', 'ArrowUp'].includes(e.key) || !items.length) return; e.preventDefault(); sel_i = (sel_i + (e.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length; items[sel_i].focus(); };
-      inp.addEventListener('keydown', e => { if (e.key === 'Enter' && items[0]) items[0].click(); });
-      if (q0) inp.value = q0; run(); load().then(() => { if (dlg && !sT.options[1]) { fill(); run(); } });
+      // focus ở lại ô nhập (combobox): mũi tên đổi mục chọn, Enter mở mục chọn; Esc đóng + trả focus do open()
+      inp.addEventListener('keydown', e => {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { if (!items.length) return; e.preventDefault(); pick(S.step(sel_i, items.length, e.key === 'ArrowDown' ? 1 : -1)); }
+        else if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); if (items[sel_i]) items[sel_i].act(); }
+      });
+      if (q0) inp.value = q0; run(); load().then(() => { if (!dlg) return; if (!IX) failed = true; if (failed || !sT.options[1]) { if (IX) fill(); run(); } });
     });
   }
 
@@ -89,10 +125,14 @@
     return { id, t: a ? a.textContent : '', u: a ? a.href : '', s: m.split(' · ')[0], img: im && httpOk(im.src) ? im.src : '', x: r ? r[S.R.x] : '', sid: r ? (r[9] || r[S.R.id]) : c.dataset.sid || id, d: r ? r[S.R.d] : '', st: c.dataset.st }; };
   const cards = () => $$('main .card[data-id]').filter(c => c.querySelector('a[href^="http"]'));
   const cur = () => { const a = D.activeElement && D.activeElement.closest && D.activeElement.closest('.card[data-id]'); return a || $('.card.kb') || null; };
+  function markRead(c) {
+    const PD = window.PressDedup; if (!PD || !c) return; c.classList.add('read');
+    try { const sd = PD.open(null, pid()), l = $('h3 a', c); sd.mark({ id: c.dataset.id, sid: c.dataset.sid || '', rev: +c.dataset.rev || 0, title: l ? l.textContent : '', url: l ? l.href : '' }, true, Date.now()); } catch (e) {}
+  }
   function reader(c) {
     RCARDS = cards(); RI = Math.max(0, RCARDS.indexOf(c)); const pr = rd('press.reader', { size: 1, wide: false });
     const draw = () => {
-      const a = cardData(RCARDS[RI]);
+      const a = cardData(RCARDS[RI]); markRead(RCARDS[RI]); rememberCard(RCARDS[RI]);
       open(T('Đọc nhanh', 'Quick read'), (box, d) => {
         d.classList.toggle('wide', !!pr.wide); box.style.setProperty('--rs', 1 + pr.size * 0.12);
         const bar = el('div', 'pp-bar'); bar.append(
@@ -105,8 +145,10 @@
         box.append(el('h2', 'pp-t', a.t), el('p', 'meta', a.s + (a.d ? ' · ' + a.d : '')), el('p', 'pp-x', a.x || T('Chưa có tóm tắt cho bài này — mở bài gốc để đọc.', 'No summary for this story — open the original to read.')));
         const act = el('div', 'pp-bar');
         act.append(el('a', 'btn pri', T('Đọc bài gốc ↗', 'Read original ↗'), { href: a.u, rel: 'noopener' }));
-        const sv = btn(inLib(a.id) ? T('Đã lưu ✓', 'Saved ✓') : T('Đọc sau', 'Read later'), () => { const on = toggleLater(a); sv.textContent = on ? T('Đã lưu ✓', 'Saved ✓') : T('Đọc sau', 'Read later'); sv.setAttribute('aria-pressed', on); }, { 'aria-pressed': !!inLib(a.id) }); act.append(sv);
-        if (STORIES && STORIES[a.sid]) { const fo = (rd('press.follow.' + pid(), [])).some(x => x.sid === a.sid); const fb = btn(fo ? T('Đang theo dõi ✓', 'Following ✓') : T('Theo dõi', 'Follow'), () => { const k = 'press.follow.' + pid(), l = rd(k, []), on = !l.some(x => x.sid === a.sid); ls.set(k, JSON.stringify(on ? F.follow(l, a.sid, STORIES, today()) : F.unfollow(l, a.sid))); fb.textContent = on ? T('Đang theo dõi ✓', 'Following ✓') : T('Theo dõi', 'Follow'); toast(on ? T('Sẽ báo khi câu chuyện này có tin mới.', 'You’ll see when this story has news.') : T('Đã bỏ theo dõi.', 'Unfollowed.')); }, { 'aria-pressed': fo }); act.append(fb); }
+        const sv = btn(inLib(a.id) ? T('Đã lưu ✓', 'Saved ✓') : T('Đọc sau', 'Read later'), () => { const on = toggleLater(a); sv.textContent = on ? T('Đã lưu ✓', 'Saved ✓') : T('Đọc sau', 'Read later'); sv.setAttribute('aria-pressed', on); }, { 'aria-pressed': !!inLib(a.id), 'data-later-id': a.id }); act.append(sv);
+        if (STORIES && STORIES[a.sid]) { const fo = (rd('press.follow.' + pid(), [])).some(x => x.sid === a.sid); const fb = btn(fo ? T('Đang theo dõi ✓', 'Following ✓') : T('Theo dõi', 'Follow'), () => { const k = 'press.follow.' + pid(), l = rd(k, []), on = !l.some(x => x.sid === a.sid); const paint = o => { fb.textContent = o ? T('Đang theo dõi ✓', 'Following ✓') : T('Theo dõi', 'Follow'); fb.setAttribute('aria-pressed', String(o)); };
+          if (!ls.set(k, JSON.stringify(on ? F.follow(l, a.sid, STORIES, today()) : F.unfollow(l, a.sid)))) { toast(T('Không lưu được. Đã giữ nguyên như cũ.', 'Could not save. Left as it was.')); return; }
+          paint(on); toast(on ? T('Sẽ báo khi câu chuyện này có tin mới.', 'You’ll see when this story has news.') : T('Đã bỏ theo dõi.', 'Unfollowed.'), { undo: () => { ls.set(k, JSON.stringify(l)); paint(!on); }, undoLabel: T('Hoàn tác', 'Undo') }); }, { 'aria-pressed': fo }); act.append(fb); }
         act.append(btn('◀', () => step(-1), { 'aria-label': T('Bài trước (k)', 'Previous (k)') }), btn('▶', () => step(1), { 'aria-label': T('Bài sau (j)', 'Next (j)') }));
         box.append(act, el('p', 'pp-h', T('Phím: j/k đổi bài · s đọc sau · +/- cỡ chữ · Esc đóng. Vuốt trái/phải trên điện thoại.', 'Keys: j/k next/prev · s read later · +/- text size · Esc close. Swipe on phones.')));
         let x0 = null, y0 = 0; box.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
@@ -182,28 +224,120 @@
   // ---------- phím & click ----------
   const typing = e => /^(INPUT|TEXTAREA|SELECT)$/.test((e.target || {}).tagName) || (e.target && e.target.isContentEditable);
   let kbI = -1;
+  // ---------- Công cụ đọc: phím j/k/o/s/? và "Đã đọc tất cả" + Hoàn tác (lõi: readtools.js) ----------
+  const RT = window.PressReadTools;
+  const RTX = {
+    cards, cur, blocked: () => !!dlg,
+    mark: t => { kbI = cards().indexOf(t); $$('.card.kb').forEach(x => x.classList.remove('kb')); t.classList.add('kb'); const a = $('a[href^="http"]', t); a && a.focus({ preventScroll: true }); t.scrollIntoView({ block: 'center', behavior: RM ? 'auto' : 'smooth' }); },
+    open: t => reader(t), save: t => toggleLater(cardData(t)),
+    help: () => open(T('Phím tắt', 'Keyboard shortcuts'), box => {
+      box.append(el('h2', '', T('Phím tắt', 'Keyboard shortcuts')));
+      const dl = el('dl', 'pp-keys'); RT.KEYS.forEach(([k, d]) => { const dt = el('dt'); dt.append(el('kbd', '', k)); dl.append(dt, el('dd', '', T(d))); });
+      box.append(dl, btn(T('Đóng', 'Close'), close, { 'data-autofocus': '' }));
+    }),
+  };
+  let RA = null;
+  function readAll() {
+    const PD = window.PressDedup, g = $('[data-general]'), bx = $('[data-readall-undo]'); if (!PD || !g || !bx) return;
+    const sd = PD.open(null, pid());
+    RA = RT.markAll({ store: localStorage, key: sd.key, cards: () => $$('.card[data-id]', g), clear: clearTimeout,
+      art: c => ({ id: c.dataset.id, sid: c.dataset.sid || '', rev: +c.dataset.rev || 0, title: ($('h3 a', c) || {}).textContent || '', url: ($('h3 a', c) || {}).href || '' }),
+      markRead: arts => { const j = sd.load(); arts.forEach(a => PD.mark(j, a, true)); sd.save(j); },
+      timer: (f, ms) => setTimeout(() => { f(); bx.hidden = true; }, ms) });
+    $('[data-readall-msg]', bx).textContent = T('Đã đánh dấu ' + RA.n + ' bài là đã đọc.', 'Marked ' + RA.n + ' stories as read.'); bx.hidden = false;
+  }
+  function undoReadAll() { const bx = $('[data-readall-undo]'); if (RA && RA.undo()) toast(T('Đã hoàn tác.', 'Undone.')); if (bx) bx.hidden = true; }
   const api = {
     key(e) {
       const k = e.key;
-      if (k === '/' && !typing(e) && !dlg) { e.preventDefault(); palette(); return; }
-      if ((e.ctrlKey || e.metaKey) && k.toLowerCase() === 'k') { e.preventDefault(); dlg && $('.pp-q') ? close() : palette(); return; }
-      if (dlg || typing(e) || e.ctrlKey || e.metaKey || e.altKey) return;
-      const cs = cards(); if (!cs.length) return;
-      if (k === 'j' || k === 'k') { const c = cur(), i = c ? cs.indexOf(c) : kbI; kbI = Math.max(0, Math.min(cs.length - 1, i + (k === 'j' ? 1 : -1))); $$('.card.kb').forEach(x => x.classList.remove('kb')); const t = cs[kbI]; t.classList.add('kb'); const a = $('a[href^="http"]', t); a && a.focus({ preventScroll: true }); t.scrollIntoView({ block: 'center', behavior: RM ? 'auto' : 'smooth' }); e.preventDefault(); }
-      else if (k === 'o') { const c = cur() || cs[Math.max(kbI, 0)]; if (c) { e.preventDefault(); reader(c); } }
-      else if (k === 's') { const c = cur() || cs[Math.max(kbI, 0)]; if (c) { e.preventDefault(); toggleLater(cardData(c)); } }
+      const w = S.wantsOpen(e, { typing: typing(e), dialog: !!dlg }); if (w) { e.preventDefault(); if (w === 'toggle' && dlg && $('.pp-q')) close(); else palette(); return; }
+      RT.handle(e, RTX);   // j/k/o/s/? — không bắt phím khi đang gõ hoặc đang mở hộp thoại
     },
     click(e) {
+      if (saveBtn(e)) return;
+      if (cardAct(e)) return;
+      if (e.target.closest('[data-readall]')) { e.preventDefault(); readAll(); return; }
+      if (e.target.closest('[data-readall-undo-btn]')) { e.preventDefault(); undoReadAll(); return; }
       const s = e.target.closest('[data-search]'); if (s) { e.preventDefault(); palette(); return; }
       const b = e.target.closest('[data-b60]'); if (b) { e.preventDefault(); brief(); return; }
       const l = e.target.closest('[data-lang]'); if (l) { setLang(l.dataset.lang); return; }
+      const cd = e.target.closest('main .card[data-id]:not(.hub)');   // bấm vào thân thẻ (không phải liên kết/nút/⋯) → ngăn xem nhanh, không rời trang
+      if (cd && !e.target.closest('a,button,summary,details,input,select,textarea') && cd.querySelector('a[href^="http"]')) { e.preventDefault(); reader(cd); return; }
       const t = e.target.closest('.card[data-id] .thumb'); if (t) { const c = t.closest('.card'); if (c.querySelector('a[href^="http"]')) { e.preventDefault(); reader(c); } }
     },
     palette, reader, brief, setLang, applyLang,
   };
+  // Nút 'Lưu bài' (trang bài): cập nhật lạc quan — aria-pressed + nhãn đổi ngay, toast có Hoàn tác 6 giây. Bắt ở pha capture để app.js đọc đúng trạng thái mới.
+  function saveBtn(e) {
+    const b = e.target.closest && e.target.closest('[data-save]'); if (!b || b.dataset.laterId) return false;
+    const was = b.getAttribute('aria-pressed') === 'true', paint = on => { b.setAttribute('aria-pressed', String(on)); b.textContent = on ? T('Đã lưu ✓', 'Saved ✓') : T('Lưu bài', 'Save'); };
+    paint(!was); toast(was ? T('Đã bỏ lưu bài.', 'Removed from saved.') : T('Đã lưu bài.', 'Saved.'), { undo: () => paint(was), undoLabel: T('Hoàn tác', 'Undo') }); return true;
+  }
+  D.addEventListener('click', e => { saveBtn(e); }, true);
+  // Thao tác ở thẻ: nút ⋯ mở Lưu · Bớt tin · Ẩn · Chia sẻ. Lưu/Bớt tin do app.js nghe ([data-save]/[data-less]); Ẩn ghi vào hồ sơ (hidden) + ẩn thẻ, Hoàn tác 6 s.
+  const profDb = () => { try { return PP && PP.open(); } catch (e) { return null; } };
+  const profMut = fn => { const db = profDb(), R = window.PressRank, id = db && (db.active() || 'me'); if (!id || !R) return; const p = R.ensure(db.load(id) || R.newProfile(null, [])); fn(p); db.save(id, p); };
+  function cardActs() {
+    D.querySelectorAll('.card[data-id]:not(.hub):not(.sk-card)').forEach(c => {
+      const cb = c.querySelector('.cb'); if (!cb || c.querySelector('.cmore')) return; const id = c.dataset.id, d = D.createElement('details'); d.className = 'cmore';
+      const mk = (tag, at, tx) => { const x = D.createElement(tag); Object.keys(at).forEach(k => x.setAttribute(k, at[k])); if (tx) x.textContent = tx; return x; };
+      const row = mk('div', { class: 'cm-row', role: 'group' });
+      [['data-save', T('Lưu bài', 'Save'), 'aria-pressed'], ['data-less', T('Bớt tin này', 'Show less')], ['data-hide', T('Ẩn', 'Hide')], ['data-cshare', T('Chia sẻ', 'Share')]].forEach(b => {
+        const at = { class: 'ca', type: 'button', 'data-id': id }; at[b[0]] = ''; if (b[2]) at['aria-pressed'] = 'false'; row.append(mk('button', at, b[1])); });
+      d.append(mk('summary', { 'aria-label': T('Thao tác với bài này', 'Actions for this story') }, '⋯'), row);
+      cb.append(d);
+    });
+    profMut(p => { const H = new Set(p.hidden || []); if (H.size) D.querySelectorAll('.card[data-id]').forEach(c => { if (H.has(c.dataset.id)) c.hidden = true; }); });
+  }
+  function cardAct(e) {
+    const t = e.target.closest && e.target.closest('.ca[data-less],[data-hide],[data-cshare]'); if (!t) return false;
+    const c = t.closest('.card[data-id]'), id = t.dataset.id;
+    if (t.hasAttribute('data-less')) { t.textContent = T('Đã bớt ✓', 'Done ✓'); t.disabled = true; return false; }   // để app.js ghi tín hiệu
+    if (t.hasAttribute('data-hide')) {
+      if (c) c.hidden = true; profMut(p => { if (!(p.hidden || (p.hidden = [])).includes(id)) p.hidden.push(id); });
+      toast(T('Đã ẩn bài này.', 'Story hidden.'), { undo: () => { if (c) c.hidden = false; profMut(p => { p.hidden = (p.hidden || []).filter(x => x !== id); }); }, undoLabel: T('Hoàn tác', 'Undo') }); return true;
+    }
+    const a = c && c.querySelector('h3 a'); if (!a) return true; const data = { title: a.textContent.trim(), url: a.href };
+    if (navigator.share) navigator.share(data).catch(() => {});
+    else if (navigator.clipboard) navigator.clipboard.writeText(data.url).then(() => toast(T('Đã chép liên kết.', 'Link copied.')), () => toast(T('Không chép được liên kết.', "Couldn't copy the link.")));
+    else toast(T('Trình duyệt này không hỗ trợ chia sẻ.', "This browser can't share."));
+    return true;
+  }
+  // ---- Luồng đọc: nhớ bài + vị trí cuộn theo số báo; thanh "Tiếp tục đọc" ở đầu trang chủ ----
+  const FK = () => RT.flow.key(pid()), gen = () => $('[data-general]');
+  function rememberCard(c) { const l = c && $('h3 a', c); try { RT.flow.save(localStorage, FK(), { d: today(), id: c.dataset.id, t: l ? l.textContent : '', y: scrollY }); } catch (e) {} }
+  if (gen()) {
+    let tm = 0; addEventListener('scroll', () => { clearTimeout(tm); tm = setTimeout(() => { const cs = cards().filter(x => !x.hidden), i = RT.flow.firstVisible(cs.map(x => x.getBoundingClientRect()), 60); if (i >= 0 && scrollY > 200) rememberCard(cs[i]); }, 400); }, { passive: true });
+    const f = RT.flow.load(localStorage, FK(), today());
+    if (f && scrollY < 200) {
+      const bar = el('p', 'resume'); bar.setAttribute('role', 'status');
+      bar.append(el('span', '', T('Tiếp tục đọc: ', 'Continue reading: ') + (f.t ? '“' + f.t + '”' : '')),
+        btn(T('Tiếp tục', 'Resume'), () => { const c = f.id && $('.card[data-id="' + CSS.escape(f.id) + '"]'); if (c) c.scrollIntoView({ block: 'center', behavior: RM ? 'auto' : 'smooth' }); else scrollTo({ top: f.y, behavior: RM ? 'auto' : 'smooth' }); bar.remove(); }, {}),
+        btn('✕', () => bar.remove(), { 'aria-label': T('Bỏ qua', 'Dismiss') }));
+      const g = gen(); const ra = g.querySelector('.readall'); ra ? ra.after(bar) : g.prepend(bar);
+    }
+  }
+  { let q = 0; const run = () => { q = 0; cardActs(); }; new MutationObserver(() => { if (!q) q = setTimeout(run, 150); }).observe(D.body, { childList: true, subtree: true }); cardActs(); }
   window.PressUI = api;
   D.addEventListener('click', api.click); D.addEventListener('keydown', api.key);
+  D.addEventListener('keydown', e => { const m = e.key === 'Escape' && !e.defaultPrevented && D.querySelector('details.menu[open]'); if (m) { m.open = false; m.querySelector('summary').focus(); } });
+  window.PressToast = toast;
   if (lang === 'en') loadLang().then(() => applyLang());
   mePage(); overloadNote();
   new MutationObserver(() => { if (lang === 'en') applyLang(); }).observe(D.body, { childList: true, subtree: true });
+  // Nút "Theo dõi chủ đề" (topic-<id>.html): bật/tắt w[chủ đề] trong hồ sơ đang chọn — cùng cơ chế với chip ở picker
+  const fb = $('[data-follow-topic]'), PRK = window.PressRank;
+  if (fb && PP && PRK) {
+    const t = fb.dataset.followTopic, db = PP.open(), msg = $('[data-follow-msg]');
+    const cur = () => { const id = db.active() || 'me'; return { id, p: PRK.ensure(db.load(id) || PRK.newProfile(null, [])) }; };
+    const draw = () => { const on = !!cur().p.w[t]; fb.setAttribute('aria-pressed', String(on)); fb.textContent = on ? 'Đang theo dõi ✓' : 'Theo dõi chủ đề'; };
+    fb.hidden = false; draw();
+    const flip = on => { const m = cur(); if (on) m.p.w[t] = PRK.newProfile(null, [t]).w[t]; else delete m.p.w[t]; db.save(m.id, m.p); draw(); };
+    fb.addEventListener('click', () => {
+      const was = !!cur().p.w[t], snap = was ? cur().p.w[t] : null;
+      const say = m => { if (msg) msg.textContent = m; };
+      if (FBK) FBK.optimistic({ apply: () => { fb.setAttribute('aria-pressed', String(!was)); fb.textContent = !was ? 'Đang theo dõi ✓' : 'Theo dõi chủ đề'; }, commit: () => { flip(!was); return !!cur().p.w[t] === !was; }, revert: draw, onError: () => { say('Không lưu được. Đã giữ nguyên.'); toast('Không lưu được. Đã giữ nguyên như cũ.'); } }).then(ok => { if (!ok) return; say(was ? 'Đã bỏ theo dõi.' : 'Đã thêm vào hồ sơ của bạn.'); toast(was ? 'Đã bỏ theo dõi chủ đề.' : 'Đã theo dõi chủ đề.', { undo: () => { const m = cur(); if (was) m.p.w[t] = snap; else delete m.p.w[t]; db.save(m.id, m.p); draw(); say(''); } }); });
+      else { flip(!was); say(was ? 'Đã bỏ theo dõi.' : 'Đã thêm vào hồ sơ của bạn.'); }
+    });
+  }
 })();

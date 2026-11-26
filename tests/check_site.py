@@ -24,7 +24,7 @@ for f in sorted(glob.glob(R + '/*.html')):
     if sum('loading="eager"' in i for i in imgs) > 1: bad.append(f'{n}: >1 ảnh eager')
     for m in re.finditer(r'<a [^>]*href="https?://[^"]+"[^>]*>', s):
         if 'noopener' not in m.group(0): bad.append(f'{n}: link ngoài thiếu rel=noopener'); break
-JS_BUDGET = 130_000   # tổng JS tải lúc đầu (byte, chưa nén)
+JS_BUDGET = 124_000   # tổng JS tải lúc đầu (byte, chưa nén)
 if sum(os.path.getsize(f) for f in glob.glob(R + '/*.js')) > JS_BUDGET: bad.append('tổng JS vượt ngân sách %d' % JS_BUDGET)
 if re.search(r'animation-timeline|feTurbulence[^}]*\.card', open(R + '/style.css', encoding='utf8').read().split('/* ---- perf')[-1]): bad.append('style.css: perf block dính animation-timeline')
 for f in sorted(glob.glob(R + '/*.js') + glob.glob(R + '/x/*.js')):   # cú pháp JS phía trình duyệt
@@ -47,7 +47,8 @@ for _o, _t in (('journal', 'lich-su'), ('memory', 'bo-nho'), ('settings', 'cai-d
     _p = R + '/' + _o + '.html'
     if not os.path.exists(_p) or 'me.html#' + _t not in open(_p, encoding='utf-8').read(): bad.append(_o + '.html không chuyển hướng về me.html#' + _t)
 _h = open(R + '/index.html', encoding='utf-8').read(); _mp = re.search(r'<div class="mp">(.*?)<div class="schemes"', _h, re.S)
-if not _mp or len(re.findall(r'<a ', _mp.group(1))) > 3: bad.append('menu chính phải ≤ 3 mục (Báo hôm nay · Của tôi · Chia sẻ)')
+_MENU = {'index.html', 'topics.html', 'repos.html', 'me.html', 'index.html#chia-se'}   # Chủ đề + Repo hay là mục Bi yêu cầu thêm; thêm mục mới = sửa ở đây có chủ ý
+if not _mp or not set(re.findall(r'<a href="([^"]+)"', _mp.group(1))) <= _MENU: bad.append('menu chính có mục ngoài danh sách: Báo hôm nay · Chủ đề · Repo hay · Của tôi · Chia sẻ')
 if 'data-issues' not in _h or not os.path.exists(R + '/issues.json'): bad.append('trang chủ thiếu bộ chọn số báo / issues.json')
 else:
     _i = json.loads(open(R + '/issues.json', encoding='utf-8').read())['issues']
@@ -66,5 +67,13 @@ for fg, bg, nm in [('#1a1712', '#f5eedb', 'chữ/thẻ sáng'), ('#5c5345', '#f5
     k = cr(fg, bg)
     if k < 4.5: bad.append(f'tương phản {nm} {k:.2f} < 4.5')
 if '.strings' in css or 'animation-timeline' in css and False: bad.append('CSS còn .strings')
+# cảnh báo (không fail): tỉ lệ bài có ảnh của bản build thật
+try:
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')); import metrics
+    _ar = _t.get('articles') or [a for g in _t.get('desks', []) for a in g.get('articles', [])]
+    if _ar:
+        _ic = metrics.img_coverage(_ar)
+        print(('WARN ' if _ic['pct'] < 70 else 'info ') + metrics.img_line(_ic) + (' < 70%' if _ic['pct'] < 70 else ''))
+except Exception as _ex: print('info: bỏ qua đo ảnh:', type(_ex).__name__)
 print('\n'.join(['FAIL ' + b for b in bad]) or 'OK check_site: không dây/3D, a11y, SEO, nặng ≤150KB, tương phản ≥4.5')
 sys.exit(1 if bad else 0)

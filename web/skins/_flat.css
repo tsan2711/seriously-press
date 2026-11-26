@@ -1,0 +1,76 @@
+/* ==== SKIN · lớp phẳng chung (11-25) ====
+   Nối SAU web/style.css khi build (press.py → public/style.css). Bỏ chất "bảng ghim" (nền nâu, ghim, giấy, bóng, xoay)
+   và đưa mọi màu/chữ về token; skin cụ thể (casper/tufte/blog.css) chỉ đặt token + bố cục. Không đụng JS/HTML.
+   Token skin phải đặt: --bg --card --card2 --wash --ink --ink2 --mut --rule --red --sans --serif --mono --rad --hfont --hw */
+:root{--board:var(--bg);--board2:var(--bg);--p-brief:var(--card);--p-snap:var(--card);--p-memo:var(--wash);--p-clip:var(--card);--note:var(--wash);--shadow:rgba(0,0,0,.08);--cond:var(--sans)}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--sans);font-stretch:100%}
+a:hover{color:var(--red)}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+/* chữ trước đây nằm trên bảng nâu (sáng) → về --ink/--mut */
+.title,.title a,.menu summary,.isu,.desk-h h1,.more-h,.foot a{color:var(--ink);text-shadow:none}
+.title small,.isu-l,.foot,.foot p,.desk-h p,.desk-h p:last-child{color:var(--mut);text-shadow:none}
+:root[data-scheme] .frun,:root[data-scheme] .frun span,:root[data-scheme] .sec-h,:root[data-scheme] .sec-s,:root[data-scheme] .ddnote,:root[data-scheme] .isu-l{color:var(--ink)}
+:root[data-scheme] .sec-h small,:root[data-scheme] .meta,:root[data-scheme] .mast .title small{color:var(--mut)}
+/* masthead + tab ban = chữ có gạch chân (không hộp viền đậm) */
+.mast{border-bottom:1px solid var(--rule)}
+.title a{font-family:var(--hfont);font-weight:var(--hw)}
+.tags{gap:.15rem}
+.tags a{background:none;border:0;border-bottom:2px solid transparent;box-shadow:none;color:var(--mut);font:600 .9rem var(--sans);text-transform:none;letter-spacing:0;padding:0 .7rem;border-radius:0}
+.tags a:hover{color:var(--ink)}
+.tags a[aria-current]{background:none;color:var(--ink);border-bottom-color:var(--red)}
+.who{background:none;box-shadow:none;color:var(--ink);font:600 .85rem var(--sans);letter-spacing:0;text-transform:none;padding:0 .4rem}
+.who i{background:var(--ink);color:var(--bg);font-family:var(--sans)}
+.menu summary{font:600 .85rem var(--sans)}
+.mp{background:var(--card);border:1px solid var(--rule);border-radius:var(--rad);box-shadow:0 12px 28px -10px rgba(0,0,0,.25)}
+.mp>a{font:500 .95rem var(--sans);border-radius:var(--rad)}
+.mp>a:hover,.mp>a[aria-current]{background:var(--wash)}
+.scheme{background:var(--wash);color:var(--ink);box-shadow:none}
+.scheme[aria-pressed=true]{background:var(--ink);color:var(--bg);box-shadow:none}
+/* nút / ô chọn / chip */
+.btn,.ca{font:600 .85rem var(--sans);letter-spacing:0;border:1px solid var(--rule);background:var(--card);color:var(--ink);border-radius:var(--rad)}
+.isu select,.pp-f select{font:600 1rem var(--sans);border:1px solid var(--rule);background:var(--card);color:var(--ink);border-radius:var(--rad)}
+.btn:hover{background:var(--wash);color:var(--ink)}
+.btn.pri,.btn.pri:hover{background:var(--red);border-color:var(--red);color:#fff}
+.chip,.mem button{font:500 .85rem var(--sans);border-color:var(--rule)}
+.chip[aria-pressed=true],.mem button[aria-pressed=true],.ca[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.mk input,.mk select,.mk textarea,.mk input[type=number]{font-family:var(--sans);border:1px solid var(--rule);background:var(--card);border-radius:var(--rad)}
+.lab,.lab-up{background:none;border:1px solid var(--red);color:var(--red);font:700 .66rem var(--sans);letter-spacing:.06em;border-radius:var(--rad)}
+.frun{border:1px solid var(--rule);background:var(--wash);border-radius:var(--rad)}
+.resume{background:var(--wash);border-left:3px solid var(--red);font-family:var(--sans);border-radius:0 var(--rad) var(--rad) 0}
+.cmore summary{color:var(--mut)}
+/* chữ mono → sans cho chrome (mono chỉ còn ở kbd) */
+.isu-l,.m,.ddnote,.typed,.byline,.why,.meta,.sec-h,.gen-h,.gen-h small,.sec-h small,.chip-why,.upnote,.foot,.pp-s,.pp-h,.pp-g,.sgh,.adv>summary,.mk label,.cnt,.now,.ps,.tabs [role=tab],#toast,#off,#derr{font-family:var(--sans)}
+/* thẻ: không giấy, không ghim, không bóng, không halftone */
+.card,.grid .card,.grid .card.lead{background:none;box-shadow:none;transform:none;clip-path:none;filter:none}
+.grid .card::before,.grid .card.lead::before{display:none!important}
+.thumb{border-top:0;background:var(--card2)}
+.thumb:has(img)::after{display:none}
+.grid{background:none;box-shadow:none;padding:0}
+.grid .card:hover,.grid .card:focus-within{box-shadow:none;background:none}
+.grid .card .cb h3,.cb h3,.card h3{font-family:var(--hfont);font-weight:var(--hw);letter-spacing:-.005em}
+.grid .card .cb .ex,.ex{color:var(--ink2);font-family:var(--serif)}
+.grid .card .cb .meta{font:500 .8rem/1.4 var(--sans);color:var(--mut)}
+.gen-h{border-top:0}
+/* trang phụ: picker/me/topics = một tờ phẳng */
+.pk{background:var(--card);box-shadow:none;border:1px solid var(--rule);border-radius:var(--rad)}
+.ph{border-bottom:1px solid var(--rule)}.ph h1,.mk h2,.sg h3,.pn,.pp-t,.desk-h h1{font-family:var(--hfont);font-weight:var(--hw)}
+.sub,.sg p,.desk-h p:last-child{font-family:var(--serif)}
+.mk{border-top-color:var(--rule)}
+.tabs{border-bottom-color:var(--rule)}.tabs [role=tab]{border-color:var(--rule);border-radius:var(--rad) var(--rad) 0 0}
+.tabs [role=tab][aria-selected=true]{background:var(--ink);color:var(--bg)}
+.pf{background:var(--card);border-color:var(--rule);border-radius:var(--rad)}
+.pp-b{background:var(--card);border:1px solid var(--rule);border-radius:var(--rad);box-shadow:0 24px 48px -16px rgba(0,0,0,.35)}
+.pp-q{background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:var(--rad)}
+.strip{background:var(--wash);box-shadow:none;border-color:var(--rule);border-radius:var(--rad)}
+/* trang bài */
+.art-wrap .feature{background:none;box-shadow:none}
+.art-wrap .feature>*:not(.thumb){margin-left:0;margin-right:0}
+.feature h1{font-family:var(--hfont);font-weight:var(--hw)}
+.feature .byline{border-color:var(--rule);font:500 .85rem var(--sans);color:var(--mut)}
+.feature p{font-family:var(--serif);color:var(--ink)}
+.art-wrap .thumb{border-radius:var(--rad)}
+.more-h{font-family:var(--hfont);font-weight:var(--hw)}
+.title small{font:500 .8rem var(--sans);letter-spacing:0}
+.meta .tl,.meta a{font-family:inherit}
+.art-wrap .thumb:not(:has(img)),.feature>.thumb:not(:has(img)){display:none}

@@ -121,5 +121,17 @@
 "Lưu tên": "Save name",
 "Ghim chủ đề này": "Pin this topic",
 "Khác": "Other",
-"Mở →": "Open →"
+"Mở →": "Open →",
+"Thao tác với bài này": "Actions for this story",
+"Thao tác": "Actions",
+"Bớt tin này": "Show less like this",
+"Ẩn": "Hide",
+"Chia sẻ": "Share",
+"Đã bớt ✓": "Done ✓",
+"Đã ẩn bài này.": "Story hidden.",
+"Đã chép liên kết.": "Link copied.",
+"Không chép được liên kết.": "Couldn't copy the link.",
+"Trình duyệt này không hỗ trợ chia sẻ.": "This browser can't share.",
+"Bạn đang offline — đang hiển thị bản đã lưu trên máy.": "You're offline — showing the copy saved on this device.",
+"Chưa tải được dữ liệu cá nhân hoá — bản tin vẫn đọc được.": "Couldn't load personalization data — the news is still readable."
 }

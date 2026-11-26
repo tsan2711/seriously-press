@@ -14,7 +14,7 @@ def _day(pub, fallback):
 def _rows(root, topics, desks):
     """Mỗi hàng: [id, tiêu đề, url, nguồn, ngày, [chủ đề], ban, đoạn trích, engagement 0-100]; trùng sid → giữ bản mới nhất."""
     by = {}
-    for f in sorted(glob.glob(f'{root}/store/*.json')):
+    for f in sorted(glob.glob(f'{root}/store/????-??-??.json')):
         d = json.load(open(f, encoding='utf8'))
         for a in d['articles']:
             key = a.get('sid') or a['id']
@@ -55,7 +55,7 @@ def build_pwa(root):
     pub = f'{root}/public'
     os.makedirs(f'{pub}/x', exist_ok=True)
     # gói lazy: lõi thuần + giao diện thành một tệp (test chạy trên từng lõi riêng)
-    open(f'{pub}/x/ui.js', 'w', encoding='utf8').write('\n'.join(open(f'{root}/web/x/{n}.js', encoding='utf8').read() for n in ('search', 'features', 'persona', 'ui')))
+    open(f'{pub}/x/ui.js', 'w', encoding='utf8').write('\n'.join(open(f'{root}/web/x/{n}.js', encoding='utf8').read() for n in ('search', 'features', 'persona', 'profilectl', 'readtools', 'feedback', 'tour', 'ui')))
     shutil.copy(f'{root}/web/x/en.json', f'{pub}/x/en.json')
     shutil.copy(f'{root}/web/boot.js', f'{pub}/boot.js')
     open(f'{pub}/icon.svg', 'w').write(ICON)
@@ -72,3 +72,62 @@ def build_pwa(root):
     sw = open(f'{root}/web/sw.js', encoding='utf8').read().replace('__VER__', ver).replace('__SHELL__', json.dumps(shell))
     open(f'{pub}/sw.js', 'w', encoding='utf8').write(sw)
     return ver
+
+
+# ---- feed.xml (Atom) + sitemap.xml: chỉ dữ liệu công khai, stdlib ----
+SITE_URL = os.environ.get('PRESS_SITE_URL', 'https://tsan2711.github.io/seriously-press/').rstrip('/') + '/'
+FEED_N = 20
+
+
+def _iso(pub, fallback):
+    """Chuẩn hoá về RFC 3339 (UTC); thiếu/sai giờ → 00:00:00Z của ngày fallback."""
+    m = re.match(r'(\d{4}-\d\d-\d\d)[T ](\d\d:\d\d:\d\d)', pub or '')
+    return f'{m.group(1)}T{m.group(2)}Z' if m else f'{_day(pub, fallback)}T00:00:00Z'
+
+
+def feed_items(root, n=FEED_N):
+    """n bài mới nhất qua mọi số báo trong store/ (trùng sid → bản mới nhất), mỗi mục là dict."""
+    by = {}
+    for f in sorted(glob.glob(f'{root}/store/????-??-??.json')):
+        d = json.load(open(f, encoding='utf8'))
+        for a in d['articles']:
+            if not a.get('url') or not a.get('title'): continue
+            by[a.get('sid') or a['id']] = dict(id=a.get('sid') or a['id'], title=a['title'], url=a['url'], updated=_iso(a.get('published'), d['date']),
+                                               summary=(a.get('summary') or '')[:300], source=a.get('source', ''))
+    return sorted(by.values(), key=lambda x: (x['updated'], x['id']), reverse=True)[:n]
+
+
+def build_feed_xml(items, base=SITE_URL, now=None):
+    from xml.sax.saxutils import escape as x
+    upd = items[0]['updated'] if items else (now or '1970-01-01T00:00:00Z')
+    out = ['<?xml version="1.0" encoding="utf-8"?>', '<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="vi">',
+           '<title>Bản Tin</title>', '<subtitle>Bản tin công nghệ hằng ngày: game dev, thiết kế, AI.</subtitle>',
+           f'<id>{x(base)}</id>', f'<link rel="self" type="application/atom+xml" href="{x(base)}feed.xml"/>',
+           f'<link rel="alternate" type="text/html" href="{x(base)}"/>', f'<updated>{upd}</updated>']
+    for it in items:
+        out.append(f'<entry><id>urn:press:{x(it["id"])}</id><title>{x(it["title"])}</title><link rel="alternate" href="{x(it["url"], {chr(34): "&quot;"})}"/>'
+                   f'<updated>{it["updated"]}</updated><summary>{x(it["summary"] or it["title"])}</summary>'
+                   + (f'<source><title>{x(it["source"])}</title></source>' if it['source'] else '') + '</entry>')
+    out.append('</feed>')
+    return '\n'.join(out) + '\n'
+
+
+def build_sitemap_xml(pages, base=SITE_URL, lastmod=None):
+    from xml.sax.saxutils import escape as x
+    out = ['<?xml version="1.0" encoding="utf-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for p in pages:
+        out.append(f'<url><loc>{x(base + p)}</loc>' + (f'<lastmod>{lastmod}</lastmod>' if lastmod else '') + '</url>')
+    out.append('</urlset>')
+    return '\n'.join(out) + '\n'
+
+
+def build_feed(root):
+    """Ghi public/feed.xml + public/sitemap.xml (gọi sau khi các trang HTML đã ra). Trả về số mục feed."""
+    pub = f'{root}/public'
+    items = feed_items(root)
+    open(f'{pub}/feed.xml', 'w', encoding='utf8').write(build_feed_xml(items))
+    pages = [''] + sorted(os.path.basename(p) for p in glob.glob(f'{pub}/*.html')
+                          if os.path.getsize(p) > 1000 and os.path.basename(p) not in ('index.html', 'offline.html'))
+    last = items[0]['updated'][:10] if items else None
+    open(f'{pub}/sitemap.xml', 'w', encoding='utf8').write(build_sitemap_xml(pages, lastmod=last))
+    return len(items)

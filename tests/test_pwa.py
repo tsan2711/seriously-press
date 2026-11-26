@@ -29,7 +29,14 @@ for ok, n in [(has(r"'install'.*?addAll\(SHELL\)"), 'install: tải vỏ vào ca
               (has(r"r\.mode === 'navigate'.*?offline\.html"), 'offline + chưa lưu: trang offline.html'),
               (has(r"u\.origin !== location\.origin\) return"), 'không đụng yêu cầu khác origin'),
               (has(r"const m = await c\.match\(r\); if \(m\) return m;"), 'js/css: lưu trước'),
-              (has(r"MAX_ISSUES = 7") and has(r"slice\(MAX_ISSUES\)"), 'giữ ≤7 số báo')]: ck(ok, 'SW ' + n)
+              (has(r"MAX_ISSUES = 7") and has(r"i >= MAX_ISSUES") and has(r"MAX_AGE = 7 \* 864e5"), 'giữ ≤7 số báo, ≤7 ngày'),
+              (has(r"MAX_IMGS = 60") and has(r"isImg\(u\)"), 'ảnh cùng origin: trần 60 mục, stale-while-revalidate')]: ck(ok, 'SW ' + n)
+# mô phỏng chạy thật: sw.js nguồn (web/sw.js) trên cache/fetch giả
+try: simsw = json.loads(node(f'{d}/sim_sw.js').strip().splitlines()[-1])
+except Exception as e: simsw = {}; print('sim_sw lỗi:', str(e)[:200])
+for k, n in [('img_cap', 'ảnh ≤60 mục'), ('img_evict_oldest', 'bỏ ảnh cũ nhất'), ('swr_stale', 'SWR: trả bản đã lưu ngay'), ('swr_refreshed', 'SWR: nền cập nhật lần sau'), ('cross_origin', 'ảnh khác origin không cache'),
+             ('issues_cap', 'số báo ≤7'), ('issues_age', 'số báo quá 7 ngày bị dọn'), ('offline_home', 'offline vẫn mở trang chủ'), ('offline_fallback', 'offline + chưa lưu → offline.html'),
+             ('offline_img', 'offline: ảnh đã lưu vẫn hiện'), ('activate_scoped', 'đổi bản chỉ xoá cache press-* cũ')]: ck(simsw.get(k) is True, 'sim_sw ' + n)
 try: r = json.loads(node(f'{d}/sim_cancel.js', f'{R}/run-core.js'))
 except Exception as e: r = {}; print('node lỗi:', str(e)[:200])
 # CLS: ảnh có kích thước, vùng động không đổi chiều cao

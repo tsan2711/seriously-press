@@ -1,0 +1,4369 @@
+{
+ "date": "2026-11-24",
+ "generated": "2026-11-24T23:21:16",
+ "articles": [
+  {
+   "title": "LLM agents work for their parent companies, not for you",
+   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+   "summary": "I built an Instagram-to-Bandcamp tool with Claude, but when the API broke, the model refused to help me work around it, while happily downloading from YouTube instead, which pays the artist nothing.…",
+   "published": "2026-11-24T12:40:15Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 518,
+   "comments": 224,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "ef8096d74f",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "img": "img/747994a4f6a37739.webp",
+   "img_via": "og",
+   "img_remote": "https://michaelharley.net/assets/images/open-graph-image.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ef8096d74f",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "604c323804",
+     "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "3c4f4993ad",
+     "title": "Show HN: I built a game where you are an LLM's subagent",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "cabaa2ef3d",
+     "title": "Making Immersive LLM Chat Experiences More Accessible",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Show HN: I built a game where you are an LLM's subagent",
+   "url": "https://github.com/gulivan/worker755",
+   "summary": "A browser game where an AI manager thinks you are its subagent. Play at worker755.com - gulivan/worker755",
+   "published": "2026-11-22T13:56:58Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 359,
+   "comments": 89,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "3c4f4993ad",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "marketing"
+   ],
+   "summary_by": "meta",
+   "img": "img/4b38327d2e72c130.webp",
+   "img_via": "host",
+   "img_remote": "https://opengraph.githubassets.com/1/gulivan/worker755",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "3c4f4993ad",
+   "status": "update",
+   "rev": 1,
+   "update_note": "Mới: worker755, worker755.com",
+   "related": [
+    {
+     "sid": "604c323804",
+     "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "cabaa2ef3d",
+     "title": "Making Immersive LLM Chat Experiences More Accessible",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "ba05f6db61",
+     "title": "LLM assisted reverse engineering",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+   "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+   "summary": "Try out Artifacts created by Claude users",
+   "published": "2026-11-22T23:12:10Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 259,
+   "comments": 202,
+   "engagement": 1.0,
+   "topic_by": "none",
+   "id": "ae6e6a3519",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/f34d68e32cdf21b9.webp",
+   "img_via": "og",
+   "img_remote": "https://claude.ai/images/claude_ogimage.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ae6e6a3519",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+   "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+   "summary": "Japan’s automakers will work together to lower production costs as they band together to compete against China’s growing automotive sector.",
+   "published": "2026-11-22T04:04:56Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 1388,
+   "comments": 735,
+   "engagement": 1.0,
+   "topic_by": "none",
+   "id": "d3a1a9a15e",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "meta",
+   "img": "img/c34274ce8de31183.webp",
+   "img_via": "og",
+   "img_remote": "https://hips.hearstapps.com/hmg-prod/images/d8009593-6fd1-4860-b42e-c59e9945155a.jpeg?crop=1xw:0.75xh;0xw,0.184xh&resize=1200:*",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "d3a1a9a15e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+   "url": "https://twitter.com/ylecun/status/2124550037912920090",
+   "summary": "Dario's spiel since GPT-2 has always been about hyping the dangers so that open models would be made illegal and *he* would stay in control. He left OpenAI because he wasn't going to have control.…",
+   "published": "2026-11-23T17:07:26Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 1909,
+   "comments": 1102,
+   "engagement": 1.0,
+   "topic_by": "none",
+   "id": "3c69fd5649",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "meta",
+   "sid": "3c69fd5649",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Apple removed my open-source app from EU App Stores after 9 years",
+   "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+   "summary": "Hi everyone! For those who don't know me, let me introduce myself. I'm the independent developer behind FSNotes, an open-source note-taking app for macOS and iOS. I've been developing FSNotes for 9...",
+   "published": "2026-11-23T18:48:10Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 607,
+   "comments": 152,
+   "engagement": 1.0,
+   "topic_by": "keyword",
+   "id": "42afc3642f",
+   "topics": [
+    "mobile-games",
+    "aso"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "meta",
+   "img": "img/b611df14d255c6ff.webp",
+   "img_via": "og",
+   "img_remote": "https://opengraph.githubassets.com/6ffea309f85ed97869c3b78c189a48d8d64ff8c2f775724d1730980d0bf84ad9/glushchenko/fsnotes/discussions/2056",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "42afc3642f",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+   "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+   "summary": "Obviously these results will be reported widely in other outlets, but I will note them here, in decreasing order of how “digested” the results currently are: Levent Alpöge, Tristan Buck…",
+   "published": "2026-11-20T17:21:36Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 550,
+   "comments": 246,
+   "engagement": 1.0,
+   "topic_by": "none",
+   "id": "dc0a65e6fd",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "meta",
+   "sid": "dc0a65e6fd",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+   "url": "https://scottaaronson.blog/?p=10344",
+   "summary": "“… it is very probable that all roots are real. Of course one would wish for a rigorous proof here; I have for the time being, after some fleeting vain attempts, provisionally put aside…",
+   "published": "2026-11-20T20:03:07Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 363,
+   "comments": 369,
+   "engagement": 1.0,
+   "topic_by": "none",
+   "id": "e4f971da92",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "meta",
+   "sid": "e4f971da92",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "dc0a65e6fd",
+     "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
+   "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
+   "summary": "BepiColombo double probe will map planet’s surface and study its interior to shed light on its unusually large core",
+   "published": "2026-11-21T09:14:02Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 358,
+   "comments": 120,
+   "engagement": 1.0,
+   "topic_by": "none",
+   "id": "ee41c81c01",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "meta",
+   "img": "img/9102f6055024ce82.webp",
+   "img_via": "og",
+   "img_remote": "https://i.guim.co.uk/img/media/910dcaf9ff433ebd4d751fd1b66d69ac4d3214ec/310_0_2501_2001/master/2501.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6ca4e9af30b089231419a5303deff9f6",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ee41c81c01",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Huang's Return Is the Biggest National Security Scandal in U.S. History",
+   "url": "https://foreignpolicy.com/2026/11/23/jensen-huang-nvidia-return-ceo-national-security-scandal/",
+   "summary": "Trump has put his pocketbook first and U.S. interests last.",
+   "published": "2026-11-23T23:11:38Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 323,
+   "comments": 249,
+   "engagement": 1.0,
+   "topic_by": "none",
+   "id": "eb476be725",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "meta",
+   "img": "img/aba8d84acb89a57e.webp",
+   "img_via": "og",
+   "img_remote": "https://foreignpolicy.com/wp-content/uploads/2026/11/jensen-huang-GettyImages-2205754284.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "eb476be725",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "GL.iNet Security Notice 2026-11-20",
+   "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
+   "summary": "On November 20, 2026, GL.iNet identified a vulnerability in its cloud remote management services. An unauthorized party exploited the vulnerability to access and install malicious software on some…",
+   "published": "2026-11-22T23:06:37Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 271,
+   "comments": 126,
+   "engagement": 1.0,
+   "topic_by": "none",
+   "id": "e80d783c68",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "meta",
+   "img": "img/20f2544640201c4d.webp",
+   "img_via": "og",
+   "img_remote": "https://www.gl-inet.com/cdn/shop/articles/20261121-145609_1200x675.jpg?v=1795244669",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "e80d783c68",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
+   "url": "https://news.ycombinator.com/item?id=50577613",
+   "summary": "",
+   "published": "2026-11-20T16:45:25Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 134,
+   "comments": 178,
+   "engagement": 0.997,
+   "topic_by": "none",
+   "id": "97ba4ccf6d",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "97ba4ccf6d",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Backblaze customers worried of personal data sale/sharing after policy update",
+   "url": "https://www.neowin.net/news/backblaze-customers-worried-of-personal-data-salesharing-after-policy-update/",
+   "summary": "",
+   "published": "2026-11-22T15:16:02Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 179,
+   "comments": 66,
+   "engagement": 0.924,
+   "topic_by": "none",
+   "id": "ad73016cb3",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "ad73016cb3",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Ask HN: Are the trades a safe career transition?",
+   "url": "https://news.ycombinator.com/item?id=50600771",
+   "summary": "",
+   "published": "2026-11-22T15:52:33Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 72,
+   "comments": 113,
+   "engagement": 0.917,
+   "topic_by": "none",
+   "id": "2653cf2f96",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "none",
+   "sid": "2653cf2f96",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "ClawDOS – An AI coding agent for DOS",
+   "url": "http://ricapar.net/ClawDOS/",
+   "summary": "An AI chat and coding harness for DOS, on a real IBM PC 5160 (8088 at 4.77 MHz)",
+   "published": "2026-11-21T05:38:01Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 176,
+   "comments": 53,
+   "engagement": 0.908,
+   "topic_by": "keyword",
+   "id": "c82934c02e",
+   "topics": [
+    "ai-coding",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "sid": "c82934c02e",
+   "status": "update",
+   "rev": 1,
+   "update_note": "Mới: 4.77, 5160, 8088"
+  },
+  {
+   "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+   "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+   "summary": "Image-Text-to-Text model with 27B parameters. Download, explore files and run it on Hugging Face.",
+   "published": "2026-11-23T13:42:38Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 183,
+   "comments": 36,
+   "engagement": 0.892,
+   "topic_by": "keyword",
+   "id": "81ecb7742e",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/ca6940d85351b4db.webp",
+   "img_via": "host",
+   "img_remote": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/nari-labs/Qwen3.8-27B-NariQ-GGUF.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "81ecb7742e",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
+   "url": "https://arxiv.org/abs/2606.14068",
+   "summary": "Existing studies on gender bias in LLMs have largely focused on stereotypes, occupational associations, or explicit harmful outputs. In this work, we ask whether LLMs apply consistent response…",
+   "published": "2026-11-22T09:18:36Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 94,
+   "comments": 78,
+   "engagement": 0.889,
+   "topic_by": "keyword",
+   "id": "77bc9c5c53",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "sid": "77bc9c5c53",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Pandex – Official European Law for AI Agents, over MCP",
+   "url": "https://www.pandex.io",
+   "summary": "Legislation and court decisions straight from the governments and courts that publish them, with every past version and citation, in one API and MCP server for AI agents. Europe is live; the rest of…",
+   "published": "2026-11-21T20:47:41Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 141,
+   "comments": 37,
+   "engagement": 0.865,
+   "topic_by": "keyword",
+   "id": "b77be25502",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "img": "img/41c6586693f4a2b1.webp",
+   "img_via": "og",
+   "img_remote": "https://www.pandex.io/opengraph-image?6367cd8c0b666bc6",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "b77be25502",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: OpenComputer – an open source alternative to Devin",
+   "url": "https://github.com/diggerhq/opencomputer",
+   "summary": "An open-source, faster Devin alternative. Contribute to diggerhq/opencomputer development by creating an account on GitHub.",
+   "published": "2026-11-20T20:19:56Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 129,
+   "comments": 36,
+   "engagement": 0.854,
+   "topic_by": "none",
+   "id": "00dcab6dea",
+   "topics": [],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "img": "img/54df10debc088ce9.webp",
+   "img_via": "host",
+   "img_remote": "https://opengraph.githubassets.com/1/diggerhq/opencomputer",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "00dcab6dea",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Claude Ship",
+   "url": "https://claude.com/resources/articles/introducing-claude-ship",
+   "summary": "Open a pull request and get back to building. Claude can now review pull requests, fix them, and approve the ones that a team's policy allows.",
+   "published": "2026-11-23T20:14:18Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 76,
+   "comments": 28,
+   "engagement": 0.787,
+   "topic_by": "keyword",
+   "id": "e277391e1a",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/62860c8795f3910b.webp",
+   "img_via": "og",
+   "img_remote": "https://claude.com/resources/articles/introducing-claude-ship/opengraph-image/og",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "e277391e1a",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "be373132dc",
+     "title": "Claude solves two open problems in the physics of black holes",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "b9ffbcf8b1",
+     "title": "An FBI agent called a Claude user about his chats",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "48cd8de2ce",
+     "title": "Fable: Written, painted and directed by Claude Fable 5.2",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "WSJ Editorial: Restoring Huang as CEO will have major NatSec and political costs",
+   "url": "https://www.wsj.com/opinion/nvidia-jensen-huang-donald-trump-130e644c",
+   "summary": "",
+   "published": "2026-11-24T02:11:52Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 57,
+   "comments": 27,
+   "engagement": 0.759,
+   "topic_by": "none",
+   "id": "fb81feee80",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "fb81feee80",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How should an LLM see a computer?",
+   "url": "https://www.greptile.com/blog/trex-computer-use",
+   "summary": "We benchmarked screenshots, accessibility trees, and click-by-ID on seven OpenAI models across 172 OSWorld tasks. The tree and ID clicks more than doubled weaker models’ scores and barely moved the…",
+   "published": "2026-11-23T17:19:25Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 57,
+   "comments": 25,
+   "engagement": 0.753,
+   "topic_by": "keyword",
+   "id": "b1b9880b61",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/71d73492c1d7822e.webp",
+   "img_via": "og",
+   "img_remote": "https://greptile.com/opengraph/greptile-blog.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "b1b9880b61",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "604c323804",
+     "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "3c4f4993ad",
+     "title": "Show HN: I built a game where you are an LLM's subagent",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "cabaa2ef3d",
+     "title": "Making Immersive LLM Chat Experiences More Accessible",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
+   "url": "https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models",
+   "summary": "",
+   "published": "2026-11-20T22:18:20Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 56,
+   "comments": 20,
+   "engagement": 0.736,
+   "topic_by": "keyword",
+   "id": "d3325aea2b",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "sid": "d3325aea2b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Harvard CS 2881R AI Safety",
+   "url": "https://boazbk.github.io/mltheoryseminar/",
+   "summary": "",
+   "published": "2026-11-22T18:01:54Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 80,
+   "comments": 8,
+   "engagement": 0.736,
+   "topic_by": "none",
+   "id": "770a34dc0c",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "770a34dc0c",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Coworker rejects PR (one month in) because it does not meet his standards",
+   "url": "https://news.ycombinator.com/item?id=50622809",
+   "summary": "",
+   "published": "2026-11-24T02:31:21Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 18,
+   "comments": 32,
+   "engagement": 0.711,
+   "topic_by": "none",
+   "id": "5d95bb3492",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "none",
+   "sid": "5d95bb3492",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Latent Introspection: LLMs Can Detect Prior Concept Injections",
+   "url": "https://arxiv.org/abs/2602.20031",
+   "summary": "We uncover a latent capacity for introspection in a Qwen 32B model, demonstrating that the model can detect when concepts have been injected into its earlier context and identify which concept was…",
+   "published": "2026-11-23T22:29:48Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 69,
+   "comments": 6,
+   "engagement": 0.709,
+   "topic_by": "keyword",
+   "id": "8f20e5199f",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "sid": "8f20e5199f",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "feb4caa835",
+     "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "d3325aea2b",
+     "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "77bc9c5c53",
+     "title": "Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "Del Casher–guitarist who was driving force behind the wah-wah pedal–dies at 88",
+   "url": "https://www.nytimes.com/2026/11/17/obituaries/del-casher-dead.html",
+   "summary": "",
+   "published": "2026-11-22T11:35:03Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 46,
+   "comments": 9,
+   "engagement": 0.671,
+   "topic_by": "none",
+   "id": "0b4f13aa96",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "0b4f13aa96",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "16-Year-Old Founded an AI Missile Startup. He's Targeting 'Cost per Kill'",
+   "url": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
+   "summary": "Henrijs Dandzbergs dropped out of high school to join startup accelerator Y Combinator. With a new breed of missile, he wants to make killing as efficient as possible for the US and its military…",
+   "published": "2026-11-23T21:56:44Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 25,
+   "comments": 19,
+   "engagement": 0.669,
+   "topic_by": "none",
+   "id": "cc2401a740",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "meta",
+   "img": "img/7214cd247207129f.webp",
+   "img_via": "og",
+   "img_remote": "https://media.wired.com/photos/6aff9b51715a3d6f512c8dee/191:100/w_1280,c_limit/The-Boy-Who-Builds-Missiles-Business.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "cc2401a740",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Current Efforts Aren't Enough to Slow the AI Cyber Virus",
+   "url": "https://www.bridgewater.com/research-and-insights/current-efforts-arent-enough-to-slow-the-ai-cyber-virus",
+   "summary": "Despite unprecedented efforts to patch vulnerabilities, AI is helping attackers exploit bugs faster than defenders can fix them. With policy responses lagging, we see the pressures lining up for the…",
+   "published": "2026-11-22T03:28:48Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 30,
+   "comments": 11,
+   "engagement": 0.639,
+   "topic_by": "none",
+   "id": "351e2cbe4c",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/98081a44a4f97cf2.webp",
+   "img_via": "og",
+   "img_remote": "https://bridgewater.brightspotcdn.com/dims4/default/922a82b/2147483647/strip/true/crop/2480x1302+0+49/resize/1200x630!/quality/90/?url=http%3A%2F%2Fbridgewater-brightspot.s3.us-east-1.amazonaws.com%2Fd5%2F5c%2F4e0888da4702b12084431ad4300b%2Fai-cyber-virus-hero.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "351e2cbe4c",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
+   "url": "https://morethanamachine.com/posts/slinky-escalator-benchmark/",
+   "summary": "Fifteen models from Anthropic, OpenAI and Google try the same prompt: a rainbow slinky walking down an up escalator with real physics.",
+   "published": "2026-11-22T07:31:41Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 31,
+   "comments": 8,
+   "engagement": 0.623,
+   "topic_by": "keyword",
+   "id": "604c323804",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/93e2a533dbfbbb33.webp",
+   "img_via": "og",
+   "img_remote": "https://morethanamachine.com/_astro/slinky-og.BYHNVX-K.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "604c323804",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Anyone can easily use private, open weight models",
+   "url": "https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models/",
+   "summary": "It's impossible to deny that, despite all the slop/data centers/environmental destruction/theft, LLMs are incredibly useful and powerful. It's also impossible to deny that OpenAI and Anthropic suck…",
+   "published": "2026-11-21T12:11:54Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 29,
+   "comments": 8,
+   "engagement": 0.616,
+   "topic_by": "none",
+   "id": "6bc9d30d02",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/1e490a1fcded0fb9.webp",
+   "img_via": "og",
+   "img_remote": "https://storage.ghost.io/c/ab/b9/abb95af0-3cb7-4e49-a6c2-c87b36f5d5c2/content/images/2026/11/Screenshot-2026-11-13-at-3.52.43---PM-1.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "6bc9d30d02",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: News Blocklist – a DNS blocklist of 14k news and current-affairs sites",
+   "url": "https://github.com/ruairidhflint/news-blocklist",
+   "summary": "A DNS blocklist of news and current-affairs sites worldwide: a curated core plus news outlets from Wikidata. Hosts, domains, adblock, wildcard and dnsmasq formats. - ruairidhflint/news-blocklist",
+   "published": "2026-11-23T13:02:52Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 20,
+   "comments": 11,
+   "engagement": 0.605,
+   "topic_by": "none",
+   "id": "ac61f15951",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/83d6c1b7a7e08b86.webp",
+   "img_via": "host",
+   "img_remote": "https://opengraph.githubassets.com/1/ruairidhflint/news-blocklist",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ac61f15951",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Kolibri 1.1: English-German open-weight model with sparse attention",
+   "url": "https://aleph-alpha.com/en/blog/kolibri-1-1/",
+   "summary": "Kolibri 1.1 is our improved English-German open-weight model: a new sparse-attention architecture makes it faster and cheaper per task, and it is stronger at agentic work, grounding, citations and…",
+   "published": "2026-11-23T15:08:43Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 18,
+   "comments": 2,
+   "engagement": 0.504,
+   "topic_by": "none",
+   "id": "743d96fe6f",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img": "img/501ac199ddb1012b.webp",
+   "img_via": "og",
+   "img_remote": "https://aleph-alpha.com/_astro/00-cover.Cqyhjitl_Z1tJrF.jpeg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "743d96fe6f",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Show HN: agent-mcts – Monte Carlo tree search on top of Claude Code",
+   "url": "https://github.com/natsu0529/agent-mcts",
+   "summary": "agent-mcts: a test-time search harness that runs Monte Carlo Tree Search over coding agents such as Claude Code and Codex CLI. - natsu0529/agent-mcts",
+   "published": "2026-11-21T13:53:08Z",
+   "source": "Hacker News",
+   "source_id": "hn",
+   "points": 16,
+   "comments": 2,
+   "engagement": 0.49,
+   "topic_by": "keyword",
+   "id": "79c1f4e3be",
+   "topics": [
+    "agents",
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "img": "img/d70cfa2faf2fff7d.webp",
+   "img_via": "host",
+   "img_remote": "https://opengraph.githubassets.com/1/natsu0529/agent-mcts",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "79c1f4e3be",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "be373132dc",
+     "title": "Claude solves two open problems in the physics of black holes",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "b9ffbcf8b1",
+     "title": "An FBI agent called a Claude user about his chats",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "48cd8de2ce",
+     "title": "Fable: Written, painted and directed by Claude Fable 5.2",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "datasette-charts 0.2a0",
+   "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+   "summary": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will…",
+   "published": "2026-11-24T04:24:29+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3b1f8072ba",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3b1f8072ba",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "datasette-agent 0.7a1",
+   "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+   "summary": "Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves…",
+   "published": "2026-11-24T03:45:57+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f3349335f1",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "sid": "f3349335f1",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+   "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+   "summary": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they…",
+   "published": "2026-11-23T23:40:49+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "img": "img/c237d1bc4c9784b1.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "ef3910f6a7",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://static.simonwillison.net/static/2026/glm-5.4-max.webp",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ef3910f6a7",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Ladybird's first alpha release",
+   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+   "summary": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It…",
+   "published": "2026-11-23T21:46:35+00:00",
+   "source": "Simon Willison",
+   "source_id": "simonw",
+   "img": "img/7f36a7774102dfe1.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b7fc35d5cc",
+   "topics": [
+    "ui-design",
+    "typography"
+   ],
+   "desks": [
+    "ai",
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://static.simonwillison.net/static/2026/ladybird-ffmpeg.webp",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "b7fc35d5cc",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+   "url": "https://huggingface.co/blog/allenai/robotrack",
+   "summary": "",
+   "published": "Mon, 23 Nov 2026 17:20:37 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "img": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/0KlbITzhyUGtGPyvi09um.png",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "ca38829e73",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "img_via": "og",
+   "sid": "ca38829e73",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How to build and maintain an agentic evaluation",
+   "url": "https://huggingface.co/blog/agentic-evals",
+   "summary": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "published": "Mon, 23 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "img": "img/ec8cd7adf4f26e0c.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "6fd4c32fe3",
+   "topics": [
+    "agents",
+    "prompting"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://huggingface.co/blog/assets/agentic-evals/thumbnail.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "6fd4c32fe3",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+   "url": "https://huggingface.co/blog/inkling2mini",
+   "summary": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "published": "Fri, 20 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "img": "img/fdfd34b33f48b046.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "80d31a6dee",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://huggingface.co/blog/assets/inkling2mini/thumbnail.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "80d31a6dee",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+   "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+   "summary": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "published": "Fri, 20 Nov 2026 00:00:00 GMT",
+   "source": "Hugging Face Blog",
+   "source_id": "huggingface",
+   "img": "img/7b8647d261ff2c2c.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "211fbe8009",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://huggingface.co/blog/assets/harness-adapters-at-scale/thumbnail.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "211fbe8009",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Rebuilding my local voice assistant pipeline",
+   "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+   "summary": "Swapping openwakeword for microwakeword and making voice detection smarter",
+   "published": "Thu, 19 Nov 2026 13:50:25 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "img": "img/3e8bda0ec8704a32.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "f454ea635e",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://s3.platypush.tech/static/images/voice-assistant-pipeline.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f454ea635e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+   "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 15:53:43 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "img": "img/b6d2827fc27d2374.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "feb4caa835",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "img_via": "og",
+   "img_remote": "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "feb4caa835",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+   "url": "https://energy-based-reasoners.github.io/",
+   "summary": "One learned energy refines, stops and selects. Over 99% Sudoku-Extreme accuracy with 1.8M parameters, up to 345x fewer inference FLOPs than EqR at comparable accuracy.",
+   "published": "Wed, 18 Nov 2026 08:45:20 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "img": "img/4175dd6e3c5711ac.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "6fc8c039af",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://energy-based-reasoners.github.io/static/images/ebr_landscape_abc_v1.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "6fc8c039af",
+   "status": "update",
+   "rev": 1,
+   "update_note": "Mới: 1.8m, 345x, 99"
+  },
+  {
+   "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+   "url": "https://arxiv.org/abs/2607.02512",
+   "summary": "Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly…",
+   "published": "Tue, 17 Nov 2026 06:55:46 -0600",
+   "source": "Lobsters · ai",
+   "source_id": "lobsters-ai",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "1d17667aee",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "sid": "1d17667aee",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.331",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+   "summary": "What's changed Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS Added oidc.groups_jsonpath to the Claude…",
+   "published": "2026-11-23T21:34:41Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "800aeca2d3",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://avatars.githubusercontent.com/u/76263028?s=60&v=4"
+   ],
+   "img": "img/57e2307370168c40.webp",
+   "img_via": "og",
+   "img_remote": "https://opengraph.githubassets.com/024b07707ad2eebad60c40b7aa2fa7d9bae5b770f3d2f6f73ce77b08ec266bd2/anthropics/claude-code/releases/tag/v2.1.331",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "800aeca2d3",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.330",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "summary": "What's changed Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login , Claude Code applies the organization's settings and uses its cloud provider or…",
+   "published": "2026-11-20T22:32:56Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "7ce40af713",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://avatars.githubusercontent.com/u/76263028?s=60&v=4"
+   ],
+   "img": "img/e2397333622d5e15.webp",
+   "img_via": "og",
+   "img_remote": "https://opengraph.githubassets.com/039682c0eddced240ab97c729ba18cf64b6d2a8143b2f64e8694fb42caf41007/anthropics/claude-code/releases/tag/v2.1.330",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "7ce40af713",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.329",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+   "summary": "What's changed Added a trust dialog warning that says where a folder's hooks are declared Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed…",
+   "published": "2026-11-19T22:14:41Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "9166064c2f",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://avatars.githubusercontent.com/u/76263028?s=60&v=4"
+   ],
+   "img": "img/7d0d38affec794fc.webp",
+   "img_via": "og",
+   "img_remote": "https://opengraph.githubassets.com/5b42bee5d440f0e84ecda22947f89cf6c4fa8ccb21c7ee3aac2297099480c966/anthropics/claude-code/releases/tag/v2.1.329",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "9166064c2f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "v2.1.328",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+   "summary": "What's changed Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude apps gateway; interactive sessions with no permission…",
+   "published": "2026-11-19T01:14:04Z",
+   "source": "Claude Code releases",
+   "source_id": "claude-code-releases",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "249cf944c1",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://avatars.githubusercontent.com/u/76263028?s=60&v=4"
+   ],
+   "img": "img/2d444dc316714f44.webp",
+   "img_via": "og",
+   "img_remote": "https://opengraph.githubassets.com/cb956e0313e453d1ba5080e2bb2510ad156dcebf68610b6ec5e7618b48f0d4e6/anthropics/claude-code/releases/tag/v2.1.328",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "249cf944c1",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "OpenAI and Cisco introduce Shirudo",
+   "url": "https://openai.com/index/introducing-shirudo",
+   "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+   "published": "Mon, 23 Nov 2026 21:20:00 GMT",
+   "source": "OpenAI",
+   "source_id": "openai-news",
+   "img": "img/63adfc72c50ebfdc.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "1d0c151fef",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai",
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://images.ctfassets.net/kftzwdyauwt9/5K7gFDr3r8vgjdIcsW6RVY/aba5325ce7902e5d1499b907f8e78f0b/shirudo-partner-logos-landscape-2x.png?w=1600&h=900&fit=fill",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "1d0c151fef",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "96fa849a8f",
+     "title": "OpenAI Publishes Prompting Guidance For GPT-6.2 Astra via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "Connected intelligence for in-house legal",
+   "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+   "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get…",
+   "published": "Mon, 23 Nov 2026 08:00:00 GMT",
+   "source": "OpenAI",
+   "source_id": "openai-news",
+   "img": "img/9133c995dbd591a1.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f8a4e02f42",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://images.ctfassets.net/kftzwdyauwt9/40q0vnGDp1zwWuJrVjXtu6/79ebb13b84e11ce1711a27adfd6ffafe/connected-intelligence-for-in-house-legal-cover.png?w=1600&h=900&fit=fill",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f8a4e02f42",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Richpanel helps companies automate 50% of support in 30 days",
+   "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+   "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+   "published": "Mon, 23 Nov 2026 08:00:00 GMT",
+   "source": "OpenAI",
+   "source_id": "openai-news",
+   "img": "img/3e82248dcdffab1c.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "680b35173b",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://images.ctfassets.net/kftzwdyauwt9/4aVhQ1EicxWg7i6lIkBrLQ/cdabc180f7e5f780dbb43c302e7163d8/richpanel-social.png?w=1600&h=900&fit=fill",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "680b35173b",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+   "published": "Sun, 22 Nov 2026 00:00:00 GMT",
+   "source": "OpenAI",
+   "source_id": "openai-news",
+   "img": "img/c7110827b79264fb.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "de5cd1a6d5",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://images.ctfassets.net/kftzwdyauwt9/6rIIhCRSKrhIfe385Onmcz/aca2d190553c62fd5d49efb5d5ce1eb6/perplexity-and-intelligence-social.png?w=1600&h=900&fit=fill",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "de5cd1a6d5",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Finding faster quantum algorithms with agents and formal verification",
+   "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+   "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+   "published": "Mon, 23 Nov 2026 16:59:40 +0000",
+   "source": "Google DeepMind",
+   "source_id": "deepmind",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "61dcf11694",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://lh3.googleusercontent.com/jIoM2lo98EDqLMQjIaXBlXPmXgPbUPpM2GgtXcDsGekZBOPUY41IjBsnuZIhLac7MSOuRkklNBsp20a5M25oDz-xTIY0BIqoBxUqmmXvEHwlM3MJJw=w528-h297-n-nu-rw-lo"
+   ],
+   "img": "img/bd6236111404c8ab.webp",
+   "img_via": "og",
+   "img_remote": "https://lh3.googleusercontent.com/jIoM2lo98EDqLMQjIaXBlXPmXgPbUPpM2GgtXcDsGekZBOPUY41IjBsnuZIhLac7MSOuRkklNBsp20a5M25oDz-xTIY0BIqoBxUqmmXvEHwlM3MJJw=w1200-h630-n-nu-rw",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "61dcf11694",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Introducing Gemini 4 Neon",
+   "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+   "summary": "",
+   "published": "Wed, 18 Nov 2026 21:35:43 +0000",
+   "source": "Google DeepMind",
+   "source_id": "deepmind",
+   "img": "img/a230023e2d3820ec.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b898a1b212",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "none",
+   "img_via": "og",
+   "img_remote": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-neon__blog-header__sm.width-1300.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "b898a1b212",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Genie 4 is now available",
+   "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+   "summary": "We are rolling out a new Project Genie experience to eligible Google AI Ultra subscribers, opening access to our new Genie 4 world model.",
+   "published": "Wed, 18 Nov 2026 18:13:42 +0000",
+   "source": "Google DeepMind",
+   "source_id": "deepmind",
+   "img": "img/096e646e312fec0a.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "50e3ea47cb",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "50e3ea47cb",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Introducing Gemini 4 Hydrogen",
+   "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+   "summary": "Today, we’re introducing Gemini 4 Hydrogen, our daily driver for agentic workflows",
+   "published": "Thu, 12 Nov 2026 18:00:50 +0000",
+   "source": "Google DeepMind",
+   "source_id": "deepmind",
+   "img": "img/f9c99d3a7f3b5737.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "a8d5fa7d24",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "a8d5fa7d24",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "BAIR at CoRL 2026",
+   "url": "http://bair.berkeley.edu/blog/2026/11/09/bair-at-corl-2026/",
+   "summary": "The Conference on Robot Learning (CoRL) takes place November 9–12, 2026, in Austin, Texas. BAIR faculty, postdocs and students will be presenting research at various sessions, including an Early…",
+   "published": "Mon, 09 Nov 2026 01:00:00 -0800",
+   "source": "Berkeley AI Research",
+   "source_id": "bair",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "bddeb1e469",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "sid": "bddeb1e469",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
+   "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+   "summary": "Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather than copied instruction-for-instruction. We face a new…",
+   "published": "Wed, 29 Jul 2026 02:00:00 -0700",
+   "source": "Berkeley AI Research",
+   "source_id": "bair",
+   "img": "https://bair.berkeley.edu/static/blog/cuda-to-mlx-k-search/cover.png",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "0ba31844af",
+   "topics": [],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "sid": "0ba31844af",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
+   "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+   "summary": ".abbel-fig { display: block; text-align: center; margin: 2.4em 0; line-height: 1.4; max-width: 100%; } .abbel-fig img { display: block; margin: 0.65em auto 0; height: auto; max-width: 100%; } /*…",
+   "published": "Sun, 26 Jul 2026 02:00:00 -0700",
+   "source": "Berkeley AI Research",
+   "source_id": "bair",
+   "img": "img/ef8e7e6b8969a5f2.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "81a2e769e8",
+   "topics": [
+    "llm"
+   ],
+   "desks": [
+    "ai"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://bair.berkeley.edu/static/blog/abbel/ABBEL%20main%20figure.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "81a2e769e8",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "feb4caa835",
+     "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "d3325aea2b",
+     "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "77bc9c5c53",
+     "title": "Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "Intelligence is Free, Now What? Data Systems for, of, and by Agents",
+   "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+   "summary": "... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly. GPT-4-class capabilities cost roughly $30 per million…",
+   "published": "Tue, 07 Jul 2026 02:00:00 -0700",
+   "source": "Berkeley AI Research",
+   "source_id": "bair",
+   "img": "img/e1a509d1e5b594aa.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "74a488c324",
+   "topics": [
+    "llm",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://bair.berkeley.edu/static/blog/intelligence-is-free-now-what/image6.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "74a488c324",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "b77be25502",
+     "title": "Pandex – Official European Law for AI Agents, over MCP",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "604c323804",
+     "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "13b61555bd",
+     "title": "WordPress Random Redirects, Branded API Data & CDN Advice – SEO Pulse via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "Meet AI 2027 Conference (Dec 1)",
+   "url": "https://smashingmagazine.com/2026/11/online-smashingconf-ai-2027/",
+   "summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly online conference on AI-ready design systems, AI + Figma and AI design patterns…",
+   "published": "Tue, 17 Nov 2026 12:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "img": "img/899316a241985dad.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "ea1bd15d2e",
+   "topics": [
+    "design-systems"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://files.smashing.media/articles/ai-conf/ai-conf-powered-by.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ea1bd15d2e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
+   "url": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/",
+   "summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getting less accessible. Drawing on new research, Andrew Chung explains what…",
+   "published": "Tue, 17 Nov 2026 08:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "img": "img/ba0e3eeeb1de2e67.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f0c70df868",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://files.smashing.media/articles/ai-sped-up-build-how-can-accessibility-testing-keep-up/ai-sped-up-build-how-can-accessibility-testing-keep-up.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f0c70df868",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Should You Actually Add AI To That? A Four-Question Audit For Product Teams",
+   "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/",
+   "summary": "An AI feature can save users time on a task, only for them to spend it checking the results. This practical audit helps product teams decide where AI earns its place and what users need to verify its…",
+   "published": "Thu, 12 Nov 2026 10:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "img": "img/ca84e787c196cb61.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "ebb2101084",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://files.smashing.media/articles/should-you-add-au-audit-product-teams/ai-adoption-adjustment-effort.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ebb2101084",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A New Community For In-House UX People",
+   "url": "https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/",
+   "summary": "We’ve been working on something new! We’ve teamed up for a **new small community** for people doing UX-inside organizations — with weekly calls and a shared library of the business cases, templates…",
+   "published": "Fri, 06 Nov 2026 08:00:00 GMT",
+   "source": "Smashing Magazine",
+   "source_id": "smashing",
+   "img": "img/22d4c1243b0c9671.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "fd494cf14b",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://files.smashing.media/articles/ux-insiders-community-in-house-ux-people/ux-insiders.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "fd494cf14b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Designed for a Dead Language",
+   "url": "https://alistapart.com/article/designed-for-a-dead-language/",
+   "summary": "Every language app in your pocket inherited a teaching method built for Latin. Understanding why that happened is a more useful design lesson than anything the apps themselves will teach you. In…",
+   "published": "2026-06-30T16:22:27+00:00",
+   "source": "A List Apart",
+   "source_id": "alistapart",
+   "img": "img/4cc645396d62b90d.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "2f14a68c30",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_credit": "Jacket design by One + One Studio\n\nPhoto by James Leonard · Public domain · Wikimedia Commons",
+   "img_remote": "https://upload.wikimedia.org/wikipedia/commons/7/7e/The_Dead_Zone_%281979%29_front_cover%2C_first_edition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "2f14a68c30",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Good designers, bad websites: a proposal",
+   "url": "https://alistapart.com/article/good-designers-bad-websites-a-proposal/",
+   "summary": "I want to discuss accessibility because it is the most important thing for making websites. Other A List Apart articles give you innovation and insight. This article will give you homework. These are…",
+   "published": "2026-04-23T12:57:21+00:00",
+   "source": "A List Apart",
+   "source_id": "alistapart",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "0f9f1117c1",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "0f9f1117c1",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Design for Amiability: Lessons from Vienna",
+   "url": "https://alistapart.com/article/design-for-amiability-lessons-from-vienna/",
+   "summary": "Today’s web is not always an amiable place. Sites greet you with a popover that demands assent to their cookie policy, and leave you with Taboola ads promising “One Weird Trick!” to cure your…",
+   "published": "2025-10-15T15:35:00+00:00",
+   "source": "A List Apart",
+   "source_id": "alistapart",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "b96c4ff634",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "b96c4ff634",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Design Dialects: Breaking the Rules, Not the System",
+   "url": "https://alistapart.com/article/design-dialects-breaking-the-rules-not-the-system/",
+   "summary": "“Language is not merely a set of unrelated sounds, clauses, rules, and meanings; it is a totally coherent system bound to context and behavior.” — Kenneth L. Pike The web has accents. So should our…",
+   "published": "2025-09-26T16:48:12+00:00",
+   "source": "A List Apart",
+   "source_id": "alistapart",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "a94ff5aa7e",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "a94ff5aa7e",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Qualitative User-Research Methods: An Overview",
+   "url": "https://www.nngroup.com/articles/qual-research-methods/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Want to know why users struggle or what they need? Start by choosing the right method. Here are 4 of the most popular qualitative UX-research methods.",
+   "published": "Fri, 20 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "img": "img/4f1f9aaa46bcc423.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "053f38f47f",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://media.nngroup.com/media/articles/opengraph_images/Qualitative_User_Research_Card.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "053f38f47f",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Can AI Generate Good Designs from Raw User Data?",
+   "url": "https://www.nngroup.com/articles/raw-data-vs-synthesized-data/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "In our study, AI-generated designs were better when the AI received synthesized findings and recommendations instead of raw user comments alone.",
+   "published": "Fri, 20 Nov 2026 18:00:00 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "img": "img/6ff528f4dd6a2f2f.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "706403dd4b",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://media.nngroup.com/media/articles/opengraph_images/Can_AI_Card.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "706403dd4b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "UX Conference March Announced (Mar 1 - Mar 4)",
+   "url": "https://www.nngroup.com/training/nov-asia-au/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Take up to 2 in-depth training courses, teaching user experience best practices for successful design. Live online training focused on long-lasting skills for UX professionals. March 1-4, 2027…",
+   "published": "Fri, 20 Nov 2026 03:44:24 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "img": "img/241c2a1e36c57916.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "96aa9af75e",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://media.nngroup.com/media/events/opengraph_images/Mar_Asia__Event_card.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "96aa9af75e",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "UX Conference February Announced (Feb 22 - Feb 26)",
+   "url": "https://www.nngroup.com/training/february/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+   "summary": "Take up to 5 in-depth training courses, teaching user experience best practices for successful design. Courses focused on long-lasting skills for UX professionals. February 22 - February 26, 2027.",
+   "published": "Fri, 20 Nov 2026 03:16:44 +0000",
+   "source": "Nielsen Norman Group",
+   "source_id": "nngroup",
+   "img": "img/0f5ce04aa45a205e.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "864f7e13f2",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://media.nngroup.com/media/events/opengraph_images/Feb_2226__Event_card.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "864f7e13f2",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Sarasa Gothic Mono",
+   "url": "https://picaq.github.io/sarasa",
+   "summary": "Interactive CJK Monospace Type Specimen designed for multilingual programming to Rock your world.",
+   "published": "Tue, 17 Nov 2026 12:47:39 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "img": "img/6cad47b873723609.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "c5446227ea",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://picaq.github.io/sarasa/sarasa-gothic-mono.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "c5446227ea",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Github Redesign (2019)",
+   "url": "https://tonsky.me/blog/github-redesign/",
+   "summary": "I suggest the conversation steer away from the controversial last point where he flattens the UI quite a bit to make it less \"dated\", as the rest was quite good up until that point, and that deserves…",
+   "published": "Tue, 17 Nov 2026 03:28:18 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "img": "img/704fb5d7a5849d61.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "d97800a739",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://dynogee.tonsky.me/open_graph_facebook.png?title=Redesigning+Github+repository+page",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "d97800a739",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Terminal borders that don't cost a cell",
+   "url": "https://www.joshka.net/cell-borders/",
+   "summary": "A terminal protocol for thin lines on cell edges: borders, rounded corners and gridlines that don't use up rows or columns. Working in Ghostty, with Ratatui demos.",
+   "published": "Fri, 13 Nov 2026 06:03:19 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "img": "img/0391648c33f3ec5a.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "11a7870633",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://www.joshka.net/cell-borders/og.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "11a7870633",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "I’m not descending into madness because mount and unmount icons make no sense",
+   "url": "https://www.osnews.com/story/146312/im-not-descending-into-madness-because-mount-and-unmount-icons-make-no-sense/",
+   "summary": "",
+   "published": "Thu, 12 Nov 2026 20:51:18 -0600",
+   "source": "Lobsters · design",
+   "source_id": "lobsters-design",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "5d397839ad",
+   "topics": [
+    "visual-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "none",
+   "sid": "5d397839ad",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Using Fallbacks for a Robust Front-End",
+   "url": "https://css-tricks.com/using-frontend-fallbacks/",
+   "summary": "It’s important to use fallbacks to build a robust front end, either to quietly and discreetly avoid the error or to communicate it to our users. Using Fallbacks for a Robust Front-End originally…",
+   "published": "Mon, 23 Nov 2026 14:21:44 +0000",
+   "source": "CSS-Tricks",
+   "source_id": "css-tricks",
+   "img": "img/6e79303d989f3610.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "eee56382e5",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://css-tricks.com/wp-content/uploads/2021/06/reset-refresh-recycle-default.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "eee56382e5",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Dev Material Archive",
+   "url": "https://css-tricks.com/dev-material-archive/",
+   "summary": "A new resource resurrecting lost web-dev articles and posts : This is an archive of written articles about web development, web design, and web accessibility that once existed on the World Wide Web…",
+   "published": "Mon, 23 Nov 2026 14:18:50 +0000",
+   "source": "CSS-Tricks",
+   "source_id": "css-tricks",
+   "img": "img/b556840b0692b545.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "66a13e16f0",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://css-tricks.com/wp-content/uploads/2022/06/technical-writing.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "66a13e16f0",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Andy Clarke answers six questions about Standout Designs for the Web",
+   "url": "https://css-tricks.com/andy-clarke-standout-designs-for-the-web-interview/",
+   "summary": "Web designer, author, and Stuff & Nonsense founder Andy Clarke has released Standout Designs for the Web , a new e-book that encourages designers to move beyond familiar templates and conventional…",
+   "published": "Fri, 20 Nov 2026 15:03:47 +0000",
+   "source": "CSS-Tricks",
+   "source_id": "css-tricks",
+   "img": "img/f8e2c9eeac702c6f.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "f9d528cd36",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://css-tricks.com/wp-content/uploads/2026/10/standout-design-thumbmnail.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f9d528cd36",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "scroll-state()",
+   "url": "https://css-tricks.com/almanac/functions/s/scroll-state/",
+   "summary": "The CSS scroll-state() query, surprisingly, has nothing to do with whether you’re doom-scrolling in a state of existential dread. It does, however, allow you to change the CSS used based on scrolling…",
+   "published": "Thu, 19 Nov 2026 14:57:54 +0000",
+   "source": "CSS-Tricks",
+   "source_id": "css-tricks",
+   "img": "img/e1549ba9527c0581.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f1b2d35702",
+   "topics": [
+    "ui-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://css-tricks.com/wp-content/uploads/2026/11/circle-layers.webp",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f1b2d35702",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Is product design a people industry or a tech industry?",
+   "url": "https://uxdesign.cc/is-product-design-a-people-industry-or-a-tech-industry-b8f9acc8cb6d?source=rss----138adf9c44c---4",
+   "summary": "The field talks about users and hires for prototyping. When money runs short, one half gets treated as optional. Continue reading on UX Collective »",
+   "published": "Mon, 23 Nov 2026 22:40:34 GMT",
+   "source": "UX Collective",
+   "source_id": "uxcollective",
+   "img": "https://cdn-images-1.medium.com/max/1512/1*lss2kKfB5qTh4cToUtGOyQ.png",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "4cf2b6ea35",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "sid": "4cf2b6ea35",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Don’t make me read",
+   "url": "https://uxdesign.cc/dont-make-me-read-a6821e418bb1?source=rss----138adf9c44c---4",
+   "summary": "These newest findings on how people (don’t) read on the internet can help you build your next great thing. Continue reading on UX Collective »",
+   "published": "Mon, 23 Nov 2026 22:40:01 GMT",
+   "source": "UX Collective",
+   "source_id": "uxcollective",
+   "img": "img/d4b3461615f2a772.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "029bb18952",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://cdn-images-1.medium.com/max/1280/0*AHUGuYftuptovWsy",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "029bb18952",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Decision theater, Human.MD, What is a researcher’s worth",
+   "url": "https://uxdesign.cc/decision-theater-human-md-what-is-a-researchers-worth-d7687978bd26?source=rss----138adf9c44c---4",
+   "summary": "Weekly curated resources for designers — thinkers and makers. “Conversing with a machine has no built-in friction. It does not hesitate. It just answers. It does not search for the right word, or…",
+   "published": "Mon, 23 Nov 2026 12:18:14 GMT",
+   "source": "UX Collective",
+   "source_id": "uxcollective",
+   "img": "img/6cce7d82667bd1b9.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "8d302bfb57",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://cdn-images-1.medium.com/max/1024/0*BZ8QMn7gHiS5aq1A.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "8d302bfb57",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Lessons from 3D scanning St John’s Co-Cathedral",
+   "url": "https://uxdesign.cc/lessons-from-3d-scanning-st-johns-co-cathedral-700911d61cfe?source=rss----138adf9c44c---4",
+   "summary": "Seven nights, 99,000 photographs and 25 billion triangles showed us where photogrammetry works and where gold, marble and fabric still beat it, as we reported at SIGGRAPH 2026. Summary Over seven…",
+   "published": "Sun, 22 Nov 2026 23:18:37 GMT",
+   "source": "UX Collective",
+   "source_id": "uxcollective",
+   "img": "img/194fa7b342295746.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "0779f911ad",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://cdn-images-1.medium.com/max/1024/1*xWTjGwkZN4KERgX5h8_q6w.jpeg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "0779f911ad",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "New to the web platform in September",
+   "url": "https://web.dev/blog/web-platform-09-2026?hl=en",
+   "summary": "Discover some of the interesting features that have landed in stable and beta web browsers during September 2026.",
+   "published": "Fri, 02 Oct 2026 07:00:00 GMT",
+   "source": "web.dev",
+   "source_id": "web-dev",
+   "img": "img/eb7f20f70d3bb47a.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "efb9381f0c",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://web.dev/static/blog/web-platform-09-2026/hero.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "efb9381f0c",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "August 2026 Baseline monthly digest",
+   "url": "https://web.dev/blog/baseline-digest-aug-2026?hl=en",
+   "summary": "Read about various happenings with Baseline during August 2026.",
+   "published": "Mon, 28 Sep 2026 07:00:00 GMT",
+   "source": "web.dev",
+   "source_id": "web-dev",
+   "img": "img/1a7a3f54f2a70092.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "1c1efb6745",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://web.dev/static/blog/baseline-digest-aug-2026/image/thumbnail.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "1c1efb6745",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Find features to support for Interop 2027 with your coding agent",
+   "url": "https://web.dev/blog/coding-agents-interop-proposals?hl=en",
+   "summary": "Learn how you can use your coding agent to find Interop 2027 proposals to upvote, or find features to propose.",
+   "published": "Fri, 18 Sep 2026 07:00:00 GMT",
+   "source": "web.dev",
+   "source_id": "web-dev",
+   "img": "img/0b5a92313f95db2d.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "18eeb5462d",
+   "topics": [
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://web.dev/static/blog/coding-agents-interop-proposals/image/thumbnail.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "18eeb5462d",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Submit your proposals for Interop 2027",
+   "url": "https://web.dev/blog/interop-2027-proposals?hl=en",
+   "summary": "It's time to let us know which web platform features should be part of Interop 2027.",
+   "published": "Thu, 03 Sep 2026 07:00:00 GMT",
+   "source": "web.dev",
+   "source_id": "web-dev",
+   "img": "img/f2d748ccb654164a.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "382a56bf46",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://web.dev/static/blog/interop-2027-proposals/image/hero.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "382a56bf46",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Accessibility is 'blind people'",
+   "url": "https://a11yproject.com/posts/accessibility-is-blind-people/",
+   "summary": "Accessibility is often viewed as making your site work on screen readers. In reality, web accessibility is a subset of User Experience (UX) focused on making your websites usable by the widest range…",
+   "published": "2013-01-11T00:00:00Z",
+   "source": "The A11Y Project",
+   "source_id": "a11y-project",
+   "img": "img/781c25c14eac1953.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "cfccb92169",
+   "topics": [
+    "ux-design"
+   ],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://a11yproject.com/img/social/og-image-home.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "cfccb92169",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "f0c70df868",
+     "title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Navigate using just your keyboard",
+   "url": "https://a11yproject.com/posts/navigate-using-just-your-keyboard/",
+   "summary": "Testing your site for keyboard navigation will help ensure that keyboard users can access your site. As a bonus, sites that can be navigated with a keyboard are more likely to be navigable with other…",
+   "published": "2013-01-11T00:00:00Z",
+   "source": "The A11Y Project",
+   "source_id": "a11y-project",
+   "img": "img/781c25c14eac1953.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "f7f683014a",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://a11yproject.com/img/social/og-image-home.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f7f683014a",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Using alt text properly",
+   "url": "https://a11yproject.com/posts/alt-text/",
+   "summary": "The alt attribute is meant to provide \"alternate text\" descriptions of images to help ensure people do not miss out on information conveyed by graphics. Alternative text can help people using…",
+   "published": "2013-01-14T00:00:00Z",
+   "source": "The A11Y Project",
+   "source_id": "a11y-project",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "a11c116564",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://a11yproject.com/img/social/og-image-home.png"
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/0/03/Alt_attribute_example.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "img_credit": "Aoidh, Safari elements are PD-simple · CC BY-SA 4.0 · Wikimedia Commons",
+   "sid": "a11c116564",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "ARIA Landmark roles and HTML5 implicit mapping",
+   "url": "https://a11yproject.com/posts/aria-landmark-roles/",
+   "summary": "ARIA Landmark Roles can be helpful to assistive device users, as they can be used to orient a user to, and easily navigate, your website or application. For a quick video demonstration, check out…",
+   "published": "2013-01-14T00:00:00Z",
+   "source": "The A11Y Project",
+   "source_id": "a11y-project",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "bf90171ff2",
+   "topics": [],
+   "desks": [
+    "design"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://a11yproject.com/img/social/og-image-home.png"
+   ],
+   "sid": "bf90171ff2",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Will the AI Bubble Destroy our Retirement?",
+   "url": "https://www.mrmoneymustache.com/2026/09/25/will-the-ai-bubble-destroy-our-retirement/",
+   "summary": "Wow, how about that stock market? It’s a phrase we keep having to dust off and use again, as the years go by and the market keeps surprising us. When it crashes, some of us worry because we see our…",
+   "published": "Fri, 25 Sep 2026 17:57:07 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "img": "img/4e4ee99833b693c8.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "cab68b93e9",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://www.mrmoneymustache.com/wp-content/uploads/2026/09/8ee2cf12-6da2-424c-96b6-8b652bf6fdce.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "cab68b93e9",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Shockingly Simple Math Behind Social Security",
+   "url": "https://www.mrmoneymustache.com/2026/04/16/the-shockingly-simple-math-behind-social-security/",
+   "summary": "In the world of very early retirement, we tend to ignore one of the most important things for normal retirees: the Social Security program. Don’t get me wrong, it’s a great thing for the 73 million…",
+   "published": "Thu, 16 Apr 2026 17:25:38 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "img": "img/e3e035358e4e2ee0.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f1f293dd87",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://www.mrmoneymustache.com/wp-content/uploads/2026/04/wrenches4.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f1f293dd87",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "My Unexpected Journey to Hormone Replacement (TRT)",
+   "url": "https://www.mrmoneymustache.com/2025/12/15/my-unexpected-journey-to-hormone-replacement-trt/",
+   "summary": "As a man of Science, I’m supposed to hide my enthusiasm about this somewhat controversial subject, and instead direct you only to the peer-reviewed studies. But man, I feel like I’ve stumbled upon…",
+   "published": "Tue, 16 Dec 2025 02:14:05 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "img": "img/3c165f3a6b8418c5.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "1a52c91f8b",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://www.mrmoneymustache.com/wp-content/uploads/2025/12/mini-needle-1.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "1a52c91f8b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How Unlimited Free Stuff from Amazon Almost Ruined My Retirement",
+   "url": "https://www.mrmoneymustache.com/2025/10/06/amazon-vine-ruins-retirement/",
+   "summary": "It all started last winter when I innocently posted a review for a heated vest I had bought on Amazon. I was happy with this fun new way to beat the winter and wanted to share it with others, so I…",
+   "published": "Tue, 07 Oct 2025 01:32:10 +0000",
+   "source": "Mr. Money Mustache",
+   "source_id": "mrmoneymustache",
+   "img": "img/307678d3667389a8.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3225aba45b",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://www.mrmoneymustache.com/wp-content/uploads/2025/10/eagle-shirt-music-vid.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "3225aba45b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "4 Reasons Doctors Are Retiring Earlier (and Why That Is a Problem)",
+   "url": "https://www.whitecoatinvestor.com/four-reasons-doctors-are-retiring-earlier/",
+   "summary": "Burnout is a greater component for why doctors are retiring earlier. The average age when these docs leave medicine has fallen from 57 to 48. The post 4 Reasons Doctors Are Retiring Earlier (and Why…",
+   "published": "Tue, 24 Nov 2026 07:30:37 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "bfc446bcc1",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://www.whitecoatinvestor.com/wp-content/uploads/2024/11/James-Dahle-MD-Founder-WCI-250x250-2.jpg"
+   ],
+   "img": "img/d8876ff947982f8b.webp",
+   "img_via": "og",
+   "img_remote": "https://www.whitecoatinvestor.com/wp-content/uploads/2026/10/why-doctors-are-retiring-img.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "bfc446bcc1",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Costco Is My Best Friend",
+   "url": "https://www.whitecoatinvestor.com/costco-is-my-best-friend/",
+   "summary": "When we became Costco members, my life changed. Even though I’m now an attending with an attending salary, it's still my happy place. The post Costco Is My Best Friend appeared first on The White…",
+   "published": "Mon, 23 Nov 2026 07:30:10 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "f7f34b72c1",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://www.whitecoatinvestor.com/wp-content/uploads/2026/11/Ersilia-Anghel-head-shot-scaled-e1794002647344.jpg"
+   ],
+   "img": "img/c5a95eb1dfd0fc89.webp",
+   "img_via": "og",
+   "img_remote": "https://www.whitecoatinvestor.com/wp-content/uploads/2026/11/why-i-love-costco-img.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f7f34b72c1",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Stop Playing When You Win the Game",
+   "url": "https://www.whitecoatinvestor.com/bernstein-says-stop-when-you-win-the-game/",
+   "summary": "Learn from Four Pillars of Investing author, Dr William Bernstein, how to manage your level of risk to be a winner at the retirement game. The post Stop Playing When You Win the Game appeared first…",
+   "published": "Sun, 22 Nov 2026 07:30:43 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "95e21bc478",
+   "topics": [
+    "retirement",
+    "investing"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://www.whitecoatinvestor.com/wp-content/uploads/2024/11/James-Dahle-MD-Founder-WCI-250x250-2.jpg"
+   ],
+   "sid": "95e21bc478",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Poetry in Retirement: Marking the Transition",
+   "url": "https://www.whitecoatinvestor.com/poetry-in-retirement-marking-the-transition/",
+   "summary": "Now that I'm semi-retired, I've learned more about myself and the world around me. Freedom from work has opened my mind and forged new paths. The post Poetry in Retirement: Marking the Transition…",
+   "published": "Sat, 21 Nov 2026 07:30:37 +0000",
+   "source": "White Coat Investor",
+   "source_id": "whitecoat",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f2d680fd4b",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_bad": [
+    "https://www.whitecoatinvestor.com/wp-content/uploads/2025/05/Anthony-Ellis-2025.jpg"
+   ],
+   "img": "img/1fce305f9bfebd52.webp",
+   "img_via": "og",
+   "img_remote": "https://www.whitecoatinvestor.com/wp-content/uploads/2026/11/writing-poetry-img.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f2d680fd4b",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Is It Better to Rent Forever?",
+   "url": "https://ofdollarsanddata.com/is-it-better-to-rent-forever/",
+   "summary": "With nominal U.S. home prices near record highs and 30-year fixed-rate mortgages exceeding 7%, many prospective homebuyers are debating: should I buy a home or keep renting? I know this because I'm…",
+   "published": "Tue, 24 Nov 2026 12:45:40 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "img": "img/fd313edf78e3ebda.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "82954c3420",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://ofdollarsanddata.com/wp-content/uploads/2026/11/2026_11_23_kitchen-1024x678.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "82954c3420",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How Much Should You Have Saved for Retirement by Age?",
+   "url": "https://ofdollarsanddata.com/how-much-should-you-have-saved-for-retirement-by-age/",
+   "summary": "One of the most common questions around saving for retirement is: Am I on track? While it's a good question to ask, there are a lot of factors that influence the answer. Between your future spending…",
+   "published": "Tue, 17 Nov 2026 12:45:50 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "img": "img/0c61ad43cf087271.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "43786a79ad",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://ofdollarsanddata.com/wp-content/uploads/2026/11/00_fidelity_savings_targets_2025.jpeg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "43786a79ad",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "The Gamble of Your Life",
+   "url": "https://ofdollarsanddata.com/the-gamble-of-your-life/",
+   "summary": "My late grandfather gambled away over $1 million during his lifetime. His wager of choice was horse racing. But if he were alive today, I'm confident he'd be into sports betting. How do I know?…",
+   "published": "Tue, 10 Nov 2026 12:45:13 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "img": "img/8b4dac6033b31f64.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "26249e9088",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://ofdollarsanddata.com/wp-content/uploads/2026/11/sportsbetting_revenue_and_hold.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "26249e9088",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How Many Americans Are Millionaires?",
+   "url": "https://ofdollarsanddata.com/how-many-americans-are-millionaires/",
+   "summary": "If it feels like there are more millionaires in the U.S. than ever before, you're right. According to the 2025 Survey of Consumer Finances , there are about 29 million U.S. households with a net…",
+   "published": "Tue, 03 Nov 2026 12:45:02 +0000",
+   "source": "Of Dollars And Data",
+   "source_id": "ofdollars",
+   "img": "img/93c550ec65d35e75.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "6dae7ad758",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://ofdollarsanddata.com/wp-content/uploads/2026/11/millionaire_share_over_time_2025.jpeg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "6dae7ad758",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "A Call For Updates",
+   "url": "https://www.bogleheads.org/blog/2025/09/14/a-call-for-updates/",
+   "summary": "If you have any suggestions or updates for the blog please let us know in this Bogleheads forum post: Bogleheads Blog – Please post suggestions & updates here.",
+   "published": "Sun, 14 Sep 2025 17:01:28 +0000",
+   "source": "Bogleheads Blog",
+   "source_id": "bogleheads",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3114d5a34c",
+   "topics": [
+    "investing"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "3114d5a34c",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Sacramento Local Chapter video from Meeting #97",
+   "url": "https://www.bogleheads.org/blog/2023/06/13/sacramento-local-chapter-video-from-meeting-97/",
+   "summary": "Presentation: “The Investor’s Toolkit” Speaker: Greg Dietrich reviews a collection of useful tools from chapter presentations, the Bogleheads Wiki and member spreadsheets assembled over the last…",
+   "published": "Tue, 13 Jun 2023 15:54:54 +0000",
+   "source": "Bogleheads Blog",
+   "source_id": "bogleheads",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "06ef9d98fa",
+   "topics": [
+    "investing"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "06ef9d98fa",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Sacramento Local Chapter video from Meeting #95",
+   "url": "https://www.bogleheads.org/blog/2023/04/19/sacramento-local-chapter-video-from-meeting-95-2/",
+   "summary": "Presentation: “Tax Loss Harvesting” Speaker: Ravinder Bhumbla was educated at the University of California and the University of Michigan, earning post-graduate degrees in business and engineering…",
+   "published": "Thu, 20 Apr 2023 00:03:36 +0000",
+   "source": "Bogleheads Blog",
+   "source_id": "bogleheads",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "38d776c77a",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "38d776c77a",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Sacramento Local Chapter video from Meeting #95",
+   "url": "https://www.bogleheads.org/blog/2023/04/19/sacramento-local-chapter-video-from-meeting-95/",
+   "summary": "Presentation: “Roth IRA Distribution Rules” Speaker: Huey Tseng enjoyed a career as an accountant and now lives with her husband in Tucson, Arizona. She’s a member of the leadership team with…",
+   "published": "Wed, 19 Apr 2023 17:53:32 +0000",
+   "source": "Bogleheads Blog",
+   "source_id": "bogleheads",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "5d101e29b1",
+   "topics": [
+    "retirement"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "sid": "38d776c77a",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Talk Your Book: Stop Handing the IRS Your Yield",
+   "url": "https://awealthofcommonsense.com/2026/11/talk-your-book-stop-handing-the-irs-your-yield-2/",
+   "summary": "On today’s Talk Your Book we speak with Dave Hammer from PIMCO ETFs about investing in municipal bonds, today’s yield levels, where the money comes from, where the opportunities are today and much…",
+   "published": "Mon, 23 Nov 2026 13:00:25 +0000",
+   "source": "A Wealth of Common Sense",
+   "source_id": "awealthofcs",
+   "img": "img/4c088852f530ca1f.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "811a484501",
+   "topics": [
+    "investing"
+   ],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://awealthofcommonsense.com/wp-content/uploads/2026/11/Screenshot-2026-11-23-052836-1-1024x459.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "811a484501",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "95e21bc478",
+     "title": "Stop Playing When You Win the Game",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "Risk is a Four Letter Word",
+   "url": "https://awealthofcommonsense.com/2026/11/risk-is-a-four-letter-word/",
+   "summary": "This is a healthy correction. The post Risk is a Four Letter Word appeared first on A Wealth of Common Sense. ...",
+   "published": "Sun, 22 Nov 2026 16:43:35 +0000",
+   "source": "A Wealth of Common Sense",
+   "source_id": "awealthofcs",
+   "img": "img/b2bf95f3d3e889c2.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "4f07a9223d",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://awealthofcommonsense.com/wp-content/uploads/2026/11/SPY_QQQ_BIL_chart-1024x716.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "4f07a9223d",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "When Will Buy the Dip Stop Working?",
+   "url": "https://awealthofcommonsense.com/2026/11/when-hubris-fails/",
+   "summary": "What will it take for investors to stop buying the dip? The post When Will Buy the Dip Stop Working? appeared first on A Wealth of Common Sense. ...",
+   "published": "Fri, 20 Nov 2026 21:30:47 +0000",
+   "source": "A Wealth of Common Sense",
+   "source_id": "awealthofcs",
+   "img": "img/024f7cdbb69ade4f.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "060a910e5c",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://awealthofcommonsense.com/wp-content/uploads/2026/11/Screenshot-2026-11-19-225806.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "060a910e5c",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How Often Do Bonds Beat Stocks?",
+   "url": "https://awealthofcommonsense.com/2026/11/how-often-do-bonds-beat-stocks/",
+   "summary": "Better asset class over the next 10 years: Stocks or bonds? The post How Often Do Bonds Beat Stocks? appeared first on A Wealth of Common Sense. ...",
+   "published": "Thu, 19 Nov 2026 15:48:28 +0000",
+   "source": "A Wealth of Common Sense",
+   "source_id": "awealthofcs",
+   "img": "img/36ef751f3ba4deb5.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "4c368e8202",
+   "topics": [],
+   "desks": [
+    "finance"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://awealthofcommonsense.com/wp-content/uploads/2026/11/Screenshot-2026-11-17-222845-1024x535.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "4c368e8202",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Opinion: Grand Theft Auto VI and World of Warcraft: Forever show that mundanity is having a moment",
+   "url": "https://www.gamedeveloper.com/design/grand-theft-auto-vi-and-world-of-warcraft-forever-show-that-mundanity-is-having-a-moment",
+   "summary": "Two of the year's biggest hits tell us that downtime and doldrums can be as compelling as dungeons and dragons.",
+   "published": "Tue, 24 Nov 2026 15:42:06 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "img": "img/21fd94d77ab28ebf.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "35a4ad1000",
+   "topics": [],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt55d46d9586e2d62a/6b006b7e56870f552d68ad55/ULTIMATE_EDITION_SARAS_SALON_03.jpg?width=720&quality=80&disable=upscale",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "35a4ad1000",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "fbe9dce808",
+     "title": "Take-Two lays off Firaxis employees on eve of Grand Theft Auto VI launch",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "726202cad4",
+     "title": "Zelda and Grand Theft Auto headline the nominees for the 2027 Game Awards",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "176eb6dc2a",
+     "title": "Grand Theft Auto VI is now the biggest video game launch in history",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Nvidia reinstates Jensen Huang as CEO weeks after his resignation",
+   "url": "https://www.gamedeveloper.com/business/nvidia-reinstates-jensen-huang-as-ceo",
+   "summary": "The ousted CEO has been reinstated by the board less than two weeks after his ouster, in consultation with senior officials from the United States government.",
+   "published": "Mon, 23 Nov 2026 21:07:02 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "img": "img/b12af1493ee0bd11.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "a51b6023be",
+   "topics": [],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt1004f2146506a141/66b11749c988314fb3a7ab41/nvidia.jpg?width=720&quality=80&disable=upscale",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "a51b6023be",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Epic Games no longer plans to include Blueprints or Actor Gameplay Framework in Unreal Engine 6",
+   "url": "https://www.gamedeveloper.com/programming/unreal-engine-6-to-remove-blueprints-and-actor-gameplay-framework-from-the-beginning",
+   "summary": "Until recently Epic had maintained that both features would initially remain options in Unreal Engine with plans to wind down the features over time, but now Blueprints and the Actor Gameplay…",
+   "published": "Mon, 23 Nov 2026 19:50:33 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "img": "img/dc066110b828520b.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d05fe5acf1",
+   "topics": [
+    "game-engines",
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2bb89e8a3c4c9774/66fc3ca5f7ab65a57f7c37e6/unreal_engine5.jpg?width=720&quality=80&disable=upscale",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "d05fe5acf1",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Devs can now utilize the high-end ambient occlusion technique seen in EVE: Frontier",
+   "url": "https://www.gamedeveloper.com/programming/devs-can-now-utilize-high-end-ambient-occlusion-technique-seen-in-eve-frontier",
+   "summary": "CORTAO, a personal programming project by Fenris Creations developer Daniel Isheden, is being used for EVE: Frontier, and maybe your next game.",
+   "published": "Mon, 23 Nov 2026 15:10:00 GMT",
+   "source": "Game Developer",
+   "source_id": "gamedeveloper",
+   "img": "img/0e57a1548a2230c7.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "e8b8dca17b",
+   "topics": [],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltbc73f0f172428040/6b00cb94631bf96b0e031019/evefrontierfeatured.jpg?width=720&quality=80&disable=upscale",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "e8b8dca17b",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "\"You are still taking 100% of the risk\" – Why Cairn dev The Game Bakers backs self-publishing for all but the smallest developers",
+   "url": "https://www.gamesindustry.biz/you-are-still-taking-100-of-the-risk-why-cairn-dev-the-game-bakers-backs-self-publishing-for-all-but-the-smallest-developers",
+   "summary": "Self-publishing is now firmly established as a viable route to market for indie developers, with many only looking to publishers for help with specific issues – chiefly marketing, based on…",
+   "published": "Tue, 24 Nov 2026 15:28:00 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "img": "img/e17ff510d44a897d.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "49846234b7",
+   "topics": [
+    "indie-games"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "body",
+   "img_remote": "https://assetsio.gnwcdn.com/Audrey-Leprince-Game-Bakers-presentation-at-Paris-Games-Biz.jpg?width=2048&height=2048&fit=bounds&quality=85&format=jpg&auto=webp",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "49846234b7",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Splitscreen Croatia conference offers free travel packages for developers looking to showcase unreleased games to publishers and investors",
+   "url": "https://www.gamesindustry.biz/splitscreen-croatia-conference-offers-free-travel-packages-for-developers-looking-to-showcase-unreleased-games-to-publishers-and-investors",
+   "summary": "Splitcreen Croatia, the new industry conference seeking to fill the gap left by Reboot Develop , has opened applications for its Official Selection showcase, which includes free travel, accommodation…",
+   "published": "Tue, 24 Nov 2026 12:18:30 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "img": "img/7c26b132329f7932.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "ffabf73ab1",
+   "topics": [],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://assetsio.gnwcdn.com/SPLITSCREEN---Official-Selection---1200x675---02.png?width=690&quality=85&format=jpg&auto=webp",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ffabf73ab1",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "GTA 6 was the \"biggest launch in PlayStation history\", with the highest number of concurrent players ever",
+   "url": "https://www.gamesindustry.biz/gta-6-was-the-biggest-launch-in-playstation-history-with-the-highest-number-of-concurrent-players-ever",
+   "summary": "Christmas did not come early for Sony, but it came close: the firm has declared that GTA 6 was the largest game launch in the platform's history, driving a record number of concurrent players on its…",
+   "published": "Tue, 24 Nov 2026 11:44:10 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "img": "img/129257568308c18b.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "174b86f04c",
+   "topics": [
+    "game-marketing"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://assetsio.gnwcdn.com/gta-6-drinks.webp?width=690&quality=85&format=jpg&auto=webp",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "174b86f04c",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "UK mobile developers can now apply for their share of a £260 million Google settlement",
+   "url": "https://www.gamesindustry.biz/uk-mobile-developers-can-now-apply-for-their-share-of-a-260-million-google-settlement",
+   "summary": "UK developers who released games, apps or content on the Google Play Store between August 2018 and July 2026 can now claim for their share of a £260 million settlement agreed in a class action suit…",
+   "published": "Tue, 24 Nov 2026 10:50:00 +0000",
+   "source": "GamesIndustry.biz",
+   "source_id": "gamesindustry",
+   "img": "img/16f5078c9129a031.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "1ac2340dda",
+   "topics": [
+    "mobile-games",
+    "aso"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://assetsio.gnwcdn.com/google-play.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "1ac2340dda",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Is your data telling you the whole story?",
+   "url": "https://unity.com/blog/data-fragmentation-ua-monetization-unity-vector",
+   "summary": "Data fragmentation hides the full player picture. See what it costs UA and monetization teams and which MMP, GA and IAP signals to connect to Unity Vector.",
+   "published": "Tue, 24 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "img": "img/8726f708ad90deda.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "e42e5fdb3a",
+   "topics": [
+    "unity",
+    "mobile-games"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://cdn.sanity.io/images/fuvbjjlp/production/d419351dc4e3d7772ad17d069d5aff2653ab7a2b-1024x576.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "e42e5fdb3a",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Tearing through reality: The tech behind Hyper Visor on XREAL AURA",
+   "url": "https://unity.com/blog/hyper-visor-xreal-aura-physics-scenes",
+   "summary": "Owlchemy Labs explains how Hyper Visor uses multiple Unity physics scenes and one energy stream to unify gameplay, menus, and pausing on XREAL AURA.",
+   "published": "Mon, 23 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "img": "img/fd54dcc53facf103.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "774867361b",
+   "topics": [
+    "unity",
+    "game-design"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://cdn.sanity.io/images/fuvbjjlp/production/e2140e0ea12c50f5e3143edc1de881c9d1e526f5-1024x500.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "774867361b",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "36a5989371",
+     "title": "Ready for XREAL AURA",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Real-time 3D with Unity Industry: What to vibe code with Unity CLI and when to rely on the foundational infrastructure",
+   "url": "https://unity.com/blog/ai-vibe-coding-vs-buying-managed-infrastructure",
+   "summary": "Where AI-assisted development helps on prototypes and UI, and where teams should buy managed Unity infrastructure for CAD, security, and scale.",
+   "published": "Mon, 23 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "img": "https://unity.com/blog/941/q:75/f:avif/aHR0cHM6Ly9jZG4uc2FuaXR5LmlvL2ltYWdlcy9mdXZiampscC9wcm9kdWN0aW9uL2U0N2QxYjdlODJkZmE5NzJjNjAzMWI5N2Q3ZjcyMWZjMDQzMWVkODYtMTY3MXg5NDEucG5n.avif",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "16bb99b56d",
+   "topics": [
+    "unity",
+    "ai-coding"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "sid": "16bb99b56d",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "8801e1c132",
+     "title": "Where 3D meets the real world: highlights from Unity Industry Summit Munich 2026",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "c31d0d34a1",
+     "title": "The Unity CLI 1.0 is here!",
+     "d": "2026-11-21"
+    },
+    {
+     "sid": "cbd9b508ce",
+     "title": "'It's common for there to be speculation and headlines:' Unity exec addresses acquisition rumors",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "Where 3D meets the real world: highlights from Unity Industry Summit Munich 2026",
+   "url": "https://unity.com/blog/unity-industry-summit-munich-2026-recap",
+   "summary": "Unity Industry Summit 2026 recap: customer sessions from Mazda to Lufthansa, an F1 simulator, 13 demo stations, and talks on AI agents, robotics, and 3D data.",
+   "published": "Fri, 20 Nov 2026 00:00:00 GMT",
+   "source": "Unity Blog",
+   "source_id": "unity-blog",
+   "img": "img/a8c5ea7a6ac8d944.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "8801e1c132",
+   "topics": [
+    "unity",
+    "agents"
+   ],
+   "desks": [
+    "ai",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://cdn.sanity.io/images/fuvbjjlp/production/becd2acfd514064a46f60926664ff75fa69bc183-4096x2732.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "8801e1c132",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Godot Showreel 2026",
+   "url": "https://godotengine.org/article/godot-showreel-2026/",
+   "summary": "The Godot 2026 showreel is out! We’re so grateful for every submission, vote, and support from our community. This year we had 422 submissions which is a new record. To deal with the increased amount…",
+   "published": "Thu, 19 Nov 2026 18:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "img": "img/6622a7fb3ef024fd.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "48a8ab73bf",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://godotengine.org/assets/showcase/showreels/2026.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "48a8ab73bf",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Dev snapshot: Godot 4.8 beta 4",
+   "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-beta-4/",
+   "summary": "It’s only been a little over a week since our previous development snapshot, 4.8 beta 3 , and in that time we’ve already worked through the majority of remaining release blockers! What that means is…",
+   "published": "Wed, 18 Nov 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "img": "img/6d59fec7b73ea933.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "e632f3e18a",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-8-beta-4.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "e632f3e18a",
+   "status": "repeat",
+   "rev": 1
+  },
+  {
+   "title": "Godot Foundation welcomes Manus as Platinum Sponsor",
+   "url": "https://godotengine.org/article/partners_manus_sponsorship_2026_announcement/",
+   "summary": "We’d like to welcome Manus as a Platinum Sponsor of the Godot Foundation. Their contribution helps keep Godot free, open, and in constant development for everyone, and we truly appreciate it. Here is…",
+   "published": "Tue, 17 Nov 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "img": "img/845ed2d6f696102f.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d2d628329a",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://godotengine.org/storage/blog/covers/partners_manus_sponsorship_2026_announcement.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "d2d628329a",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "JetBrains Renews its Platinum Sponsorship of the Godot Foundation",
+   "url": "https://godotengine.org/article/partners_jetbrains_sponsorship_renewal_2027/",
+   "summary": "We’re happy to share that JetBrains has renewed its Platinum sponsorship of the Godot Foundation for 2027. JetBrains first joined as a Platinum sponsor in August 2025. Alongside the sponsorship…",
+   "published": "Tue, 10 Nov 2026 12:00:00 +0000",
+   "source": "Godot Engine",
+   "source_id": "godot-blog",
+   "img": "img/a4fe4c5db6316a39.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "9f2596928d",
+   "topics": [
+    "godot"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://godotengine.org/storage/blog/covers/partners_jetbrains_sponsorship_renewal_2027.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "9f2596928d",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Marches & Gnats programming challenges",
+   "url": "https://mng.quest/",
+   "summary": "A fantastical game of programming challenges set in 19th-century Estonia, where each challenge is both a story and a test of your computational ingenuity.",
+   "published": "Sun, 22 Nov 2026 23:12:52 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "img": "img/325452d252991e25.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "613c6d5290",
+   "topics": [],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://mng.quest/static/img/og_image.6be84c239f1b.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "613c6d5290",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Lisp Game Jam devlog: Polydraw",
+   "url": "https://spritely.institute/news/lisp-game-jam-devlog-polydraw.html",
+   "summary": "",
+   "published": "Fri, 20 Nov 2026 05:18:47 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "img": "",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "ec97137176",
+   "topics": [],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "none",
+   "sid": "ec97137176",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How I made a custom game engine for Satelital",
+   "url": "https://spectralorbit.com/blog/satelital_game_engine",
+   "summary": "Seven years ago I decided to start learning how to make a game from scratch. And last week I released Satelital, a rule-discovery game about learning alien logic.",
+   "published": "Wed, 18 Nov 2026 10:39:00 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "img": "img/b083345045d5e135.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f1147e4339",
+   "topics": [
+    "game-engines"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://spectralorbit.com/assets/screenshots/trium_2.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f1147e4339",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "Making Games in Go: Entity Component System (ECS)",
+   "url": "https://threedots.tech/post/making-games-in-go-ecs/",
+   "summary": "Entity Component System (ECS) is how I structure my hobby games in Go. I show it on two small games built with Donburi and Ebitengine and explain where ECS gets in the way.",
+   "published": "Tue, 17 Nov 2026 11:18:53 -0600",
+   "source": "Lobsters · gamedev",
+   "source_id": "lobsters-gamedev",
+   "img": "img/870b7b8d19375f8d.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "9055565e26",
+   "topics": [],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "meta",
+   "img_via": "og",
+   "img_remote": "https://threedots.tech/images/covers/making-games-in-go-ecs-social.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "9055565e26",
+   "status": "repeat",
+   "rev": 0
+  },
+  {
+   "title": "How To Model & Texture PS1-Style Character In Blender",
+   "url": "https://80.lv/articles/how-to-model-texture-ps1-style-character-in-blender/",
+   "summary": "TomGrave3D shared a video walking through his design choices and overall workflow.",
+   "published": "Tue, 24 Nov 2026 15:28:00 +0000",
+   "source": "80 Level",
+   "source_id": "eighty-lv",
+   "img": "img/35ec9fd07dd3c5b0.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "526e472210",
+   "topics": [
+    "graphics"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://cdn.80.lv/api/upload/post/42364/images/6b05ad17674f4/cover_800x800.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "526e472210",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Recreating the Atmosphere of a Middle Eastern Market in Unreal Engine 5",
+   "url": "https://80.lv/articles/recreating-the-atmosphere-of-a-middle-eastern-market-in-unreal-engine-5/",
+   "summary": "Wendao talked about learning a new approach to lighting, explained how he handled color grading to make the scene atmospheric while keeping it realistic, and explained how he worked with lighting…",
+   "published": "Tue, 24 Nov 2026 15:07:00 +0000",
+   "source": "80 Level",
+   "source_id": "eighty-lv",
+   "img": "img/369541fb297558c1.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "d8ba1e6c70",
+   "topics": [
+    "visual-design",
+    "game-engines"
+   ],
+   "desks": [
+    "design",
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://cdn.80.lv/api/upload/post/42344/images/6b04415875946/cover_800x800.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "d8ba1e6c70",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Learn the Art of Making AAA Game-Ready Characters Using Industry-Standard Tools",
+   "url": "https://80.lv/articles/learn-the-art-of-making-aaa-game-ready-characters-using-industry-standard-tools/",
+   "summary": "With this Wingfox master class, you will go through the complete workflow behind character creation for games.",
+   "published": "Tue, 24 Nov 2026 14:39:00 +0000",
+   "source": "80 Level",
+   "source_id": "eighty-lv",
+   "img": "img/d47617d51f145a8b.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "046ddf071e",
+   "topics": [],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://cdn.80.lv/api/upload/post/42361/images/6b059d437ea3e/cover_800x800.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "046ddf071e",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "This Tool Brings 2D Painting Workflows Into Unreal Engine 5",
+   "url": "https://80.lv/articles/this-tool-brings-2d-painting-workflows-into-unreal-engine-5/",
+   "summary": "Inky is designed to recreate the behavior of various traditional painting materials.",
+   "published": "Tue, 24 Nov 2026 14:30:00 +0000",
+   "source": "80 Level",
+   "source_id": "eighty-lv",
+   "img": "img/73bf1681df3d886e.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "06f563d401",
+   "topics": [
+    "game-engines"
+   ],
+   "desks": [
+    "gamedev"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://cdn.80.lv/api/upload/post/42362/images/6b059fa13da7d/cover_800x800.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "06f563d401",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Google Announces December 2026 Core Update Ahead Of Rollout via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/google-december-2026-core-update/598760/",
+   "summary": "Google announced a December core update focused on ranking relevant content for longer questions and improving results when personalization is on. The post Google Announces December 2026 Core Update…",
+   "published": "Tue, 24 Nov 2026 15:10:30 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "img": "img/6be75ce418811364.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "4d5d3a7294",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://cdn.searchenginejournal.com/wp-content/uploads/2026/11/google-core-update-featured.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "4d5d3a7294",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "54c030d83f",
+     "title": "Google’s Next Update Won’t Touch The Index, And Nobody Will Announce It via @sejournal, @DuaneForrester",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "0e1e633638",
+     "title": "Google’s ‘Top 10’ Line For CMOs Points At Generic Tips Posts via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "WordPress Drops To 38.4% Of The Web, Down Nearly 5 Points In A Year via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/wordpress-drops-to-38-5-of-the-web-down-nearly-5-points-in-a-year/598175/",
+   "summary": "WordPress fell to 38.4% of all websites as the share with no detected CMS rose to 33.0%. The post WordPress Drops To 38.4% Of The Web, Down Nearly 5 Points In A Year appeared first on Search Engine…",
+   "published": "Tue, 24 Nov 2026 15:00:28 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "img": "img/d8347fba3daf517b.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "685f832705",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://cdn.searchenginejournal.com/wp-content/uploads/2026/11/wordpress-usage-decline-featured-598175.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "685f832705",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "844acc68f1",
+     "title": "WordPress 7.2 Arrives Dec. 8 – Last-Minute Changes Still Being Made via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "13b61555bd",
+     "title": "WordPress Random Redirects, Branded API Data & CDN Advice – SEO Pulse via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "0e1e633638",
+     "title": "Google’s ‘Top 10’ Line For CMOs Points At Generic Tips Posts via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "Google Confirms November 2026 Core Update Is Complete via @sejournal, @MattGSouthern",
+   "url": "https://www.searchenginejournal.com/google-november-2026-core-update-complete/598751/",
+   "summary": "Google’s November 2026 core update finished Nov. 24, just before a holiday week that could complicate Search Console comparisons for retailers. The post Google Confirms November 2026 Core Update Is…",
+   "published": "Tue, 24 Nov 2026 14:48:46 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "img": "img/29bafbce70bdf942.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "1c95779106",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://cdn.searchenginejournal.com/wp-content/uploads/2026/06/52072d16-85c1-42fe-8ce6-bcf5e6d20877-559.jpeg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "4d5d3a7294",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "54c030d83f",
+     "title": "Google’s Next Update Won’t Touch The Index, And Nobody Will Announce It via @sejournal, @DuaneForrester",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "0e1e633638",
+     "title": "Google’s ‘Top 10’ Line For CMOs Points At Generic Tips Posts via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "What Bing’s AI Actually Cites: 883,000 Citations Analyzed via @sejournal, @dodgejd",
+   "url": "https://www.searchenginejournal.com/what-bings-ai-actually-cites-883000-citations-analyzed/595708/",
+   "summary": "An analysis of 883,000 Bing AI citations shows overlooked PDFs, app pages, and support content earn citations and deserve a place in content audits. The post What Bing’s AI Actually Cites: 883,000…",
+   "published": "Tue, 24 Nov 2026 13:00:08 +0000",
+   "source": "Search Engine Journal",
+   "source_id": "sej",
+   "img": "img/73fcfab4417da95d.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "07713995fe",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://cdn.searchenginejournal.com/wp-content/uploads/2026/11/bing-ai-306.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "07713995fe",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Cannibalization",
+   "url": "https://feedpress.me/link/9375/14757949/cannibalization",
+   "summary": "In today's episode of Whiteboard Friday, Moz SEO expert Tom Capper walks you through cannibalization: what it is, how to identify it, and how to fix it.",
+   "published": "Fri, 17 Sep 2021 00:00:00 -0700",
+   "source": "Moz Blog",
+   "source_id": "moz-blog",
+   "img": "img/c262153380fb2672.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "b1b765d526",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://moz.com/images/blog/Blog-OG-images/Keyword-Cannibalization-by-Success-Olagboye-OG-Image.png?w=1200&h=630&q=82&auto=format&fit=crop&dm=1738059763&s=5c8c9ccefeee12275448f5d0c0bf68d7",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "b1b765d526",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Tackling 8,000 Title Tag Rewrites: A Case Study",
+   "url": "https://feedpress.me/link/9375/14753388/title-tag-rewrite-case-study",
+   "summary": "Let's take an in-depth look at Moz.com title tags that were re-written by Google, including three case studies where we managed to fix bad rewrites.",
+   "published": "Thu, 16 Sep 2021 00:00:00 -0700",
+   "source": "Moz Blog",
+   "source_id": "moz-blog",
+   "img": "img/8003a5eaf564a687.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "2ab987237b",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://moz.com/images/cms/Dr.-Pete-Title-Tag-case-study-OG-Max-Quality.jpg?w=1200&h=630&q=82&auto=format&fit=clip&dm=1631753895&s=aad8eafebccefbcc6008150aa14ac9fb",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "2ab987237b",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How Our Website Conversion Strategy Increased Business Inquiries by 37%",
+   "url": "https://feedpress.me/link/9375/14751225/website-conversion-case-study",
+   "summary": "See how, through several little tweaks to their conversion strategy, the team at Chromatix attracted a higher tier of customers, more inquiries, plus over $780,000 worth of new sales opportunities.",
+   "published": "Wed, 15 Sep 2021 00:00:00 -0700",
+   "source": "Moz Blog",
+   "source_id": "moz-blog",
+   "img": "img/19bd6db588889eed.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "26680615b7",
+   "topics": [
+    "growth"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://moz.com/images/cms/Irwin-conversion-OG-Max-Quality.jpg?w=1200&h=630&q=82&auto=format&fit=clip&dm=1631548097&s=e7525c8551fe84333cbc2684a7300327",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "26680615b7",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How to Add Products to Your Google My Business Listing, Illustrated",
+   "url": "https://feedpress.me/link/9375/14746944/add-products-to-gmb-listing",
+   "summary": "Miriam helps you get started in Google My Business Products with this illustrated tutorial, walking you through how to add your most important products and services.",
+   "published": "Mon, 13 Sep 2021 00:00:00 -0700",
+   "source": "Moz Blog",
+   "source_id": "moz-blog",
+   "img": "img/e6065e2a95475c62.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "7e336aadba",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://moz.com/images/cms/Miriam-GMB-products-OG-Max-Quality.jpg?w=1200&h=630&q=82&auto=format&fit=clip&dm=1631295754&s=7b0fd0cd325d932b5b5336e6e3631150",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "7e336aadba",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "How Does Google Get Its Information? 7 Ways (2026)",
+   "url": "https://ahrefs.com/blog/how-google-gets-information/",
+   "summary": "That’s true, but it’s only part of the answer. Google search gets its information in seven main ways: Below, I’ll show you how each one works, with proof, and what you can do (if anything) to…",
+   "published": "Tue, 24 Nov 2026 14:28:11 +0000",
+   "source": "Ahrefs Blog",
+   "source_id": "ahrefs",
+   "img": "img/55e387e82b73a99f.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "ef1f2233cb",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://ahrefs.com/blog/wp-content/uploads/2026/11/how-does-google-get-its-information-by-louise-linehan-general-seo-1.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ef1f2233cb",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "8e29706924",
+     "title": "21 Alternative Search Engines You Can Use Instead of Google via @sejournal, @lorenbaker",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "Barnacle SEO: Spam Risk or Smart Marketing?",
+   "url": "https://ahrefs.com/blog/barnacle-seo/",
+   "summary": "Directories, review sites and big publishers often own page one, and it’s unlikely you’ll be able to outrank them any time soon. But you can get your brand onto the pages that do rank. That’s…",
+   "published": "Wed, 18 Nov 2026 14:38:24 +0000",
+   "source": "Ahrefs Blog",
+   "source_id": "ahrefs",
+   "img": "img/c46598da390b3467.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f3353c09cb",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://ahrefs.com/blog/wp-content/uploads/2026/11/barnacle-seo-10-wide.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f3353c09cb",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "d477595b95",
+     "title": "Salesforce CEO Says ‘Goodbye SEO.’ Salesforce’s SEO Guide Disagrees via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "47e3bcb383",
+     "title": "Why Building Trust Through Real People Stands The Test Of Time In SEO & AI Search via @sejournal, @lilyraynyc",
+     "d": "2026-11-22"
+    },
+    {
+     "sid": "13b61555bd",
+     "title": "WordPress Random Redirects, Branded API Data & CDN Advice – SEO Pulse via @sejournal, @MattGSouthern",
+     "d": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "title": "4 Reasons to Read DISCOVERABLE by Tim Soulo",
+   "url": "https://ahrefs.com/blog/discoverable-book-review/",
+   "summary": "I won’t insult you by pretending this is an unbiased review. Let’s own it: I work at Ahrefs! Tim is my boss! I helped edit the book! But I will share my honest take on what you, dear reader, stand ……",
+   "published": "Wed, 18 Nov 2026 10:11:58 +0000",
+   "source": "Ahrefs Blog",
+   "source_id": "ahrefs",
+   "img": "img/26ba63e7b25bf927.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "edb788a36a",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://ahrefs.com/blog/wp-content/uploads/2026/11/4-reasons-to-read-discoverable-by-by-ryan-law-marketing-1.jpg",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "edb788a36a",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Letaido Review: 10+ Jobs Our Marketing Team Hands to It Every Week",
+   "url": "https://ahrefs.com/blog/letaido-review/",
+   "summary": "It keeps our data-led articles up to date, builds and hosts our sites, runs our research, watches our competitors, and plans out our day from start to finish. We’re lucky enough to have lots of…",
+   "published": "Tue, 17 Nov 2026 14:28:14 +0000",
+   "source": "Ahrefs Blog",
+   "source_id": "ahrefs",
+   "img": "img/f07d4e293d23789e.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "02c6871863",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://ahrefs.com/blog/wp-content/uploads/2026/11/letaido-review-1.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "02c6871863",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Nominate your work heroes in our 2026 community awards",
+   "url": "https://mobilegamer.biz/nominate-your-work-heroes-in-our-2026-community-awards/",
+   "summary": "Vote now to celebrate the mobile game industry heroes of 2026. Winners get an actual, real trophy.",
+   "published": "Tue, 24 Nov 2026 15:43:38 +0000",
+   "source": "MobileGamer.biz",
+   "source_id": "mobilegamer-biz",
+   "img": "img/5678451633f5d42c.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "ca11be71e9",
+   "topics": [
+    "mobile-games"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://i0.wp.com/mobilegamer.biz/wp-content/uploads/2026/11/mobilegamerbiz-community-awards-2026.jpg?fit=1200%2C592&ssl=1",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "ca11be71e9",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Google’s $338m UK developer settlement opens for claims",
+   "url": "https://mobilegamer.biz/googles-338m-uk-developer-settlement-opens-for-claims/",
+   "summary": "Every eligible developer is guaranteed at least $260 (£200).",
+   "published": "Tue, 24 Nov 2026 10:34:17 +0000",
+   "source": "MobileGamer.biz",
+   "source_id": "mobilegamer-biz",
+   "img": "img/790c452200228078.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "a63b5020e9",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://i0.wp.com/mobilegamer.biz/wp-content/uploads/2025/11/google-play-e1782321524170.jpg?fit=864%2C369&ssl=1",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "a63b5020e9",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Monopoly Go gets an Avengers: Doomsday season in Scopely’s third Marvel crossover",
+   "url": "https://mobilegamer.biz/monopoly-go-gets-an-avengers-doomsday-season-in-scopelys-third-marvel-crossover/",
+   "summary": "It's the third time Scopely has brought Marvel to Monopoly Go since 2024.",
+   "published": "Mon, 23 Nov 2026 18:00:13 +0000",
+   "source": "MobileGamer.biz",
+   "source_id": "mobilegamer-biz",
+   "img": "img/0f01e1296e320e1d.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "fd4740187a",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://i0.wp.com/mobilegamer.biz/wp-content/uploads/2026/11/Screenshot-2026-11-19-at-15.39.12.png?fit=1200%2C671&ssl=1",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "fd4740187a",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Rockstar’s mobile downloads more than quadrupled thanks to GTA VI",
+   "url": "https://mobilegamer.biz/rockstars-mobile-downloads-more-than-quadrupled-thanks-to-gta-vi/",
+   "summary": "Rockstar's mobile games are now being downloaded more than 600,000 times a day.",
+   "published": "Mon, 23 Nov 2026 14:57:32 +0000",
+   "source": "MobileGamer.biz",
+   "source_id": "mobilegamer-biz",
+   "img": "img/2bd64e6bfc365895.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "3127264997",
+   "topics": [
+    "mobile-games"
+   ],
+   "desks": [
+    "gamedev",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_via": "og",
+   "img_remote": "https://i0.wp.com/mobilegamer.biz/wp-content/uploads/2026/11/Screenshot-2026-11-23-at-12.18.38.png?fit=1200%2C593&ssl=1",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "3127264997",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "72782c5456",
+     "title": "IGN partners with Rockstar to host Official Strategy Guide for GTA 6",
+     "d": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "title": "How to Audit Any Page in Under 3 Minutes with SEOquake",
+   "url": "https://backlinko.com/seoquake-page-audit",
+   "summary": "You’re looking at a page that should be performing better, and you want answers fast. Maybe it’s a product page that slipped in rankings, a competitor’s post outranking yours, or a client page that…",
+   "published": "Wed, 09 Sep 2026 21:24:18 +0000",
+   "source": "Backlinko",
+   "source_id": "backlinko",
+   "img": "img/fcb30ef72a26c404.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "0b9065ca62",
+   "topics": [
+    "seo"
+   ],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://backlinko.com/app/uploads/2026/09/chrome-web-store-seoquake.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "0b9065ca62",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "7 Website Marketing Strategies for 2026",
+   "url": "https://backlinko.com/website-marketing",
+   "summary": "Website marketing in 2026 no longer works the way it used to. Traditionally, it meant promoting your site to attract visitors and turn them into customers. Your website is still central. But much of…",
+   "published": "Wed, 19 Aug 2026 23:53:56 +0000",
+   "source": "Backlinko",
+   "source_id": "backlinko",
+   "img": "img/5dc5613844478fe0.webp",
+   "engagement": 0.0,
+   "topic_by": "none",
+   "id": "104b2c93c2",
+   "topics": [],
+   "desks": [
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://backlinko.com/app/uploads/2026/05/website-marketing-in-2026.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "104b2c93c2",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Brand Mentions in 2026: How to Earn and Track Them Across the Web",
+   "url": "https://backlinko.com/brand-mentions",
+   "summary": "You can have an impressive website, great content, and a seamless user experience. But you might still be invisible to search engines and AI tools. That’s because Google and ChatGPT don’t just look…",
+   "published": "Wed, 19 Aug 2026 11:04:49 +0000",
+   "source": "Backlinko",
+   "source_id": "backlinko",
+   "img": "img/c65504669a10c3aa.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "f238d84982",
+   "topics": [
+    "ux-design",
+    "seo"
+   ],
+   "desks": [
+    "design",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://backlinko.com/app/uploads/2026/06/nytimes-best-fitness-trackers.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "f238d84982",
+   "status": "new",
+   "rev": 0
+  },
+  {
+   "title": "Prompt Tracking: How to Find (and Fix) Your AI Visibility Gaps",
+   "url": "https://backlinko.com/llm-prompt-tracking",
+   "summary": "Your brand could be ranking #1 on Google, but still be invisible to AI. Absent from conversations your customers are having with large language models (LLMs) about your category. Or worse, showing up…",
+   "published": "Thu, 13 Aug 2026 21:23:04 +0000",
+   "source": "Backlinko",
+   "source_id": "backlinko",
+   "img": "img/325a8b0ef7192378.webp",
+   "engagement": 0.0,
+   "topic_by": "keyword",
+   "id": "870093af6c",
+   "topics": [
+    "llm",
+    "prompting"
+   ],
+   "desks": [
+    "ai",
+    "marketing"
+   ],
+   "summary_by": "excerpt",
+   "img_remote": "https://backlinko.com/app/uploads/2026/04/google-serp-ai-visibility.png",
+   "img_w": 640,
+   "img_h": 360,
+   "sid": "870093af6c",
+   "status": "new",
+   "rev": 0,
+   "related": [
+    {
+     "sid": "7d99e1aa81",
+     "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+     "d": "2026-11-21"
+    }
+   ]
+  }
+ ],
+ "trending": {
+  "ai": [
+   {
+    "topic": "llm",
+    "heat": 26.99,
+    "count": 28,
+    "url": "https://news.ycombinator.com/item?id=50233779",
+    "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+    "source": "Hacker News",
+    "blurb": "28 cuộc thảo luận về Mô hình ngôn ngữ trong 30 ngày; sôi nhất trên Hacker News (670 điểm, 274 bình luận)."
+   },
+   {
+    "topic": "agents",
+    "heat": 22.29,
+    "count": 23,
+    "url": "https://news.ycombinator.com/item?id=50452455",
+    "title": "My AI agents found an unmapped Maya site?",
+    "source": "Hacker News",
+    "blurb": "23 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (1036 điểm, 393 bình luận)."
+   },
+   {
+    "topic": "ai-art",
+    "heat": 1.88,
+    "count": 2,
+    "url": "https://news.ycombinator.com/item?id=50368208",
+    "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+    "source": "Hacker News",
+    "blurb": "2 cuộc thảo luận về AI sinh ảnh/3D trong 30 ngày; sôi nhất trên Hacker News (287 điểm, 30 bình luận)."
+   }
+  ],
+  "design": [
+   {
+    "topic": "ui-design",
+    "heat": 7.95,
+    "count": 10,
+    "url": "https://news.ycombinator.com/item?id=50245831",
+    "title": "CSS-Tricks has a new owner",
+    "source": "Hacker News",
+    "blurb": "10 cuộc thảo luận về UI & giao diện trong 30 ngày; sôi nhất trên Hacker News (556 điểm, 116 bình luận)."
+   },
+   {
+    "topic": "agents",
+    "heat": 4.05,
+    "count": 5,
+    "url": "https://news.ycombinator.com/item?id=50443812",
+    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+    "source": "Hacker News",
+    "blurb": "5 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (449 điểm, 146 bình luận)."
+   },
+   {
+    "topic": "ux-design",
+    "heat": 1.98,
+    "count": 3,
+    "url": "https://news.ycombinator.com/item?id=50533517",
+    "title": "Bolt's Scooters Are Becoming Accessibility Sensors",
+    "source": "Hacker News",
+    "blurb": "3 cuộc thảo luận về UX trong 30 ngày; sôi nhất trên Hacker News (39 điểm, 53 bình luận)."
+   },
+   {
+    "topic": "game-marketing",
+    "heat": 1.68,
+    "count": 2,
+    "url": "https://news.ycombinator.com/item?id=50562320",
+    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+    "source": "Hacker News",
+    "blurb": "2 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (125 điểm, 87 bình luận)."
+   },
+   {
+    "topic": "graphics",
+    "heat": 1.58,
+    "count": 2,
+    "url": "https://news.ycombinator.com/item?id=50441350",
+    "title": "Show HN: Aircad – Professional drafting and 3D modeling in the browser",
+    "source": "Hacker News",
+    "blurb": "2 cuộc thảo luận về Đồ hoạ & shader trong 30 ngày; sôi nhất trên Hacker News (97 điểm, 48 bình luận)."
+   }
+  ],
+  "finance": [],
+  "gamedev": [
+   {
+    "topic": "agents",
+    "heat": 3.6,
+    "count": 6,
+    "url": "https://news.ycombinator.com/item?id=50454951",
+    "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+    "source": "Hacker News",
+    "blurb": "6 cuộc thảo luận về Agent & công cụ trong 30 ngày; sôi nhất trên Hacker News (85 điểm, 34 bình luận)."
+   },
+   {
+    "topic": "unity",
+    "heat": 3.49,
+    "count": 7,
+    "url": "https://github.com/erwachirakenya-dot/gflfc-decryption-toolkit",
+    "title": "erwachirakenya-dot/gflfc-decryption-toolkit: GFLFC Decryption Toolkit: Fire Control UnityFS XOR, FlatBuffers Manifest, CDN Subpackages…",
+    "source": "GitHub",
+    "blurb": "7 cuộc thảo luận về Unity trong 30 ngày; sôi nhất trên GitHub (153 điểm, 0 bình luận)."
+   },
+   {
+    "topic": "indie-games",
+    "heat": 3.27,
+    "count": 4,
+    "url": "https://news.ycombinator.com/item?id=50343418",
+    "title": "Valve \"played capitalism so well they broke it\" and now Steam can't be replaced",
+    "source": "Hacker News",
+    "blurb": "4 cuộc thảo luận về Game indie trong 30 ngày; sôi nhất trên Hacker News (58 điểm, 131 bình luận)."
+   },
+   {
+    "topic": "game-marketing",
+    "heat": 3.09,
+    "count": 4,
+    "url": "https://news.ycombinator.com/item?id=50562320",
+    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+    "source": "Hacker News",
+    "blurb": "4 cuộc thảo luận về Marketing game trong 30 ngày; sôi nhất trên Hacker News (125 điểm, 87 bình luận)."
+   },
+   {
+    "topic": "godot",
+    "heat": 2.56,
+    "count": 5,
+    "url": "https://github.com/Zengkailin/parametric-topdown-pixel-architecture",
+    "title": "Zengkailin/parametric-topdown-pixel-architecture: 参数化2D topdown像素建筑 - 把参数化 3D 建筑渲染成 2D 俯视像素图的本地网页工具（Godot hd2d_scene_tools 网页移植版）",
+    "source": "GitHub",
+    "blurb": "5 cuộc thảo luận về Godot trong 30 ngày; sôi nhất trên GitHub (246 điểm, 0 bình luận)."
+   }
+  ],
+  "marketing": []
+ },
+ "errors": [
+  "ai/anthropic-news: HTTPError: HTTP Error 404: Not Found",
+  "finance/collab-fund: HTTPError: HTTP Error 404: Not Found",
+  "finance/irs-news: HTTPError: HTTP Error 404: Not Found",
+  "finance/investor-gov: HTTPError: HTTP Error 403: Forbidden",
+  "gamedev/gamedev-net: HTTPError: HTTP Error 403: Forbidden",
+  "gamedev/gdc-vault: ParseError: not well-formed (invalid token): line 7, column 107",
+  "marketing/pocketgamer-biz: HTTPError: HTTP Error 403: Forbidden",
+  "marketing/think-with-google: ParseError: syntax error: line 1, column 0",
+  "ai/reddit:LocalLLaMA: HTTPError: HTTP Error 403: Blocked",
+  "ai/reddit:ClaudeAI: HTTPError: HTTP Error 403: Blocked",
+  "design/reddit:userexperience: HTTPError: HTTP Error 403: Blocked",
+  "design/reddit:web_design: HTTPError: HTTP Error 403: Blocked",
+  "gamedev/reddit:gamedev: HTTPError: HTTP Error 403: Blocked",
+  "gamedev/reddit:indiegaming: HTTPError: HTTP Error 403: Blocked"
+ ],
+ "blocked_injection": 0,
+ "dedup": {
+  "n": 158,
+  "new": 110,
+  "update": 3,
+  "repeat": 45
+ }
+}
